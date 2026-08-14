@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-08-14T14:27:07.199Z",
+    "last_updated": "2026-08-14T15:46:56.538Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -40,7 +40,7 @@
       "search_console": null,
       "manual_app_store": "2026-08-12"
     },
-    "last_growth_cycle_at": "2026-08-14T14:27:05.202Z"
+    "last_growth_cycle_at": "2026-08-14T15:46:53.809Z"
   },
   "apps": [
     {
@@ -1263,24 +1263,27 @@
       "name": "App Store Connect Analytics",
       "type": "acquisition_commerce",
       "mode": "official_read_only_api",
-      "status": "blocked",
+      "status": "waiting",
       "app_ids": [
         "style-atlas"
       ],
-      "last_sync": "2026-08-14T14:27:06.541Z",
+      "last_sync": "2026-08-14T15:46:55.928Z",
       "last_successful_import": null,
       "data_through": null,
-      "freshness": "blocked",
+      "freshness": "stale",
       "data_available": [],
       "authentication_required": false,
       "authentication_status": "configured",
       "required_configuration": [],
       "secrets_stored": false,
-      "error": "BLOCKED — ONE-TIME ADMIN ANALYTICS REPORT REQUEST REQUIRED",
+      "error": "WAITING — APPLE ANALYTICS REPORT GENERATION",
       "sla": {
         "expected_latency_hours": 48,
         "stale_after_hours": 96
-      }
+      },
+      "report_request_status": "active_waiting_for_reports",
+      "report_request_access_type": "ONGOING",
+      "report_request_verified_at": "2026-08-14T15:44:05.107Z"
     },
     {
       "id": "app_store_reviews_api",
@@ -1291,8 +1294,8 @@
       "app_ids": [
         "style-atlas"
       ],
-      "last_sync": "2026-08-14T14:27:07.198Z",
-      "last_successful_import": "2026-08-14T14:27:07.198Z",
+      "last_sync": "2026-08-14T15:46:56.536Z",
+      "last_successful_import": "2026-08-14T15:46:56.536Z",
       "data_through": "2026-08-13",
       "freshness": "delayed",
       "data_available": [],
@@ -1315,7 +1318,7 @@
       "app_ids": [
         "style-atlas"
       ],
-      "last_sync": "2026-08-14T14:27:07.199Z",
+      "last_sync": "2026-08-14T15:46:56.536Z",
       "last_successful_import": null,
       "data_through": null,
       "freshness": "blocked",
@@ -1341,12 +1344,12 @@
       "provider": "app_store_connect_api",
       "app_id": "style-atlas",
       "schedule": "every:1d",
-      "last_run": "2026-08-14T14:27:06.541Z",
+      "last_run": "2026-08-14T15:46:55.928Z",
       "next_run": null,
-      "status": "blocked",
+      "status": "waiting",
       "duration": null,
       "result": null,
-      "error": "BLOCKED — ONE-TIME ADMIN ANALYTICS REPORT REQUEST REQUIRED",
+      "error": "WAITING — APPLE ANALYTICS REPORT GENERATION",
       "retry_count": 0
     },
     {
@@ -1372,8 +1375,8 @@
       "provider": "app_store_reviews_api",
       "app_id": "style-atlas",
       "schedule": "every:1d",
-      "last_run": "2026-08-14T14:27:07.198Z",
-      "next_run": "2026-08-15T14:27:05.202Z",
+      "last_run": "2026-08-14T15:46:56.536Z",
+      "next_run": "2026-08-15T15:46:53.809Z",
       "status": "scheduled",
       "duration": null,
       "result": {
@@ -1473,7 +1476,7 @@
       "provider": "google_search_console_api",
       "app_id": "style-atlas",
       "schedule": "every:1d",
-      "last_run": "2026-08-14T14:27:07.199Z",
+      "last_run": "2026-08-14T15:46:56.536Z",
       "next_run": null,
       "status": "blocked",
       "duration": null,
@@ -1496,6 +1499,65 @@
     }
   ],
   "audit": [
+    {
+      "id": "e324ffec-5afa-4e82-a74b-1c8915eee6c1",
+      "at": "2026-08-14T15:46:53.809Z",
+      "actor": "AI COO OS",
+      "app_id": "style-atlas",
+      "source": "phase_3_growth_cycle",
+      "action": "run_growth_data_cycle_v2",
+      "input": {
+        "external_writes": false
+      },
+      "result": {
+        "cycle_id": "growth-cycle-style-atlas-2026-08-14T15-46-53-809Z",
+        "status": "partial",
+        "provider_syncs": {
+          "succeeded": 1,
+          "blocked": 1,
+          "failed": 0
+        },
+        "reconciliation": {
+          "received": 0,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 0,
+          "matches": 0,
+          "mismatches": 0
+        },
+        "search_opportunities": 0,
+        "review_opportunities": 0,
+        "data_through": {
+          "app_store": null,
+          "app_store_reviews": "2026-08-13",
+          "search_console": null,
+          "manual_app_store": "2026-08-12"
+        }
+      },
+      "status": "blocked",
+      "error": null
+    },
+    {
+      "id": "790044f6-e48d-4cb5-a2cd-39fdc7936739",
+      "at": "2026-08-14T15:44:05.107Z",
+      "actor": "Codex COO",
+      "app_id": "style-atlas",
+      "source": "explicit_user_authorization",
+      "action": "create_ongoing_analytics_report_request",
+      "input": {
+        "requested_count": 1,
+        "access_type": "ONGOING",
+        "external_write": true
+      },
+      "result": {
+        "created_count": 1,
+        "verified_ongoing_count": 1,
+        "active_count": 1,
+        "stopped_due_to_inactivity": false
+      },
+      "status": "success",
+      "error": null
+    },
     {
       "id": "5a681375-2669-4825-8a10-1927dc070397",
       "at": "2026-08-14T14:27:05.202Z",
@@ -2333,6 +2395,82 @@
         "search_console": null,
         "manual_app_store": "2026-08-12"
       }
+    },
+    {
+      "id": "growth-cycle-style-atlas-2026-08-14T15-46-53-809Z",
+      "app_id": "style-atlas",
+      "version": "v2",
+      "started_at": "2026-08-14T15:46:53.809Z",
+      "completed_at": "2026-08-14T15:46:56.537Z",
+      "status": "partial",
+      "stages": {
+        "sync": {
+          "succeeded": 1,
+          "blocked": 1,
+          "failed": 0,
+          "provider_sync_ids": [
+            "sync-app_store_connect_api-2026-08-14T15-46-53-809Z",
+            "sync-app_store_reviews_api-2026-08-14T15-46-53-809Z",
+            "sync-google_search_console_api-2026-08-14T15-46-53-809Z"
+          ]
+        },
+        "validate": {
+          "status": "completed",
+          "invalid_records": 0
+        },
+        "reconcile": {
+          "status": "completed",
+          "received": 0,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 0,
+          "matches": 0,
+          "mismatches": 0
+        },
+        "detect": {
+          "status": "completed",
+          "search_opportunities": 0,
+          "review_opportunities": 0
+        },
+        "brief": {
+          "status": "completed",
+          "data_through": {
+            "app_store": null,
+            "app_store_reviews": "2026-08-13",
+            "search_console": null,
+            "manual_app_store": "2026-08-12"
+          }
+        },
+        "approve": {
+          "status": "not_required",
+          "risk_level": 0
+        },
+        "execute": {
+          "status": "completed",
+          "action": "Refresh internal growth-data readiness and reconciliation."
+        },
+        "measure": {
+          "status": "completed",
+          "new_conclusive_outcomes": 0
+        },
+        "learn": {
+          "status": "completed",
+          "new_learnings": 0
+        }
+      },
+      "detected": {
+        "result": "No material change detected.",
+        "material_changes": 0
+      },
+      "decided": {
+        "decision": "Connect the minimum read-only credentials; retain verified baseline until then."
+      },
+      "data_through": {
+        "app_store": null,
+        "app_store_reviews": "2026-08-13",
+        "search_console": null,
+        "manual_app_store": "2026-08-12"
+      }
     }
   ],
   "provider_syncs": [
@@ -2605,6 +2743,67 @@
           "GOOGLE_APPLICATION_CREDENTIALS or GSC_ACCESS_TOKEN"
         ]
       }
+    },
+    {
+      "id": "sync-app_store_connect_api-2026-08-14T15-46-53-809Z",
+      "app_id": "style-atlas",
+      "provider": "app_store_connect_api",
+      "period_start": "2026-07-17",
+      "period_end": "2026-08-13",
+      "started_at": "2026-08-14T15:46:53.809Z",
+      "completed_at": "2026-08-14T15:46:55.928Z",
+      "status": "waiting",
+      "records_received": 0,
+      "records_inserted": 0,
+      "records_updated": 0,
+      "records_unchanged": 0,
+      "data_through": null,
+      "error": {
+        "code": "REPORT_GENERATION_PENDING",
+        "message": "WAITING — APPLE ANALYTICS REPORT GENERATION",
+        "retryable": false,
+        "required_configuration": []
+      }
+    },
+    {
+      "id": "sync-app_store_reviews_api-2026-08-14T15-46-53-809Z",
+      "app_id": "style-atlas",
+      "provider": "app_store_reviews_api",
+      "period_start": null,
+      "period_end": "2026-08-13",
+      "started_at": "2026-08-14T15:46:53.809Z",
+      "completed_at": "2026-08-14T15:46:56.536Z",
+      "status": "succeeded",
+      "records_received": 2,
+      "records_inserted": 0,
+      "records_updated": 0,
+      "records_unchanged": 2,
+      "data_through": "2026-08-13",
+      "error": null
+    },
+    {
+      "id": "sync-google_search_console_api-2026-08-14T15-46-53-809Z",
+      "app_id": "style-atlas",
+      "provider": "google_search_console_api",
+      "period_start": "2026-07-17",
+      "period_end": "2026-08-13",
+      "started_at": "2026-08-14T15:46:53.809Z",
+      "completed_at": "2026-08-14T15:46:56.536Z",
+      "status": "blocked",
+      "records_received": 0,
+      "records_inserted": 0,
+      "records_updated": 0,
+      "records_unchanged": 0,
+      "data_through": null,
+      "error": {
+        "code": "AUTH_REQUIRED",
+        "message": "BLOCKED — AUTH REQUIRED",
+        "retryable": false,
+        "required_configuration": [
+          "GSC_SITE_URL",
+          "GOOGLE_APPLICATION_CREDENTIALS or GSC_ACCESS_TOKEN"
+        ]
+      }
     }
   ],
   "reconciliations": [],
@@ -2651,35 +2850,35 @@
       "id": "instrumentation-style-atlas",
       "app_id": "style-atlas",
       "level": 1,
-      "updated_at": "2026-08-14T14:27:05.202Z",
+      "updated_at": "2026-08-14T15:46:53.809Z",
       "source": "calculated_from_verified_coverage"
     },
     {
       "id": "instrumentation-yixiu-meditation",
       "app_id": "yixiu-meditation",
       "level": 0,
-      "updated_at": "2026-08-14T14:27:05.202Z",
+      "updated_at": "2026-08-14T15:46:53.809Z",
       "source": "calculated_from_verified_coverage"
     },
     {
       "id": "instrumentation-know-yourself",
       "app_id": "know-yourself",
       "level": 0,
-      "updated_at": "2026-08-14T14:27:05.202Z",
+      "updated_at": "2026-08-14T15:46:53.809Z",
       "source": "calculated_from_verified_coverage"
     },
     {
       "id": "instrumentation-wendao",
       "app_id": "wendao",
       "level": 0,
-      "updated_at": "2026-08-14T14:27:05.202Z",
+      "updated_at": "2026-08-14T15:46:53.809Z",
       "source": "calculated_from_verified_coverage"
     },
     {
       "id": "instrumentation-xiazi-yesterdays-world",
       "app_id": "xiazi-yesterdays-world",
       "level": 0,
-      "updated_at": "2026-08-14T14:27:05.202Z",
+      "updated_at": "2026-08-14T15:46:53.809Z",
       "source": "calculated_from_verified_coverage"
     }
   ]

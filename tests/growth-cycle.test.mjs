@@ -24,3 +24,9 @@ test("successful official provider sync is marked live",async()=>{
   await runGrowthDataCycle(current,{now:new Date("2026-08-14T12:00:00Z"),appStoreProvider,searchProvider});
   assert.equal(current.providers.find((row)=>row.id==="app_store_connect_api").status,"live");assert.equal(current.providers.find((row)=>row.id==="app_store_reviews_api").status,"live");
 });
+
+test("active report request without generated instances remains waiting",async()=>{
+  const current=state();const appStoreProvider={health:async()=>({status:"configured"}),fetchAnalytics:async()=>{throw new ProviderUnavailableError("app_store_connect_api","Report instances are pending.",{code:"REPORT_GENERATION_PENDING"});},fetchReviews:async()=>[]};const searchProvider=new SearchConsoleProvider({config:{siteUrl:null,accessToken:null,credentialsPath:null}});
+  const result=await runGrowthDataCycle(current,{now:new Date("2026-08-14T12:00:00Z"),appStoreProvider,searchProvider});const analytics=current.providers.find((row)=>row.id==="app_store_connect_api"),job=current.jobs.find((row)=>row.provider==="app_store_connect_api");
+  assert.equal(result.syncs[0].status,"waiting");assert.equal(analytics.status,"waiting");assert.equal(analytics.authentication_status,"configured");assert.equal(analytics.error,"WAITING — APPLE ANALYTICS REPORT GENERATION");assert.equal(job.status,"waiting");assert.equal(job.next_run,null);
+});

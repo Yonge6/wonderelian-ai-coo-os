@@ -5,7 +5,7 @@ import { ATTRIBUTION_CONFIDENCE, PROVIDER_SLAS, attributionConfidence, classifyR
 
 const isoDate=(date)=>date.toISOString().slice(0,10);
 const daysBefore=(date,days)=>{const copy=new Date(date);copy.setUTCDate(copy.getUTCDate()-days);return copy;};
-const errorSummary=(error)=>({code:error.code??"PROVIDER_ERROR",message:error.code==="REPORT_REQUEST_REQUIRED"?"BLOCKED — ONE-TIME ADMIN ANALYTICS REPORT REQUEST REQUIRED":error.message?.includes("AUTH REQUIRED")?"BLOCKED — AUTH REQUIRED":"Provider sync failed; previous verified data retained.",retryable:Boolean(error.retryable),required_configuration:error instanceof ProviderAuthRequiredError?error.missing:[]});
+const errorSummary=(error)=>({code:error.code??"PROVIDER_ERROR",message:error.code==="REPORT_REQUEST_REQUIRED"?"BLOCKED — ONE-TIME ADMIN ANALYTICS REPORT REQUEST REQUIRED":error.code==="REPORT_GENERATION_PENDING"?"WAITING — APPLE ANALYTICS REPORT GENERATION":error.message?.includes("AUTH REQUIRED")?"BLOCKED — AUTH REQUIRED":"Provider sync failed; previous verified data retained.",retryable:Boolean(error.retryable),required_configuration:error instanceof ProviderAuthRequiredError?error.missing:[]});
 
 function audit(state,{at,action,result,status="success"}){state.audit.unshift({id:crypto.randomUUID(),at,actor:"AI COO OS",app_id:"style-atlas",source:"phase_3_growth_cycle",action,input:{external_writes:false},result,status,error:null});}
 function provider(state,id){return state.providers.find((row)=>row.id===id);}
@@ -14,7 +14,7 @@ function updateProvider(state,id,patch){const row=provider(state,id);if(row)Obje
 async function runSync(state,{id,appId,now,periodStart,periodEnd,operation,ingest,dataThroughOf}){
   const startedAt=now.toISOString();const sync={id:`sync-${id}-${startedAt.replace(/[:.]/g,"-")}`,app_id:appId,provider:id,period_start:periodStart,period_end:periodEnd,started_at:startedAt,completed_at:null,status:"running",records_received:0,records_inserted:0,records_updated:0,records_unchanged:0,data_through:null,error:null};state.provider_syncs.push(sync);
   try{const result=await operation();const counts=ingest(result);Object.assign(sync,{completed_at:new Date().toISOString(),status:"succeeded",records_received:counts.received,records_inserted:counts.inserted,records_updated:counts.updated,records_unchanged:counts.unchanged,data_through:dataThroughOf(result)});return sync;}
-  catch(error){const safe=errorSummary(error);Object.assign(sync,{completed_at:new Date().toISOString(),status:["AUTH_REQUIRED","REPORT_REQUEST_REQUIRED"].includes(safe.code)?"blocked":"failed",error:safe});return sync;}
+  catch(error){const safe=errorSummary(error);Object.assign(sync,{completed_at:new Date().toISOString(),status:safe.code==="REPORT_GENERATION_PENDING"?"waiting":["AUTH_REQUIRED","REPORT_REQUEST_REQUIRED"].includes(safe.code)?"blocked":"failed",error:safe});return sync;}
 }
 
 function updateScheduledJob(state,sync,now){
