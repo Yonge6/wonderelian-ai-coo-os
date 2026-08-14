@@ -1,3 +1,10 @@
 test-results/
 playwright-report/
 .DS_Store
+.env
+.env.*
+!.env.example
+config/*.local.json
+private_keys/
+*.p8
+service-account*.json

@@ -1,7 +1,18 @@
 export class ProviderUnavailableError extends Error {
-  constructor(provider, message) {
+  constructor(provider, message, { code = "PROVIDER_UNAVAILABLE", retryable = false } = {}) {
     super(`${provider} unavailable: ${message}`);
     this.name = "ProviderUnavailableError";
+    this.provider = provider;
+    this.code = code;
+    this.retryable = retryable;
+  }
+}
+
+export class ProviderAuthRequiredError extends ProviderUnavailableError {
+  constructor(provider, missing = []) {
+    super(provider, "BLOCKED — AUTH REQUIRED", { code:"AUTH_REQUIRED", retryable:false });
+    this.name = "ProviderAuthRequiredError";
+    this.missing = missing;
   }
 }
 

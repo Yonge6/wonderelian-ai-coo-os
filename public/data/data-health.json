@@ -56,19 +56,6 @@
         "error": null
       },
       {
-        "id": "search_console",
-        "name": "Google Search Console",
-        "status": "not_connected",
-        "mode": "api",
-        "last_successful_import": null,
-        "freshness": "unknown",
-        "age_state": "unknown",
-        "age_days": null,
-        "data_available": [],
-        "authentication_required": true,
-        "error": null
-      },
-      {
         "id": "social_url_tracking",
         "name": "Social Platforms",
         "status": "partial",
@@ -95,15 +82,66 @@
         "data_available": [],
         "authentication_required": false,
         "error": "No verified feedback snapshot has been supplied."
+      },
+      {
+        "id": "app_store_connect_api",
+        "name": "App Store Connect Analytics",
+        "status": "blocked",
+        "mode": "official_read_only_api",
+        "last_successful_import": "2026-08-14T12:52:00.837Z",
+        "freshness": "blocked",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [],
+        "authentication_required": true,
+        "error": "BLOCKED — AUTH REQUIRED"
+      },
+      {
+        "id": "app_store_reviews_api",
+        "name": "App Store Customer Reviews",
+        "status": "blocked",
+        "mode": "official_read_only_api",
+        "last_successful_import": "2026-08-14T12:52:00.837Z",
+        "freshness": "blocked",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [],
+        "authentication_required": true,
+        "error": "BLOCKED — AUTH REQUIRED"
+      },
+      {
+        "id": "google_search_console_api",
+        "name": "Google Search Console",
+        "status": "blocked",
+        "mode": "official_read_only_api",
+        "last_successful_import": "2026-08-14T12:52:00.837Z",
+        "freshness": "blocked",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [],
+        "authentication_required": true,
+        "error": "BLOCKED — AUTH REQUIRED"
       }
     ],
-    "last_successful_import": "2026-08-14T09:38:00.000Z",
+    "last_successful_import": "2026-08-14T12:52:00.837Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [
       {
         "provider": "manual_verified_feedback",
         "error": "No verified feedback snapshot has been supplied."
+      },
+      {
+        "provider": "app_store_connect_api",
+        "error": "BLOCKED — AUTH REQUIRED"
+      },
+      {
+        "provider": "app_store_reviews_api",
+        "error": "BLOCKED — AUTH REQUIRED"
+      },
+      {
+        "provider": "google_search_console_api",
+        "error": "BLOCKED — AUTH REQUIRED"
       }
     ],
     "attribution": {
@@ -113,7 +151,7 @@
       "link_coverage": 20,
       "outcome_coverage": 0
     },
-    "coverage_score": 68,
+    "coverage_score": 57,
     "confidence_cap": 0.65
   },
   {
