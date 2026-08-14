@@ -1,4 +1,62 @@
 {
-  "themes": [],
+  "themes": [
+    {
+      "app_id": "style-atlas",
+      "topic": "general",
+      "items": [
+        {
+          "id": "asc-review-00000194-9038-eb03-57fa-5dcd00000000",
+          "external_id": "00000194-9038-eb03-57fa-5dcd00000000",
+          "app_id": "style-atlas",
+          "provider": "app_store_reviews_api",
+          "source": "App Store Connect customerReviews API",
+          "source_reference": "customerReviews:00000194-9038-eb03-57fa-5dcd00000000",
+          "rating": 5,
+          "title": "审美爆炸的一款app",
+          "text": "很好用的一款App，直接把审美锁定在了最高档",
+          "reviewer_nickname": "Nicoxiong",
+          "territory": "CHN",
+          "created_at": "2026-07-28T20:41:09-07:00",
+          "verified_at": "2026-08-14T14:25:44.617Z",
+          "imported_at": "2026-08-14T14:25:44.617Z",
+          "verification_type": "api_verified",
+          "sentiment": "positive",
+          "topic": "general",
+          "severity": 2,
+          "response_status": "relationship_available",
+          "stable_key": "9af8bfeaeb1a6eaf58a71200"
+        },
+        {
+          "id": "asc-review-00000194-9038-eb03-5739-108500000000",
+          "external_id": "00000194-9038-eb03-5739-108500000000",
+          "app_id": "style-atlas",
+          "provider": "app_store_reviews_api",
+          "source": "App Store Connect customerReviews API",
+          "source_reference": "customerReviews:00000194-9038-eb03-5739-108500000000",
+          "rating": 5,
+          "title": "好美",
+          "text": "一款很有品味的艺术应用，里面的风格设计非常精美，让我发现了很多以前不了解的艺术表达。每天探索一点不同的美，提升自己的审美和创造力。",
+          "reviewer_nickname": "WonderElian",
+          "territory": "CHN",
+          "created_at": "2026-07-25T16:47:15-07:00",
+          "verified_at": "2026-08-14T14:25:44.617Z",
+          "imported_at": "2026-08-14T14:25:44.617Z",
+          "verification_type": "api_verified",
+          "sentiment": "positive",
+          "topic": "general",
+          "severity": 2,
+          "response_status": "relationship_available",
+          "stable_key": "deea8d2bc25e2a2e9703d352"
+        }
+      ],
+      "frequency": 2,
+      "severity": 2,
+      "evidence": [
+        "很好用的一款App，直接把审美锁定在了最高档",
+        "一款很有品味的艺术应用，里面的风格设计非常精美，让我发现了很多以前不了解的艺术表达。每天探索一点不同的美，提升自己的审美和创造力。"
+      ],
+      "score": 34
+    }
+  ],
   "opportunities": []
 }
