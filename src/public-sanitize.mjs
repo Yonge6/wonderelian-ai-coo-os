@@ -6,6 +6,7 @@ const SENSITIVE_PATTERNS = [
   { name:"secret assignment", pattern:/\b(?:password|passwd|api[_-]?key|secret|access[_-]?token|refresh[_-]?token|cookie)\b\s*[:=]\s*["']?[^\s,"'}]{6,}/i },
   { name:"private key", pattern:/-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/ },
   { name:"private provider configuration", pattern:/\b(?:ASC_ISSUER_ID|ASC_KEY_ID|ASC_PRIVATE_KEY_PATH|GOOGLE_APPLICATION_CREDENTIALS|GSC_SITE_URL)\b/ },
+  { name:"private operating memory", pattern:/\boperating_memory\b/i },
 ];
 
 export function sanitizePublicData(value) {
@@ -16,6 +17,9 @@ export function sanitizePublicData(value) {
   }
   return Object.fromEntries(Object.entries(value).flatMap(([key, item]) => {
     if (PRIVATE_KEYS.test(key)) return [];
+    if (key === "data_available" && Array.isArray(item)) {
+      return [[key, item.filter((entry)=>entry !== "operating_memory").map(sanitizePublicData)]];
+    }
     if (key === "audit" && Array.isArray(item)) {
       return [[key, item.map(({id, at, actor, app_id, source, action, status, result})=>({
         id,
