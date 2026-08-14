@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-08-14T12:52:00.838Z",
+    "last_updated": "2026-08-14T14:03:36.669Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -40,7 +40,7 @@
       "search_console": null,
       "manual_app_store": "2026-08-12"
     },
-    "last_growth_cycle_at": "2026-08-14T12:52:00.836Z"
+    "last_growth_cycle_at": "2026-08-14T14:03:36.668Z"
   },
   "apps": [
     {
@@ -1219,18 +1219,13 @@
       "app_ids": [
         "style-atlas"
       ],
-      "last_sync": "2026-08-14T12:52:00.837Z",
+      "last_sync": "2026-08-14T14:03:36.669Z",
       "last_successful_import": null,
       "data_through": null,
       "freshness": "blocked",
       "data_available": [],
       "authentication_required": true,
       "authentication_status": "not_configured",
-      "required_configuration": [
-        "ASC_ISSUER_ID",
-        "ASC_KEY_ID",
-        "ASC_PRIVATE_KEY_PATH"
-      ],
       "secrets_stored": false,
       "error": "BLOCKED — AUTH REQUIRED",
       "sla": {
@@ -1247,18 +1242,13 @@
       "app_ids": [
         "style-atlas"
       ],
-      "last_sync": "2026-08-14T12:52:00.837Z",
+      "last_sync": "2026-08-14T14:03:36.669Z",
       "last_successful_import": null,
       "data_through": null,
       "freshness": "blocked",
       "data_available": [],
       "authentication_required": true,
       "authentication_status": "not_configured",
-      "required_configuration": [
-        "ASC_ISSUER_ID",
-        "ASC_KEY_ID",
-        "ASC_PRIVATE_KEY_PATH"
-      ],
       "secrets_stored": false,
       "error": "BLOCKED — AUTH REQUIRED",
       "sla": {
@@ -1275,17 +1265,13 @@
       "app_ids": [
         "style-atlas"
       ],
-      "last_sync": "2026-08-14T12:52:00.837Z",
+      "last_sync": "2026-08-14T14:03:36.669Z",
       "last_successful_import": null,
       "data_through": null,
       "freshness": "blocked",
       "data_available": [],
       "authentication_required": true,
       "authentication_status": "not_configured",
-      "required_configuration": [
-        "GSC_SITE_URL",
-        "GOOGLE_APPLICATION_CREDENTIALS or GSC_ACCESS_TOKEN"
-      ],
       "secrets_stored": false,
       "error": "BLOCKED — AUTH REQUIRED",
       "sla": {
@@ -1301,12 +1287,12 @@
       "provider": "app_store_connect_api",
       "app_id": "style-atlas",
       "schedule": "every:1d",
-      "last_run": "2026-08-14T12:19:09.000Z",
-      "next_run": "2026-08-14T12:47:39.711Z",
-      "status": "scheduled",
+      "last_run": "2026-08-14T14:03:36.669Z",
+      "next_run": null,
+      "status": "blocked",
       "duration": null,
       "result": null,
-      "error": null,
+      "error": "BLOCKED — AUTH REQUIRED",
       "retry_count": 0
     },
     {
@@ -1332,12 +1318,12 @@
       "provider": "app_store_reviews_api",
       "app_id": "style-atlas",
       "schedule": "every:1d",
-      "last_run": "2026-08-14T12:19:09.000Z",
-      "next_run": "2026-08-14T12:47:39.711Z",
-      "status": "scheduled",
+      "last_run": "2026-08-14T14:03:36.669Z",
+      "next_run": null,
+      "status": "blocked",
       "duration": null,
       "result": null,
-      "error": null,
+      "error": "BLOCKED — AUTH REQUIRED",
       "retry_count": 0
     },
     {
@@ -1428,12 +1414,12 @@
       "provider": "google_search_console_api",
       "app_id": "style-atlas",
       "schedule": "every:1d",
-      "last_run": null,
-      "next_run": "2026-08-14T12:47:39.711Z",
-      "status": "scheduled",
+      "last_run": "2026-08-14T14:03:36.669Z",
+      "next_run": null,
+      "status": "blocked",
       "duration": null,
       "result": null,
-      "error": null,
+      "error": "BLOCKED — AUTH REQUIRED",
       "retry_count": 0
     }
   ],
@@ -1452,42 +1438,22 @@
   ],
   "audit": [
     {
+      "id": "d8df30fa-1216-4561-9c5c-0ec56b3b37b1",
+      "at": "2026-08-14T14:03:36.668Z",
+      "actor": "AI COO OS",
+      "app_id": "style-atlas",
+      "source": "phase_3_growth_cycle",
+      "action": "run_growth_data_cycle_v2",
+      "status": "blocked"
+    },
+    {
       "id": "ae1cc5ef-c3eb-476c-9c44-9e1befc42c94",
       "at": "2026-08-14T12:52:00.836Z",
       "actor": "AI COO OS",
       "app_id": "style-atlas",
       "source": "phase_3_growth_cycle",
       "action": "run_growth_data_cycle_v2",
-      "input": {
-        "external_writes": false
-      },
-      "result": {
-        "cycle_id": "growth-cycle-style-atlas-2026-08-14T12-52-00-836Z",
-        "status": "blocked",
-        "provider_syncs": {
-          "succeeded": 0,
-          "blocked": 3,
-          "failed": 0
-        },
-        "reconciliation": {
-          "received": 0,
-          "inserted": 0,
-          "updated": 0,
-          "unchanged": 0,
-          "matches": 0,
-          "mismatches": 0
-        },
-        "search_opportunities": 0,
-        "review_opportunities": 0,
-        "data_through": {
-          "app_store": null,
-          "app_store_reviews": null,
-          "search_console": null,
-          "manual_app_store": "2026-08-12"
-        }
-      },
-      "status": "blocked",
-      "error": null
+      "status": "blocked"
     },
     {
       "id": "7b0f39eb-572f-4e99-98a0-a759d26f7499",
@@ -1496,20 +1462,7 @@
       "app_id": "style-atlas",
       "source": "phase_3_migration",
       "action": "initialize_growth_data_spine",
-      "input": {
-        "external_writes": false
-      },
-      "result": {
-        "schema_version": "3.0.0",
-        "providers": [
-          "app_store_connect_api",
-          "app_store_reviews_api",
-          "google_search_console_api"
-        ],
-        "credential_material_stored": false
-      },
-      "status": "success",
-      "error": null
+      "status": "success"
     },
     {
       "id": "audit-cycle-style-atlas-2026-08-14T12-19-09-000Z",
@@ -1518,21 +1471,7 @@
       "app_id": "style-atlas",
       "source": "phase_2_operating_cycle",
       "action": "run_style_atlas_coo_cycle",
-      "input": {
-        "verified_sources": [
-          "manual_app_store_connect",
-          "local_ops_log"
-        ],
-        "external_writes": false
-      },
-      "result": {
-        "cycle_id": "cycle-style-atlas-2026-08-14T12-19-09-000Z",
-        "material_changes": 0,
-        "action_id": "action-cycle-style-atlas-2026-08-14T12-19-09-000Z-health-review",
-        "execution_state": "completed"
-      },
-      "status": "success",
-      "error": null
+      "status": "success"
     },
     {
       "id": "audit-x-hierarchy-guide-published",
@@ -1541,14 +1480,8 @@
       "app_id": "style-atlas",
       "source": "active_user_authorization",
       "action": "publish_x_image_post",
-      "input": {
-        "content_id": "sa-x-hierarchy-guide-20260814",
-        "asset_generated_via": "logged_in_ChatGPT_Chrome",
-        "alt_text": true
-      },
-      "result": "https://x.com/WonderElian/status/2088198316786074075",
       "status": "success",
-      "error": null
+      "result": "https://x.com/WonderElian/status/2088198316786074075"
     },
     {
       "id": "audit-bootstrap-20260814",
@@ -1557,13 +1490,8 @@
       "app_id": null,
       "source": "verified_ops_handoff",
       "action": "bootstrap_phase_1",
-      "input": {
-        "apps": 5,
-        "data_policy": "verified_only"
-      },
-      "result": "Seeded five apps, verified Style Atlas baseline, campaigns, and public content; unknown metrics preserved as null.",
       "status": "success",
-      "error": null
+      "result": "Seeded five apps, verified Style Atlas baseline, campaigns, and public content; unknown metrics preserved as null."
     }
   ],
   "attributions": [
@@ -1835,6 +1763,82 @@
         "search_console": null,
         "manual_app_store": "2026-08-12"
       }
+    },
+    {
+      "id": "growth-cycle-style-atlas-2026-08-14T14-03-36-668Z",
+      "app_id": "style-atlas",
+      "version": "v2",
+      "started_at": "2026-08-14T14:03:36.668Z",
+      "completed_at": "2026-08-14T14:03:36.669Z",
+      "status": "blocked",
+      "stages": {
+        "sync": {
+          "succeeded": 0,
+          "blocked": 3,
+          "failed": 0,
+          "provider_sync_ids": [
+            "sync-app_store_connect_api-2026-08-14T14-03-36-668Z",
+            "sync-app_store_reviews_api-2026-08-14T14-03-36-668Z",
+            "sync-google_search_console_api-2026-08-14T14-03-36-668Z"
+          ]
+        },
+        "validate": {
+          "status": "completed",
+          "invalid_records": 0
+        },
+        "reconcile": {
+          "status": "completed",
+          "received": 0,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 0,
+          "matches": 0,
+          "mismatches": 0
+        },
+        "detect": {
+          "status": "completed",
+          "search_opportunities": 0,
+          "review_opportunities": 0
+        },
+        "brief": {
+          "status": "completed",
+          "data_through": {
+            "app_store": null,
+            "app_store_reviews": null,
+            "search_console": null,
+            "manual_app_store": "2026-08-12"
+          }
+        },
+        "approve": {
+          "status": "not_required",
+          "risk_level": 0
+        },
+        "execute": {
+          "status": "completed",
+          "action": "Refresh internal growth-data readiness and reconciliation."
+        },
+        "measure": {
+          "status": "completed",
+          "new_conclusive_outcomes": 0
+        },
+        "learn": {
+          "status": "completed",
+          "new_learnings": 0
+        }
+      },
+      "detected": {
+        "result": "No material change detected.",
+        "material_changes": 0
+      },
+      "decided": {
+        "decision": "Connect the minimum read-only credentials; retain verified baseline until then."
+      },
+      "data_through": {
+        "app_store": null,
+        "app_store_reviews": null,
+        "search_console": null,
+        "manual_app_store": "2026-08-12"
+      }
     }
   ],
   "provider_syncs": [
@@ -1855,12 +1859,7 @@
       "error": {
         "code": "AUTH_REQUIRED",
         "message": "BLOCKED — AUTH REQUIRED",
-        "retryable": false,
-        "required_configuration": [
-          "ASC_ISSUER_ID",
-          "ASC_KEY_ID",
-          "ASC_PRIVATE_KEY_PATH"
-        ]
+        "retryable": false
       }
     },
     {
@@ -1880,12 +1879,7 @@
       "error": {
         "code": "AUTH_REQUIRED",
         "message": "BLOCKED — AUTH REQUIRED",
-        "retryable": false,
-        "required_configuration": [
-          "ASC_ISSUER_ID",
-          "ASC_KEY_ID",
-          "ASC_PRIVATE_KEY_PATH"
-        ]
+        "retryable": false
       }
     },
     {
@@ -1905,11 +1899,67 @@
       "error": {
         "code": "AUTH_REQUIRED",
         "message": "BLOCKED — AUTH REQUIRED",
-        "retryable": false,
-        "required_configuration": [
-          "GSC_SITE_URL",
-          "GOOGLE_APPLICATION_CREDENTIALS or GSC_ACCESS_TOKEN"
-        ]
+        "retryable": false
+      }
+    },
+    {
+      "id": "sync-app_store_connect_api-2026-08-14T14-03-36-668Z",
+      "app_id": "style-atlas",
+      "provider": "app_store_connect_api",
+      "period_start": "2026-07-17",
+      "period_end": "2026-08-13",
+      "started_at": "2026-08-14T14:03:36.668Z",
+      "completed_at": "2026-08-14T14:03:36.669Z",
+      "status": "blocked",
+      "records_received": 0,
+      "records_inserted": 0,
+      "records_updated": 0,
+      "records_unchanged": 0,
+      "data_through": null,
+      "error": {
+        "code": "AUTH_REQUIRED",
+        "message": "BLOCKED — AUTH REQUIRED",
+        "retryable": false
+      }
+    },
+    {
+      "id": "sync-app_store_reviews_api-2026-08-14T14-03-36-668Z",
+      "app_id": "style-atlas",
+      "provider": "app_store_reviews_api",
+      "period_start": null,
+      "period_end": "2026-08-13",
+      "started_at": "2026-08-14T14:03:36.668Z",
+      "completed_at": "2026-08-14T14:03:36.669Z",
+      "status": "blocked",
+      "records_received": 0,
+      "records_inserted": 0,
+      "records_updated": 0,
+      "records_unchanged": 0,
+      "data_through": null,
+      "error": {
+        "code": "AUTH_REQUIRED",
+        "message": "BLOCKED — AUTH REQUIRED",
+        "retryable": false
+      }
+    },
+    {
+      "id": "sync-google_search_console_api-2026-08-14T14-03-36-668Z",
+      "app_id": "style-atlas",
+      "provider": "google_search_console_api",
+      "period_start": "2026-07-17",
+      "period_end": "2026-08-13",
+      "started_at": "2026-08-14T14:03:36.668Z",
+      "completed_at": "2026-08-14T14:03:36.669Z",
+      "status": "blocked",
+      "records_received": 0,
+      "records_inserted": 0,
+      "records_updated": 0,
+      "records_unchanged": 0,
+      "data_through": null,
+      "error": {
+        "code": "AUTH_REQUIRED",
+        "message": "BLOCKED — AUTH REQUIRED",
+        "retryable": false
       }
     }
   ],
@@ -1957,35 +2007,35 @@
       "id": "instrumentation-style-atlas",
       "app_id": "style-atlas",
       "level": 1,
-      "updated_at": "2026-08-14T12:52:00.836Z",
+      "updated_at": "2026-08-14T14:03:36.668Z",
       "source": "calculated_from_verified_coverage"
     },
     {
       "id": "instrumentation-yixiu-meditation",
       "app_id": "yixiu-meditation",
       "level": 0,
-      "updated_at": "2026-08-14T12:52:00.836Z",
+      "updated_at": "2026-08-14T14:03:36.668Z",
       "source": "calculated_from_verified_coverage"
     },
     {
       "id": "instrumentation-know-yourself",
       "app_id": "know-yourself",
       "level": 0,
-      "updated_at": "2026-08-14T12:52:00.836Z",
+      "updated_at": "2026-08-14T14:03:36.668Z",
       "source": "calculated_from_verified_coverage"
     },
     {
       "id": "instrumentation-wendao",
       "app_id": "wendao",
       "level": 0,
-      "updated_at": "2026-08-14T12:52:00.836Z",
+      "updated_at": "2026-08-14T14:03:36.668Z",
       "source": "calculated_from_verified_coverage"
     },
     {
       "id": "instrumentation-xiazi-yesterdays-world",
       "app_id": "xiazi-yesterdays-world",
       "level": 0,
-      "updated_at": "2026-08-14T12:52:00.836Z",
+      "updated_at": "2026-08-14T14:03:36.668Z",
       "source": "calculated_from_verified_coverage"
     }
   ]
