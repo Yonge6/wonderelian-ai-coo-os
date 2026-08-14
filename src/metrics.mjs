@@ -1,4 +1,5 @@
-export const FRESHNESS_STATES = ["live", "fresh", "stale", "manual", "unknown"];
+export const FRESHNESS_STATES = ["live", "fresh", "delayed", "stale", "manual", "unknown", "blocked"];
+export const VERIFICATION_TYPES = ["manual_verified", "api_verified", "calculated", "inferred"];
 
 const REQUIRED_PROVENANCE = [
   "app_id", "metric", "period_start", "period_end", "source", "provider",
@@ -27,6 +28,7 @@ export function normalizeMetricRecord(input, { id = crypto.randomUUID(), now = n
     freshness: input.freshness ?? "unknown",
     confidence: input.confidence ?? null,
     notes: input.notes ?? null,
+    verification_type:input.verification_type ?? (input.verified_at || input.verifiedAt ? "manual_verified" : "inferred"),
   };
   validateMetricRecord(record);
   return record;
@@ -41,6 +43,7 @@ export function validateMetricRecord(record) {
   if (record.value !== null && typeof record.value !== "number") throw new Error(`Metric ${record.id ?? record.metric} value must be number or null`);
   if (!FRESHNESS_STATES.includes(record.freshness)) throw new Error(`Invalid metric freshness: ${record.freshness}`);
   if (record.confidence !== null && (typeof record.confidence !== "number" || record.confidence < 0 || record.confidence > 1)) throw new Error("Metric confidence must be null or between 0 and 1");
+  if (!VERIFICATION_TYPES.includes(record.verification_type ?? "manual_verified")) throw new Error(`Invalid metric verification type: ${record.verification_type}`);
   return record;
 }
 

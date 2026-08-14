@@ -185,6 +185,7 @@ export function generateBrief(state) {
 
 export function validateState(state) {
   const collections = ["apps", "metrics", "channels", "campaigns", "content", "attributions", "insights", "actions", "feedback", "opportunities", "experiments", "providers", "jobs", "events", "audit", "detections", "executions", "approvals", "action_outcomes", "learnings", "operating_memory", "ingestion_runs", "cycles"];
+  if (String(state?.metadata?.schema_version).startsWith("3")) collections.push("provider_syncs", "reconciliations", "search_observations", "geo_observations", "instrumentation");
   if (!state?.metadata?.schema_version) throw new Error("metadata.schema_version is required");
   for (const name of collections) if (!Array.isArray(state[name])) throw new Error(`${name} must be an array`);
   for (const name of collections) {

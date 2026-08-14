@@ -9,6 +9,7 @@ import { calculateDataHealth } from "./metrics.mjs";
 import { createExecution, recordActionOutcome, transitionExecution } from "./operations.mjs";
 import { ManualSnapshotProvider } from "./providers/manual-snapshot-provider.mjs";
 import { runOperatingCycle } from "./cycle.mjs";
+import { runGrowthDataCycle } from "./growth-cycle.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publicDir = join(root, "public");
@@ -56,7 +57,9 @@ export function createServer({ dataFile = defaultDataFile } = {}) {
 
       if (req.method === "POST" && url.pathname === "/api/cycle/run") {
         const input = await readJson(req);
-        const result = await store.mutate((state)=>runOperatingCycle(state,{ appId:input.app_id ?? "style-atlas" }));
+        const result = await store.mutate((state)=>String(state.metadata.schema_version).startsWith("3")
+          ? runGrowthDataCycle(state,{ appId:input.app_id ?? "style-atlas" })
+          : runOperatingCycle(state,{ appId:input.app_id ?? "style-atlas" }));
         return json(res, 200, result);
       }
 

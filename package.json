@@ -1,13 +1,15 @@
 {
   "name": "wonderelian-ai-coo-os",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "start": "node src/server.mjs",
     "build:static": "node src/build-static.mjs",
     "migrate:phase2": "node src/migrate-phase2.mjs",
+    "migrate:phase3": "node src/migrate-phase3.mjs",
     "cycle": "node src/run-cycle.mjs",
+    "cycle:growth": "node src/run-growth-cycle.mjs",
     "test": "node --test tests/*.test.mjs",
     "check": "node src/check.mjs"
   }

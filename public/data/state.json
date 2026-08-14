@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "schema_version": "2.0.0",
-    "last_updated": "2026-08-14T12:19:09.008Z",
+    "schema_version": "3.0.0",
+    "last_updated": "2026-08-14T12:52:00.838Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
-    "phase": 2,
+    "phase": 3,
     "operating_loop": [
       "observe",
       "detect",
@@ -31,7 +31,16 @@
         "minimum_sample_size": 100
       }
     },
-    "last_brief_at": "2026-08-14T12:19:09.000Z"
+    "last_brief_at": "2026-08-14T12:19:09.000Z",
+    "growth_data_spine": "official_read_only_providers",
+    "growth_cycle_version": "v2",
+    "data_through": {
+      "app_store": null,
+      "app_store_reviews": null,
+      "search_console": null,
+      "manual_app_store": "2026-08-12"
+    },
+    "last_growth_cycle_at": "2026-08-14T12:52:00.836Z"
   },
   "apps": [
     {
@@ -220,7 +229,8 @@
       "verified_at": "2026-08-12T23:59:59.000Z",
       "freshness": "manual",
       "confidence": 1,
-      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed."
+      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed.",
+      "verification_type": "manual_verified"
     },
     {
       "id": "sa-ppv-90d-20260812",
@@ -239,7 +249,8 @@
       "verified_at": "2026-08-12T23:59:59.000Z",
       "freshness": "manual",
       "confidence": 1,
-      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed."
+      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed.",
+      "verification_type": "manual_verified"
     },
     {
       "id": "sa-ftd-90d-20260812",
@@ -258,7 +269,8 @@
       "verified_at": "2026-08-12T23:59:59.000Z",
       "freshness": "manual",
       "confidence": 1,
-      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed."
+      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed.",
+      "verification_type": "manual_verified"
     },
     {
       "id": "sa-redownload-90d-20260812",
@@ -277,7 +289,8 @@
       "verified_at": "2026-08-12T23:59:59.000Z",
       "freshness": "manual",
       "confidence": 1,
-      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed."
+      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed.",
+      "verification_type": "manual_verified"
     },
     {
       "id": "sa-conversion-90d-20260812",
@@ -296,7 +309,8 @@
       "verified_at": "2026-08-12T23:59:59.000Z",
       "freshness": "manual",
       "confidence": 1,
-      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed."
+      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed.",
+      "verification_type": "manual_verified"
     },
     {
       "id": "sa-iap-90d-20260812",
@@ -315,7 +329,8 @@
       "verified_at": "2026-08-12T23:59:59.000Z",
       "freshness": "manual",
       "confidence": 1,
-      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed."
+      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed.",
+      "verification_type": "manual_verified"
     }
   ],
   "channels": [
@@ -1158,24 +1173,6 @@
       "error": null
     },
     {
-      "id": "search_console",
-      "name": "Google Search Console",
-      "type": "search",
-      "mode": "api",
-      "status": "not_connected",
-      "app_ids": [
-        "style-atlas"
-      ],
-      "last_sync": null,
-      "last_successful_import": null,
-      "freshness": "unknown",
-      "data_available": [],
-      "authentication_required": true,
-      "authentication_status": "not_configured",
-      "secrets_stored": false,
-      "error": null
-    },
-    {
       "id": "social_url_tracking",
       "name": "Social Platforms",
       "type": "content_performance",
@@ -1212,24 +1209,103 @@
       "authentication_status": "not_required",
       "secrets_stored": false,
       "error": "No verified feedback snapshot has been supplied."
+    },
+    {
+      "id": "app_store_connect_api",
+      "name": "App Store Connect Analytics",
+      "type": "acquisition_commerce",
+      "mode": "official_read_only_api",
+      "status": "blocked",
+      "app_ids": [
+        "style-atlas"
+      ],
+      "last_sync": "2026-08-14T12:52:00.837Z",
+      "last_successful_import": null,
+      "data_through": null,
+      "freshness": "blocked",
+      "data_available": [],
+      "authentication_required": true,
+      "authentication_status": "not_configured",
+      "required_configuration": [
+        "ASC_ISSUER_ID",
+        "ASC_KEY_ID",
+        "ASC_PRIVATE_KEY_PATH"
+      ],
+      "secrets_stored": false,
+      "error": "BLOCKED — AUTH REQUIRED",
+      "sla": {
+        "expected_latency_hours": 48,
+        "stale_after_hours": 96
+      }
+    },
+    {
+      "id": "app_store_reviews_api",
+      "name": "App Store Customer Reviews",
+      "type": "customer_feedback",
+      "mode": "official_read_only_api",
+      "status": "blocked",
+      "app_ids": [
+        "style-atlas"
+      ],
+      "last_sync": "2026-08-14T12:52:00.837Z",
+      "last_successful_import": null,
+      "data_through": null,
+      "freshness": "blocked",
+      "data_available": [],
+      "authentication_required": true,
+      "authentication_status": "not_configured",
+      "required_configuration": [
+        "ASC_ISSUER_ID",
+        "ASC_KEY_ID",
+        "ASC_PRIVATE_KEY_PATH"
+      ],
+      "secrets_stored": false,
+      "error": "BLOCKED — AUTH REQUIRED",
+      "sla": {
+        "expected_latency_hours": 24,
+        "stale_after_hours": 72
+      }
+    },
+    {
+      "id": "google_search_console_api",
+      "name": "Google Search Console",
+      "type": "search",
+      "mode": "official_read_only_api",
+      "status": "blocked",
+      "app_ids": [
+        "style-atlas"
+      ],
+      "last_sync": "2026-08-14T12:52:00.837Z",
+      "last_successful_import": null,
+      "data_through": null,
+      "freshness": "blocked",
+      "data_available": [],
+      "authentication_required": true,
+      "authentication_status": "not_configured",
+      "required_configuration": [
+        "GSC_SITE_URL",
+        "GOOGLE_APPLICATION_CREDENTIALS or GSC_ACCESS_TOKEN"
+      ],
+      "secrets_stored": false,
+      "error": "BLOCKED — AUTH REQUIRED",
+      "sla": {
+        "expected_latency_hours": 48,
+        "stale_after_hours": 96
+      }
     }
   ],
   "jobs": [
     {
       "id": "job-import-acquisition",
-      "type": "import_acquisition_metrics",
-      "provider": "manual_app_store_connect",
+      "type": "import_app_store_analytics",
+      "provider": "app_store_connect_api",
       "app_id": "style-atlas",
       "schedule": "every:1d",
       "last_run": "2026-08-14T12:19:09.000Z",
-      "next_run": "2026-08-15T12:19:09.000Z",
-      "status": "succeeded",
-      "duration": 0,
-      "result": {
-        "verified_observations": 6,
-        "newest_period_end": "2026-08-12",
-        "new_records": 0
-      },
+      "next_run": "2026-08-14T12:47:39.711Z",
+      "status": "scheduled",
+      "duration": null,
+      "result": null,
       "error": null,
       "retry_count": 0
     },
@@ -1252,18 +1328,16 @@
     },
     {
       "id": "job-feedback-refresh",
-      "type": "refresh_customer_feedback",
-      "provider": "manual_verified_feedback",
+      "type": "refresh_app_store_reviews",
+      "provider": "app_store_reviews_api",
       "app_id": "style-atlas",
       "schedule": "every:1d",
       "last_run": "2026-08-14T12:19:09.000Z",
-      "next_run": "2026-08-15T12:19:09.000Z",
-      "status": "blocked",
-      "duration": 0,
-      "result": {
-        "imported": 0
-      },
-      "error": "No authenticated review provider or verified feedback snapshot is available.",
+      "next_run": "2026-08-14T12:47:39.711Z",
+      "status": "scheduled",
+      "duration": null,
+      "result": null,
+      "error": null,
       "retry_count": 0
     },
     {
@@ -1347,6 +1421,20 @@
       },
       "error": null,
       "retry_count": 0
+    },
+    {
+      "id": "job-search-console",
+      "type": "import_search_console",
+      "provider": "google_search_console_api",
+      "app_id": "style-atlas",
+      "schedule": "every:1d",
+      "last_run": null,
+      "next_run": "2026-08-14T12:47:39.711Z",
+      "status": "scheduled",
+      "duration": null,
+      "result": null,
+      "error": null,
+      "retry_count": 0
     }
   ],
   "events": [
@@ -1363,6 +1451,66 @@
     }
   ],
   "audit": [
+    {
+      "id": "ae1cc5ef-c3eb-476c-9c44-9e1befc42c94",
+      "at": "2026-08-14T12:52:00.836Z",
+      "actor": "AI COO OS",
+      "app_id": "style-atlas",
+      "source": "phase_3_growth_cycle",
+      "action": "run_growth_data_cycle_v2",
+      "input": {
+        "external_writes": false
+      },
+      "result": {
+        "cycle_id": "growth-cycle-style-atlas-2026-08-14T12-52-00-836Z",
+        "status": "blocked",
+        "provider_syncs": {
+          "succeeded": 0,
+          "blocked": 3,
+          "failed": 0
+        },
+        "reconciliation": {
+          "received": 0,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 0,
+          "matches": 0,
+          "mismatches": 0
+        },
+        "search_opportunities": 0,
+        "review_opportunities": 0,
+        "data_through": {
+          "app_store": null,
+          "app_store_reviews": null,
+          "search_console": null,
+          "manual_app_store": "2026-08-12"
+        }
+      },
+      "status": "blocked",
+      "error": null
+    },
+    {
+      "id": "7b0f39eb-572f-4e99-98a0-a759d26f7499",
+      "at": "2026-08-14T12:47:39.711Z",
+      "actor": "AI COO OS",
+      "app_id": "style-atlas",
+      "source": "phase_3_migration",
+      "action": "initialize_growth_data_spine",
+      "input": {
+        "external_writes": false
+      },
+      "result": {
+        "schema_version": "3.0.0",
+        "providers": [
+          "app_store_connect_api",
+          "app_store_reviews_api",
+          "google_search_console_api"
+        ],
+        "credential_material_stored": false
+      },
+      "status": "success",
+      "error": null
+    },
     {
       "id": "audit-cycle-style-atlas-2026-08-14T12-19-09-000Z",
       "at": "2026-08-14T12:19:09.000Z",
@@ -1431,7 +1579,8 @@
       "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Guide%20Visual%20Hierarchy&mt=8",
       "publish_url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
       "first_time_downloads": null,
-      "measurement_status": "collecting"
+      "measurement_status": "collecting",
+      "confidence_class": "strong"
     },
     {
       "id": "attr-sa-compare-nouveau-deco",
@@ -1445,7 +1594,8 @@
       "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Compare%20Nouveau%20Deco&mt=8",
       "publish_url": "https://style-atlas.wonderelian.com/compare/art-nouveau-vs-art-deco/",
       "first_time_downloads": null,
-      "measurement_status": "collecting"
+      "measurement_status": "collecting",
+      "confidence_class": "strong"
     },
     {
       "id": "attr-sa-x-hierarchy-guide",
@@ -1459,7 +1609,8 @@
       "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=X%20Organic&mt=8",
       "publish_url": "https://x.com/WonderElian/status/2088198316786074075",
       "first_time_downloads": null,
-      "measurement_status": "collecting"
+      "measurement_status": "collecting",
+      "confidence_class": "strong"
     }
   ],
   "detections": [
@@ -1608,6 +1759,234 @@
         "job-evaluate-experiments",
         "job-measure-actions"
       ]
+    },
+    {
+      "id": "growth-cycle-style-atlas-2026-08-14T12-52-00-836Z",
+      "app_id": "style-atlas",
+      "version": "v2",
+      "started_at": "2026-08-14T12:52:00.836Z",
+      "completed_at": "2026-08-14T12:52:00.837Z",
+      "status": "blocked",
+      "stages": {
+        "sync": {
+          "succeeded": 0,
+          "blocked": 3,
+          "failed": 0,
+          "provider_sync_ids": [
+            "sync-app_store_connect_api-2026-08-14T12-52-00-836Z",
+            "sync-app_store_reviews_api-2026-08-14T12-52-00-836Z",
+            "sync-google_search_console_api-2026-08-14T12-52-00-836Z"
+          ]
+        },
+        "validate": {
+          "status": "completed",
+          "invalid_records": 0
+        },
+        "reconcile": {
+          "status": "completed",
+          "received": 0,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 0,
+          "matches": 0,
+          "mismatches": 0
+        },
+        "detect": {
+          "status": "completed",
+          "search_opportunities": 0,
+          "review_opportunities": 0
+        },
+        "brief": {
+          "status": "completed",
+          "data_through": {
+            "app_store": null,
+            "app_store_reviews": null,
+            "search_console": null,
+            "manual_app_store": "2026-08-12"
+          }
+        },
+        "approve": {
+          "status": "not_required",
+          "risk_level": 0
+        },
+        "execute": {
+          "status": "completed",
+          "action": "Refresh internal growth-data readiness and reconciliation."
+        },
+        "measure": {
+          "status": "completed",
+          "new_conclusive_outcomes": 0
+        },
+        "learn": {
+          "status": "completed",
+          "new_learnings": 0
+        }
+      },
+      "detected": {
+        "result": "No material change detected.",
+        "material_changes": 0
+      },
+      "decided": {
+        "decision": "Connect the minimum read-only credentials; retain verified baseline until then."
+      },
+      "data_through": {
+        "app_store": null,
+        "app_store_reviews": null,
+        "search_console": null,
+        "manual_app_store": "2026-08-12"
+      }
+    }
+  ],
+  "provider_syncs": [
+    {
+      "id": "sync-app_store_connect_api-2026-08-14T12-52-00-836Z",
+      "app_id": "style-atlas",
+      "provider": "app_store_connect_api",
+      "period_start": "2026-07-17",
+      "period_end": "2026-08-13",
+      "started_at": "2026-08-14T12:52:00.836Z",
+      "completed_at": "2026-08-14T12:52:00.837Z",
+      "status": "blocked",
+      "records_received": 0,
+      "records_inserted": 0,
+      "records_updated": 0,
+      "records_unchanged": 0,
+      "data_through": null,
+      "error": {
+        "code": "AUTH_REQUIRED",
+        "message": "BLOCKED — AUTH REQUIRED",
+        "retryable": false,
+        "required_configuration": [
+          "ASC_ISSUER_ID",
+          "ASC_KEY_ID",
+          "ASC_PRIVATE_KEY_PATH"
+        ]
+      }
+    },
+    {
+      "id": "sync-app_store_reviews_api-2026-08-14T12-52-00-836Z",
+      "app_id": "style-atlas",
+      "provider": "app_store_reviews_api",
+      "period_start": null,
+      "period_end": "2026-08-13",
+      "started_at": "2026-08-14T12:52:00.836Z",
+      "completed_at": "2026-08-14T12:52:00.837Z",
+      "status": "blocked",
+      "records_received": 0,
+      "records_inserted": 0,
+      "records_updated": 0,
+      "records_unchanged": 0,
+      "data_through": null,
+      "error": {
+        "code": "AUTH_REQUIRED",
+        "message": "BLOCKED — AUTH REQUIRED",
+        "retryable": false,
+        "required_configuration": [
+          "ASC_ISSUER_ID",
+          "ASC_KEY_ID",
+          "ASC_PRIVATE_KEY_PATH"
+        ]
+      }
+    },
+    {
+      "id": "sync-google_search_console_api-2026-08-14T12-52-00-836Z",
+      "app_id": "style-atlas",
+      "provider": "google_search_console_api",
+      "period_start": "2026-07-17",
+      "period_end": "2026-08-13",
+      "started_at": "2026-08-14T12:52:00.836Z",
+      "completed_at": "2026-08-14T12:52:00.837Z",
+      "status": "blocked",
+      "records_received": 0,
+      "records_inserted": 0,
+      "records_updated": 0,
+      "records_unchanged": 0,
+      "data_through": null,
+      "error": {
+        "code": "AUTH_REQUIRED",
+        "message": "BLOCKED — AUTH REQUIRED",
+        "retryable": false,
+        "required_configuration": [
+          "GSC_SITE_URL",
+          "GOOGLE_APPLICATION_CREDENTIALS or GSC_ACCESS_TOKEN"
+        ]
+      }
+    }
+  ],
+  "reconciliations": [],
+  "search_observations": [],
+  "geo_observations": [
+    {
+      "id": "geo-style-atlas-technical-p0",
+      "app_id": "style-atlas",
+      "page": "https://style-atlas.wonderelian.com/",
+      "dimension": "technical_readiness",
+      "status": "verified",
+      "verification_type": "manual_verified",
+      "observed_at": "2026-08-14T09:38:00.000Z",
+      "evidence": "lang, canonical, metadata, social cards, SoftwareApplication JSON-LD, robots and sitemap returned live HTTP 200.",
+      "ai_citation_status": "unknown"
+    },
+    {
+      "id": "geo-guide-hierarchy",
+      "app_id": "style-atlas",
+      "page": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
+      "dimension": "useful_citable_content",
+      "status": "verified",
+      "verification_type": "manual_verified",
+      "observed_at": "2026-08-14T09:38:00.000Z",
+      "evidence": "Public English guide with original visual example and attributable App Store CTA.",
+      "search_performance_status": "unavailable",
+      "ai_citation_status": "unknown"
+    },
+    {
+      "id": "geo-compare-nouveau-deco",
+      "app_id": "style-atlas",
+      "page": "https://style-atlas.wonderelian.com/compare/art-nouveau-vs-art-deco/",
+      "dimension": "useful_citable_content",
+      "status": "verified",
+      "verification_type": "manual_verified",
+      "observed_at": "2026-08-14T09:38:00.000Z",
+      "evidence": "Public English comparison with original visual example and attributable App Store CTA.",
+      "search_performance_status": "unavailable",
+      "ai_citation_status": "unknown"
+    }
+  ],
+  "instrumentation": [
+    {
+      "id": "instrumentation-style-atlas",
+      "app_id": "style-atlas",
+      "level": 1,
+      "updated_at": "2026-08-14T12:52:00.836Z",
+      "source": "calculated_from_verified_coverage"
+    },
+    {
+      "id": "instrumentation-yixiu-meditation",
+      "app_id": "yixiu-meditation",
+      "level": 0,
+      "updated_at": "2026-08-14T12:52:00.836Z",
+      "source": "calculated_from_verified_coverage"
+    },
+    {
+      "id": "instrumentation-know-yourself",
+      "app_id": "know-yourself",
+      "level": 0,
+      "updated_at": "2026-08-14T12:52:00.836Z",
+      "source": "calculated_from_verified_coverage"
+    },
+    {
+      "id": "instrumentation-wendao",
+      "app_id": "wendao",
+      "level": 0,
+      "updated_at": "2026-08-14T12:52:00.836Z",
+      "source": "calculated_from_verified_coverage"
+    },
+    {
+      "id": "instrumentation-xiazi-yesterdays-world",
+      "app_id": "xiazi-yesterdays-world",
+      "level": 0,
+      "updated_at": "2026-08-14T12:52:00.836Z",
+      "source": "calculated_from_verified_coverage"
     }
   ]
 }

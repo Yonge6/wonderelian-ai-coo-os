@@ -1,10 +1,18 @@
-# AI COO OS — Phase 2 Source of Truth
+# AI COO OS — Phase 3 Source of Truth
 
 Last updated: 2026-08-14
 
 ## Purpose
 
-The system turns verified operating evidence into a small number of decisions across five WonderElian products. The primary outcome is attributable first-time App Store downloads. Style Atlas is the first fully instrumented app; missing portfolio data remains `null`.
+The system turns verified operating evidence into a small number of decisions across five WonderElian products. The primary outcome is attributable first-time App Store downloads. Style Atlas is the first instrumented app; it remains maturity Level 1 until an official acquisition sync succeeds. Missing portfolio data remains `null`.
+
+## Growth Data Spine status
+
+Phase 3 implements official read-only App Store Connect Analytics, customer reviews, and Google Search Console providers. Credential material is not present and is never stored in state. The 2026-08-14 real Cycle V2 therefore records all three syncs as `BLOCKED — AUTH REQUIRED`, retains the verified manual App Store baseline through 2026-08-12, and completes internal validation, reconciliation, detection, brief, Level 0 execution, measurement, and learning stages without fabricating rows.
+
+Every official observation is idempotently keyed and classified as `api_verified`. Historical snapshots are `manual_verified`; derived scorecards are `calculated`; weak directional signals are `inferred`. Overlapping manual/API values are reconciled into append-only match or mismatch records and neither source silently overwrites the other.
+
+The public command center shows provider-specific `data_through` timestamps, source drilldowns, acquisition/search/attribution/VOC scorecards, SEO/GEO technical readiness, and instrumentation maturity. Unknown search and review results remain unavailable, not zero.
 
 ## Operating loop
 
@@ -98,4 +106,3 @@ The 2026-08-14 Style Atlas cycle read six verified metrics and found no second c
 1. App Store Connect read-only daily and campaign ingestion.
 2. Search Console landing/query integration.
 3. Verified App Store review ingestion.
-

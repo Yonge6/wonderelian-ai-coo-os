@@ -14,6 +14,7 @@ export class ManualSnapshotProvider {
       ...item, app_id:snapshot.app_id, source:snapshot.source, provider:snapshot.provider ?? this.id,
       source_reference:snapshot.source_reference, imported_at:now, verified_at:snapshot.verified_at,
       freshness:"manual", confidence:item.confidence ?? snapshot.confidence ?? 1,
+      verification_type:"manual_verified",
       notes:item.notes ?? snapshot.notes ?? null,
     }, { now }));
   }
