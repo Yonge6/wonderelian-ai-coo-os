@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WonderElian AI COO OS</title>
+  <meta name="description" content="Local command center for WonderElian's consumer app portfolio.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div><span class="eyebrow">WonderElian / Operations</span><h1>AI COO OS</h1></div>
+    <div class="header-tools">
+      <div class="locale-switch" aria-label="Language"><button data-locale="en" class="active">EN</button><button data-locale="zh">中文</button></div>
+      <div class="north-star"><span data-i18n="north_star">North star</span><strong data-i18n="north_star_value">Attributable first-time downloads</strong></div>
+    </div>
+  </header>
+  <nav aria-label="Workspace">
+    <button class="active" data-view="command" data-i18n="command_center">Command Center</button>
+    <button data-view="apps" data-i18n="apps">Apps</button><button data-view="insights" data-i18n="insights">Insights</button>
+    <button data-view="actions" data-i18n="actions">Actions</button><button data-view="experiments" data-i18n="experiments">Experiments</button>
+    <button data-view="content" data-i18n="content">Content</button><button data-view="customers" data-i18n="customers">Customers</button>
+    <button data-view="activity" data-i18n="activity">Activity</button>
+  </nav>
+  <p class="mode-banner" hidden data-i18n="readonly_banner">Public read-only snapshot. Run the local app for writes, approvals, and imports.</p>
+  <main id="app"><p class="loading">Loading verified operating state…</p></main>
+  <template id="form-template">
+    <form class="panel form-panel"><h2></h2><div class="fields"></div><button type="submit">Save</button><p class="form-status" role="status"></p></form>
+  </template>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

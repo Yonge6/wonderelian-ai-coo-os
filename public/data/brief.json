@@ -1,0 +1,207 @@
+{
+  "generated_at": "2026-08-14T09:51:48.243Z",
+  "primary_outcome": "Attributable first-time App Store downloads",
+  "kpis": {
+    "first_time_downloads": {
+      "value": 24,
+      "apps_reporting": 1,
+      "apps_total": 5
+    },
+    "active_users": {
+      "value": null,
+      "apps_reporting": 0,
+      "apps_total": 5
+    },
+    "revenue": {
+      "value": null,
+      "apps_reporting": 0,
+      "apps_total": 5
+    },
+    "trial_starts": {
+      "value": null,
+      "apps_reporting": 0,
+      "apps_total": 5
+    },
+    "paid_conversions": {
+      "value": null,
+      "apps_reporting": 0,
+      "apps_total": 5
+    },
+    "conversion_rate": {
+      "value": null,
+      "apps_reporting": 0,
+      "apps_total": 5
+    },
+    "d1_retention": {
+      "value": null,
+      "apps_reporting": 0,
+      "apps_total": 5
+    },
+    "d7_retention": {
+      "value": null,
+      "apps_reporting": 0,
+      "apps_total": 5
+    },
+    "d30_retention": {
+      "value": null,
+      "apps_reporting": 0,
+      "apps_total": 5
+    },
+    "traffic": {
+      "value": null,
+      "apps_reporting": 0,
+      "apps_total": 5
+    },
+    "content_published": {
+      "value": 15,
+      "apps_reporting": 1,
+      "apps_total": 5
+    },
+    "acquisition_performance": {
+      "value": null,
+      "apps_reporting": 0,
+      "apps_total": 5
+    }
+  },
+  "portfolio_summary": "5 apps are tracked; 1 currently report the primary outcome.",
+  "portfolio_summary_zh": "已追踪 5 个应用；目前 1 个上报北极星指标。",
+  "winners": [],
+  "problems": [
+    {
+      "id": "portfolio-data-coverage",
+      "app_id": null,
+      "source": "portfolio_state",
+      "category": "measurement",
+      "title": "Portfolio acquisition data coverage is incomplete",
+      "title_zh": "产品组合的获客数据覆盖不完整",
+      "summary": "Only Style Atlas has a verified acquisition baseline in Phase 1.",
+      "summary_zh": "Phase 1 目前只有 Style Atlas 拥有已验证的获客基线。",
+      "observation": "Only Style Atlas has a verified acquisition baseline in Phase 1.",
+      "observation_zh": "Phase 1 目前只有 Style Atlas 拥有已验证的获客基线。",
+      "evidence": "1 of 5 apps reports first-time downloads; unknown values remain null.",
+      "evidence_zh": "5 个应用中只有 1 个上报首次下载；未知值保持为 null。",
+      "reason": "Portfolio ranking is unreliable without comparable acquisition data.",
+      "reason_zh": "缺少可比的获客数据时，产品组合排序不可靠。",
+      "recommended_action": "Connect or manually import one verified acquisition baseline per app.",
+      "recommended_action_zh": "为每个应用接入或手动导入一组已验证的获客基线。",
+      "expected_impact": "Enables evidence-based portfolio allocation.",
+      "expected_impact_zh": "支持基于证据分配产品投入。",
+      "impact": 88,
+      "impact_score": 88,
+      "urgency": 90,
+      "urgency_score": 90,
+      "confidence": 0.99,
+      "status": "open",
+      "detected_at": "2026-08-14T09:20:00.000Z",
+      "score": 91
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "sa-channel-attribution-gap",
+      "app_id": "style-atlas",
+      "source": "ops_log",
+      "category": "acquisition",
+      "title": "Import campaign-level App Store outcomes",
+      "title_zh": "导入 campaign 级 App Store 结果",
+      "summary": "Eight campaign links exist but outcome rows are not recorded.",
+      "summary_zh": "8 条 campaign 链接已建立，但尚未录入各自结果。",
+      "observation": "Campaign links exist for eight channels but per-campaign App Store outcomes are not yet recorded.",
+      "observation_zh": "8 个渠道已有独立 campaign 链接，但尚未记录各 campaign 的 App Store 结果。",
+      "evidence": "Published URLs are known; outbound clicks and first-time downloads are null.",
+      "evidence_zh": "公开 URL 已验证；外链点击和首次下载仍为 null。",
+      "reason": "Engagement cannot identify download-driving channels without outcome imports.",
+      "reason_zh": "没有结果导入，仅靠互动无法判断哪个渠道真正带来下载。",
+      "recommended_action": "Import weekly App Store campaign results and annotate every permanent content URL.",
+      "recommended_action_zh": "每周导入 App Store campaign 结果，并关联每条永久内容 URL。",
+      "expected_impact": "Stops effort on channels that do not produce attributable downloads.",
+      "expected_impact_zh": "停止在无法带来可归因下载的渠道上浪费投入。",
+      "impact": 92,
+      "impact_score": 92,
+      "urgency": 82,
+      "urgency_score": 82,
+      "confidence": 0.95,
+      "status": "open",
+      "detected_at": "2026-08-14T09:20:00.000Z",
+      "score": 90
+    },
+    {
+      "id": "sa-search-inventory",
+      "app_id": "style-atlas",
+      "source": "seo_audit",
+      "category": "SEO",
+      "title": "Build useful static search inventory",
+      "title_zh": "建设真正有用的静态搜索内容",
+      "summary": "Two attributable English pages create the first query-specific inventory.",
+      "summary_zh": "两张可归因的英文页面形成首批搜索内容资产。",
+      "observation": "Style Atlas had no indexable guide or comparison inventory beyond the product page.",
+      "observation_zh": "此前除产品页外，Style Atlas 没有可索引的指南或比较页。",
+      "evidence": "Two attributable English pages were deployed on 2026-08-14.",
+      "evidence_zh": "2026-08-14 已上线两张带独立归因的英文页面。",
+      "reason": "Useful query-specific pages create durable discovery paths and campaign-level attribution.",
+      "reason_zh": "针对真实问题的页面可以形成长期发现路径和 campaign 级归因。",
+      "recommended_action": "Publish one useful guide or comparison page weekly and review search-to-download attribution monthly.",
+      "recommended_action_zh": "每周发布一张高质量指南或比较页，并每月复盘搜索到下载的归因。",
+      "expected_impact": "Incremental qualified product-page views and first-time downloads.",
+      "expected_impact_zh": "增加高意向产品页访问与首次下载。",
+      "impact": 78,
+      "impact_score": 78,
+      "urgency": 70,
+      "urgency_score": 70,
+      "confidence": 0.85,
+      "status": "open",
+      "detected_at": "2026-08-14T09:20:00.000Z",
+      "score": 77
+    }
+  ],
+  "recommendations": [
+    {
+      "app": "Portfolio",
+      "app_zh": "产品组合",
+      "observation": "Only Style Atlas has a verified acquisition baseline in Phase 1.",
+      "observation_zh": "Phase 1 目前只有 Style Atlas 拥有已验证的获客基线。",
+      "evidence": "1 of 5 apps reports first-time downloads; unknown values remain null.",
+      "evidence_zh": "5 个应用中只有 1 个上报首次下载；未知值保持为 null。",
+      "reason": "Portfolio ranking is unreliable without comparable acquisition data.",
+      "reason_zh": "缺少可比的获客数据时，产品组合排序不可靠。",
+      "action": "Connect or manually import one verified acquisition baseline per app.",
+      "action_zh": "为每个应用接入或手动导入一组已验证的获客基线。",
+      "expected_impact": "Enables evidence-based portfolio allocation.",
+      "expected_impact_zh": "支持基于证据分配产品投入。",
+      "confidence": 0.99,
+      "priority": 91
+    },
+    {
+      "app": "Style Atlas: Art & Design",
+      "app_zh": "Style Atlas：艺术与设计",
+      "observation": "Campaign links exist for eight channels but per-campaign App Store outcomes are not yet recorded.",
+      "observation_zh": "8 个渠道已有独立 campaign 链接，但尚未记录各 campaign 的 App Store 结果。",
+      "evidence": "Published URLs are known; outbound clicks and first-time downloads are null.",
+      "evidence_zh": "公开 URL 已验证；外链点击和首次下载仍为 null。",
+      "reason": "Engagement cannot identify download-driving channels without outcome imports.",
+      "reason_zh": "没有结果导入，仅靠互动无法判断哪个渠道真正带来下载。",
+      "action": "Import weekly App Store campaign results and annotate every permanent content URL.",
+      "action_zh": "每周导入 App Store campaign 结果，并关联每条永久内容 URL。",
+      "expected_impact": "Stops effort on channels that do not produce attributable downloads.",
+      "expected_impact_zh": "停止在无法带来可归因下载的渠道上浪费投入。",
+      "confidence": 0.95,
+      "priority": 90
+    },
+    {
+      "app": "Style Atlas: Art & Design",
+      "app_zh": "Style Atlas：艺术与设计",
+      "observation": "Style Atlas had no indexable guide or comparison inventory beyond the product page.",
+      "observation_zh": "此前除产品页外，Style Atlas 没有可索引的指南或比较页。",
+      "evidence": "Two attributable English pages were deployed on 2026-08-14.",
+      "evidence_zh": "2026-08-14 已上线两张带独立归因的英文页面。",
+      "reason": "Useful query-specific pages create durable discovery paths and campaign-level attribution.",
+      "reason_zh": "针对真实问题的页面可以形成长期发现路径和 campaign 级归因。",
+      "action": "Publish one useful guide or comparison page weekly and review search-to-download attribution monthly.",
+      "action_zh": "每周发布一张高质量指南或比较页，并每月复盘搜索到下载的归因。",
+      "expected_impact": "Incremental qualified product-page views and first-time downloads.",
+      "expected_impact_zh": "增加高意向产品页访问与首次下载。",
+      "confidence": 0.85,
+      "priority": 77
+    }
+  ]
+}

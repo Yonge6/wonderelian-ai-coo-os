@@ -1,0 +1,783 @@
+{
+  "metadata": {
+    "schema_version": "1.0.0",
+    "last_updated": "2026-08-14T09:20:00.000Z",
+    "portfolio_name": "WonderElian Consumer Apps",
+    "primary_outcome": "Attributable first-time App Store downloads"
+  },
+  "apps": [
+    {
+      "id": "style-atlas",
+      "name": "Style Atlas: Art & Design",
+      "name_zh": "Style Atlas：艺术与设计",
+      "slug": "style-atlas",
+      "description": "A visual reference and style discovery product for creators.",
+      "category": "Art & Design",
+      "platform": [
+        "iOS",
+        "web"
+      ],
+      "platforms": [
+        "iOS",
+        "web"
+      ],
+      "app_store_url": "https://apps.apple.com/app/id6787447019",
+      "website_url": "https://style-atlas.wonderelian.com/",
+      "status": "active",
+      "primary_market": "global",
+      "target_audience": "Creators and visually curious learners",
+      "positioning": "A structured atlas for learning and applying visual styles.",
+      "monetization_model": "freemium with subscription",
+      "acquisition_channels": [
+        "search",
+        "social",
+        "community"
+      ],
+      "keywords": [],
+      "competitors": [],
+      "social_accounts": [],
+      "kpis": [
+        "first_time_downloads",
+        "product_page_views"
+      ],
+      "content_themes": [
+        "visual literacy",
+        "style comparisons",
+        "creator workflows"
+      ],
+      "brand_url": "https://wonderelian.com/",
+      "owner": "WonderElian",
+      "location": "Wuhan, China",
+      "created_at": null,
+      "updated_at": "2026-08-14T09:20:00.000Z"
+    },
+    {
+      "id": "yixiu-meditation",
+      "name": "Yixiu Meditation",
+      "name_zh": "一休冥想",
+      "slug": "yixiu-meditation",
+      "description": null,
+      "category": "Meditation",
+      "platform": [
+        "iOS",
+        "web"
+      ],
+      "platforms": [
+        "iOS",
+        "web"
+      ],
+      "app_store_url": null,
+      "website_url": "https://yixiu.wonderelian.com/",
+      "status": "active",
+      "primary_market": null,
+      "target_audience": null,
+      "positioning": null,
+      "monetization_model": null,
+      "acquisition_channels": [],
+      "keywords": [],
+      "competitors": [],
+      "social_accounts": [],
+      "kpis": [],
+      "content_themes": [],
+      "owner": "WonderElian",
+      "created_at": null,
+      "updated_at": "2026-08-14T09:20:00.000Z"
+    },
+    {
+      "id": "know-yourself",
+      "name": "Know Yourself",
+      "name_zh": "认识你自己",
+      "slug": "know-yourself",
+      "description": null,
+      "category": "Self-discovery",
+      "platform": [
+        "web"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "app_store_url": null,
+      "website_url": "https://human-design.wonderelian.com/",
+      "status": "active",
+      "primary_market": null,
+      "target_audience": null,
+      "positioning": null,
+      "monetization_model": null,
+      "acquisition_channels": [],
+      "keywords": [],
+      "competitors": [],
+      "social_accounts": [],
+      "kpis": [],
+      "content_themes": [],
+      "owner": "WonderElian",
+      "created_at": null,
+      "updated_at": "2026-08-14T09:20:00.000Z"
+    },
+    {
+      "id": "wendao",
+      "name": "Wendao",
+      "name_zh": "问道",
+      "slug": "wendao",
+      "description": null,
+      "category": "Wisdom",
+      "platform": [
+        "web"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "app_store_url": null,
+      "website_url": "https://wendao.wonderelian.com/",
+      "status": "active",
+      "primary_market": null,
+      "target_audience": null,
+      "positioning": null,
+      "monetization_model": null,
+      "acquisition_channels": [],
+      "keywords": [],
+      "competitors": [],
+      "social_accounts": [],
+      "kpis": [],
+      "content_themes": [],
+      "owner": "WonderElian",
+      "created_at": null,
+      "updated_at": "2026-08-14T09:20:00.000Z"
+    },
+    {
+      "id": "xiazi-yesterdays-world",
+      "name": "Xiazi Yesterday's World",
+      "name_zh": "虾子曰·昨日世界",
+      "slug": "xiazi-yesterdays-world",
+      "description": null,
+      "category": "News & Culture",
+      "platform": [
+        "web"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "app_store_url": null,
+      "website_url": "https://xiazishuo.com/",
+      "status": "active",
+      "primary_market": null,
+      "target_audience": null,
+      "positioning": null,
+      "monetization_model": null,
+      "acquisition_channels": [],
+      "keywords": [],
+      "competitors": [],
+      "social_accounts": [],
+      "kpis": [],
+      "content_themes": [],
+      "owner": "WonderElian",
+      "created_at": null,
+      "updated_at": "2026-08-14T09:20:00.000Z"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "sa-imp-90d-20260812",
+      "app_id": "style-atlas",
+      "name": "impressions",
+      "value": 1610,
+      "unit": "count",
+      "period_start": "2026-05-15",
+      "period_end": "2026-08-12",
+      "provider": "manual_app_store_connect",
+      "provenance": "Verified 90-day baseline in ops log"
+    },
+    {
+      "id": "sa-ppv-90d-20260812",
+      "app_id": "style-atlas",
+      "name": "product_page_views",
+      "value": 189,
+      "unit": "count",
+      "period_start": "2026-05-15",
+      "period_end": "2026-08-12",
+      "provider": "manual_app_store_connect",
+      "provenance": "Verified 90-day baseline in ops log"
+    },
+    {
+      "id": "sa-ftd-90d-20260812",
+      "app_id": "style-atlas",
+      "name": "first_time_downloads",
+      "value": 24,
+      "unit": "count",
+      "period_start": "2026-05-15",
+      "period_end": "2026-08-12",
+      "provider": "manual_app_store_connect",
+      "provenance": "Verified 90-day baseline in ops log"
+    },
+    {
+      "id": "sa-redownload-90d-20260812",
+      "app_id": "style-atlas",
+      "name": "redownloads",
+      "value": 5,
+      "unit": "count",
+      "period_start": "2026-05-15",
+      "period_end": "2026-08-12",
+      "provider": "manual_app_store_connect",
+      "provenance": "Verified 90-day baseline in ops log"
+    },
+    {
+      "id": "sa-conversion-90d-20260812",
+      "app_id": "style-atlas",
+      "name": "average_conversion_rate",
+      "value": 2.44,
+      "unit": "percent",
+      "period_start": "2026-05-15",
+      "period_end": "2026-08-12",
+      "provider": "manual_app_store_connect",
+      "provenance": "Verified 90-day baseline in ops log"
+    },
+    {
+      "id": "sa-iap-90d-20260812",
+      "app_id": "style-atlas",
+      "name": "in_app_purchases",
+      "value": 3,
+      "unit": "count",
+      "period_start": "2026-05-15",
+      "period_end": "2026-08-12",
+      "provider": "manual_app_store_connect",
+      "provenance": "Verified 90-day baseline in ops log"
+    }
+  ],
+  "channels": [
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "status": "active"
+    },
+    {
+      "id": "pinterest",
+      "name": "Pinterest",
+      "status": "active"
+    },
+    {
+      "id": "tiktok",
+      "name": "TikTok",
+      "status": "active"
+    },
+    {
+      "id": "x",
+      "name": "X",
+      "status": "active"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "status": "active"
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "status": "active"
+    },
+    {
+      "id": "product-hunt",
+      "name": "Product Hunt",
+      "status": "active"
+    },
+    {
+      "id": "indie-hackers",
+      "name": "Indie Hackers",
+      "status": "blocked_auth_conflict"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "sa-instagram-organic",
+      "app_id": "style-atlas",
+      "channel_id": "instagram",
+      "name": "Instagram Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Instagram%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-pinterest-organic",
+      "app_id": "style-atlas",
+      "channel_id": "pinterest",
+      "name": "Pinterest Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Pinterest%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-tiktok-organic",
+      "app_id": "style-atlas",
+      "channel_id": "tiktok",
+      "name": "TikTok Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=TikTok%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-x-organic",
+      "app_id": "style-atlas",
+      "channel_id": "x",
+      "name": "X Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=X%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-youtube-organic",
+      "app_id": "style-atlas",
+      "channel_id": "youtube",
+      "name": "YouTube Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=YouTube%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-reddit-organic",
+      "app_id": "style-atlas",
+      "channel_id": "reddit",
+      "name": "Reddit Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Reddit%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-product-hunt-organic",
+      "app_id": "style-atlas",
+      "channel_id": "product-hunt",
+      "name": "Product Hunt Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=ProductHunt%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-indie-hackers-organic",
+      "app_id": "style-atlas",
+      "channel_id": "indie-hackers",
+      "name": "Indie Hackers Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=IndieHackers%20Organic&mt=8",
+      "status": "blocked"
+    }
+  ],
+  "content": [
+    {
+      "id": "sa-guide-hierarchy",
+      "app_id": "style-atlas",
+      "channel_id": "owned-search",
+      "type": "guide",
+      "title": "Visual hierarchy checklist for social media covers",
+      "url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
+      "campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Guide%20Visual%20Hierarchy&mt=8",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-compare-nouveau-deco",
+      "app_id": "style-atlas",
+      "channel_id": "owned-search",
+      "type": "comparison",
+      "title": "Art Nouveau vs. Art Deco",
+      "url": "https://style-atlas.wonderelian.com/compare/art-nouveau-vs-art-deco/",
+      "campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Compare%20Nouveau%20Deco&mt=8",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-instagram-carousel-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "instagram",
+      "type": "carousel",
+      "title": "Baseline carousel",
+      "url": "https://www.instagram.com/wonderelian/p/DcAn14vm8z2/",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-youtube-short-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "youtube",
+      "type": "short",
+      "title": "Baseline image short",
+      "url": "https://youtube.com/shorts/P9_MmJeGtKk",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-x-discussion-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "x",
+      "type": "community_reply",
+      "title": "Verified external discussion reply",
+      "url": "https://x.com/WonderElian/status/2088165710564569305",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-tiktok-photo-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "tiktok",
+      "type": "photo_post",
+      "title": "Baseline photo post",
+      "url": "https://www.tiktok.com/@wonderelian1/photo/7673767036438252813",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-x-image-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "x",
+      "type": "image_post",
+      "title": "Baseline image post",
+      "url": "https://x.com/WonderElian/status/2088143318043824466",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-pinterest-pin-1-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "pinterest",
+      "type": "pin",
+      "title": "Baseline pin 1",
+      "url": "https://www.pinterest.com/pin/1147643917689177253",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-pinterest-pin-2-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "pinterest",
+      "type": "pin",
+      "title": "Baseline pin 2",
+      "url": "https://www.pinterest.com/pin/1147643917689177266",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-pinterest-pin-3-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "pinterest",
+      "type": "pin",
+      "title": "Baseline pin 3",
+      "url": "https://www.pinterest.com/pin/1147643917689177277",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-instagram-reel-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "instagram",
+      "type": "reel",
+      "title": "Baseline reel",
+      "url": "https://www.instagram.com/wonderelian/reel/DcAYpTdRNAX/",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-tiktok-video-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "tiktok",
+      "type": "video",
+      "title": "Baseline video",
+      "url": "https://www.tiktok.com/@wonderelian1/video/7673728870314429709",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-x-video-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "x",
+      "type": "video_post",
+      "title": "Baseline video post",
+      "url": "https://x.com/WonderElian/status/2088111395162431576",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-pinterest-video-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "pinterest",
+      "type": "video_pin",
+      "title": "Baseline video pin",
+      "url": "https://www.pinterest.com/pin/1147643917689172029/",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null
+    },
+    {
+      "id": "sa-x-hierarchy-guide-20260814",
+      "app_id": "style-atlas",
+      "campaign_id": "sa-x-organic",
+      "channel_id": "x",
+      "source_insight": "sa-search-inventory",
+      "topic": "Visual hierarchy",
+      "angle": "A 30-second pre-export check",
+      "format": "image",
+      "platform": "X",
+      "type": "image_post",
+      "title": "The 30-Second Hierarchy Check",
+      "url": "https://x.com/WonderElian/status/2088198316786074075",
+      "landing_page_url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
+      "status": "published",
+      "publish_date": "2026-08-14",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "product_page_views": null,
+      "first_time_downloads": null
+    }
+  ],
+  "insights": [
+    {
+      "id": "portfolio-data-coverage",
+      "app_id": null,
+      "source": "portfolio_state",
+      "category": "measurement",
+      "title": "Portfolio acquisition data coverage is incomplete",
+      "title_zh": "产品组合的获客数据覆盖不完整",
+      "summary": "Only Style Atlas has a verified acquisition baseline in Phase 1.",
+      "summary_zh": "Phase 1 目前只有 Style Atlas 拥有已验证的获客基线。",
+      "observation": "Only Style Atlas has a verified acquisition baseline in Phase 1.",
+      "observation_zh": "Phase 1 目前只有 Style Atlas 拥有已验证的获客基线。",
+      "evidence": "1 of 5 apps reports first-time downloads; unknown values remain null.",
+      "evidence_zh": "5 个应用中只有 1 个上报首次下载；未知值保持为 null。",
+      "reason": "Portfolio ranking is unreliable without comparable acquisition data.",
+      "reason_zh": "缺少可比的获客数据时，产品组合排序不可靠。",
+      "recommended_action": "Connect or manually import one verified acquisition baseline per app.",
+      "recommended_action_zh": "为每个应用接入或手动导入一组已验证的获客基线。",
+      "expected_impact": "Enables evidence-based portfolio allocation.",
+      "expected_impact_zh": "支持基于证据分配产品投入。",
+      "impact": 88,
+      "impact_score": 88,
+      "urgency": 90,
+      "urgency_score": 90,
+      "confidence": 0.99,
+      "status": "open",
+      "detected_at": "2026-08-14T09:20:00.000Z"
+    },
+    {
+      "id": "sa-search-inventory",
+      "app_id": "style-atlas",
+      "source": "seo_audit",
+      "category": "SEO",
+      "title": "Build useful static search inventory",
+      "title_zh": "建设真正有用的静态搜索内容",
+      "summary": "Two attributable English pages create the first query-specific inventory.",
+      "summary_zh": "两张可归因的英文页面形成首批搜索内容资产。",
+      "observation": "Style Atlas had no indexable guide or comparison inventory beyond the product page.",
+      "observation_zh": "此前除产品页外，Style Atlas 没有可索引的指南或比较页。",
+      "evidence": "Two attributable English pages were deployed on 2026-08-14.",
+      "evidence_zh": "2026-08-14 已上线两张带独立归因的英文页面。",
+      "reason": "Useful query-specific pages create durable discovery paths and campaign-level attribution.",
+      "reason_zh": "针对真实问题的页面可以形成长期发现路径和 campaign 级归因。",
+      "recommended_action": "Publish one useful guide or comparison page weekly and review search-to-download attribution monthly.",
+      "recommended_action_zh": "每周发布一张高质量指南或比较页，并每月复盘搜索到下载的归因。",
+      "expected_impact": "Incremental qualified product-page views and first-time downloads.",
+      "expected_impact_zh": "增加高意向产品页访问与首次下载。",
+      "impact": 78,
+      "impact_score": 78,
+      "urgency": 70,
+      "urgency_score": 70,
+      "confidence": 0.85,
+      "status": "open",
+      "detected_at": "2026-08-14T09:20:00.000Z"
+    },
+    {
+      "id": "sa-channel-attribution-gap",
+      "app_id": "style-atlas",
+      "source": "ops_log",
+      "category": "acquisition",
+      "title": "Import campaign-level App Store outcomes",
+      "title_zh": "导入 campaign 级 App Store 结果",
+      "summary": "Eight campaign links exist but outcome rows are not recorded.",
+      "summary_zh": "8 条 campaign 链接已建立，但尚未录入各自结果。",
+      "observation": "Campaign links exist for eight channels but per-campaign App Store outcomes are not yet recorded.",
+      "observation_zh": "8 个渠道已有独立 campaign 链接，但尚未记录各 campaign 的 App Store 结果。",
+      "evidence": "Published URLs are known; outbound clicks and first-time downloads are null.",
+      "evidence_zh": "公开 URL 已验证；外链点击和首次下载仍为 null。",
+      "reason": "Engagement cannot identify download-driving channels without outcome imports.",
+      "reason_zh": "没有结果导入，仅靠互动无法判断哪个渠道真正带来下载。",
+      "recommended_action": "Import weekly App Store campaign results and annotate every permanent content URL.",
+      "recommended_action_zh": "每周导入 App Store campaign 结果，并关联每条永久内容 URL。",
+      "expected_impact": "Stops effort on channels that do not produce attributable downloads.",
+      "expected_impact_zh": "停止在无法带来可归因下载的渠道上浪费投入。",
+      "impact": 92,
+      "impact_score": 92,
+      "urgency": 82,
+      "urgency_score": 82,
+      "confidence": 0.95,
+      "status": "open",
+      "detected_at": "2026-08-14T09:20:00.000Z"
+    }
+  ],
+  "actions": [
+    {
+      "id": "action-brand-seo-p0",
+      "insight_id": "sa-search-inventory",
+      "app_id": "style-atlas",
+      "title": "Ship WonderElian and Style Atlas global SEO/GEO P0",
+      "title_zh": "上线 WonderElian 与 Style Atlas 全球 SEO/GEO P0",
+      "rationale": "Create owned global discovery surfaces.",
+      "expected_impact": "Indexable brand and product entry points.",
+      "owner": "WonderElian",
+      "status": "completed",
+      "approval_required": false,
+      "created_at": "2026-08-14T07:00:00.000Z",
+      "updated_at": "2026-08-14T09:20:00.000Z"
+    },
+    {
+      "id": "action-x-hierarchy-guide",
+      "insight_id": "sa-search-inventory",
+      "app_id": "style-atlas",
+      "title": "Publish the visual hierarchy guide on X",
+      "title_zh": "在 X 发布视觉层级指南",
+      "description": "Share an original English checklist visual with a useful permanent guide link and accessible alt text.",
+      "priority": 81,
+      "rationale": "Reuse the weekly guide as a high-quality social asset.",
+      "expected_impact": "Qualified guide visits and attributable App Store conversions.",
+      "confidence": 0.85,
+      "owner": "WonderElian",
+      "status": "completed",
+      "approval_required": true,
+      "approval_source": "Active user instruction to continue English image-led publishing when browser accounts permit",
+      "created_at": "2026-08-14T09:34:00.000Z",
+      "updated_at": "2026-08-14T09:38:00.000Z",
+      "completed_at": "2026-08-14T09:38:00.000Z"
+    }
+  ],
+  "feedback": [],
+  "opportunities": [],
+  "experiments": [
+    {
+      "id": "sa-seo-page-format-01",
+      "app_id": "style-atlas",
+      "name": "Guide vs comparison search acquisition",
+      "name_zh": "指南页与比较页的搜索获客对比",
+      "hypothesis": "Query-specific visual guides and comparisons produce attributable App Store visits and first-time downloads.",
+      "hypothesis_zh": "针对具体问题的视觉指南与比较页可以带来可归因的 App Store 访问和首次下载。",
+      "variants": [
+        "visual hierarchy guide",
+        "Art Nouveau vs Art Deco comparison"
+      ],
+      "primary_metric": "first_time_downloads",
+      "guardrail_metrics": [
+        "product_page_views"
+      ],
+      "status": "running",
+      "decision": null,
+      "started_at": "2026-08-14",
+      "ends_at": "2026-09-13",
+      "created_at": "2026-08-14T09:20:00.000Z",
+      "updated_at": "2026-08-14T09:20:00.000Z"
+    }
+  ],
+  "providers": [
+    {
+      "id": "manual_app_store_connect",
+      "type": "manual_import",
+      "status": "available",
+      "last_sync": "2026-08-12",
+      "secrets_stored": false
+    },
+    {
+      "id": "local_ops_log",
+      "type": "local_file",
+      "status": "available",
+      "last_sync": "2026-08-14",
+      "secrets_stored": false
+    }
+  ],
+  "jobs": [],
+  "events": [
+    {
+      "id": "event-x-hierarchy-guide-published",
+      "type": "content_published",
+      "app_id": "style-atlas",
+      "entity_id": "sa-x-hierarchy-guide-20260814",
+      "at": "2026-08-14T09:38:00.000Z",
+      "source": "x",
+      "payload": {
+        "url": "https://x.com/WonderElian/status/2088198316786074075"
+      }
+    }
+  ],
+  "audit": [
+    {
+      "id": "audit-x-hierarchy-guide-published",
+      "at": "2026-08-14T09:38:00.000Z",
+      "actor": "Codex COO",
+      "app_id": "style-atlas",
+      "source": "active_user_authorization",
+      "action": "publish_x_image_post",
+      "input": {
+        "content_id": "sa-x-hierarchy-guide-20260814",
+        "asset_generated_via": "logged_in_ChatGPT_Chrome",
+        "alt_text": true
+      },
+      "result": "https://x.com/WonderElian/status/2088198316786074075",
+      "status": "success",
+      "error": null
+    },
+    {
+      "id": "audit-bootstrap-20260814",
+      "at": "2026-08-14T09:20:00.000Z",
+      "actor": "Codex COO",
+      "app_id": null,
+      "source": "verified_ops_handoff",
+      "action": "bootstrap_phase_1",
+      "input": {
+        "apps": 5,
+        "data_policy": "verified_only"
+      },
+      "result": "Seeded five apps, verified Style Atlas baseline, campaigns, and public content; unknown metrics preserved as null.",
+      "status": "success",
+      "error": null
+    }
+  ]
+}
