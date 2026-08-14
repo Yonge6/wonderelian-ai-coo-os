@@ -1,0 +1,189 @@
+[
+  {
+    "app_id": "style-atlas",
+    "providers": [
+      {
+        "id": "manual_app_store_connect",
+        "name": "App Store Connect",
+        "status": "available",
+        "mode": "manual_snapshot",
+        "last_successful_import": "2026-08-14T09:20:00.000Z",
+        "freshness": "manual",
+        "age_state": "fresh",
+        "age_days": 1.5,
+        "data_available": [
+          "impressions",
+          "product_page_views",
+          "first_time_downloads",
+          "redownloads",
+          "average_conversion_rate",
+          "in_app_purchases"
+        ],
+        "authentication_required": true,
+        "error": null
+      },
+      {
+        "id": "local_ops_log",
+        "name": "Verified Operations Log",
+        "status": "available",
+        "mode": "local_file",
+        "last_successful_import": "2026-08-14T09:38:00.000Z",
+        "freshness": "fresh",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [
+          "content",
+          "campaigns",
+          "public_urls",
+          "operating_memory"
+        ],
+        "authentication_required": false,
+        "error": null
+      },
+      {
+        "id": "public_url_verifier",
+        "name": "Public URL Verifier",
+        "status": "available",
+        "mode": "read_only_http",
+        "last_successful_import": "2026-08-14T09:38:00.000Z",
+        "freshness": "fresh",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [
+          "public_url_status"
+        ],
+        "authentication_required": false,
+        "error": null
+      },
+      {
+        "id": "search_console",
+        "name": "Google Search Console",
+        "status": "not_connected",
+        "mode": "api",
+        "last_successful_import": null,
+        "freshness": "unknown",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [],
+        "authentication_required": true,
+        "error": null
+      },
+      {
+        "id": "social_url_tracking",
+        "name": "Social Platforms",
+        "status": "partial",
+        "mode": "published_url_tracking_only",
+        "last_successful_import": "2026-08-14T09:38:00.000Z",
+        "freshness": "manual",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [
+          "published_urls"
+        ],
+        "authentication_required": true,
+        "error": null
+      },
+      {
+        "id": "manual_verified_feedback",
+        "name": "Verified Feedback Import",
+        "status": "available",
+        "mode": "manual_snapshot",
+        "last_successful_import": null,
+        "freshness": "unknown",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [],
+        "authentication_required": false,
+        "error": "No verified feedback snapshot has been supplied."
+      }
+    ],
+    "last_successful_import": "2026-08-14T09:38:00.000Z",
+    "stale_providers": [],
+    "missing_critical_metrics": [],
+    "import_errors": [
+      {
+        "provider": "manual_verified_feedback",
+        "error": "No verified feedback snapshot has been supplied."
+      }
+    ],
+    "attribution": {
+      "published_assets": 15,
+      "linked_assets": 3,
+      "measured_assets": 0,
+      "link_coverage": 20,
+      "outcome_coverage": 0
+    },
+    "coverage_score": 68,
+    "confidence_cap": 0.65
+  },
+  {
+    "app_id": "yixiu-meditation",
+    "providers": [],
+    "last_successful_import": null,
+    "stale_providers": [],
+    "missing_critical_metrics": [
+      "first_time_downloads"
+    ],
+    "import_errors": [],
+    "attribution": {
+      "published_assets": 0,
+      "linked_assets": 0,
+      "measured_assets": 0,
+      "link_coverage": null,
+      "outcome_coverage": null
+    },
+    "coverage_score": 0,
+    "confidence_cap": 0.65
+  },
+  {
+    "app_id": "know-yourself",
+    "providers": [],
+    "last_successful_import": null,
+    "stale_providers": [],
+    "missing_critical_metrics": [],
+    "import_errors": [],
+    "attribution": {
+      "published_assets": 0,
+      "linked_assets": 0,
+      "measured_assets": 0,
+      "link_coverage": null,
+      "outcome_coverage": null
+    },
+    "coverage_score": 0,
+    "confidence_cap": 0.95
+  },
+  {
+    "app_id": "wendao",
+    "providers": [],
+    "last_successful_import": null,
+    "stale_providers": [],
+    "missing_critical_metrics": [],
+    "import_errors": [],
+    "attribution": {
+      "published_assets": 0,
+      "linked_assets": 0,
+      "measured_assets": 0,
+      "link_coverage": null,
+      "outcome_coverage": null
+    },
+    "coverage_score": 0,
+    "confidence_cap": 0.95
+  },
+  {
+    "app_id": "xiazi-yesterdays-world",
+    "providers": [],
+    "last_successful_import": null,
+    "stale_providers": [],
+    "missing_critical_metrics": [],
+    "import_errors": [],
+    "attribution": {
+      "published_assets": 0,
+      "linked_assets": 0,
+      "measured_assets": 0,
+      "link_coverage": null,
+      "outcome_coverage": null
+    },
+    "coverage_score": 0,
+    "confidence_cap": 0.95
+  }
+]

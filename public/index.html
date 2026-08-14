@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WonderElian AI COO OS</title>
   <meta name="description" content="Local command center for WonderElian's consumer app portfolio.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -16,11 +17,11 @@
     </div>
   </header>
   <nav aria-label="Workspace">
-    <button class="active" data-view="command" data-i18n="command_center">Command Center</button>
-    <button data-view="apps" data-i18n="apps">Apps</button><button data-view="insights" data-i18n="insights">Insights</button>
-    <button data-view="actions" data-i18n="actions">Actions</button><button data-view="experiments" data-i18n="experiments">Experiments</button>
-    <button data-view="content" data-i18n="content">Content</button><button data-view="customers" data-i18n="customers">Customers</button>
-    <button data-view="activity" data-i18n="activity">Activity</button>
+    <button class="active" data-view="command" data-index="1" data-i18n="command_center">Command Center</button>
+    <button data-view="apps" data-index="2" data-i18n="apps">Apps</button><button data-view="insights" data-index="3" data-i18n="insights">Insights</button>
+    <button data-view="actions" data-index="4" data-i18n="actions">Actions</button><button data-view="experiments" data-index="5" data-i18n="experiments">Experiments</button>
+    <button data-view="content" data-index="6" data-i18n="content">Content</button><button data-view="customers" data-index="7" data-i18n="customers">Customers</button>
+    <button data-view="sources" data-index="8" data-i18n="data_sources">Data Sources</button><button data-view="activity" data-index="9" data-i18n="activity">Activity</button>
   </nav>
   <p class="mode-banner" hidden data-i18n="readonly_banner">Public read-only snapshot. Run the local app for writes, approvals, and imports.</p>
   <main id="app"><p class="loading">Loading verified operating state…</p></main>

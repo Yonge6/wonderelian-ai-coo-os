@@ -1,86 +1,1727 @@
 {
   "metadata": {
-    "schema_version": "1.0.0",
-    "last_updated": "2026-08-14T09:20:00.000Z",
+    "schema_version": "2.0.0",
+    "last_updated": "2026-08-14T12:19:09.008Z",
     "portfolio_name": "WonderElian Consumer Apps",
-    "primary_outcome": "Attributable first-time App Store downloads"
+    "primary_outcome": "Attributable first-time App Store downloads",
+    "phase": 2,
+    "operating_loop": [
+      "observe",
+      "detect",
+      "decide",
+      "approve",
+      "execute",
+      "measure",
+      "learn"
+    ],
+    "change_thresholds": {
+      "default": {
+        "minimum_absolute_change": 1,
+        "minimum_percentage_change": 20,
+        "minimum_sample_size": 10
+      },
+      "first_time_downloads": {
+        "minimum_absolute_change": 5,
+        "minimum_percentage_change": 20,
+        "minimum_sample_size": 20
+      },
+      "average_conversion_rate": {
+        "minimum_absolute_change": 0.5,
+        "minimum_percentage_change": 15,
+        "minimum_sample_size": 100
+      }
+    },
+    "last_brief_at": "2026-08-14T12:19:09.000Z"
   },
   "apps": [
-    { "id": "style-atlas", "name": "Style Atlas: Art & Design", "name_zh": "Style Atlas：艺术与设计", "slug": "style-atlas", "description": "A visual reference and style discovery product for creators.", "category": "Art & Design", "platform": ["iOS", "web"], "platforms": ["iOS", "web"], "app_store_url": "https://apps.apple.com/app/id6787447019", "website_url": "https://style-atlas.wonderelian.com/", "status": "active", "primary_market": "global", "target_audience": "Creators and visually curious learners", "positioning": "A structured atlas for learning and applying visual styles.", "monetization_model": "freemium with subscription", "acquisition_channels": ["search", "social", "community"], "keywords": [], "competitors": [], "social_accounts": [], "kpis": ["first_time_downloads", "product_page_views"], "content_themes": ["visual literacy", "style comparisons", "creator workflows"], "brand_url": "https://wonderelian.com/", "owner": "WonderElian", "location": "Wuhan, China", "created_at": null, "updated_at": "2026-08-14T09:20:00.000Z" },
-    { "id": "yixiu-meditation", "name": "Yixiu Meditation", "name_zh": "一休冥想", "slug": "yixiu-meditation", "description": null, "category": "Meditation", "platform": ["iOS", "web"], "platforms": ["iOS", "web"], "app_store_url": null, "website_url": "https://yixiu.wonderelian.com/", "status": "active", "primary_market": null, "target_audience": null, "positioning": null, "monetization_model": null, "acquisition_channels": [], "keywords": [], "competitors": [], "social_accounts": [], "kpis": [], "content_themes": [], "owner": "WonderElian", "created_at": null, "updated_at": "2026-08-14T09:20:00.000Z" },
-    { "id": "know-yourself", "name": "Know Yourself", "name_zh": "认识你自己", "slug": "know-yourself", "description": null, "category": "Self-discovery", "platform": ["web"], "platforms": ["web"], "app_store_url": null, "website_url": "https://human-design.wonderelian.com/", "status": "active", "primary_market": null, "target_audience": null, "positioning": null, "monetization_model": null, "acquisition_channels": [], "keywords": [], "competitors": [], "social_accounts": [], "kpis": [], "content_themes": [], "owner": "WonderElian", "created_at": null, "updated_at": "2026-08-14T09:20:00.000Z" },
-    { "id": "wendao", "name": "Wendao", "name_zh": "问道", "slug": "wendao", "description": null, "category": "Wisdom", "platform": ["web"], "platforms": ["web"], "app_store_url": null, "website_url": "https://wendao.wonderelian.com/", "status": "active", "primary_market": null, "target_audience": null, "positioning": null, "monetization_model": null, "acquisition_channels": [], "keywords": [], "competitors": [], "social_accounts": [], "kpis": [], "content_themes": [], "owner": "WonderElian", "created_at": null, "updated_at": "2026-08-14T09:20:00.000Z" },
-    { "id": "xiazi-yesterdays-world", "name": "Xiazi Yesterday's World", "name_zh": "虾子曰·昨日世界", "slug": "xiazi-yesterdays-world", "description": null, "category": "News & Culture", "platform": ["web"], "platforms": ["web"], "app_store_url": null, "website_url": "https://xiazishuo.com/", "status": "active", "primary_market": null, "target_audience": null, "positioning": null, "monetization_model": null, "acquisition_channels": [], "keywords": [], "competitors": [], "social_accounts": [], "kpis": [], "content_themes": [], "owner": "WonderElian", "created_at": null, "updated_at": "2026-08-14T09:20:00.000Z" }
+    {
+      "id": "style-atlas",
+      "name": "Style Atlas: Art & Design",
+      "name_zh": "Style Atlas：艺术与设计",
+      "slug": "style-atlas",
+      "description": "A visual reference and style discovery product for creators.",
+      "category": "Art & Design",
+      "platform": [
+        "iOS",
+        "web"
+      ],
+      "platforms": [
+        "iOS",
+        "web"
+      ],
+      "app_store_url": "https://apps.apple.com/app/id6787447019",
+      "website_url": "https://style-atlas.wonderelian.com/",
+      "status": "active",
+      "primary_market": "global",
+      "target_audience": "Creators and visually curious learners",
+      "positioning": "A structured atlas for learning and applying visual styles.",
+      "monetization_model": "freemium with subscription",
+      "acquisition_channels": [
+        "search",
+        "social",
+        "community"
+      ],
+      "keywords": [],
+      "competitors": [],
+      "social_accounts": [],
+      "kpis": [
+        "first_time_downloads",
+        "product_page_views"
+      ],
+      "content_themes": [
+        "visual literacy",
+        "style comparisons",
+        "creator workflows"
+      ],
+      "brand_url": "https://wonderelian.com/",
+      "owner": "WonderElian",
+      "location": "Wuhan, China",
+      "created_at": null,
+      "updated_at": "2026-08-14T09:20:00.000Z"
+    },
+    {
+      "id": "yixiu-meditation",
+      "name": "Yixiu Meditation",
+      "name_zh": "一休冥想",
+      "slug": "yixiu-meditation",
+      "description": null,
+      "category": "Meditation",
+      "platform": [
+        "iOS",
+        "web"
+      ],
+      "platforms": [
+        "iOS",
+        "web"
+      ],
+      "app_store_url": null,
+      "website_url": "https://yixiu.wonderelian.com/",
+      "status": "active",
+      "primary_market": null,
+      "target_audience": null,
+      "positioning": null,
+      "monetization_model": null,
+      "acquisition_channels": [],
+      "keywords": [],
+      "competitors": [],
+      "social_accounts": [],
+      "kpis": [],
+      "content_themes": [],
+      "owner": "WonderElian",
+      "created_at": null,
+      "updated_at": "2026-08-14T09:20:00.000Z"
+    },
+    {
+      "id": "know-yourself",
+      "name": "Know Yourself",
+      "name_zh": "认识你自己",
+      "slug": "know-yourself",
+      "description": null,
+      "category": "Self-discovery",
+      "platform": [
+        "web"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "app_store_url": null,
+      "website_url": "https://human-design.wonderelian.com/",
+      "status": "active",
+      "primary_market": null,
+      "target_audience": null,
+      "positioning": null,
+      "monetization_model": null,
+      "acquisition_channels": [],
+      "keywords": [],
+      "competitors": [],
+      "social_accounts": [],
+      "kpis": [],
+      "content_themes": [],
+      "owner": "WonderElian",
+      "created_at": null,
+      "updated_at": "2026-08-14T09:20:00.000Z"
+    },
+    {
+      "id": "wendao",
+      "name": "Wendao",
+      "name_zh": "问道",
+      "slug": "wendao",
+      "description": null,
+      "category": "Wisdom",
+      "platform": [
+        "web"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "app_store_url": null,
+      "website_url": "https://wendao.wonderelian.com/",
+      "status": "active",
+      "primary_market": null,
+      "target_audience": null,
+      "positioning": null,
+      "monetization_model": null,
+      "acquisition_channels": [],
+      "keywords": [],
+      "competitors": [],
+      "social_accounts": [],
+      "kpis": [],
+      "content_themes": [],
+      "owner": "WonderElian",
+      "created_at": null,
+      "updated_at": "2026-08-14T09:20:00.000Z"
+    },
+    {
+      "id": "xiazi-yesterdays-world",
+      "name": "Xiazi Yesterday's World",
+      "name_zh": "虾子曰·昨日世界",
+      "slug": "xiazi-yesterdays-world",
+      "description": null,
+      "category": "News & Culture",
+      "platform": [
+        "web"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "app_store_url": null,
+      "website_url": "https://xiazishuo.com/",
+      "status": "active",
+      "primary_market": null,
+      "target_audience": null,
+      "positioning": null,
+      "monetization_model": null,
+      "acquisition_channels": [],
+      "keywords": [],
+      "competitors": [],
+      "social_accounts": [],
+      "kpis": [],
+      "content_themes": [],
+      "owner": "WonderElian",
+      "created_at": null,
+      "updated_at": "2026-08-14T09:20:00.000Z"
+    }
   ],
   "metrics": [
-    { "id": "sa-imp-90d-20260812", "app_id": "style-atlas", "name": "impressions", "value": 1610, "unit": "count", "period_start": "2026-05-15", "period_end": "2026-08-12", "provider": "manual_app_store_connect", "provenance": "Verified 90-day baseline in ops log" },
-    { "id": "sa-ppv-90d-20260812", "app_id": "style-atlas", "name": "product_page_views", "value": 189, "unit": "count", "period_start": "2026-05-15", "period_end": "2026-08-12", "provider": "manual_app_store_connect", "provenance": "Verified 90-day baseline in ops log" },
-    { "id": "sa-ftd-90d-20260812", "app_id": "style-atlas", "name": "first_time_downloads", "value": 24, "unit": "count", "period_start": "2026-05-15", "period_end": "2026-08-12", "provider": "manual_app_store_connect", "provenance": "Verified 90-day baseline in ops log" },
-    { "id": "sa-redownload-90d-20260812", "app_id": "style-atlas", "name": "redownloads", "value": 5, "unit": "count", "period_start": "2026-05-15", "period_end": "2026-08-12", "provider": "manual_app_store_connect", "provenance": "Verified 90-day baseline in ops log" },
-    { "id": "sa-conversion-90d-20260812", "app_id": "style-atlas", "name": "average_conversion_rate", "value": 2.44, "unit": "percent", "period_start": "2026-05-15", "period_end": "2026-08-12", "provider": "manual_app_store_connect", "provenance": "Verified 90-day baseline in ops log" },
-    { "id": "sa-iap-90d-20260812", "app_id": "style-atlas", "name": "in_app_purchases", "value": 3, "unit": "count", "period_start": "2026-05-15", "period_end": "2026-08-12", "provider": "manual_app_store_connect", "provenance": "Verified 90-day baseline in ops log" }
+    {
+      "id": "sa-imp-90d-20260812",
+      "app_id": "style-atlas",
+      "name": "impressions",
+      "value": 1610,
+      "unit": "count",
+      "period_start": "2026-05-15",
+      "period_end": "2026-08-12",
+      "provider": "manual_app_store_connect",
+      "provenance": "Verified 90-day baseline in ops log",
+      "metric": "impressions",
+      "source": "App Store Connect verified 90-day snapshot",
+      "source_reference": "ops-log:2026-08-14-app-store-baseline",
+      "imported_at": "2026-08-14T09:20:00.000Z",
+      "verified_at": "2026-08-12T23:59:59.000Z",
+      "freshness": "manual",
+      "confidence": 1,
+      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed."
+    },
+    {
+      "id": "sa-ppv-90d-20260812",
+      "app_id": "style-atlas",
+      "name": "product_page_views",
+      "value": 189,
+      "unit": "count",
+      "period_start": "2026-05-15",
+      "period_end": "2026-08-12",
+      "provider": "manual_app_store_connect",
+      "provenance": "Verified 90-day baseline in ops log",
+      "metric": "product_page_views",
+      "source": "App Store Connect verified 90-day snapshot",
+      "source_reference": "ops-log:2026-08-14-app-store-baseline",
+      "imported_at": "2026-08-14T09:20:00.000Z",
+      "verified_at": "2026-08-12T23:59:59.000Z",
+      "freshness": "manual",
+      "confidence": 1,
+      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed."
+    },
+    {
+      "id": "sa-ftd-90d-20260812",
+      "app_id": "style-atlas",
+      "name": "first_time_downloads",
+      "value": 24,
+      "unit": "count",
+      "period_start": "2026-05-15",
+      "period_end": "2026-08-12",
+      "provider": "manual_app_store_connect",
+      "provenance": "Verified 90-day baseline in ops log",
+      "metric": "first_time_downloads",
+      "source": "App Store Connect verified 90-day snapshot",
+      "source_reference": "ops-log:2026-08-14-app-store-baseline",
+      "imported_at": "2026-08-14T09:20:00.000Z",
+      "verified_at": "2026-08-12T23:59:59.000Z",
+      "freshness": "manual",
+      "confidence": 1,
+      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed."
+    },
+    {
+      "id": "sa-redownload-90d-20260812",
+      "app_id": "style-atlas",
+      "name": "redownloads",
+      "value": 5,
+      "unit": "count",
+      "period_start": "2026-05-15",
+      "period_end": "2026-08-12",
+      "provider": "manual_app_store_connect",
+      "provenance": "Verified 90-day baseline in ops log",
+      "metric": "redownloads",
+      "source": "App Store Connect verified 90-day snapshot",
+      "source_reference": "ops-log:2026-08-14-app-store-baseline",
+      "imported_at": "2026-08-14T09:20:00.000Z",
+      "verified_at": "2026-08-12T23:59:59.000Z",
+      "freshness": "manual",
+      "confidence": 1,
+      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed."
+    },
+    {
+      "id": "sa-conversion-90d-20260812",
+      "app_id": "style-atlas",
+      "name": "average_conversion_rate",
+      "value": 2.44,
+      "unit": "percent",
+      "period_start": "2026-05-15",
+      "period_end": "2026-08-12",
+      "provider": "manual_app_store_connect",
+      "provenance": "Verified 90-day baseline in ops log",
+      "metric": "average_conversion_rate",
+      "source": "App Store Connect verified 90-day snapshot",
+      "source_reference": "ops-log:2026-08-14-app-store-baseline",
+      "imported_at": "2026-08-14T09:20:00.000Z",
+      "verified_at": "2026-08-12T23:59:59.000Z",
+      "freshness": "manual",
+      "confidence": 1,
+      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed."
+    },
+    {
+      "id": "sa-iap-90d-20260812",
+      "app_id": "style-atlas",
+      "name": "in_app_purchases",
+      "value": 3,
+      "unit": "count",
+      "period_start": "2026-05-15",
+      "period_end": "2026-08-12",
+      "provider": "manual_app_store_connect",
+      "provenance": "Verified 90-day baseline in ops log",
+      "metric": "in_app_purchases",
+      "source": "App Store Connect verified 90-day snapshot",
+      "source_reference": "ops-log:2026-08-14-app-store-baseline",
+      "imported_at": "2026-08-14T09:20:00.000Z",
+      "verified_at": "2026-08-12T23:59:59.000Z",
+      "freshness": "manual",
+      "confidence": 1,
+      "notes": "Manually transcribed from the verified App Store Connect 90-day baseline; not a live API feed."
+    }
   ],
   "channels": [
-    { "id": "instagram", "name": "Instagram", "status": "active" },
-    { "id": "pinterest", "name": "Pinterest", "status": "active" },
-    { "id": "tiktok", "name": "TikTok", "status": "active" },
-    { "id": "x", "name": "X", "status": "active" },
-    { "id": "youtube", "name": "YouTube", "status": "active" },
-    { "id": "reddit", "name": "Reddit", "status": "active" },
-    { "id": "product-hunt", "name": "Product Hunt", "status": "active" },
-    { "id": "indie-hackers", "name": "Indie Hackers", "status": "blocked_auth_conflict" }
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "status": "active"
+    },
+    {
+      "id": "pinterest",
+      "name": "Pinterest",
+      "status": "active"
+    },
+    {
+      "id": "tiktok",
+      "name": "TikTok",
+      "status": "active"
+    },
+    {
+      "id": "x",
+      "name": "X",
+      "status": "active"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "status": "active"
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "status": "active"
+    },
+    {
+      "id": "product-hunt",
+      "name": "Product Hunt",
+      "status": "active"
+    },
+    {
+      "id": "indie-hackers",
+      "name": "Indie Hackers",
+      "status": "blocked_auth_conflict"
+    }
   ],
   "campaigns": [
-    { "id": "sa-instagram-organic", "app_id": "style-atlas", "channel_id": "instagram", "name": "Instagram Organic", "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Instagram%20Organic&mt=8", "status": "active" },
-    { "id": "sa-pinterest-organic", "app_id": "style-atlas", "channel_id": "pinterest", "name": "Pinterest Organic", "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Pinterest%20Organic&mt=8", "status": "active" },
-    { "id": "sa-tiktok-organic", "app_id": "style-atlas", "channel_id": "tiktok", "name": "TikTok Organic", "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=TikTok%20Organic&mt=8", "status": "active" },
-    { "id": "sa-x-organic", "app_id": "style-atlas", "channel_id": "x", "name": "X Organic", "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=X%20Organic&mt=8", "status": "active" },
-    { "id": "sa-youtube-organic", "app_id": "style-atlas", "channel_id": "youtube", "name": "YouTube Organic", "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=YouTube%20Organic&mt=8", "status": "active" },
-    { "id": "sa-reddit-organic", "app_id": "style-atlas", "channel_id": "reddit", "name": "Reddit Organic", "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Reddit%20Organic&mt=8", "status": "active" },
-    { "id": "sa-product-hunt-organic", "app_id": "style-atlas", "channel_id": "product-hunt", "name": "Product Hunt Organic", "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=ProductHunt%20Organic&mt=8", "status": "active" },
-    { "id": "sa-indie-hackers-organic", "app_id": "style-atlas", "channel_id": "indie-hackers", "name": "Indie Hackers Organic", "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=IndieHackers%20Organic&mt=8", "status": "blocked" }
+    {
+      "id": "sa-instagram-organic",
+      "app_id": "style-atlas",
+      "channel_id": "instagram",
+      "name": "Instagram Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Instagram%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-pinterest-organic",
+      "app_id": "style-atlas",
+      "channel_id": "pinterest",
+      "name": "Pinterest Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Pinterest%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-tiktok-organic",
+      "app_id": "style-atlas",
+      "channel_id": "tiktok",
+      "name": "TikTok Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=TikTok%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-x-organic",
+      "app_id": "style-atlas",
+      "channel_id": "x",
+      "name": "X Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=X%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-youtube-organic",
+      "app_id": "style-atlas",
+      "channel_id": "youtube",
+      "name": "YouTube Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=YouTube%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-reddit-organic",
+      "app_id": "style-atlas",
+      "channel_id": "reddit",
+      "name": "Reddit Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Reddit%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-product-hunt-organic",
+      "app_id": "style-atlas",
+      "channel_id": "product-hunt",
+      "name": "Product Hunt Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=ProductHunt%20Organic&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-indie-hackers-organic",
+      "app_id": "style-atlas",
+      "channel_id": "indie-hackers",
+      "name": "Indie Hackers Organic",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=IndieHackers%20Organic&mt=8",
+      "status": "blocked"
+    },
+    {
+      "id": "sa-seo-guide-hierarchy",
+      "app_id": "style-atlas",
+      "channel_id": "owned-search",
+      "name": "SEO Guide Visual Hierarchy",
+      "source": "search",
+      "medium": "organic",
+      "content": "visual-hierarchy-checklist",
+      "landing_url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Guide%20Visual%20Hierarchy&mt=8",
+      "status": "active"
+    },
+    {
+      "id": "sa-seo-compare-nouveau-deco",
+      "app_id": "style-atlas",
+      "channel_id": "owned-search",
+      "name": "SEO Compare Nouveau Deco",
+      "source": "search",
+      "medium": "organic",
+      "content": "art-nouveau-vs-art-deco",
+      "landing_url": "https://style-atlas.wonderelian.com/compare/art-nouveau-vs-art-deco/",
+      "url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Compare%20Nouveau%20Deco&mt=8",
+      "status": "active"
+    }
   ],
   "content": [
-    { "id": "sa-guide-hierarchy", "app_id": "style-atlas", "channel_id": "owned-search", "type": "guide", "title": "Visual hierarchy checklist for social media covers", "url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/", "campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Guide%20Visual%20Hierarchy&mt=8", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-compare-nouveau-deco", "app_id": "style-atlas", "channel_id": "owned-search", "type": "comparison", "title": "Art Nouveau vs. Art Deco", "url": "https://style-atlas.wonderelian.com/compare/art-nouveau-vs-art-deco/", "campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Compare%20Nouveau%20Deco&mt=8", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-instagram-carousel-20260814", "app_id": "style-atlas", "channel_id": "instagram", "type": "carousel", "title": "Baseline carousel", "url": "https://www.instagram.com/wonderelian/p/DcAn14vm8z2/", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-youtube-short-20260814", "app_id": "style-atlas", "channel_id": "youtube", "type": "short", "title": "Baseline image short", "url": "https://youtube.com/shorts/P9_MmJeGtKk", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-x-discussion-20260814", "app_id": "style-atlas", "channel_id": "x", "type": "community_reply", "title": "Verified external discussion reply", "url": "https://x.com/WonderElian/status/2088165710564569305", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-tiktok-photo-20260814", "app_id": "style-atlas", "channel_id": "tiktok", "type": "photo_post", "title": "Baseline photo post", "url": "https://www.tiktok.com/@wonderelian1/photo/7673767036438252813", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-x-image-20260814", "app_id": "style-atlas", "channel_id": "x", "type": "image_post", "title": "Baseline image post", "url": "https://x.com/WonderElian/status/2088143318043824466", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-pinterest-pin-1-20260814", "app_id": "style-atlas", "channel_id": "pinterest", "type": "pin", "title": "Baseline pin 1", "url": "https://www.pinterest.com/pin/1147643917689177253", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-pinterest-pin-2-20260814", "app_id": "style-atlas", "channel_id": "pinterest", "type": "pin", "title": "Baseline pin 2", "url": "https://www.pinterest.com/pin/1147643917689177266", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-pinterest-pin-3-20260814", "app_id": "style-atlas", "channel_id": "pinterest", "type": "pin", "title": "Baseline pin 3", "url": "https://www.pinterest.com/pin/1147643917689177277", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-instagram-reel-20260814", "app_id": "style-atlas", "channel_id": "instagram", "type": "reel", "title": "Baseline reel", "url": "https://www.instagram.com/wonderelian/reel/DcAYpTdRNAX/", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-tiktok-video-20260814", "app_id": "style-atlas", "channel_id": "tiktok", "type": "video", "title": "Baseline video", "url": "https://www.tiktok.com/@wonderelian1/video/7673728870314429709", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-x-video-20260814", "app_id": "style-atlas", "channel_id": "x", "type": "video_post", "title": "Baseline video post", "url": "https://x.com/WonderElian/status/2088111395162431576", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-pinterest-video-20260814", "app_id": "style-atlas", "channel_id": "pinterest", "type": "video_pin", "title": "Baseline video pin", "url": "https://www.pinterest.com/pin/1147643917689172029/", "status": "published", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "first_time_downloads": null },
-    { "id": "sa-x-hierarchy-guide-20260814", "app_id": "style-atlas", "campaign_id": "sa-x-organic", "channel_id": "x", "source_insight": "sa-search-inventory", "topic": "Visual hierarchy", "angle": "A 30-second pre-export check", "format": "image", "platform": "X", "type": "image_post", "title": "The 30-Second Hierarchy Check", "url": "https://x.com/WonderElian/status/2088198316786074075", "landing_page_url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/", "asset_path": "/Users/yongyuan/Downloads/ChatGPT Image 2026年8月14日 17_35_13.png", "status": "published", "publish_date": "2026-08-14", "published_at": "2026-08-14", "impressions": null, "engagements": null, "outbound_clicks": null, "product_page_views": null, "first_time_downloads": null }
+    {
+      "id": "sa-guide-hierarchy",
+      "app_id": "style-atlas",
+      "channel_id": "owned-search",
+      "type": "guide",
+      "title": "Visual hierarchy checklist for social media covers",
+      "url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
+      "campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Guide%20Visual%20Hierarchy&mt=8",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-seo-guide-hierarchy",
+      "landing_url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Guide%20Visual%20Hierarchy&mt=8",
+      "publish_url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-compare-nouveau-deco",
+      "app_id": "style-atlas",
+      "channel_id": "owned-search",
+      "type": "comparison",
+      "title": "Art Nouveau vs. Art Deco",
+      "url": "https://style-atlas.wonderelian.com/compare/art-nouveau-vs-art-deco/",
+      "campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Compare%20Nouveau%20Deco&mt=8",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-seo-compare-nouveau-deco",
+      "landing_url": "https://style-atlas.wonderelian.com/compare/art-nouveau-vs-art-deco/",
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Compare%20Nouveau%20Deco&mt=8",
+      "publish_url": "https://style-atlas.wonderelian.com/compare/art-nouveau-vs-art-deco/",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-instagram-carousel-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "instagram",
+      "type": "carousel",
+      "title": "Baseline carousel",
+      "url": "https://www.instagram.com/wonderelian/p/DcAn14vm8z2/",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-instagram-organic",
+      "landing_url": null,
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Instagram%20Organic&mt=8",
+      "publish_url": "https://www.instagram.com/wonderelian/p/DcAn14vm8z2/",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-youtube-short-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "youtube",
+      "type": "short",
+      "title": "Baseline image short",
+      "url": "https://youtube.com/shorts/P9_MmJeGtKk",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-youtube-organic",
+      "landing_url": null,
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=YouTube%20Organic&mt=8",
+      "publish_url": "https://youtube.com/shorts/P9_MmJeGtKk",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-x-discussion-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "x",
+      "type": "community_reply",
+      "title": "Verified external discussion reply",
+      "url": "https://x.com/WonderElian/status/2088165710564569305",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-x-organic",
+      "landing_url": null,
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=X%20Organic&mt=8",
+      "publish_url": "https://x.com/WonderElian/status/2088165710564569305",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-tiktok-photo-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "tiktok",
+      "type": "photo_post",
+      "title": "Baseline photo post",
+      "url": "https://www.tiktok.com/@wonderelian1/photo/7673767036438252813",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-tiktok-organic",
+      "landing_url": null,
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=TikTok%20Organic&mt=8",
+      "publish_url": "https://www.tiktok.com/@wonderelian1/photo/7673767036438252813",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-x-image-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "x",
+      "type": "image_post",
+      "title": "Baseline image post",
+      "url": "https://x.com/WonderElian/status/2088143318043824466",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-x-organic",
+      "landing_url": null,
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=X%20Organic&mt=8",
+      "publish_url": "https://x.com/WonderElian/status/2088143318043824466",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-pinterest-pin-1-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "pinterest",
+      "type": "pin",
+      "title": "Baseline pin 1",
+      "url": "https://www.pinterest.com/pin/1147643917689177253",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-pinterest-organic",
+      "landing_url": null,
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Pinterest%20Organic&mt=8",
+      "publish_url": "https://www.pinterest.com/pin/1147643917689177253",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-pinterest-pin-2-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "pinterest",
+      "type": "pin",
+      "title": "Baseline pin 2",
+      "url": "https://www.pinterest.com/pin/1147643917689177266",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-pinterest-organic",
+      "landing_url": null,
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Pinterest%20Organic&mt=8",
+      "publish_url": "https://www.pinterest.com/pin/1147643917689177266",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-pinterest-pin-3-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "pinterest",
+      "type": "pin",
+      "title": "Baseline pin 3",
+      "url": "https://www.pinterest.com/pin/1147643917689177277",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-pinterest-organic",
+      "landing_url": null,
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Pinterest%20Organic&mt=8",
+      "publish_url": "https://www.pinterest.com/pin/1147643917689177277",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-instagram-reel-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "instagram",
+      "type": "reel",
+      "title": "Baseline reel",
+      "url": "https://www.instagram.com/wonderelian/reel/DcAYpTdRNAX/",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-instagram-organic",
+      "landing_url": null,
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Instagram%20Organic&mt=8",
+      "publish_url": "https://www.instagram.com/wonderelian/reel/DcAYpTdRNAX/",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-tiktok-video-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "tiktok",
+      "type": "video",
+      "title": "Baseline video",
+      "url": "https://www.tiktok.com/@wonderelian1/video/7673728870314429709",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-tiktok-organic",
+      "landing_url": null,
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=TikTok%20Organic&mt=8",
+      "publish_url": "https://www.tiktok.com/@wonderelian1/video/7673728870314429709",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-x-video-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "x",
+      "type": "video_post",
+      "title": "Baseline video post",
+      "url": "https://x.com/WonderElian/status/2088111395162431576",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-x-organic",
+      "landing_url": null,
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=X%20Organic&mt=8",
+      "publish_url": "https://x.com/WonderElian/status/2088111395162431576",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-pinterest-video-20260814",
+      "app_id": "style-atlas",
+      "channel_id": "pinterest",
+      "type": "video_pin",
+      "title": "Baseline video pin",
+      "url": "https://www.pinterest.com/pin/1147643917689172029/",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "campaign_id": "sa-pinterest-organic",
+      "landing_url": null,
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=Pinterest%20Organic&mt=8",
+      "publish_url": "https://www.pinterest.com/pin/1147643917689172029/",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "sa-x-hierarchy-guide-20260814",
+      "app_id": "style-atlas",
+      "campaign_id": "sa-x-organic",
+      "channel_id": "x",
+      "source_insight": "sa-search-inventory",
+      "topic": "Visual hierarchy",
+      "angle": "A 30-second pre-export check",
+      "format": "image",
+      "platform": "X",
+      "type": "image_post",
+      "title": "The 30-Second Hierarchy Check",
+      "url": "https://x.com/WonderElian/status/2088198316786074075",
+      "landing_page_url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
+      "asset_path": "/Users/yongyuan/Downloads/ChatGPT Image 2026年8月14日 17_35_13.png",
+      "status": "published",
+      "publish_date": "2026-08-14",
+      "published_at": "2026-08-14",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "product_page_views": null,
+      "first_time_downloads": null,
+      "landing_url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=X%20Organic&mt=8",
+      "publish_url": "https://x.com/WonderElian/status/2088198316786074075",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "measurement_status": "collecting"
+    }
   ],
   "insights": [
-    { "id": "portfolio-data-coverage", "app_id": null, "source": "portfolio_state", "category": "measurement", "title": "Portfolio acquisition data coverage is incomplete", "title_zh": "产品组合的获客数据覆盖不完整", "summary": "Only Style Atlas has a verified acquisition baseline in Phase 1.", "summary_zh": "Phase 1 目前只有 Style Atlas 拥有已验证的获客基线。", "observation": "Only Style Atlas has a verified acquisition baseline in Phase 1.", "observation_zh": "Phase 1 目前只有 Style Atlas 拥有已验证的获客基线。", "evidence": "1 of 5 apps reports first-time downloads; unknown values remain null.", "evidence_zh": "5 个应用中只有 1 个上报首次下载；未知值保持为 null。", "reason": "Portfolio ranking is unreliable without comparable acquisition data.", "reason_zh": "缺少可比的获客数据时，产品组合排序不可靠。", "recommended_action": "Connect or manually import one verified acquisition baseline per app.", "recommended_action_zh": "为每个应用接入或手动导入一组已验证的获客基线。", "expected_impact": "Enables evidence-based portfolio allocation.", "expected_impact_zh": "支持基于证据分配产品投入。", "impact": 88, "impact_score": 88, "urgency": 90, "urgency_score": 90, "confidence": 0.99, "status": "open", "detected_at": "2026-08-14T09:20:00.000Z" },
-    { "id": "sa-search-inventory", "app_id": "style-atlas", "source": "seo_audit", "category": "SEO", "title": "Build useful static search inventory", "title_zh": "建设真正有用的静态搜索内容", "summary": "Two attributable English pages create the first query-specific inventory.", "summary_zh": "两张可归因的英文页面形成首批搜索内容资产。", "observation": "Style Atlas had no indexable guide or comparison inventory beyond the product page.", "observation_zh": "此前除产品页外，Style Atlas 没有可索引的指南或比较页。", "evidence": "Two attributable English pages were deployed on 2026-08-14.", "evidence_zh": "2026-08-14 已上线两张带独立归因的英文页面。", "reason": "Useful query-specific pages create durable discovery paths and campaign-level attribution.", "reason_zh": "针对真实问题的页面可以形成长期发现路径和 campaign 级归因。", "recommended_action": "Publish one useful guide or comparison page weekly and review search-to-download attribution monthly.", "recommended_action_zh": "每周发布一张高质量指南或比较页，并每月复盘搜索到下载的归因。", "expected_impact": "Incremental qualified product-page views and first-time downloads.", "expected_impact_zh": "增加高意向产品页访问与首次下载。", "impact": 78, "impact_score": 78, "urgency": 70, "urgency_score": 70, "confidence": 0.85, "status": "open", "detected_at": "2026-08-14T09:20:00.000Z" },
-    { "id": "sa-channel-attribution-gap", "app_id": "style-atlas", "source": "ops_log", "category": "acquisition", "title": "Import campaign-level App Store outcomes", "title_zh": "导入 campaign 级 App Store 结果", "summary": "Eight campaign links exist but outcome rows are not recorded.", "summary_zh": "8 条 campaign 链接已建立，但尚未录入各自结果。", "observation": "Campaign links exist for eight channels but per-campaign App Store outcomes are not yet recorded.", "observation_zh": "8 个渠道已有独立 campaign 链接，但尚未记录各 campaign 的 App Store 结果。", "evidence": "Published URLs are known; outbound clicks and first-time downloads are null.", "evidence_zh": "公开 URL 已验证；外链点击和首次下载仍为 null。", "reason": "Engagement cannot identify download-driving channels without outcome imports.", "reason_zh": "没有结果导入，仅靠互动无法判断哪个渠道真正带来下载。", "recommended_action": "Import weekly App Store campaign results and annotate every permanent content URL.", "recommended_action_zh": "每周导入 App Store campaign 结果，并关联每条永久内容 URL。", "expected_impact": "Stops effort on channels that do not produce attributable downloads.", "expected_impact_zh": "停止在无法带来可归因下载的渠道上浪费投入。", "impact": 92, "impact_score": 92, "urgency": 82, "urgency_score": 82, "confidence": 0.95, "status": "open", "detected_at": "2026-08-14T09:20:00.000Z" }
+    {
+      "id": "portfolio-data-coverage",
+      "app_id": null,
+      "source": "portfolio_state",
+      "category": "measurement",
+      "title": "Portfolio acquisition data coverage is incomplete",
+      "title_zh": "产品组合的获客数据覆盖不完整",
+      "summary": "Only Style Atlas has a verified acquisition baseline in Phase 1.",
+      "summary_zh": "Phase 1 目前只有 Style Atlas 拥有已验证的获客基线。",
+      "observation": "Only Style Atlas has a verified acquisition baseline in Phase 1.",
+      "observation_zh": "Phase 1 目前只有 Style Atlas 拥有已验证的获客基线。",
+      "evidence": "1 of 5 apps reports first-time downloads; unknown values remain null.",
+      "evidence_zh": "5 个应用中只有 1 个上报首次下载；未知值保持为 null。",
+      "reason": "Portfolio ranking is unreliable without comparable acquisition data.",
+      "reason_zh": "缺少可比的获客数据时，产品组合排序不可靠。",
+      "recommended_action": "Connect or manually import one verified acquisition baseline per app.",
+      "recommended_action_zh": "为每个应用接入或手动导入一组已验证的获客基线。",
+      "expected_impact": "Enables evidence-based portfolio allocation.",
+      "expected_impact_zh": "支持基于证据分配产品投入。",
+      "impact": 88,
+      "impact_score": 88,
+      "urgency": 90,
+      "urgency_score": 90,
+      "confidence": 0.99,
+      "status": "open",
+      "detected_at": "2026-08-14T09:20:00.000Z",
+      "interpretation": "Portfolio ranking is unreliable without comparable acquisition data.",
+      "evidence_quality": 99,
+      "effort": 25,
+      "reversibility": 95,
+      "strategic_relevance": 95,
+      "recommended_risk_level": 0
+    },
+    {
+      "id": "sa-search-inventory",
+      "app_id": "style-atlas",
+      "source": "seo_audit",
+      "category": "SEO",
+      "title": "Build useful static search inventory",
+      "title_zh": "建设真正有用的静态搜索内容",
+      "summary": "Two attributable English pages create the first query-specific inventory.",
+      "summary_zh": "两张可归因的英文页面形成首批搜索内容资产。",
+      "observation": "Style Atlas had no indexable guide or comparison inventory beyond the product page.",
+      "observation_zh": "此前除产品页外，Style Atlas 没有可索引的指南或比较页。",
+      "evidence": "Two attributable English pages were deployed on 2026-08-14.",
+      "evidence_zh": "2026-08-14 已上线两张带独立归因的英文页面。",
+      "reason": "Useful query-specific pages create durable discovery paths and campaign-level attribution.",
+      "reason_zh": "针对真实问题的页面可以形成长期发现路径和 campaign 级归因。",
+      "recommended_action": "Publish one useful guide or comparison page weekly and review search-to-download attribution monthly.",
+      "recommended_action_zh": "每周发布一张高质量指南或比较页，并每月复盘搜索到下载的归因。",
+      "expected_impact": "Incremental qualified product-page views and first-time downloads.",
+      "expected_impact_zh": "增加高意向产品页访问与首次下载。",
+      "impact": 78,
+      "impact_score": 78,
+      "urgency": 70,
+      "urgency_score": 70,
+      "confidence": 0.85,
+      "status": "open",
+      "detected_at": "2026-08-14T09:20:00.000Z",
+      "interpretation": "Useful query-specific pages create durable discovery paths and campaign-level attribution.",
+      "evidence_quality": 85,
+      "effort": 55,
+      "reversibility": 75,
+      "strategic_relevance": 95,
+      "recommended_risk_level": 2
+    },
+    {
+      "id": "sa-channel-attribution-gap",
+      "app_id": "style-atlas",
+      "source": "ops_log",
+      "category": "acquisition",
+      "title": "Import campaign-level App Store outcomes",
+      "title_zh": "导入 campaign 级 App Store 结果",
+      "summary": "Eight campaign links exist but outcome rows are not recorded.",
+      "summary_zh": "8 条 campaign 链接已建立，但尚未录入各自结果。",
+      "observation": "Campaign links exist for eight channels but per-campaign App Store outcomes are not yet recorded.",
+      "observation_zh": "8 个渠道已有独立 campaign 链接，但尚未记录各 campaign 的 App Store 结果。",
+      "evidence": "Published URLs are known; outbound clicks and first-time downloads are null.",
+      "evidence_zh": "公开 URL 已验证；外链点击和首次下载仍为 null。",
+      "reason": "Engagement cannot identify download-driving channels without outcome imports.",
+      "reason_zh": "没有结果导入，仅靠互动无法判断哪个渠道真正带来下载。",
+      "recommended_action": "Import weekly App Store campaign results and annotate every permanent content URL.",
+      "recommended_action_zh": "每周导入 App Store campaign 结果，并关联每条永久内容 URL。",
+      "expected_impact": "Stops effort on channels that do not produce attributable downloads.",
+      "expected_impact_zh": "停止在无法带来可归因下载的渠道上浪费投入。",
+      "impact": 92,
+      "impact_score": 92,
+      "urgency": 82,
+      "urgency_score": 82,
+      "confidence": 0.95,
+      "status": "open",
+      "detected_at": "2026-08-14T09:20:00.000Z",
+      "interpretation": "Engagement cannot identify download-driving channels without outcome imports.",
+      "evidence_quality": 95,
+      "effort": 25,
+      "reversibility": 95,
+      "strategic_relevance": 95,
+      "recommended_risk_level": 0
+    }
   ],
   "actions": [
-    { "id": "action-brand-seo-p0", "insight_id": "sa-search-inventory", "app_id": "style-atlas", "title": "Ship WonderElian and Style Atlas global SEO/GEO P0", "title_zh": "上线 WonderElian 与 Style Atlas 全球 SEO/GEO P0", "rationale": "Create owned global discovery surfaces.", "expected_impact": "Indexable brand and product entry points.", "owner": "WonderElian", "status": "completed", "approval_required": false, "created_at": "2026-08-14T07:00:00.000Z", "updated_at": "2026-08-14T09:20:00.000Z" },
-    { "id": "action-x-hierarchy-guide", "insight_id": "sa-search-inventory", "app_id": "style-atlas", "title": "Publish the visual hierarchy guide on X", "title_zh": "在 X 发布视觉层级指南", "description": "Share an original English checklist visual with a useful permanent guide link and accessible alt text.", "priority": 81, "rationale": "Reuse the weekly guide as a high-quality social asset.", "expected_impact": "Qualified guide visits and attributable App Store conversions.", "confidence": 0.85, "owner": "WonderElian", "status": "completed", "approval_required": true, "approval_source": "Active user instruction to continue English image-led publishing when browser accounts permit", "created_at": "2026-08-14T09:34:00.000Z", "updated_at": "2026-08-14T09:38:00.000Z", "completed_at": "2026-08-14T09:38:00.000Z" }
+    {
+      "id": "action-brand-seo-p0",
+      "insight_id": "sa-search-inventory",
+      "app_id": "style-atlas",
+      "title": "Ship WonderElian and Style Atlas global SEO/GEO P0",
+      "title_zh": "上线 WonderElian 与 Style Atlas 全球 SEO/GEO P0",
+      "rationale": "Create owned global discovery surfaces.",
+      "expected_impact": "Indexable brand and product entry points.",
+      "owner": "WonderElian",
+      "status": "completed",
+      "approval_required": true,
+      "created_at": "2026-08-14T07:00:00.000Z",
+      "updated_at": "2026-08-14T09:20:00.000Z",
+      "risk_level": 3,
+      "approval_id": "approval-brand-seo-p0",
+      "executor": "codex_operator",
+      "provider": "git_github_pages",
+      "measurement_window": {
+        "start": "2026-08-14",
+        "end": "2026-09-13",
+        "metric": "first_time_downloads"
+      }
+    },
+    {
+      "id": "action-x-hierarchy-guide",
+      "insight_id": "sa-search-inventory",
+      "app_id": "style-atlas",
+      "title": "Publish the visual hierarchy guide on X",
+      "title_zh": "在 X 发布视觉层级指南",
+      "description": "Share an original English checklist visual with a useful permanent guide link and accessible alt text.",
+      "priority": 81,
+      "rationale": "Reuse the weekly guide as a high-quality social asset.",
+      "expected_impact": "Qualified guide visits and attributable App Store conversions.",
+      "confidence": 0.85,
+      "owner": "WonderElian",
+      "status": "completed",
+      "approval_required": true,
+      "approval_source": "Active user instruction to continue English image-led publishing when browser accounts permit",
+      "created_at": "2026-08-14T09:34:00.000Z",
+      "updated_at": "2026-08-14T09:38:00.000Z",
+      "completed_at": "2026-08-14T09:38:00.000Z",
+      "risk_level": 2,
+      "approval_id": "approval-x-hierarchy-guide",
+      "executor": "codex_operator",
+      "provider": "x_browser",
+      "measurement_window": {
+        "start": "2026-08-14",
+        "end": "2026-08-21",
+        "metric": "first_time_downloads"
+      }
+    },
+    {
+      "id": "action-cycle-style-atlas-2026-08-14T12-19-09-000Z-health-review",
+      "insight_id": "sa-channel-attribution-gap",
+      "app_id": "style-atlas",
+      "title": "Refresh Style Atlas data health and attribution readiness",
+      "title_zh": "刷新 Style Atlas 数据健康与归因准备状态",
+      "description": "Recalculate provider freshness, missing metrics, and campaign attribution coverage from verified records.",
+      "rationale": "A read-only data-health review is the highest-value executable operation while no newer verified App Store snapshot exists.",
+      "expected_impact": "Prevents decisions from treating unavailable campaign outcomes as zero.",
+      "confidence": 1,
+      "priority": 86,
+      "owner": "AI COO OS",
+      "risk_level": 0,
+      "approval_required": false,
+      "executor": "internal",
+      "provider": "internal_data_health",
+      "status": "completed",
+      "created_at": "2026-08-14T12:19:09.000Z",
+      "updated_at": "2026-08-14T12:19:09.000Z",
+      "completed_at": "2026-08-14T12:19:09.000Z",
+      "measurement_window": null
+    }
   ],
   "feedback": [],
   "opportunities": [],
   "experiments": [
-    { "id": "sa-seo-page-format-01", "app_id": "style-atlas", "name": "Guide vs comparison search acquisition", "name_zh": "指南页与比较页的搜索获客对比", "hypothesis": "Query-specific visual guides and comparisons produce attributable App Store visits and first-time downloads.", "hypothesis_zh": "针对具体问题的视觉指南与比较页可以带来可归因的 App Store 访问和首次下载。", "variants": ["visual hierarchy guide", "Art Nouveau vs Art Deco comparison"], "primary_metric": "first_time_downloads", "guardrail_metrics": ["product_page_views"], "status": "running", "decision": null, "started_at": "2026-08-14", "ends_at": "2026-09-13", "created_at": "2026-08-14T09:20:00.000Z", "updated_at": "2026-08-14T09:20:00.000Z" }
+    {
+      "id": "sa-seo-page-format-01",
+      "app_id": "style-atlas",
+      "name": "Guide vs comparison search acquisition",
+      "name_zh": "指南页与比较页的搜索获客对比",
+      "hypothesis": "Query-specific visual guides and comparisons produce attributable App Store visits and first-time downloads.",
+      "hypothesis_zh": "针对具体问题的视觉指南与比较页可以带来可归因的 App Store 访问和首次下载。",
+      "variants": [
+        "visual hierarchy guide",
+        "Art Nouveau vs Art Deco comparison"
+      ],
+      "primary_metric": "first_time_downloads",
+      "guardrail_metrics": [
+        "product_page_views"
+      ],
+      "status": "running",
+      "decision": null,
+      "started_at": "2026-08-14",
+      "ends_at": "2026-09-13",
+      "created_at": "2026-08-14T09:20:00.000Z",
+      "updated_at": "2026-08-14T09:20:00.000Z",
+      "control": "Visual Hierarchy Checklist guide",
+      "variant": "Art Nouveau vs. Art Deco comparison",
+      "campaign_ids": [
+        "sa-seo-guide-hierarchy",
+        "sa-seo-compare-nouveau-deco"
+      ],
+      "content_ids": [
+        "sa-guide-hierarchy",
+        "sa-compare-nouveau-deco"
+      ],
+      "urls": [
+        "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
+        "https://style-atlas.wonderelian.com/compare/art-nouveau-vs-art-deco/"
+      ],
+      "baseline": null,
+      "target": "At least one verified attributed first-time download per variant",
+      "start_date": "2026-08-14",
+      "end_date": "2026-09-13",
+      "sample_requirement": "Verified campaign-level App Store outcomes for both variants",
+      "current_result": null,
+      "result_status": "awaiting_verified_attribution_data",
+      "confidence": null
+    }
   ],
   "providers": [
-    { "id": "manual_app_store_connect", "type": "manual_import", "status": "available", "last_sync": "2026-08-12", "secrets_stored": false },
-    { "id": "local_ops_log", "type": "local_file", "status": "available", "last_sync": "2026-08-14", "secrets_stored": false }
+    {
+      "id": "manual_app_store_connect",
+      "name": "App Store Connect",
+      "type": "acquisition_revenue",
+      "mode": "manual_snapshot",
+      "status": "available",
+      "app_ids": [
+        "style-atlas"
+      ],
+      "last_sync": "2026-08-12T23:59:59.000Z",
+      "last_successful_import": "2026-08-14T09:20:00.000Z",
+      "freshness": "manual",
+      "data_available": [
+        "impressions",
+        "product_page_views",
+        "first_time_downloads",
+        "redownloads",
+        "average_conversion_rate",
+        "in_app_purchases"
+      ],
+      "authentication_required": true,
+      "authentication_status": "api_not_configured",
+      "secrets_stored": false,
+      "error": null
+    },
+    {
+      "id": "local_ops_log",
+      "name": "Verified Operations Log",
+      "type": "operations",
+      "mode": "local_file",
+      "status": "available",
+      "app_ids": [
+        "style-atlas"
+      ],
+      "last_sync": "2026-08-14T09:38:00.000Z",
+      "last_successful_import": "2026-08-14T09:38:00.000Z",
+      "freshness": "fresh",
+      "data_available": [
+        "content",
+        "campaigns",
+        "public_urls",
+        "operating_memory"
+      ],
+      "authentication_required": false,
+      "authentication_status": "not_required",
+      "secrets_stored": false,
+      "error": null
+    },
+    {
+      "id": "public_url_verifier",
+      "name": "Public URL Verifier",
+      "type": "content",
+      "mode": "read_only_http",
+      "status": "available",
+      "app_ids": [
+        "style-atlas"
+      ],
+      "last_sync": "2026-08-14T09:38:00.000Z",
+      "last_successful_import": "2026-08-14T09:38:00.000Z",
+      "freshness": "fresh",
+      "data_available": [
+        "public_url_status"
+      ],
+      "authentication_required": false,
+      "authentication_status": "not_required",
+      "secrets_stored": false,
+      "error": null
+    },
+    {
+      "id": "search_console",
+      "name": "Google Search Console",
+      "type": "search",
+      "mode": "api",
+      "status": "not_connected",
+      "app_ids": [
+        "style-atlas"
+      ],
+      "last_sync": null,
+      "last_successful_import": null,
+      "freshness": "unknown",
+      "data_available": [],
+      "authentication_required": true,
+      "authentication_status": "not_configured",
+      "secrets_stored": false,
+      "error": null
+    },
+    {
+      "id": "social_url_tracking",
+      "name": "Social Platforms",
+      "type": "content_performance",
+      "mode": "published_url_tracking_only",
+      "status": "partial",
+      "app_ids": [
+        "style-atlas"
+      ],
+      "last_sync": "2026-08-14T09:38:00.000Z",
+      "last_successful_import": "2026-08-14T09:38:00.000Z",
+      "freshness": "manual",
+      "data_available": [
+        "published_urls"
+      ],
+      "authentication_required": true,
+      "authentication_status": "metrics_api_not_configured",
+      "secrets_stored": false,
+      "error": null
+    },
+    {
+      "id": "manual_verified_feedback",
+      "name": "Verified Feedback Import",
+      "type": "customer_feedback",
+      "mode": "manual_snapshot",
+      "status": "available",
+      "app_ids": [
+        "style-atlas"
+      ],
+      "last_sync": null,
+      "last_successful_import": null,
+      "freshness": "unknown",
+      "data_available": [],
+      "authentication_required": false,
+      "authentication_status": "not_required",
+      "secrets_stored": false,
+      "error": "No verified feedback snapshot has been supplied."
+    }
   ],
-  "jobs": [],
+  "jobs": [
+    {
+      "id": "job-import-acquisition",
+      "type": "import_acquisition_metrics",
+      "provider": "manual_app_store_connect",
+      "app_id": "style-atlas",
+      "schedule": "every:1d",
+      "last_run": "2026-08-14T12:19:09.000Z",
+      "next_run": "2026-08-15T12:19:09.000Z",
+      "status": "succeeded",
+      "duration": 0,
+      "result": {
+        "verified_observations": 6,
+        "newest_period_end": "2026-08-12",
+        "new_records": 0
+      },
+      "error": null,
+      "retry_count": 0
+    },
+    {
+      "id": "job-content-performance",
+      "type": "update_content_performance",
+      "provider": "social_url_tracking",
+      "app_id": "style-atlas",
+      "schedule": "every:1d",
+      "last_run": "2026-08-14T12:19:09.000Z",
+      "next_run": "2026-08-15T12:19:09.000Z",
+      "status": "succeeded",
+      "duration": 0,
+      "result": {
+        "collecting": 15,
+        "new_verified_results": 0
+      },
+      "error": null,
+      "retry_count": 0
+    },
+    {
+      "id": "job-feedback-refresh",
+      "type": "refresh_customer_feedback",
+      "provider": "manual_verified_feedback",
+      "app_id": "style-atlas",
+      "schedule": "every:1d",
+      "last_run": "2026-08-14T12:19:09.000Z",
+      "next_run": "2026-08-15T12:19:09.000Z",
+      "status": "blocked",
+      "duration": 0,
+      "result": {
+        "imported": 0
+      },
+      "error": "No authenticated review provider or verified feedback snapshot is available.",
+      "retry_count": 0
+    },
+    {
+      "id": "job-calculate-anomalies",
+      "type": "calculate_anomalies",
+      "provider": "internal_change_detection",
+      "app_id": "style-atlas",
+      "schedule": "every:1d",
+      "last_run": "2026-08-14T12:19:09.000Z",
+      "next_run": "2026-08-15T12:19:09.000Z",
+      "status": "succeeded",
+      "duration": 5,
+      "result": {
+        "material_changes": 0,
+        "data_risks": 2
+      },
+      "error": null,
+      "retry_count": 0
+    },
+    {
+      "id": "job-generate-insights",
+      "type": "generate_insights",
+      "provider": "internal_decision_engine",
+      "app_id": "style-atlas",
+      "schedule": "every:1d",
+      "last_run": "2026-08-14T12:19:09.000Z",
+      "next_run": "2026-08-15T12:19:09.000Z",
+      "status": "succeeded",
+      "duration": 1,
+      "result": {
+        "insights_created": 0
+      },
+      "error": null,
+      "retry_count": 0
+    },
+    {
+      "id": "job-refresh-brief",
+      "type": "refresh_daily_brief",
+      "provider": "internal_brief",
+      "app_id": "style-atlas",
+      "schedule": "every:1d",
+      "last_run": "2026-08-14T12:19:09.000Z",
+      "next_run": "2026-08-15T12:19:09.000Z",
+      "status": "succeeded",
+      "duration": 0,
+      "result": {
+        "decisions": 3,
+        "no_material_change": true
+      },
+      "error": null,
+      "retry_count": 0
+    },
+    {
+      "id": "job-evaluate-experiments",
+      "type": "evaluate_experiments",
+      "provider": "internal_experiments",
+      "app_id": "style-atlas",
+      "schedule": "every:1d",
+      "last_run": "2026-08-14T12:19:09.000Z",
+      "next_run": "2026-08-15T12:19:09.000Z",
+      "status": "succeeded",
+      "duration": 0,
+      "result": {
+        "experiments_awaiting_verified_attribution": 1
+      },
+      "error": null,
+      "retry_count": 0
+    },
+    {
+      "id": "job-measure-actions",
+      "type": "measure_completed_actions",
+      "provider": "internal_measurement",
+      "app_id": "style-atlas",
+      "schedule": "every:1d",
+      "last_run": "2026-08-14T12:19:09.000Z",
+      "next_run": "2026-08-15T12:19:09.000Z",
+      "status": "succeeded",
+      "duration": 0,
+      "result": {
+        "outcomes_opened": 0
+      },
+      "error": null,
+      "retry_count": 0
+    }
+  ],
   "events": [
-    { "id": "event-x-hierarchy-guide-published", "type": "content_published", "app_id": "style-atlas", "entity_id": "sa-x-hierarchy-guide-20260814", "at": "2026-08-14T09:38:00.000Z", "source": "x", "payload": { "url": "https://x.com/WonderElian/status/2088198316786074075" } }
+    {
+      "id": "event-x-hierarchy-guide-published",
+      "type": "content_published",
+      "app_id": "style-atlas",
+      "entity_id": "sa-x-hierarchy-guide-20260814",
+      "at": "2026-08-14T09:38:00.000Z",
+      "source": "x",
+      "payload": {
+        "url": "https://x.com/WonderElian/status/2088198316786074075"
+      }
+    }
   ],
   "audit": [
-    { "id": "audit-x-hierarchy-guide-published", "at": "2026-08-14T09:38:00.000Z", "actor": "Codex COO", "app_id": "style-atlas", "source": "active_user_authorization", "action": "publish_x_image_post", "input": { "content_id": "sa-x-hierarchy-guide-20260814", "asset_generated_via": "logged_in_ChatGPT_Chrome", "alt_text": true }, "result": "https://x.com/WonderElian/status/2088198316786074075", "status": "success", "error": null },
-    { "id": "audit-bootstrap-20260814", "at": "2026-08-14T09:20:00.000Z", "actor": "Codex COO", "app_id": null, "source": "verified_ops_handoff", "action": "bootstrap_phase_1", "input": { "apps": 5, "data_policy": "verified_only" }, "result": "Seeded five apps, verified Style Atlas baseline, campaigns, and public content; unknown metrics preserved as null.", "status": "success", "error": null }
+    {
+      "id": "audit-cycle-style-atlas-2026-08-14T12-19-09-000Z",
+      "at": "2026-08-14T12:19:09.000Z",
+      "actor": "AI COO OS",
+      "app_id": "style-atlas",
+      "source": "phase_2_operating_cycle",
+      "action": "run_style_atlas_coo_cycle",
+      "input": {
+        "verified_sources": [
+          "manual_app_store_connect",
+          "local_ops_log"
+        ],
+        "external_writes": false
+      },
+      "result": {
+        "cycle_id": "cycle-style-atlas-2026-08-14T12-19-09-000Z",
+        "material_changes": 0,
+        "action_id": "action-cycle-style-atlas-2026-08-14T12-19-09-000Z-health-review",
+        "execution_state": "completed"
+      },
+      "status": "success",
+      "error": null
+    },
+    {
+      "id": "audit-x-hierarchy-guide-published",
+      "at": "2026-08-14T09:38:00.000Z",
+      "actor": "Codex COO",
+      "app_id": "style-atlas",
+      "source": "active_user_authorization",
+      "action": "publish_x_image_post",
+      "input": {
+        "content_id": "sa-x-hierarchy-guide-20260814",
+        "asset_generated_via": "logged_in_ChatGPT_Chrome",
+        "alt_text": true
+      },
+      "result": "https://x.com/WonderElian/status/2088198316786074075",
+      "status": "success",
+      "error": null
+    },
+    {
+      "id": "audit-bootstrap-20260814",
+      "at": "2026-08-14T09:20:00.000Z",
+      "actor": "Codex COO",
+      "app_id": null,
+      "source": "verified_ops_handoff",
+      "action": "bootstrap_phase_1",
+      "input": {
+        "apps": 5,
+        "data_policy": "verified_only"
+      },
+      "result": "Seeded five apps, verified Style Atlas baseline, campaigns, and public content; unknown metrics preserved as null.",
+      "status": "success",
+      "error": null
+    }
+  ],
+  "approvals": [
+    {
+      "id": "approval-brand-seo-p0",
+      "action_id": "action-brand-seo-p0",
+      "status": "approved",
+      "source": "active_user_instruction",
+      "scope": "Deploy WonderElian and Style Atlas global SEO/GEO P0",
+      "approved_at": "2026-08-14T07:00:00.000Z",
+      "actor": "WonderElian"
+    },
+    {
+      "id": "approval-x-hierarchy-guide",
+      "action_id": "action-x-hierarchy-guide",
+      "status": "approved",
+      "source": "active_user_instruction",
+      "scope": "Continue high-quality English image-led publishing when browser accounts permit",
+      "approved_at": "2026-08-14T09:34:00.000Z",
+      "actor": "WonderElian"
+    }
+  ],
+  "attributions": [
+    {
+      "id": "attr-sa-guide-hierarchy",
+      "app_id": "style-atlas",
+      "content_id": "sa-guide-hierarchy",
+      "campaign_id": "sa-seo-guide-hierarchy",
+      "source": "search",
+      "medium": "organic",
+      "content": "visual-hierarchy-checklist",
+      "landing_url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Guide%20Visual%20Hierarchy&mt=8",
+      "publish_url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
+      "first_time_downloads": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "attr-sa-compare-nouveau-deco",
+      "app_id": "style-atlas",
+      "content_id": "sa-compare-nouveau-deco",
+      "campaign_id": "sa-seo-compare-nouveau-deco",
+      "source": "search",
+      "medium": "organic",
+      "content": "art-nouveau-vs-art-deco",
+      "landing_url": "https://style-atlas.wonderelian.com/compare/art-nouveau-vs-art-deco/",
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=SEO%20Compare%20Nouveau%20Deco&mt=8",
+      "publish_url": "https://style-atlas.wonderelian.com/compare/art-nouveau-vs-art-deco/",
+      "first_time_downloads": null,
+      "measurement_status": "collecting"
+    },
+    {
+      "id": "attr-sa-x-hierarchy-guide",
+      "app_id": "style-atlas",
+      "content_id": "sa-x-hierarchy-guide-20260814",
+      "campaign_id": "sa-x-organic",
+      "source": "x",
+      "medium": "organic-social",
+      "content": "hierarchy-guide-image",
+      "landing_url": "https://style-atlas.wonderelian.com/guides/visual-hierarchy-checklist/",
+      "app_store_campaign_url": "https://apps.apple.com/app/apple-store/id6787447019?pt=120014121&ct=X%20Organic&mt=8",
+      "publish_url": "https://x.com/WonderElian/status/2088198316786074075",
+      "first_time_downloads": null,
+      "measurement_status": "collecting"
+    }
+  ],
+  "detections": [
+    {
+      "id": "data-risk-feed-style-atlas",
+      "app_id": "style-atlas",
+      "type": "missing_feed",
+      "metric": null,
+      "current_value": null,
+      "previous_baseline": null,
+      "absolute_change": null,
+      "percentage_change": null,
+      "sample_size": null,
+      "confidence": 1,
+      "severity": "medium",
+      "detected_at": "2026-08-14T12:19:09.000Z",
+      "evidence": "Missing provider integrations: search_console"
+    },
+    {
+      "id": "data-risk-import-style-atlas",
+      "app_id": "style-atlas",
+      "type": "import_error",
+      "metric": null,
+      "current_value": null,
+      "previous_baseline": null,
+      "absolute_change": null,
+      "percentage_change": null,
+      "sample_size": null,
+      "confidence": 1,
+      "severity": "medium",
+      "detected_at": "2026-08-14T12:19:09.000Z",
+      "evidence": "Provider errors: manual_verified_feedback"
+    }
+  ],
+  "executions": [
+    {
+      "id": "execution-cycle-style-atlas-2026-08-14T12-19-09-000Z",
+      "action_id": "action-cycle-style-atlas-2026-08-14T12-19-09-000Z-health-review",
+      "insight_id": "sa-channel-attribution-gap",
+      "app_id": "style-atlas",
+      "risk_level": 0,
+      "state": "completed",
+      "executor": "internal",
+      "provider": "internal_data_health",
+      "approval_id": null,
+      "execution_log": [
+        {
+          "at": "2026-08-14T12:19:09.000Z",
+          "event": "calculated_data_health",
+          "result": {
+            "coverage_score": 68,
+            "missing_critical_metrics": [],
+            "attribution": {
+              "published_assets": 15,
+              "linked_assets": 3,
+              "measured_assets": 0,
+              "link_coverage": 20,
+              "outcome_coverage": 0
+            }
+          }
+        }
+      ],
+      "output_url": null,
+      "output_identifier": "data-health:style-atlas:2026-08-14T12:19:09.000Z",
+      "result": "Data health and attribution readiness refreshed.",
+      "measurement_window": null,
+      "created_at": "2026-08-14T12:19:09.000Z",
+      "updated_at": "2026-08-14T12:19:09.000Z",
+      "completed_at": "2026-08-14T12:19:09.000Z"
+    }
+  ],
+  "action_outcomes": [
+    {
+      "id": "outcome-action-brand-seo-p0",
+      "action_id": "action-brand-seo-p0",
+      "app_id": "style-atlas",
+      "metric": "first_time_downloads",
+      "metric_before": null,
+      "metric_after": null,
+      "measurement_period": {
+        "start": "2026-08-14",
+        "end": "2026-09-13",
+        "metric": "first_time_downloads"
+      },
+      "observed_effect": "Awaiting comparable verified attribution data.",
+      "confidence": null,
+      "result": "inconclusive",
+      "notes": "Completion is verified; acquisition effect is not yet measurable.",
+      "created_at": "2026-08-14T12:18:30.754Z"
+    },
+    {
+      "id": "outcome-action-x-hierarchy-guide",
+      "action_id": "action-x-hierarchy-guide",
+      "app_id": "style-atlas",
+      "metric": "first_time_downloads",
+      "metric_before": null,
+      "metric_after": null,
+      "measurement_period": {
+        "start": "2026-08-14",
+        "end": "2026-08-21",
+        "metric": "first_time_downloads"
+      },
+      "observed_effect": "Awaiting comparable verified attribution data.",
+      "confidence": null,
+      "result": "inconclusive",
+      "notes": "Completion is verified; acquisition effect is not yet measurable.",
+      "created_at": "2026-08-14T12:18:30.754Z"
+    },
+    {
+      "id": "outcome-action-cycle-style-atlas-2026-08-14T12-19-09-000Z-health-review",
+      "action_id": "action-cycle-style-atlas-2026-08-14T12-19-09-000Z-health-review",
+      "app_id": "style-atlas",
+      "metric": null,
+      "metric_before": null,
+      "metric_after": null,
+      "measurement_period": null,
+      "observed_effect": "Data health was refreshed without changing any external system.",
+      "confidence": 1,
+      "result": "not_measurable",
+      "notes": "Level 0 read-only operating action.",
+      "created_at": "2026-08-14T12:19:09.000Z"
+    }
+  ],
+  "learnings": [],
+  "operating_memory": [
+    {
+      "id": "memory-style-atlas-positioning",
+      "app_id": "style-atlas",
+      "category": "positioning",
+      "statement": "Style Atlas is a structured visual reference and style-discovery product for creators and visually curious learners.",
+      "evidence": [
+        "https://style-atlas.wonderelian.com/"
+      ],
+      "source": "verified_product_site",
+      "confidence": 1,
+      "created_at": "2026-08-14T12:11:29.620Z",
+      "last_validated_at": "2026-08-14T09:38:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "memory-style-atlas-content-rule",
+      "app_id": "style-atlas",
+      "category": "brand_constraint",
+      "statement": "Public global copy is English; promotional artwork uses original polished still images and every published item keeps a permanent URL and attribution path.",
+      "evidence": [
+        "ops-log:publishing-system"
+      ],
+      "source": "verified_ops_handoff",
+      "confidence": 1,
+      "created_at": "2026-08-14T12:11:29.620Z",
+      "last_validated_at": "2026-08-14T12:11:29.620Z",
+      "status": "active"
+    },
+    {
+      "id": "memory-indie-hackers-blocker",
+      "app_id": "style-atlas",
+      "category": "platform_blocker",
+      "statement": "Indie Hackers has an OAuth identity-state conflict; do not switch email or use an alias without approval.",
+      "evidence": [
+        "ops-log:2026-08-14-active-acquisition-setup"
+      ],
+      "source": "verified_ops_handoff",
+      "confidence": 1,
+      "created_at": "2026-08-14T12:11:29.620Z",
+      "last_validated_at": "2026-08-14T12:11:29.620Z",
+      "status": "active"
+    },
+    {
+      "id": "memory-no-spam",
+      "app_id": "style-atlas",
+      "category": "brand_constraint",
+      "statement": "Community participation must be useful and relevant; no mass comments, repeated templates, fake testimonials, or bulk direct messages.",
+      "evidence": [
+        "ops-log:guardrails"
+      ],
+      "source": "verified_ops_handoff",
+      "confidence": 1,
+      "created_at": "2026-08-14T12:11:29.620Z",
+      "last_validated_at": "2026-08-14T12:11:29.620Z",
+      "status": "active"
+    }
+  ],
+  "ingestion_runs": [
+    {
+      "id": "ingestion-style-atlas-baseline-20260812",
+      "app_id": "style-atlas",
+      "provider": "manual_app_store_connect",
+      "source_reference": "ops-log:2026-08-14-app-store-baseline",
+      "started_at": "2026-08-14T09:20:00.000Z",
+      "completed_at": "2026-08-14T09:20:00.000Z",
+      "status": "succeeded",
+      "records_received": 6,
+      "records_inserted": 6,
+      "records_unchanged": 0,
+      "error": null
+    }
+  ],
+  "cycles": [
+    {
+      "id": "cycle-style-atlas-2026-08-14T12-19-09-000Z",
+      "app_id": "style-atlas",
+      "started_at": "2026-08-14T12:19:09.000Z",
+      "completed_at": "2026-08-14T12:19:09.000Z",
+      "status": "completed",
+      "observed": {
+        "verified_metric_records": 6
+      },
+      "detected": {
+        "material_changes": 0,
+        "result": "No material change detected."
+      },
+      "decided": {
+        "action_id": "action-cycle-style-atlas-2026-08-14T12-19-09-000Z-health-review",
+        "decision": "Run a Level 0 data-health and attribution readiness refresh."
+      },
+      "approved": {
+        "required": false
+      },
+      "executed": {
+        "execution_id": "execution-cycle-style-atlas-2026-08-14T12-19-09-000Z",
+        "status": "completed"
+      },
+      "measured": {
+        "outcome_id": "outcome-action-cycle-style-atlas-2026-08-14T12-19-09-000Z-health-review",
+        "result": "not_measurable"
+      },
+      "learned": {
+        "new_learnings": 0
+      },
+      "job_ids": [
+        "job-import-acquisition",
+        "job-content-performance",
+        "job-feedback-refresh",
+        "job-calculate-anomalies",
+        "job-generate-insights",
+        "job-refresh-brief",
+        "job-evaluate-experiments",
+        "job-measure-actions"
+      ]
+    }
   ]
 }

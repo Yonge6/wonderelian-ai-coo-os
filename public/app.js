@@ -1,155 +1,85 @@
-const root = document.querySelector("#app");
-const staticMode = location.hostname.endsWith("github.io") || location.protocol === "file:" || new URLSearchParams(location.search).has("static");
-document.body.dataset.mode = staticMode ? "static" : "local";
+const root=document.querySelector("#app");
+const staticMode=location.hostname.endsWith("github.io")||location.protocol==="file:"||new URLSearchParams(location.search).has("static");
+document.body.dataset.mode=staticMode?"static":"local";
 
-const copy = {
-  en: {
-    north_star:"North star", north_star_value:"Attributable first-time downloads", readonly_banner:"Public read-only snapshot. Run the local app for writes, approvals, and imports.",
-    command_center:"Command Center", apps:"Apps", insights:"Insights", actions:"Actions", experiments:"Experiments", content:"Content", customers:"Customers", activity:"Activity",
-    updated:"State updated", portfolio_summary:"Portfolio summary", daily_brief:"Daily AI COO brief", winners:"Winners", problems:"Problems", opportunities:"Opportunities", recommended_decisions:"Recommended decisions",
-    no_winner:"No verified winner can be declared from current coverage.", no_problem:"No verified problem detected.", no_opportunity:"No verified opportunity detected.",
-    pending_approvals:"Pending approvals", no_pending:"No actions awaiting approval.", portfolio:"Portfolio", open:"Open", data_quality:"Data quality",
-    data_quality_body:"Unknown outcomes stay null, so coverage is visible and no missing metric is mistaken for zero.", apps_reporting_primary:"1/5 apps currently report first-time downloads.",
-    apps_detail:"Five configurable products; unknown store links remain empty.", add_app:"Add app", name:"Name", website_url:"Website URL", status:"Status", platforms:"Platforms (comma-separated)", save:"Save",
-    insights_detail:"Ranked by impact, urgency, and confidence.", propose_action:"Propose action", actions_detail:"Every important external action moves through approval and audit states.",
-    experiments_detail:"Primary decisions follow outcome metrics, not social likes.", primary:"Primary", add_experiment:"Add experiment", hypothesis:"Hypothesis", app_id:"App ID", primary_metric:"Primary metric",
-    content_detail:"Permanent URLs and attribution paths; outcome fields remain empty until verified.", downloads:"downloads", log_content:"Log content", channel_id:"Channel ID", title:"Title", permanent_url:"Permanent URL",
-    customers_detail:"Feedback stays linked to a product, source, topic, and evidence.", customer_feedback:"Customer feedback", no_feedback:"No verified customer feedback logged yet.", detected_opportunities:"Detected opportunities",
-    opportunity_empty:"A repeated severe theme needs at least two evidence items.", signals:"signals", severity:"severity", log_feedback:"Log feedback", source:"Source", external_id:"External ID", feedback_text:"Feedback text", rating:"Rating", sentiment:"Sentiment", topic:"Topic", source_date:"Source date",
-    activity_detail:"Append-only evidence of local state changes.", saved:"Saved and audited.", local_only:"The GitHub Pages dashboard is read-only. Use the local app for changes.", loading:"Loading verified operating state…", unavailable:"Unable to load operating state",
-    evidence:"Evidence", confidence:"Confidence", reporting:"apps reporting", app:"App",
-    proposed:"proposed", approved:"approved", executing:"executing", completed:"completed", rejected:"rejected", active:"active", published:"published", available:"available", running:"running", draft:"draft", blocked:"blocked", archived:"archived",
-    kpi_first_time_downloads:"First time downloads", kpi_active_users:"Active users", kpi_revenue:"Revenue", kpi_trial_starts:"Trial starts", kpi_paid_conversions:"Paid conversions", kpi_conversion_rate:"Conversion rate", kpi_d1_retention:"D1 retention", kpi_d7_retention:"D7 retention", kpi_d30_retention:"D30 retention", kpi_traffic:"Traffic", kpi_content_published:"Content published", kpi_acquisition_performance:"Acquisition performance",
+const copy={
+  en:{
+    north_star:"North star",north_star_value:"Attributable first-time downloads",readonly_banner:"Public read-only operating snapshot · writes, approvals, imports, and execution stay local.",
+    command_center:"Command Center",apps:"Apps",insights:"Insights",actions:"Actions",experiments:"Experiments",content:"Content",customers:"Customers",data_sources:"Data Sources",activity:"Activity",
+    updated:"Updated",todays_decisions:"Today's decisions",what_changed:"What changed",portfolio_health:"Portfolio health",execution_measurement:"Execution / measurement",no_material_change:"No material change detected.",
+    no_material_detail:"Only one verified App Store snapshot exists, so no like-for-like trend can be claimed yet.",data_risks:"Data risks",pending_approvals:"Awaiting approval",executing:"Executing",awaiting_results:"Awaiting results",proven:"Proven",failed:"Failed",
+    score:"Decision score",why_ranked:"Why ranked here",impact:"Impact",confidence:"Confidence",urgency:"Urgency",effort:"Effort",reversibility:"Reversibility",evidence_quality:"Evidence quality",approval:"Approval",required:"Required",not_required:"Not required",risk_level:"Risk level",
+    evidence:"Evidence",interpretation:"Interpretation",recommendation:"Recommendation",expected_impact:"Expected impact",portfolio_summary:"Portfolio summary",daily_brief:"Daily AI COO brief",winners:"Winners",problems:"Problems",opportunities:"Opportunities",
+    no_winner:"No verified winner yet.",no_problem:"No material performance problem detected.",no_opportunity:"No verified opportunity detected.",open:"Open",reporting:"apps reporting",data_coverage:"Data coverage",missing:"Missing",providers:"Providers",last_import:"Last import",attribution:"Attribution",outcome_coverage:"outcome coverage",
+    apps_detail:"Portfolio configuration and latest verified metric provenance.",platforms:"Platforms",latest_metrics:"Latest verified metrics",source:"Source",freshness:"Freshness",period:"Period",
+    insights_detail:"Observed fact, interpretation, and follow-up stay separate.",propose_action:"Propose action",actions_detail:"Risk-ranked actions, approvals, execution queue, and measured outcomes.",execution_queue:"Execution queue",outcomes:"Outcomes",
+    experiments_detail:"Real experiments remain undecided until verified attribution reaches the measurement threshold.",primary:"Primary metric",sample_requirement:"Sample requirement",current_result:"Current result",awaiting_verified_attribution_data:"Awaiting verified attribution data",
+    content_detail:"Permanent URLs, campaign paths, and acquisition outcomes. Missing performance remains empty.",downloads:"First-time downloads",measurement_status:"Measurement",campaign:"Campaign",landing:"Landing",publish_url:"Publish URL",
+    customers_detail:"Only verified reviews, support messages, or public comments enter Voice of Customer.",customer_feedback:"Customer feedback",no_feedback:"No verified feedback is available.",detected_opportunities:"Detected opportunities",opportunity_empty:"No repeated verified feedback theme yet.",
+    data_sources_detail:"Provider control plane, freshness, authentication state, and single-machine jobs.",status:"Status",mode:"Mode",data_available:"Data available",authentication:"Authentication",auth_required:"Required / not configured",not_connected:"Not connected",jobs:"Scheduled jobs",last_run:"Last run",next_run:"Next run",retry_count:"Retries",run_cycle:"Run Style Atlas COO cycle",cycle_running:"Running verified cycle…",cycle_done:"Cycle completed and audited.",
+    activity_detail:"Operating cycles and append-only mutation evidence.",operating_cycles:"Operating cycles",audit_log:"Audit log",local_only:"Public mode is read-only. Use the local app for this operation.",loading:"Loading verified operating state…",unavailable:"Unable to load operating state",none:"—",
+    proposed:"proposed",approved:"approved",completed:"completed",rejected:"rejected",active:"active",published:"published",available:"available",running:"running",draft:"draft",blocked:"blocked",archived:"archived",partial:"partial",not_connected_status:"not connected",scheduled:"scheduled",succeeded:"succeeded",waiting:"waiting",ready:"ready",cancelled:"cancelled",inconclusive:"inconclusive",not_measurable:"not measurable",collecting:"collecting",not_started:"not started",unavailable_status:"unavailable",manual:"manual",fresh:"fresh",stale:"stale",unknown:"unknown",live:"live",
+    kpi_first_time_downloads:"First-time downloads",kpi_active_users:"Active users",kpi_revenue:"Revenue",kpi_trial_starts:"Trial starts",kpi_paid_conversions:"Paid conversions",kpi_conversion_rate:"Conversion rate",kpi_d1_retention:"D1 retention",kpi_d7_retention:"D7 retention",kpi_d30_retention:"D30 retention",kpi_traffic:"Traffic",kpi_content_published:"Published content",kpi_acquisition_performance:"Acquisition performance",
   },
-  zh: {
-    north_star:"北极星指标", north_star_value:"可归因的 App 首次下载", readonly_banner:"GitHub 公开版为只读快照；写入、审批和数据导入请使用本机版本。",
-    command_center:"运营指挥中心", apps:"应用", insights:"洞察", actions:"行动", experiments:"实验", content:"内容", customers:"用户声音", activity:"审计日志",
-    updated:"状态更新时间", portfolio_summary:"产品组合摘要", daily_brief:"每日 AI COO 简报", winners:"表现亮点", problems:"关键问题", opportunities:"增长机会", recommended_decisions:"建议决策",
-    no_winner:"当前数据覆盖不足，暂不能判断已验证的赢家。", no_problem:"暂未发现已验证的问题。", no_opportunity:"暂未发现已验证的机会。",
-    pending_approvals:"待审批", no_pending:"当前没有等待审批的行动。", portfolio:"产品组合", open:"打开", data_quality:"数据质量",
-    data_quality_body:"未知结果保留为 null，以便看清数据覆盖，避免把缺失数据误判为零。", apps_reporting_primary:"目前 5 个应用中只有 1 个上报首次下载。",
-    apps_detail:"5 个可配置产品；未经验证的商店链接保持为空。", add_app:"添加应用", name:"名称", website_url:"网站链接", status:"状态", platforms:"平台（逗号分隔）", save:"保存",
-    insights_detail:"按影响力、紧迫度和置信度排序。", propose_action:"生成行动建议", actions_detail:"所有重要外部行动都必须经过审批与审计状态。",
-    experiments_detail:"实验决策以结果指标为准，不以社交点赞为准。", primary:"主指标", add_experiment:"添加实验", hypothesis:"假设", app_id:"应用 ID", primary_metric:"主指标",
-    content_detail:"每条内容保留永久 URL 与归因路径；未验证的结果保持为空。", downloads:"首次下载", log_content:"记录内容", channel_id:"渠道 ID", title:"标题", permanent_url:"永久 URL",
-    customers_detail:"用户反馈必须关联产品、来源、主题和证据。", customer_feedback:"用户反馈", no_feedback:"尚未记录已验证的用户反馈。", detected_opportunities:"已识别机会",
-    opportunity_empty:"同一高严重度主题至少需要两条证据。", signals:"条信号", severity:"严重度", log_feedback:"记录反馈", source:"来源", external_id:"外部 ID", feedback_text:"反馈内容", rating:"评分", sentiment:"情绪", topic:"主题", source_date:"来源日期",
-    activity_detail:"本地状态变更的追加式证据记录。", saved:"已保存并写入审计。", local_only:"GitHub Pages 公开版为只读；请使用本机版本修改数据。", loading:"正在加载已验证的运营状态…", unavailable:"无法加载运营状态",
-    evidence:"证据", confidence:"置信度", reporting:"个应用上报", app:"应用",
-    proposed:"待审批", approved:"已批准", executing:"执行中", completed:"已完成", rejected:"已拒绝", active:"运行中", published:"已发布", available:"可用", running:"实验中", draft:"草稿", blocked:"受阻", archived:"已归档",
-    kpi_first_time_downloads:"首次下载", kpi_active_users:"活跃用户", kpi_revenue:"收入", kpi_trial_starts:"试用开始", kpi_paid_conversions:"付费转化", kpi_conversion_rate:"转化率", kpi_d1_retention:"次日留存", kpi_d7_retention:"7 日留存", kpi_d30_retention:"30 日留存", kpi_traffic:"流量", kpi_content_published:"已发布内容", kpi_acquisition_performance:"获客表现",
+  zh:{
+    north_star:"北极星指标",north_star_value:"可归因的 App 首次下载",readonly_banner:"公开只读运营快照 · 写入、审批、导入和执行仅保留在本机。",
+    command_center:"运营指挥中心",apps:"应用",insights:"洞察",actions:"行动",experiments:"实验",content:"内容",customers:"用户声音",data_sources:"数据源",activity:"审计日志",
+    updated:"更新时间",todays_decisions:"今日决策",what_changed:"发生了什么变化",portfolio_health:"产品组合健康度",execution_measurement:"执行 / 测量",no_material_change:"未检测到重大变化。",
+    no_material_detail:"当前只有一份已验证的 App Store 快照，因此不能声称存在可比趋势。",data_risks:"数据风险",pending_approvals:"等待审批",executing:"执行中",awaiting_results:"等待结果",proven:"已验证",failed:"失败",
+    score:"决策分数",why_ranked:"为何排在这里",impact:"影响",confidence:"置信度",urgency:"紧迫度",effort:"工作量",reversibility:"可逆性",evidence_quality:"证据质量",approval:"审批",required:"需要",not_required:"不需要",risk_level:"风险等级",
+    evidence:"证据",interpretation:"解释",recommendation:"建议",expected_impact:"预期影响",portfolio_summary:"产品组合摘要",daily_brief:"每日 AI COO 简报",winners:"表现亮点",problems:"关键问题",opportunities:"增长机会",
+    no_winner:"尚无已验证的赢家。",no_problem:"未检测到重大表现问题。",no_opportunity:"尚无已验证的机会。",open:"打开",reporting:"个应用上报",data_coverage:"数据覆盖",missing:"缺失",providers:"数据源",last_import:"最近导入",attribution:"归因",outcome_coverage:"结果覆盖",
+    apps_detail:"产品组合配置与最新已验证指标来源。",platforms:"平台",latest_metrics:"最新已验证指标",source:"来源",freshness:"新鲜度",period:"周期",
+    insights_detail:"观察事实、解释与后续行动分别呈现。",propose_action:"生成行动",actions_detail:"按风险划分的行动、审批、执行队列和结果测量。",execution_queue:"执行队列",outcomes:"行动结果",
+    experiments_detail:"真实实验只有在获得足够的已验证归因后才做结论。",primary:"主指标",sample_requirement:"样本要求",current_result:"当前结果",awaiting_verified_attribution_data:"等待已验证的归因数据",
+    content_detail:"永久链接、campaign 路径和获客结果；缺失表现继续留空。",downloads:"首次下载",measurement_status:"测量状态",campaign:"Campaign",landing:"落地页",publish_url:"公开链接",
+    customers_detail:"只有已验证的评论、支持消息或公开社区反馈才进入用户声音。",customer_feedback:"用户反馈",no_feedback:"当前没有已验证的用户反馈。",detected_opportunities:"识别的机会",opportunity_empty:"尚无重复出现的已验证反馈主题。",
+    data_sources_detail:"数据源控制面、新鲜度、认证状态和单机作业。",status:"状态",mode:"模式",data_available:"可用数据",authentication:"认证",auth_required:"需要 / 未配置",not_connected:"未连接",jobs:"定时作业",last_run:"最近运行",next_run:"下次运行",retry_count:"重试",run_cycle:"运行 Style Atlas COO 周期",cycle_running:"正在运行已验证周期…",cycle_done:"周期已完成并写入审计。",
+    activity_detail:"运营周期与追加式状态变更证据。",operating_cycles:"运营周期",audit_log:"审计记录",local_only:"公开模式为只读，请在本机应用执行此操作。",loading:"正在加载已验证运营状态…",unavailable:"无法加载运营状态",none:"—",
+    proposed:"待审批",approved:"已批准",completed:"已完成",rejected:"已拒绝",active:"运行中",published:"已发布",available:"可用",running:"实验中",draft:"草稿",blocked:"受阻",archived:"已归档",partial:"部分可用",not_connected_status:"未连接",scheduled:"已计划",succeeded:"成功",waiting:"等待中",ready:"就绪",cancelled:"已取消",inconclusive:"无结论",not_measurable:"不可测量",collecting:"收集中",not_started:"未开始",unavailable_status:"不可用",manual:"手动",fresh:"新鲜",stale:"过期",unknown:"未知",live:"实时",
+    kpi_first_time_downloads:"首次下载",kpi_active_users:"活跃用户",kpi_revenue:"收入",kpi_trial_starts:"试用开始",kpi_paid_conversions:"付费转化",kpi_conversion_rate:"转化率",kpi_d1_retention:"次日留存",kpi_d7_retention:"7 日留存",kpi_d30_retention:"30 日留存",kpi_traffic:"流量",kpi_content_published:"已发布内容",kpi_acquisition_performance:"获客表现",
   },
 };
 
-let locale = localStorage.getItem("ai-coo-locale") === "zh" ? "zh" : "en";
-let state;
-let brief;
-let feedbackAnalysis;
-let view = "command";
-const t = (key) => copy[locale][key] ?? copy.en[key] ?? key;
-const pick = (object, key) => locale === "zh" && object?.[`${key}_zh`] ? object[`${key}_zh`] : object?.[key];
-const esc = (value) => String(value ?? (locale === "zh" ? "未知" : "Unknown")).replace(/[&<>"']/g, (c) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" })[c]);
-const fmt = (value) => value === null || value === undefined ? "—" : new Intl.NumberFormat(locale === "zh" ? "zh-CN" : "en").format(value);
-const appName = (id) => pick(state.apps.find((app) => app.id === id), "name") ?? (locale === "zh" ? "产品组合" : "Portfolio");
-const statusTag = (status) => `<span class="tag ${["active","completed","published","available"].includes(status) ? "good" : ["blocked","rejected","killed","blocked_auth_conflict"].includes(status) ? "warn" : ""}">${esc(t(status))}</span>`;
+let locale=localStorage.getItem("ai-coo-locale")==="zh"?"zh":"en",state,brief,feedbackAnalysis,dataHealth,view="command";
+const t=(key)=>copy[locale][key]??copy.en[key]??key;
+const pick=(object,key)=>locale==="zh"&&object?.[`${key}_zh`]?object[`${key}_zh`]:object?.[key];
+const esc=(value)=>String(value??"—").replace(/[&<>"']/g,(c)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);
+const fmt=(value,unit)=>value===null||value===undefined?"—":`${new Intl.NumberFormat(locale==="zh"?"zh-CN":"en",{maximumFractionDigits:2}).format(value)}${unit==="percent"?"%":""}`;
+const date=(value)=>value?new Date(value).toLocaleString(locale==="zh"?"zh-CN":"en",{dateStyle:"medium",timeStyle:"short"}):"—";
+const appName=(id)=>pick(state.apps.find((app)=>app.id===id),"name")??(locale==="zh"?"产品组合":"Portfolio");
+const statusClass=(status)=>["active","completed","published","available","fresh","live","succeeded","ready","positive","complete"].includes(status)?"good":["blocked","rejected","killed","failed","stale","not_connected","negative"].includes(status)?"warn":"";
+const tag=(status,label)=>`<span class="tag ${statusClass(status)}">${esc(label??t(status==="not_connected"?"not_connected_status":status))}</span>`;
 
-function applyLocale() {
-  document.documentElement.lang = locale === "zh" ? "zh-CN" : "en";
-  document.querySelectorAll("[data-i18n]").forEach((element) => { element.textContent = t(element.dataset.i18n); });
-  document.querySelectorAll("[data-locale]").forEach((button) => button.classList.toggle("active", button.dataset.locale === locale));
-}
+function applyLocale(){document.documentElement.lang=locale==="zh"?"zh-CN":"en";document.querySelectorAll("[data-i18n]").forEach((el)=>el.textContent=t(el.dataset.i18n));document.querySelectorAll("[data-locale]").forEach((button)=>button.classList.toggle("active",button.dataset.locale===locale));}
+async function api(path,options){const routes={"/api/state":"./data/state.json","/api/brief":"./data/brief.json","/api/feedback-analysis":"./data/feedback-analysis.json","/api/data-health":"./data/data-health.json"};if(staticMode&&options)throw new Error(t("local_only"));const target=staticMode?routes[path]:path;if(!target)throw new Error(t("local_only"));const response=await fetch(target,options&&{...options,headers:{"content-type":"application/json","x-actor":"WonderElian",...options.headers}});const data=await response.json();if(!response.ok)throw new Error(data.error||"Request failed");return data;}
+async function refresh(){[state,brief,feedbackAnalysis,dataHealth]=await Promise.all([api("/api/state"),api("/api/brief"),api("/api/feedback-analysis"),api("/api/data-health")]);render();}
+const head=(key,detail)=>`<header class="page-head"><div><span class="section-no">${String(document.querySelector(`[data-view="${view}"]`)?.dataset.index??1).padStart(2,"0")}</span><h2>${t(key)}</h2></div><p>${detail}</p></header>`;
 
-async function api(path, options) {
-  const staticRoutes = { "/api/state":"./data/state.json", "/api/brief":"./data/brief.json", "/api/feedback-analysis":"./data/feedback-analysis.json" };
-  if (staticMode && options) throw new Error(t("local_only"));
-  const target = staticMode ? staticRoutes[path] : path;
-  if (!target) throw new Error(t("local_only"));
-  const response = await fetch(target, options && { ...options, headers: { "content-type":"application/json", "x-actor":"WonderElian", ...options.headers } });
-  const data = await response.json();
-  if (!response.ok) throw new Error(data.error || "Request failed");
-  return data;
-}
+function metricCard(name){const item=brief.kpis[name];return `<article class="metric-card"><span class="label">${t(`kpi_${name}`)}</span><strong>${fmt(item.value,name==="conversion_rate"?"percent":null)}</strong><small>${item.apps_reporting}/${item.apps_total} ${t("reporting")}</small></article>`;}
+function decisionCard(item,index){const c=item.decision_score?.contributions??{};return `<article class="decision-card"><div class="decision-rank">0${index+1}</div><div><span class="label">${esc(locale==="zh"?item.app_zh:item.app)} · ${t("risk_level")} ${item.risk_level}</span><h3>${esc(pick(item,"action"))}</h3><p>${esc(pick(item,"observation"))}</p><dl class="decision-evidence"><div><dt>${t("evidence")}</dt><dd>${esc(pick(item,"evidence"))}</dd></div><div><dt>${t("expected_impact")}</dt><dd>${esc(pick(item,"expected_impact"))}</dd></div></dl><details><summary>${t("why_ranked")}</summary><div class="score-grid">${Object.entries(c).map(([key,value])=>`<span>${esc(t(key))}<b>${value}</b></span>`).join("")}</div></details></div><div class="score"><small>${t("score")}</small><b>${item.priority}</b></div></article>`;}
+function healthCard(item){const app=state.apps.find((row)=>row.id===item.app_id);return `<article class="health-card"><div class="health-score">${item.coverage_score}<small>/100</small></div><div><h3>${esc(pick(app,"name"))}</h3><p>${item.providers.length} ${t("providers")} · ${t("last_import")} ${date(item.last_successful_import)}</p><p>${item.missing_critical_metrics.length?`${t("missing")}: ${item.missing_critical_metrics.map((x)=>t(`kpi_${x}`)).join(", ")}`:`${t("data_coverage")}: ${item.coverage_score}%`}</p><small>${t("attribution")}: ${fmt(item.attribution.link_coverage,"percent")} links · ${fmt(item.attribution.outcome_coverage,"percent")} ${t("outcome_coverage")}</small></div></article>`;}
 
-async function refresh() {
-  [state, brief, feedbackAnalysis] = await Promise.all([api("/api/state"), api("/api/brief"), api("/api/feedback-analysis")]);
-  render();
-}
+function command(){const executions=state.executions??[],outcomes=state.action_outcomes??[];const counters={pending:state.actions.filter((a)=>a.status==="proposed"&&a.approval_required).length,executing:executions.filter((x)=>x.state==="executing").length,awaiting:outcomes.filter((x)=>x.result==="inconclusive").length,proven:outcomes.filter((x)=>["positive","negative","neutral"].includes(x.result)).length,failed:executions.filter((x)=>x.state==="failed").length};return `${head("command_center",`${t("updated")} ${date(state.metadata.last_updated)}`)}
+  <section class="command-hero"><div><span class="label">${t("portfolio_summary")}</span><h3>${t("daily_brief")}</h3><p>${esc(locale==="zh"?brief.portfolio_summary_zh:brief.portfolio_summary)}</p></div><div class="signal"><span>${t("what_changed")}</span><strong>${brief.no_material_change?"0":brief.what_changed.length}</strong><small>${brief.no_material_change?t("no_material_change"):brief.what_changed.map((x)=>x.metric).join(", ")}</small></div></section>
+  <section class="metric-strip">${["first_time_downloads","conversion_rate","content_published","revenue"].map(metricCard).join("")}</section>
+  <section class="section-block"><div class="section-title"><span>01</span><h3>${t("todays_decisions")}</h3></div><div class="decision-stack">${brief.decisions.map(decisionCard).join("")}</div></section>
+  <section class="split"><div class="section-block"><div class="section-title"><span>02</span><h3>${t("what_changed")}</h3></div>${brief.no_material_change?`<article class="empty-state"><strong>${t("no_material_change")}</strong><p>${t("no_material_detail")}</p></article>`:brief.what_changed.map((d)=>`<article class="panel"><h3>${esc(d.metric)}</h3><p>${d.previous_baseline} → ${d.current_value} · ${d.percentage_change}%</p>${tag(d.severity)}</article>`).join("")}</div>
+  <div class="section-block"><div class="section-title"><span>03</span><h3>${t("execution_measurement")}</h3></div><div class="execution-grid">${Object.entries(counters).map(([key,value])=>`<article><strong>${value}</strong><span>${t(key==="pending"?"pending_approvals":key==="awaiting"?"awaiting_results":key)}</span></article>`).join("")}</div></div></section>
+  <section class="section-block"><div class="section-title"><span>04</span><h3>${t("portfolio_health")}</h3></div><div class="health-grid">${dataHealth.map(healthCard).join("")}</div></section>`;}
 
-function head(key, detail) { return `<header class="page-head"><h2>${t(key)}</h2><p>${detail}</p></header>`; }
-function kpis() {
-  return `<section class="kpis">${Object.entries(brief.kpis).map(([name, item]) => `<article class="kpi"><span class="label">${esc(t(`kpi_${name}`))}</span><strong>${fmt(item.value)}</strong><small>${item.apps_reporting}/${item.apps_total} ${t("reporting")}</small></article>`).join("")}</section>`;
-}
+function appsView(){return `${head("apps",t("apps_detail"))}<section class="card-grid">${state.apps.map((app)=>{const metrics=state.metrics.filter((m)=>m.app_id===app.id);return `<article class="panel app-card"><span class="label">${esc(app.id)}</span><h3>${esc(pick(app,"name"))}</h3><p>${(app.platforms??[]).map((p)=>tag("",p)).join("")} ${tag(app.status)}</p><a href="${esc(app.website_url)}" target="_blank" rel="noreferrer">${t("open")}</a><div class="mini-list"><strong>${t("latest_metrics")}</strong>${metrics.length?metrics.map((m)=>`<p><b>${esc(m.metric)}</b> ${fmt(m.value,m.unit)}<small>${esc(m.source)} · ${tag(m.freshness)} · ${m.period_start}—${m.period_end}</small></p>`).join(""):`<p>—</p>`}</div></article>`;}).join("")}</section>`;}
+function insightsView(){return `${head("insights",t("insights_detail"))}<section class="stack">${state.insights.map((item)=>`<article class="panel insight"><div><span class="label">${esc(appName(item.app_id))}</span><h3>${esc(pick(item,"observation"))}</h3><dl class="decision-evidence"><div><dt>${t("evidence")}</dt><dd>${esc(pick(item,"evidence"))}</dd></div><div><dt>${t("interpretation")}</dt><dd>${esc(pick(item,"interpretation")??pick(item,"reason"))}</dd></div><div><dt>${t("recommendation")}</dt><dd>${esc(pick(item,"recommended_action"))}</dd></div></dl><button data-create-action="${item.id}">${t("propose_action")}</button></div></article>`).join("")}</section>`;}
+function actionRow(action){const execution=state.executions.find((x)=>x.action_id===action.id);const next=action.status==="proposed"?["approved","rejected"]:action.status==="approved"?["executing","rejected"]:action.status==="executing"&&action.risk_level<2?["completed"]:[];return `<article class="panel action-row"><div><span class="label">${esc(appName(action.app_id))} · ${t("risk_level")} ${action.risk_level??2}</span><h3>${esc(pick(action,"title"))}</h3><p>${tag(action.status)} ${execution?tag(execution.state):""} · ${t("approval")}: ${action.approval_required?t("required"):t("not_required")}</p><div class="actions">${next.map((status)=>`<button data-transition-action="${action.id}" data-status="${status}" data-risk="${action.risk_level??2}">${t(status)}</button>`).join("")}</div></div><div class="score"><small>${t("score")}</small><b>${action.priority??"—"}</b></div></article>`;}
+function actionsView(){return `${head("actions",t("actions_detail"))}<section class="section-block"><div class="section-title"><span>01</span><h3>${t("execution_queue")}</h3></div><div class="stack">${state.actions.map(actionRow).join("")}</div></section><section class="section-block"><div class="section-title"><span>02</span><h3>${t("outcomes")}</h3></div><div class="card-grid">${state.action_outcomes.map((o)=>`<article class="panel"><span class="label">${esc(o.action_id)}</span><h3>${esc(o.observed_effect)}</h3>${tag(o.result)}<p>${esc(o.metric??"—")}: ${fmt(o.metric_before)} → ${fmt(o.metric_after)}</p></article>`).join("")}</div></section>`;}
+function experimentsView(){return `${head("experiments",t("experiments_detail"))}<section class="card-grid">${state.experiments.map((item)=>`<article class="panel"><span class="label">${esc(appName(item.app_id))}</span><h3>${esc(pick(item,"name"))}</h3><p>${esc(pick(item,"hypothesis"))}</p>${tag(item.status)}<dl class="decision-evidence"><div><dt>${t("primary")}</dt><dd>${esc(item.primary_metric)}</dd></div><div><dt>${t("sample_requirement")}</dt><dd>${esc(item.sample_requirement)}</dd></div><div><dt>${t("current_result")}</dt><dd>${item.current_result===null?t(item.result_status):esc(item.current_result)}</dd></div></dl>${(item.urls??[]).map((url)=>`<a class="block-link" href="${esc(url)}" target="_blank" rel="noreferrer">${esc(url)}</a>`).join("")}</article>`).join("")}</section>`;}
+function contentView(){return `${head("content",t("content_detail"))}<section class="stack">${state.content.map((item)=>`<article class="panel content-row"><div><span class="label">${esc(item.channel_id)} / ${esc(item.type)}</span><h3>${esc(pick(item,"title"))}</h3><a href="${esc(item.publish_url??item.url)}" target="_blank" rel="noreferrer">${esc(item.publish_url??item.url)}</a><p>${tag(item.status)} ${tag(item.measurement_status)} <span class="tag">${t("downloads")} ${fmt(item.first_time_downloads)}</span></p></div><dl><div><dt>${t("campaign")}</dt><dd>${esc(item.campaign_id)}</dd></div><div><dt>${t("landing")}</dt><dd>${esc(item.landing_url)}</dd></div><div><dt>${t("measurement_status")}</dt><dd>${esc(t(item.measurement_status))}</dd></div></dl></article>`).join("")}</section>`;}
+function customersView(){return `${head("customers",t("customers_detail"))}<section class="split"><article class="panel"><h3>${t("customer_feedback")}</h3>${state.feedback.length?state.feedback.map((item)=>`<p><strong>${esc(item.text)}</strong><small>${esc(item.source)} · ${esc(item.topic)}</small></p>`).join(""):`<p class="empty">${t("no_feedback")}</p>`}</article><article class="panel"><h3>${t("detected_opportunities")}</h3>${feedbackAnalysis.opportunities.length?feedbackAnalysis.opportunities.map((o)=>`<p>${esc(o.problem)} · ${o.frequency}</p>`).join(""):`<p class="empty">${t("opportunity_empty")}</p>`}</article></section>`;}
+function sourcesView(){return `${head("data_sources",t("data_sources_detail"))}<section class="provider-table"><div class="table-head"><span>${t("providers")}</span><span>${t("status")}</span><span>${t("last_import")}</span><span>${t("data_available")}</span><span>${t("authentication")}</span></div>${state.providers.map((p)=>`<article><div><strong>${esc(p.name)}</strong><small>${esc((p.app_ids??[]).map(appName).join(", "))}</small></div><div>${tag(p.status)}</div><div>${date(p.last_successful_import)}</div><div>${(p.data_available??[]).length?(p.data_available??[]).map((x)=>tag("",x)).join(""):"—"}</div><div>${p.authentication_required&&!p.authentication_status?.includes("not_required")?t("auth_required"):t("not_required")}${p.error?`<small class="warning">${esc(p.error)}</small>`:""}</div></article>`).join("")}</section><section class="section-block"><div class="section-title"><span>02</span><h3>${t("jobs")}</h3><button data-run-cycle>${t("run_cycle")}</button></div><p class="cycle-status" role="status"></p><section class="card-grid jobs">${state.jobs.map((job)=>`<article class="panel"><span class="label">${esc(job.type)}</span><h3>${esc(job.provider)}</h3><p>${tag(job.status)}</p><small>${t("last_run")}: ${date(job.last_run)}<br>${t("next_run")}: ${date(job.next_run)}<br>${t("retry_count")}: ${job.retry_count}</small>${job.error?`<p class="warning">${esc(job.error)}</p>`:""}</article>`).join("")}</section></section>`;}
+function activityView(){return `${head("activity",t("activity_detail"))}<section class="section-block"><div class="section-title"><span>01</span><h3>${t("operating_cycles")}</h3></div>${state.cycles.length?state.cycles.slice().reverse().map((cycle)=>`<article class="panel cycle"><div><span class="label">${esc(cycle.id)}</span><h3>${esc(cycle.detected.result)}</h3><p>${esc(cycle.decided.decision)}</p></div>${tag(cycle.status)}</article>`).join(""):`<p class="empty">—</p>`}</section><section class="section-block"><div class="section-title"><span>02</span><h3>${t("audit_log")}</h3></div><section class="panel">${state.audit.map((item)=>`<div class="audit-row"><div><strong>${esc(item.action)}</strong><p>${esc(typeof item.result==="string"?item.result:JSON.stringify(item.result))}</p><small>${date(item.at)} · ${esc(item.actor)} · ${esc(item.source)}</small></div>${tag(item.status)}</div>`).join("")}</section></section>`;}
 
-function command() {
-  const pending = state.actions.filter((action) => action.status === "proposed");
-  const summary = locale === "zh" ? (brief.portfolio_summary_zh ?? `已追踪 ${state.apps.length} 个应用；目前 1 个上报北极星指标。`) : brief.portfolio_summary;
-  return `${head("command_center", `${t("updated")} ${new Date(state.metadata.last_updated).toLocaleString(locale === "zh" ? "zh-CN" : "en")}`)}${kpis()}<section class="grid">
-    <article class="panel span-2"><span class="label">${t("portfolio_summary")}</span><h3>${t("daily_brief")}</h3><p>${esc(summary)}</p>
-      <div class="brief-sections"><div><strong>${t("winners")}</strong><p class="muted">${brief.winners.length ? brief.winners.map((item) => esc(pick(item,"title"))).join(" · ") : t("no_winner")}</p></div>
-      <div><strong>${t("problems")}</strong><p class="muted">${brief.problems.length ? brief.problems.map((item) => esc(pick(item,"title"))).join(" · ") : t("no_problem")}</p></div>
-      <div><strong>${t("opportunities")}</strong><p class="muted">${brief.opportunities.length ? brief.opportunities.map((item) => esc(pick(item,"title"))).join(" · ") : t("no_opportunity")}</p></div></div>
-      <h3>${t("recommended_decisions")}</h3><div class="stack">${brief.recommendations.map((item) => `<div class="row"><div><span class="label">${esc(locale === "zh" ? (item.app_zh ?? item.app) : item.app)}</span><h3>${esc(pick(item,"action"))}</h3><p>${esc(pick(item,"observation"))}</p><small class="muted">${t("evidence")}: ${esc(pick(item,"evidence"))} · ${t("confidence")} ${Math.round(item.confidence*100)}%</small></div><span class="score">${item.priority}</span></div>`).join("")}</div></article>
-    <article class="panel"><h3>${t("pending_approvals")}</h3>${pending.length ? pending.map(actionRow).join("") : `<p class="empty">${t("no_pending")}</p>`}</article>
-    <article class="panel span-2"><h3>${t("portfolio")}</h3>${state.apps.map((app) => `<div class="row"><div><strong>${esc(pick(app,"name"))}</strong><div>${app.platforms.map((platform)=>`<span class="tag">${esc(platform)}</span>`).join("")} ${statusTag(app.status)}</div></div><a href="${esc(app.website_url)}" target="_blank" rel="noreferrer">${t("open")}</a></div>`).join("")}</article>
-    <article class="panel"><h3>${t("data_quality")}</h3><p>${t("data_quality_body")}</p><p><strong>${t("apps_reporting_primary")}</strong></p></article></section>`;
-}
-
-function actionRow(action) {
-  const next = ({proposed:["approved","rejected"],approved:["executing","rejected"],executing:["completed","rejected"]}[action.status]||[]);
-  return `<div class="row"><div><strong>${esc(pick(action,"title"))}</strong><p class="muted">${esc(appName(action.app_id))}</p>${statusTag(action.status)}<div class="actions">${next.map((status)=>`<button data-transition-action="${action.id}" data-status="${status}">${t(status)}</button>`).join("")}</div></div></div>`;
-}
-
-function appsView() {
-  return `${head("apps",t("apps_detail"))}<section class="grid">${state.apps.map((app)=>`<article class="panel"><span class="label">${esc(app.id)}</span><h3>${esc(pick(app,"name"))}</h3><p>${app.platforms.map((platform)=>`<span class="tag">${esc(platform)}</span>`).join("")} ${statusTag(app.status)}</p><a href="${esc(app.website_url)}" target="_blank" rel="noreferrer">${esc(app.website_url)}</a></article>`).join("")}</section>${form(t("add_app"),"/api/apps",[{name:"name",label:t("name"),required:true},{name:"website_url",label:t("website_url")},{name:"status",label:t("status"),value:"active"},{name:"platforms",label:t("platforms")}])}`;
-}
-function insightsView() {
-  return `${head("insights",t("insights_detail"))}<section class="stack">${state.insights.map((item)=>`<article class="panel row"><div><span class="label">${esc(appName(item.app_id))}</span><h3>${esc(pick(item,"observation"))}</h3><p>${esc(pick(item,"reason"))}</p><small class="muted">${esc(pick(item,"evidence"))}</small><div class="actions"><button data-create-action="${item.id}">${t("propose_action")}</button></div></div><span class="score">${Math.round(item.impact*.5+item.urgency*.3+item.confidence*20)}</span></article>`).join("")}</section>`;
-}
-function actionsView() { return `${head("actions",t("actions_detail"))}<section class="stack">${state.actions.map(actionRow).join("")}</section>`; }
-function experimentsView() {
-  return `${head("experiments",t("experiments_detail"))}<section class="grid">${state.experiments.map((item)=>`<article class="panel"><span class="label">${esc(appName(item.app_id))}</span><h3>${esc(pick(item,"name"))}</h3><p>${esc(pick(item,"hypothesis"))}</p>${statusTag(item.status)}<p class="muted">${t("primary")}: ${esc(t(`kpi_${item.primary_metric}`))}</p></article>`).join("")}</section>${form(t("add_experiment"),"/api/experiments",[{name:"app_id",label:t("app_id"),value:"style-atlas"},{name:"name",label:t("name"),required:true},{name:"hypothesis",label:t("hypothesis"),type:"textarea"},{name:"primary_metric",label:t("primary_metric"),value:"first_time_downloads"}])}`;
-}
-function contentView() {
-  return `${head("content",t("content_detail"))}<section class="stack">${state.content.map((item)=>`<article class="panel row"><div><span class="label">${esc(item.channel_id)} / ${esc(item.type)}</span><h3>${esc(pick(item,"title"))}</h3><a href="${esc(item.url)}" target="_blank" rel="noreferrer">${esc(item.url)}</a><p>${statusTag(item.status)} <span class="tag">${t("downloads")} ${fmt(item.first_time_downloads)}</span></p></div></article>`).join("")}</section>${form(t("log_content"),"/api/content",[{name:"app_id",label:t("app_id"),value:"style-atlas"},{name:"channel_id",label:t("channel_id")},{name:"title",label:t("title"),required:true},{name:"url",label:t("permanent_url"),required:true}])}`;
-}
-function customersView() {
-  return `${head("customers",t("customers_detail"))}<section class="grid"><article class="panel span-2"><h3>${t("customer_feedback")}</h3>${state.feedback.length ? state.feedback.map((item)=>`<div class="row"><div><strong>${esc(item.text)}</strong><p>${esc(appName(item.app_id))} · ${esc(item.source)} · ${esc(item.topic)}</p></div></div>`).join("") : `<p class="empty">${t("no_feedback")}</p>`}</article><article class="panel"><h3>${t("detected_opportunities")}</h3>${feedbackAnalysis.opportunities.length ? feedbackAnalysis.opportunities.map((item)=>`<div class="row"><div><strong>${esc(item.problem)}</strong><p>${item.frequency} ${t("signals")} · ${t("severity")} ${item.severity}</p><span class="score">${item.opportunity_score}</span></div></div>`).join("") : `<p class="empty">${t("opportunity_empty")}</p>`}</article></section>${form(t("log_feedback"),"/api/feedback",[{name:"app_id",label:t("app_id"),value:"style-atlas"},{name:"source",label:t("source")},{name:"external_id",label:t("external_id")},{name:"text",label:t("feedback_text"),type:"textarea",required:true},{name:"rating",label:t("rating")},{name:"sentiment",label:t("sentiment")},{name:"topic",label:t("topic")},{name:"created_at",label:t("source_date")}])}`;
-}
-function activityView() {
-  return `${head("activity",t("activity_detail"))}<section class="panel">${state.audit.map((item)=>`<div class="row"><div><strong>${esc(item.action)}</strong><p>${esc(item.result)}</p><small class="muted">${new Date(item.at).toLocaleString(locale === "zh" ? "zh-CN" : "en")} · ${esc(item.actor)} · ${esc(item.source)}</small></div>${statusTag(item.status)}</div>`).join("")}</section>`;
-}
-
-function form(title, endpoint, fields) {
-  return `<form class="panel form-panel" data-endpoint="${endpoint}"><h2>${title}</h2><div class="fields">${fields.map((field)=>`<label>${field.label}${field.type === "textarea" ? `<textarea name="${field.name}" ${field.required?"required":""}>${field.value||""}</textarea>` : `<input name="${field.name}" value="${field.value||""}" ${field.required?"required":""}>`}</label>`).join("")}</div><button type="submit">${t("save")}</button><p class="form-status" role="status"></p></form>`;
-}
-
-function bind() {
-  document.querySelectorAll("[data-transition-action]").forEach((button) => button.onclick = async () => { await api(`/api/actions/${button.dataset.transitionAction}/transition`,{method:"POST",body:JSON.stringify({status:button.dataset.status})}); await refresh(); });
-  document.querySelectorAll("[data-create-action]").forEach((button) => button.onclick = async () => { await api(`/api/insights/${button.dataset.createAction}/actions`,{method:"POST",body:"{}"}); await refresh(); });
-  document.querySelectorAll("form[data-endpoint]").forEach((element) => element.onsubmit = async (event) => {
-    event.preventDefault(); const raw=Object.fromEntries(new FormData(element)); let data=raw;
-    if(element.dataset.endpoint==="/api/apps") data={...raw,platforms:raw.platforms.split(',').map((item)=>item.trim()).filter(Boolean)};
-    if(element.dataset.endpoint==="/api/experiments") data={...raw,status:"draft",variants:[],guardrail_metrics:[],decision:null};
-    if(element.dataset.endpoint==="/api/content") data={...raw,type:"post",status:"draft",impressions:null,engagements:null,outbound_clicks:null,first_time_downloads:null};
-    if(element.dataset.endpoint==="/api/feedback") data={...raw,rating:raw.rating?Number(raw.rating):null,imported_at:new Date().toISOString()};
-    const status=element.querySelector('.form-status');
-    try { await api(element.dataset.endpoint,{method:"POST",body:JSON.stringify(data)}); status.textContent=t("saved"); await refresh(); }
-    catch(error) { status.textContent=error.message; }
-  });
-}
-
-function render() {
-  applyLocale();
-  root.innerHTML = ({command,apps:appsView,insights:insightsView,actions:actionsView,experiments:experimentsView,content:contentView,customers:customersView,activity:activityView}[view])();
-  bind();
-}
-
-document.querySelectorAll("nav button").forEach((button) => button.onclick = () => {
-  document.querySelector("nav .active")?.classList.remove("active"); button.classList.add("active"); view=button.dataset.view; render();
-});
-document.querySelectorAll("[data-locale]").forEach((button) => button.onclick = () => {
-  locale=button.dataset.locale; localStorage.setItem("ai-coo-locale",locale); render();
-});
-applyLocale();
-root.innerHTML=`<p class="loading">${t("loading")}</p>`;
-refresh().catch((error) => root.innerHTML=`<p class="panel">${t("unavailable")}: ${esc(error.message)}</p>`);
+function bind(){document.querySelectorAll("[data-transition-action]").forEach((button)=>button.onclick=async()=>{const payload={status:button.dataset.status};if(button.dataset.status==="approved")payload.approval_source="local_dashboard_explicit_approval";if(button.dataset.status==="completed")payload.output_identifier="internal-dashboard-completion";await api(`/api/actions/${button.dataset.transitionAction}/transition`,{method:"POST",body:JSON.stringify(payload)});await refresh();});document.querySelectorAll("[data-create-action]").forEach((button)=>button.onclick=async()=>{await api(`/api/insights/${button.dataset.createAction}/actions`,{method:"POST",body:"{}"});await refresh();});document.querySelector("[data-run-cycle]")?.addEventListener("click",async(event)=>{const status=document.querySelector(".cycle-status");event.currentTarget.disabled=true;status.textContent=t("cycle_running");try{await api("/api/cycle/run",{method:"POST",body:JSON.stringify({app_id:"style-atlas"})});status.textContent=t("cycle_done");await refresh();}catch(error){status.textContent=error.message;event.currentTarget.disabled=false;}});}
+function render(){applyLocale();root.innerHTML=({command,apps:appsView,insights:insightsView,actions:actionsView,experiments:experimentsView,content:contentView,customers:customersView,sources:sourcesView,activity:activityView}[view])();bind();}
+document.querySelectorAll("nav button").forEach((button)=>button.onclick=()=>{document.querySelector("nav .active")?.classList.remove("active");button.classList.add("active");view=button.dataset.view;render();});
+document.querySelectorAll("[data-locale]").forEach((button)=>button.onclick=()=>{locale=button.dataset.locale;localStorage.setItem("ai-coo-locale",locale);render();});
+applyLocale();root.innerHTML=`<p class="loading">${t("loading")}</p>`;refresh().catch((error)=>root.innerHTML=`<p class="panel">${t("unavailable")}: ${esc(error.message)}</p>`);
