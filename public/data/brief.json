@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T12:57:27.846Z",
+  "generated_at": "2026-08-14T14:05:16.382Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -276,7 +276,7 @@
           "last_successful_import": "2026-08-14T09:20:00.000Z",
           "freshness": "manual",
           "age_state": "fresh",
-          "age_days": 1.5,
+          "age_days": 1.6,
           "data_available": [
             "impressions",
             "product_page_views",
@@ -354,7 +354,7 @@
           "name": "App Store Connect Analytics",
           "status": "blocked",
           "mode": "official_read_only_api",
-          "last_successful_import": "2026-08-14T12:52:00.837Z",
+          "last_successful_import": "2026-08-14T14:03:36.669Z",
           "freshness": "blocked",
           "age_state": "unknown",
           "age_days": null,
@@ -367,7 +367,7 @@
           "name": "App Store Customer Reviews",
           "status": "blocked",
           "mode": "official_read_only_api",
-          "last_successful_import": "2026-08-14T12:52:00.837Z",
+          "last_successful_import": "2026-08-14T14:03:36.669Z",
           "freshness": "blocked",
           "age_state": "unknown",
           "age_days": null,
@@ -380,7 +380,7 @@
           "name": "Google Search Console",
           "status": "blocked",
           "mode": "official_read_only_api",
-          "last_successful_import": "2026-08-14T12:52:00.837Z",
+          "last_successful_import": "2026-08-14T14:03:36.669Z",
           "freshness": "blocked",
           "age_state": "unknown",
           "age_days": null,
@@ -389,7 +389,7 @@
           "error": "BLOCKED — AUTH REQUIRED"
         }
       ],
-      "last_successful_import": "2026-08-14T12:52:00.837Z",
+      "last_successful_import": "2026-08-14T14:03:36.669Z",
       "stale_providers": [],
       "missing_critical_metrics": [],
       "import_errors": [
