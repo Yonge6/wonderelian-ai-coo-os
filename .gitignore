@@ -8,3 +8,4 @@ config/*.local.json
 private_keys/
 *.p8
 service-account*.json
+node_modules/
