@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T14:10:28.840Z",
+  "generated_at": "2026-08-14T14:27:29.435Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -353,33 +353,33 @@
           "name": "App Store Connect Analytics",
           "status": "blocked",
           "mode": "official_read_only_api",
-          "last_successful_import": "2026-08-14T14:03:36.669Z",
+          "last_successful_import": "2026-08-14T14:27:06.541Z",
           "freshness": "blocked",
           "age_state": "unknown",
           "age_days": null,
           "data_available": [],
-          "authentication_required": true,
-          "error": "BLOCKED — AUTH REQUIRED"
+          "authentication_required": false,
+          "error": "BLOCKED — ONE-TIME ADMIN ANALYTICS REPORT REQUEST REQUIRED"
         },
         {
           "id": "app_store_reviews_api",
           "name": "App Store Customer Reviews",
-          "status": "blocked",
+          "status": "live",
           "mode": "official_read_only_api",
-          "last_successful_import": "2026-08-14T14:03:36.669Z",
-          "freshness": "blocked",
+          "last_successful_import": "2026-08-14T14:27:07.198Z",
+          "freshness": "delayed",
           "age_state": "unknown",
           "age_days": null,
           "data_available": [],
-          "authentication_required": true,
-          "error": "BLOCKED — AUTH REQUIRED"
+          "authentication_required": false,
+          "error": null
         },
         {
           "id": "google_search_console_api",
           "name": "Google Search Console",
           "status": "blocked",
           "mode": "official_read_only_api",
-          "last_successful_import": "2026-08-14T14:03:36.669Z",
+          "last_successful_import": "2026-08-14T14:27:07.199Z",
           "freshness": "blocked",
           "age_state": "unknown",
           "age_days": null,
@@ -388,7 +388,7 @@
           "error": "BLOCKED — AUTH REQUIRED"
         }
       ],
-      "last_successful_import": "2026-08-14T14:03:36.669Z",
+      "last_successful_import": "2026-08-14T14:27:07.199Z",
       "stale_providers": [],
       "missing_critical_metrics": [],
       "import_errors": [
@@ -398,11 +398,7 @@
         },
         {
           "provider": "app_store_connect_api",
-          "error": "BLOCKED — AUTH REQUIRED"
-        },
-        {
-          "provider": "app_store_reviews_api",
-          "error": "BLOCKED — AUTH REQUIRED"
+          "error": "BLOCKED — ONE-TIME ADMIN ANALYTICS REPORT REQUEST REQUIRED"
         },
         {
           "provider": "google_search_console_api",
@@ -416,7 +412,7 @@
         "link_coverage": 20,
         "outcome_coverage": 0
       },
-      "coverage_score": 57,
+      "coverage_score": 61,
       "confidence_cap": 0.65
     },
     {
