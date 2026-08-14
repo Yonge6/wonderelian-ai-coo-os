@@ -60,6 +60,7 @@ export class AppStoreConnectProvider{
       const segments=await this.requestAll(`/v1/analyticsReportInstances/${encodeURIComponent(instance.id)}/segments?limit=200`);
       for(const segment of segments){const url=segment.attributes?.url;if(!url)continue;let body=await this.request(url,{download:true});if(body[0]===0x1f&&body[1]===0x8b)body=gunzipSync(body);observations.push(...normalizeAnalyticsRows(parseTabular(body),{appId,sourceReference:`analyticsReport:${report.id}:instance:${instance.id}:segment:${segment.id}`}));}
     }
+    if(!dataThrough)throw new ProviderUnavailableError(this.id,"The active analytics report request has not generated report instances yet.",{code:"REPORT_GENERATION_PENDING"});
     return {observations:observations.map((row)=>({...row,imported_at:now,verified_at:now})),data_through:dataThrough,report_request_id:ongoing.id,reports_considered:selected.length};
   }
 }
