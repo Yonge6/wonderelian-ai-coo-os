@@ -1144,8 +1144,7 @@
       "data_available": [
         "content",
         "campaigns",
-        "public_urls",
-        "operating_memory"
+        "public_urls"
       ],
       "authentication_required": false,
       "authentication_status": "not_required",

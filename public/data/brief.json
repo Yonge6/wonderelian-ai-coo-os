@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T14:05:16.382Z",
+  "generated_at": "2026-08-14T14:10:28.840Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -300,8 +300,7 @@
           "data_available": [
             "content",
             "campaigns",
-            "public_urls",
-            "operating_memory"
+            "public_urls"
           ],
           "authentication_required": false,
           "error": null
