@@ -1,5 +1,6 @@
 const root=document.querySelector("#app");
-const staticMode=location.hostname.endsWith("github.io")||location.protocol==="file:"||new URLSearchParams(location.search).has("static");
+const localHosts=new Set(["127.0.0.1","localhost"]);
+const staticMode=location.protocol==="file:"||!localHosts.has(location.hostname)||new URLSearchParams(location.search).has("static");
 document.body.dataset.mode=staticMode?"static":"local";
 
 const copy={

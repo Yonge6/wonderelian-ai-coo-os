@@ -12,7 +12,9 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.match(script, /operatingTimeZone="Asia\/Shanghai"/);
   assert.match(script, /timeZone:operatingTimeZone/);
   assert.doesNotMatch(script, /toISOString\(\)\.slice\(0,10\)/);
-  assert.match(html, /app\.js\?v=20260815-websites-v2/);
+  assert.match(html, /app\.js\?v=20260815-ops-domain-v3/);
+  assert.match(script, /const localHosts=new Set\(\["127\.0\.0\.1","localhost"\]\)/);
+  assert.match(script, /!localHosts\.has\(location\.hostname\)/);
   assert.ok(html.indexOf('data-view="apps"') < html.indexOf('data-view="websites"'));
   assert.ok(html.indexOf('data-view="websites"') < html.indexOf('data-view="insights"'));
   assert.match(html, /data-view="websites" data-index="3"/);
@@ -27,5 +29,5 @@ test("public dashboard ships the custom domain and accessible Image 2 logo", asy
   assert.equal(cname.trim(), "ops.wonderelian.com");
   assert.match(index, /rel="canonical" href="https:\/\/ops\.wonderelian\.com\/"/);
   assert.match(index, /<span class="sr-only">AI COO OS<\/span>/);
-  assert.match(index, /assets\/ai-coo-logo-image2\.png/);
+  assert.match(index, /assets\/ai-coo-logo-image2-v2\.png/);
 });
