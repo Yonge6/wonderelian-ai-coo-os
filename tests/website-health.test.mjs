@@ -38,11 +38,14 @@ test("production state registers six operated websites and preserves traffic as 
   assert.equal(state.website_metrics.length, 0);
   assert.equal(state.providers.find((row) => row.id === "public_website_health")?.status, "live");
   assert.equal(state.providers.find((row) => row.id === "website_analytics_api")?.status, "not_connected");
-  assert.deepEqual(generateBrief(state).website_summary, {
+  const brief = generateBrief(state);
+  assert.deepEqual(brief.website_summary, {
     sites_tracked:6,
     sites_live:6,
     analytics_connected:0,
     traffic_metrics_available:0,
     data_through:"2026-08-15",
   });
+  assert.equal(brief.portfolio_summary, "5 apps and 6 websites are tracked. 1 of 5 apps currently reports the primary outcome; recommendations are qualified by data coverage.");
+  assert.equal(brief.portfolio_summary_zh, "已追踪 5 个应用和 6 个网站。目前 1 个应用上报北极星指标；所有建议均受数据覆盖度约束。");
 });
