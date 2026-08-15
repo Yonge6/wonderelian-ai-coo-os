@@ -22,6 +22,7 @@
 }
 .ph.ph-house::before{content:"\e2c2"}
 .ph.ph-grid-four::before{content:"\e296"}
+.ph.ph-globe::before{content:"\e288"}
 .ph.ph-lightbulb::before{content:"\e2dc"}
 .ph.ph-check-circle::before{content:"\e184"}
 .ph.ph-flask::before{content:"\e79e"}

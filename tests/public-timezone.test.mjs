@@ -3,13 +3,18 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 test("public dashboard renders operating dates in Beijing time", async () => {
-  const [script, html] = await Promise.all([
+  const [script, html, icons] = await Promise.all([
     readFile(new URL("../public/app.js", import.meta.url), "utf8"),
     readFile(new URL("../public/index.html", import.meta.url), "utf8"),
+    readFile(new URL("../public/vendor/phosphor/style.css", import.meta.url), "utf8"),
   ]);
 
   assert.match(script, /operatingTimeZone="Asia\/Shanghai"/);
   assert.match(script, /timeZone:operatingTimeZone/);
   assert.doesNotMatch(script, /toISOString\(\)\.slice\(0,10\)/);
-  assert.match(html, /app\.js\?v=20260815-websites/);
+  assert.match(html, /app\.js\?v=20260815-websites-v2/);
+  assert.ok(html.indexOf('data-view="apps"') < html.indexOf('data-view="websites"'));
+  assert.ok(html.indexOf('data-view="websites"') < html.indexOf('data-view="insights"'));
+  assert.match(html, /data-view="websites" data-index="3"/);
+  assert.match(icons, /\.ph\.ph-globe::before\{content:"\\e288"\}/);
 });
