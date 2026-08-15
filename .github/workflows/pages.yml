@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "15 0 * * *"
 
 permissions:
   contents: read
@@ -25,6 +27,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+      - name: Refresh six-site public health
+        if: github.event_name != 'push'
+        run: npm run sync:websites
       - run: npm run check
       - run: npm test
       - run: npm run build:static
