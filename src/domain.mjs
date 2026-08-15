@@ -166,10 +166,18 @@ export function generateBrief(state) {
     priority: item.score,
     decision_score: item.decision_score,
   }));
+  const websites = state.websites ?? [];
   return {
     generated_at: new Date().toISOString(),
     primary_outcome: state.metadata.primary_outcome,
     kpis: aggregatePortfolioKpis(state),
+    website_summary: {
+      sites_tracked:websites.length,
+      sites_live:websites.filter((site)=>site.health_status === "live").length,
+      analytics_connected:websites.filter((site)=>site.analytics_status === "connected").length,
+      traffic_metrics_available:(state.website_metrics ?? []).filter((metric)=>metric.value !== null).length,
+      data_through:state.metadata.data_through?.website_health ?? null,
+    },
     portfolio_summary: `${state.apps.length} apps are tracked. ${new Set(state.metrics.filter((metric)=>metricName(metric) === "first_time_downloads" && metric.value !== null).map((metric)=>metric.app_id)).size} currently report the primary outcome; recommendations are qualified by data coverage.`,
     portfolio_summary_zh: `已追踪 ${state.apps.length} 个应用。目前 ${new Set(state.metrics.filter((metric)=>metricName(metric) === "first_time_downloads" && metric.value !== null).map((metric)=>metric.app_id)).size} 个上报北极星指标；所有建议均受数据覆盖度约束。`,
     what_changed: changes,
@@ -186,6 +194,7 @@ export function generateBrief(state) {
 export function validateState(state) {
   const collections = ["apps", "metrics", "channels", "campaigns", "content", "attributions", "insights", "actions", "feedback", "opportunities", "experiments", "providers", "jobs", "events", "audit", "detections", "executions", "approvals", "action_outcomes", "learnings", "operating_memory", "ingestion_runs", "cycles"];
   if (String(state?.metadata?.schema_version).startsWith("3")) collections.push("provider_syncs", "reconciliations", "search_observations", "geo_observations", "instrumentation");
+  for (const optional of ["websites", "website_observations", "website_metrics", "website_operations"]) if (state?.[optional] !== undefined) collections.push(optional);
   if (!state?.metadata?.schema_version) throw new Error("metadata.schema_version is required");
   for (const name of collections) if (!Array.isArray(state[name])) throw new Error(`${name} must be an array`);
   for (const name of collections) {
@@ -195,6 +204,13 @@ export function validateState(state) {
   const appIds = new Set(state.apps.map((app) => app.id));
   for (const name of ["metrics", "campaigns", "content", "attributions", "insights", "actions", "feedback", "experiments", "detections", "executions", "learnings", "operating_memory"]) {
     for (const row of state[name]) if (row.app_id && !appIds.has(row.app_id)) throw new Error(`${name}.${row.id} references missing app ${row.app_id}`);
+  }
+  if (state.websites) {
+    const websiteIds = new Set(state.websites.map((website) => website.id));
+    for (const website of state.websites) if (website.app_id && !appIds.has(website.app_id)) throw new Error(`websites.${website.id} references missing app ${website.app_id}`);
+    for (const name of ["website_observations", "website_metrics", "website_operations"]) {
+      for (const row of state[name] ?? []) if (!websiteIds.has(row.website_id)) throw new Error(`${name}.${row.id} references missing website ${row.website_id}`);
+    }
   }
   for (const metric of state.metrics) validateMetricRecord(metric);
   for (const action of state.actions) if (action.risk_level !== undefined) requiredApproval(action.risk_level);

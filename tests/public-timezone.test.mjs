@@ -11,5 +11,5 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.match(script, /operatingTimeZone="Asia\/Shanghai"/);
   assert.match(script, /timeZone:operatingTimeZone/);
   assert.doesNotMatch(script, /toISOString\(\)\.slice\(0,10\)/);
-  assert.match(html, /app\.js\?v=20260815-bjt/);
+  assert.match(html, /app\.js\?v=20260815-websites/);
 });

@@ -9,7 +9,7 @@
         "mode": "manual_snapshot",
         "last_successful_import": "2026-08-14T09:20:00.000Z",
         "freshness": "manual",
-        "age_state": "fresh",
+        "age_state": "aging",
         "age_days": 2,
         "data_available": [
           "impressions",
@@ -120,9 +120,39 @@
         "data_available": [],
         "authentication_required": true,
         "error": "BLOCKED — AUTH REQUIRED"
+      },
+      {
+        "id": "public_website_health",
+        "name": "Six-site Public Health Monitor",
+        "status": "live",
+        "mode": "scheduled_read_only_http",
+        "last_successful_import": "2026-08-15T00:13:25.072Z",
+        "freshness": "fresh",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [
+          "http_status",
+          "technical_seo",
+          "analytics_tag_detection"
+        ],
+        "authentication_required": false,
+        "error": null
+      },
+      {
+        "id": "website_analytics_api",
+        "name": "Six-site Website Analytics",
+        "status": "not_connected",
+        "mode": "official_read_only_api",
+        "last_successful_import": null,
+        "freshness": "not_connected",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [],
+        "authentication_required": true,
+        "error": "NOT CONNECTED — no analytics tags or verified traffic API data are available."
       }
     ],
-    "last_successful_import": "2026-08-14T15:46:56.536Z",
+    "last_successful_import": "2026-08-15T00:13:25.072Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [
@@ -137,6 +167,10 @@
       {
         "provider": "google_search_console_api",
         "error": "BLOCKED — AUTH REQUIRED"
+      },
+      {
+        "provider": "website_analytics_api",
+        "error": "NOT CONNECTED — no analytics tags or verified traffic API data are available."
       }
     ],
     "attribution": {
@@ -146,18 +180,54 @@
       "link_coverage": 20,
       "outcome_coverage": 0
     },
-    "coverage_score": 61,
+    "coverage_score": 60,
     "confidence_cap": 0.65
   },
   {
     "app_id": "yixiu-meditation",
-    "providers": [],
-    "last_successful_import": null,
+    "providers": [
+      {
+        "id": "public_website_health",
+        "name": "Six-site Public Health Monitor",
+        "status": "live",
+        "mode": "scheduled_read_only_http",
+        "last_successful_import": "2026-08-15T00:13:25.072Z",
+        "freshness": "fresh",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [
+          "http_status",
+          "technical_seo",
+          "analytics_tag_detection"
+        ],
+        "authentication_required": false,
+        "error": null
+      },
+      {
+        "id": "website_analytics_api",
+        "name": "Six-site Website Analytics",
+        "status": "not_connected",
+        "mode": "official_read_only_api",
+        "last_successful_import": null,
+        "freshness": "not_connected",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [],
+        "authentication_required": true,
+        "error": "NOT CONNECTED — no analytics tags or verified traffic API data are available."
+      }
+    ],
+    "last_successful_import": "2026-08-15T00:13:25.072Z",
     "stale_providers": [],
     "missing_critical_metrics": [
       "first_time_downloads"
     ],
-    "import_errors": [],
+    "import_errors": [
+      {
+        "provider": "website_analytics_api",
+        "error": "NOT CONNECTED — no analytics tags or verified traffic API data are available."
+      }
+    ],
     "attribution": {
       "published_assets": 0,
       "linked_assets": 0,
@@ -165,16 +235,52 @@
       "link_coverage": null,
       "outcome_coverage": null
     },
-    "coverage_score": 0,
+    "coverage_score": 25,
     "confidence_cap": 0.65
   },
   {
     "app_id": "know-yourself",
-    "providers": [],
-    "last_successful_import": null,
+    "providers": [
+      {
+        "id": "public_website_health",
+        "name": "Six-site Public Health Monitor",
+        "status": "live",
+        "mode": "scheduled_read_only_http",
+        "last_successful_import": "2026-08-15T00:13:25.072Z",
+        "freshness": "fresh",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [
+          "http_status",
+          "technical_seo",
+          "analytics_tag_detection"
+        ],
+        "authentication_required": false,
+        "error": null
+      },
+      {
+        "id": "website_analytics_api",
+        "name": "Six-site Website Analytics",
+        "status": "not_connected",
+        "mode": "official_read_only_api",
+        "last_successful_import": null,
+        "freshness": "not_connected",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [],
+        "authentication_required": true,
+        "error": "NOT CONNECTED — no analytics tags or verified traffic API data are available."
+      }
+    ],
+    "last_successful_import": "2026-08-15T00:13:25.072Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
-    "import_errors": [],
+    "import_errors": [
+      {
+        "provider": "website_analytics_api",
+        "error": "NOT CONNECTED — no analytics tags or verified traffic API data are available."
+      }
+    ],
     "attribution": {
       "published_assets": 0,
       "linked_assets": 0,
@@ -182,16 +288,52 @@
       "link_coverage": null,
       "outcome_coverage": null
     },
-    "coverage_score": 0,
-    "confidence_cap": 0.95
+    "coverage_score": 50,
+    "confidence_cap": 0.65
   },
   {
     "app_id": "wendao",
-    "providers": [],
-    "last_successful_import": null,
+    "providers": [
+      {
+        "id": "public_website_health",
+        "name": "Six-site Public Health Monitor",
+        "status": "live",
+        "mode": "scheduled_read_only_http",
+        "last_successful_import": "2026-08-15T00:13:25.072Z",
+        "freshness": "fresh",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [
+          "http_status",
+          "technical_seo",
+          "analytics_tag_detection"
+        ],
+        "authentication_required": false,
+        "error": null
+      },
+      {
+        "id": "website_analytics_api",
+        "name": "Six-site Website Analytics",
+        "status": "not_connected",
+        "mode": "official_read_only_api",
+        "last_successful_import": null,
+        "freshness": "not_connected",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [],
+        "authentication_required": true,
+        "error": "NOT CONNECTED — no analytics tags or verified traffic API data are available."
+      }
+    ],
+    "last_successful_import": "2026-08-15T00:13:25.072Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
-    "import_errors": [],
+    "import_errors": [
+      {
+        "provider": "website_analytics_api",
+        "error": "NOT CONNECTED — no analytics tags or verified traffic API data are available."
+      }
+    ],
     "attribution": {
       "published_assets": 0,
       "linked_assets": 0,
@@ -199,16 +341,52 @@
       "link_coverage": null,
       "outcome_coverage": null
     },
-    "coverage_score": 0,
-    "confidence_cap": 0.95
+    "coverage_score": 50,
+    "confidence_cap": 0.65
   },
   {
     "app_id": "xiazi-yesterdays-world",
-    "providers": [],
-    "last_successful_import": null,
+    "providers": [
+      {
+        "id": "public_website_health",
+        "name": "Six-site Public Health Monitor",
+        "status": "live",
+        "mode": "scheduled_read_only_http",
+        "last_successful_import": "2026-08-15T00:13:25.072Z",
+        "freshness": "fresh",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [
+          "http_status",
+          "technical_seo",
+          "analytics_tag_detection"
+        ],
+        "authentication_required": false,
+        "error": null
+      },
+      {
+        "id": "website_analytics_api",
+        "name": "Six-site Website Analytics",
+        "status": "not_connected",
+        "mode": "official_read_only_api",
+        "last_successful_import": null,
+        "freshness": "not_connected",
+        "age_state": "unknown",
+        "age_days": null,
+        "data_available": [],
+        "authentication_required": true,
+        "error": "NOT CONNECTED — no analytics tags or verified traffic API data are available."
+      }
+    ],
+    "last_successful_import": "2026-08-15T00:13:25.072Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
-    "import_errors": [],
+    "import_errors": [
+      {
+        "provider": "website_analytics_api",
+        "error": "NOT CONNECTED — no analytics tags or verified traffic API data are available."
+      }
+    ],
     "attribution": {
       "published_assets": 0,
       "linked_assets": 0,
@@ -216,7 +394,7 @@
       "link_coverage": null,
       "outcome_coverage": null
     },
-    "coverage_score": 0,
-    "confidence_cap": 0.95
+    "coverage_score": 50,
+    "confidence_cap": 0.65
   }
 ]
