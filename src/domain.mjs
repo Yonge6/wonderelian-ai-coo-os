@@ -182,7 +182,7 @@ export function generateBrief(state) {
       data_through:state.metadata.data_through?.website_health ?? null,
     },
     portfolio_summary: `${state.apps.length} apps and ${websites.length} websites are tracked. ${reportingApps} of ${state.apps.length} apps currently ${reportingApps === 1 ? "reports" : "report"} the primary outcome; recommendations are qualified by data coverage.`,
-    portfolio_summary_zh: `已追踪 ${state.apps.length} 个应用和 ${websites.length} 个网站。目前 ${reportingApps} 个应用上报北极星指标；所有建议均受数据覆盖度约束。`,
+    portfolio_summary_zh: `已追踪 ${state.apps.length} 个应用和 ${websites.length} 个网站。目前 ${reportingApps} 个上报北极星指标；所有建议均受数据覆盖度约束。`,
     what_changed: changes,
     no_material_change: changes.length === 0,
     winners: changes.filter((item)=>item.direction === "rising").slice(0,3),
