@@ -19,6 +19,7 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.ok(html.indexOf('data-view="websites"') < html.indexOf('data-view="insights"'));
   assert.match(html, /data-view="websites" data-index="3"/);
   assert.match(icons, /\.ph\.ph-globe::before\{content:"\\e288"\}/);
+  assert.match(await readFile(new URL("../public/styles.css", import.meta.url), "utf8"), /mix-blend-mode:screen/);
 });
 
 test("public dashboard ships the custom domain and accessible Image 2 logo", async () => {
