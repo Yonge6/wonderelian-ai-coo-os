@@ -44,7 +44,7 @@ test("production state registers six operated websites and preserves traffic as 
   assert.equal(state.website_operations.length, 6);
   assert.equal(state.website_metrics.length, 0);
   assert.equal(state.providers.find((row) => row.id === "public_website_health")?.status, "live");
-  assert.equal(state.providers.find((row) => row.id === "website_analytics_api")?.status, "blocked");
+  assert.equal(state.providers.find((row) => row.id === "website_analytics_api")?.status, "waiting");
   const brief = generateBrief(state);
   assert.deepEqual(brief.website_summary, {
     sites_tracked:6,

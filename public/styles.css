@@ -44,11 +44,6 @@ a:hover{color:#8de6ff}
 .header-tools{display:flex;align-items:center;gap:34px}
 .locale-switch{display:flex}
 .locale-switch button{min-width:70px;border-radius:7px}
-.north-star{position:relative;max-width:250px;padding-left:52px;border-left:1px solid var(--line);text-align:left}
-.north-star::before{content:"";position:absolute;left:22px;top:8px;width:13px;height:13px;border:2px solid var(--lime);border-radius:50%;box-shadow:0 0 0 5px rgba(200,239,22,.08)}
-.north-star span,.north-star strong{display:block}
-.north-star span{color:var(--muted);font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase}
-.north-star strong{margin-top:5px;font-size:.9rem;font-weight:500}
 button{border:1px solid var(--line);border-radius:7px;padding:.62rem .92rem;color:var(--ink);background:transparent;cursor:pointer;font:600 .76rem "IBM Plex Sans",sans-serif;white-space:nowrap;transition:border-color .18s,color .18s,background .18s,transform .18s}
 button:hover{border-color:var(--cyan);color:var(--cyan);background:var(--cyan-soft)}
 button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
@@ -193,7 +188,6 @@ summary{cursor:pointer;font-size:.73rem}
 @media(max-width:900px){
   :root{--header-h:auto;--rail-w:0px}
   .masthead{position:relative;height:auto;padding:22px 24px}
-  .north-star{display:none}
   nav{position:sticky;top:0;bottom:auto;width:100%;height:auto;display:block;padding:0;border-right:0;border-bottom:1px solid var(--line);overflow-x:auto}
   .nav-items{display:flex;min-width:max-content;padding:8px 16px}
   nav button{grid-template-columns:20px auto;min-height:44px;width:auto;padding:0 13px}

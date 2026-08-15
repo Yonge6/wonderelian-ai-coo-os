@@ -13,7 +13,8 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.match(script, /timeZone:operatingTimeZone/);
   assert.doesNotMatch(script, /toISOString\(\)\.slice\(0,10\)/);
   assert.match(html, /app\.js\?v=20260815-ga4-tags/);
-  assert.match(html, /styles\.css\?v=20260815-logo-full/);
+  assert.match(html, /styles\.css\?v=20260815-header-clean/);
+  assert.doesNotMatch(html, /class="north-star"/);
   assert.match(script, /const localHosts=new Set\(\["127\.0\.0\.1","localhost"\]\)/);
   assert.match(script, /!localHosts\.has\(location\.hostname\)/);
   assert.match(script, /tagged=websites\.filter/);
