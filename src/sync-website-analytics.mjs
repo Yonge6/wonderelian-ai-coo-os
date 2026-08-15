@@ -14,7 +14,19 @@ export async function syncWebsiteAnalyticsState(state,{provider=new Ga4WebsitePr
   const at=now.toISOString(),health=await provider.health(),providerState=state.providers.find((row)=>row.id==="website_analytics_api"),job=state.jobs.find((row)=>row.provider==="website_analytics_api");
   if(health.status==="blocked")return {status:"blocked",records_received:0,data_through:null,missing:health.missing};
   const periodStart=isoDate(daysBefore(now,backfillDays)),periodEnd=isoDate(daysBefore(now,1));
-  const result=await provider.fetchPerformance({websites:state.websites,startDate:periodStart,endDate:periodEnd,now:at});
+  let result;
+  try {
+    result=await provider.fetchPerformance({websites:state.websites,startDate:periodStart,endDate:periodEnd,now:at});
+  } catch (error) {
+    const authRejected=error?.code==="AUTH_REJECTED";
+    const status=authRejected?"blocked":"unavailable";
+    const message=authRejected?"BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED":"UNAVAILABLE — GA4 DATA API REQUEST FAILED";
+    if(providerState)Object.assign(providerState,{status,last_sync:at,freshness:status,authentication_required:authRejected,authentication_status:authRejected?"rejected":"configured",error:message});
+    if(job)Object.assign(job,{last_run:at,next_run:null,status,result:{records_received:0},error:message});
+    appendSync(state,{at,status,dataThrough:null,error:{code:error?.code??"PROVIDER_UNAVAILABLE",message},periodStart,periodEnd});
+    state.audit.unshift({id:crypto.randomUUID(),at,actor:"AI COO OS",app_id:null,source:"ga4_website_sync",action:"sync_six_site_website_analytics",input:{external_writes:false},result:{status,records_received:0,data_through:null},status,error:{code:error?.code??"PROVIDER_UNAVAILABLE",message}});
+    return {status,records_received:0,data_through:null,error:message};
+  }
   if(!result.observations.length){
     if(providerState)Object.assign(providerState,{status:"waiting",last_sync:at,freshness:"waiting",authentication_required:false,authentication_status:"configured",error:"WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"});
     if(job)Object.assign(job,{last_run:at,next_run:null,status:"waiting",result:{records_received:0},error:"WAITING — GA4 OBSERVATIONS"});

@@ -1,4 +1,4 @@
-const ANALYTICS_PATTERN = /(?:googletagmanager\.com|google-analytics\.com|\bgtag\s*\(|plausible\.io|clarity\.ms|cloudflareinsights\.com|posthog|umami|matomo|usefathom\.com)/i;
+const ANALYTICS_PATTERN = /(?:\banalytics\.js\b|googletagmanager\.com|google-analytics\.com|\bgtag\s*\(|plausible\.io|clarity\.ms|cloudflareinsights\.com|posthog|umami|matomo|usefathom\.com)/i;
 
 function textContent(value) {
   return String(value ?? "").replace(/<[^>]+>/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim() || null;
@@ -126,4 +126,3 @@ export class WebsiteHealthProvider {
     return { observations, data_through:beijingDay(now) };
   }
 }
-

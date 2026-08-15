@@ -126,7 +126,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-15T00:13:25.072Z",
+        "last_successful_import": "2026-08-15T02:17:10.593Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -141,18 +141,18 @@
       {
         "id": "website_analytics_api",
         "name": "Google Analytics 4 Website Data",
-        "status": "not_connected",
+        "status": "blocked",
         "mode": "official_read_only_api",
-        "last_successful_import": null,
-        "freshness": "not_connected",
+        "last_successful_import": "2026-08-15T02:21:36.814Z",
+        "freshness": "blocked",
         "age_state": "unknown",
         "age_days": null,
         "data_available": [],
         "authentication_required": true,
-        "error": "NOT CONNECTED — GA4 Property, site tags, and read-only Data API access are required."
+        "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
       }
     ],
-    "last_successful_import": "2026-08-15T00:13:25.072Z",
+    "last_successful_import": "2026-08-15T02:21:36.814Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [
@@ -170,7 +170,7 @@
       },
       {
         "provider": "website_analytics_api",
-        "error": "NOT CONNECTED — GA4 Property, site tags, and read-only Data API access are required."
+        "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
       }
     ],
     "attribution": {
@@ -191,7 +191,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-15T00:13:25.072Z",
+        "last_successful_import": "2026-08-15T02:17:10.593Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -206,18 +206,18 @@
       {
         "id": "website_analytics_api",
         "name": "Google Analytics 4 Website Data",
-        "status": "not_connected",
+        "status": "blocked",
         "mode": "official_read_only_api",
-        "last_successful_import": null,
-        "freshness": "not_connected",
+        "last_successful_import": "2026-08-15T02:21:36.814Z",
+        "freshness": "blocked",
         "age_state": "unknown",
         "age_days": null,
         "data_available": [],
         "authentication_required": true,
-        "error": "NOT CONNECTED — GA4 Property, site tags, and read-only Data API access are required."
+        "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
       }
     ],
-    "last_successful_import": "2026-08-15T00:13:25.072Z",
+    "last_successful_import": "2026-08-15T02:21:36.814Z",
     "stale_providers": [],
     "missing_critical_metrics": [
       "first_time_downloads"
@@ -225,7 +225,7 @@
     "import_errors": [
       {
         "provider": "website_analytics_api",
-        "error": "NOT CONNECTED — GA4 Property, site tags, and read-only Data API access are required."
+        "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
       }
     ],
     "attribution": {
@@ -246,7 +246,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-15T00:13:25.072Z",
+        "last_successful_import": "2026-08-15T02:17:10.593Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -261,24 +261,24 @@
       {
         "id": "website_analytics_api",
         "name": "Google Analytics 4 Website Data",
-        "status": "not_connected",
+        "status": "blocked",
         "mode": "official_read_only_api",
-        "last_successful_import": null,
-        "freshness": "not_connected",
+        "last_successful_import": "2026-08-15T02:21:36.814Z",
+        "freshness": "blocked",
         "age_state": "unknown",
         "age_days": null,
         "data_available": [],
         "authentication_required": true,
-        "error": "NOT CONNECTED — GA4 Property, site tags, and read-only Data API access are required."
+        "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
       }
     ],
-    "last_successful_import": "2026-08-15T00:13:25.072Z",
+    "last_successful_import": "2026-08-15T02:21:36.814Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [
       {
         "provider": "website_analytics_api",
-        "error": "NOT CONNECTED — GA4 Property, site tags, and read-only Data API access are required."
+        "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
       }
     ],
     "attribution": {
@@ -299,7 +299,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-15T00:13:25.072Z",
+        "last_successful_import": "2026-08-15T02:17:10.593Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -314,24 +314,24 @@
       {
         "id": "website_analytics_api",
         "name": "Google Analytics 4 Website Data",
-        "status": "not_connected",
+        "status": "blocked",
         "mode": "official_read_only_api",
-        "last_successful_import": null,
-        "freshness": "not_connected",
+        "last_successful_import": "2026-08-15T02:21:36.814Z",
+        "freshness": "blocked",
         "age_state": "unknown",
         "age_days": null,
         "data_available": [],
         "authentication_required": true,
-        "error": "NOT CONNECTED — GA4 Property, site tags, and read-only Data API access are required."
+        "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
       }
     ],
-    "last_successful_import": "2026-08-15T00:13:25.072Z",
+    "last_successful_import": "2026-08-15T02:21:36.814Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [
       {
         "provider": "website_analytics_api",
-        "error": "NOT CONNECTED — GA4 Property, site tags, and read-only Data API access are required."
+        "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
       }
     ],
     "attribution": {
@@ -352,7 +352,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-15T00:13:25.072Z",
+        "last_successful_import": "2026-08-15T02:17:10.593Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -367,24 +367,24 @@
       {
         "id": "website_analytics_api",
         "name": "Google Analytics 4 Website Data",
-        "status": "not_connected",
+        "status": "blocked",
         "mode": "official_read_only_api",
-        "last_successful_import": null,
-        "freshness": "not_connected",
+        "last_successful_import": "2026-08-15T02:21:36.814Z",
+        "freshness": "blocked",
         "age_state": "unknown",
         "age_days": null,
         "data_available": [],
         "authentication_required": true,
-        "error": "NOT CONNECTED — GA4 Property, site tags, and read-only Data API access are required."
+        "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
       }
     ],
-    "last_successful_import": "2026-08-15T00:13:25.072Z",
+    "last_successful_import": "2026-08-15T02:21:36.814Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [
       {
         "provider": "website_analytics_api",
-        "error": "NOT CONNECTED — GA4 Property, site tags, and read-only Data API access are required."
+        "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
       }
     ],
     "attribution": {

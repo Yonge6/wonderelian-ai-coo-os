@@ -17,6 +17,13 @@ test("website HTML inspection separates SEO readiness from analytics availabilit
   assert.equal(result.app_store_link_count, 1);
 });
 
+test("website HTML inspection detects a self-hosted analytics bootstrap", () => {
+  const result = inspectWebsiteHtml(`<!doctype html><html><head>
+    <script defer src="/analytics.js"></script>
+  </head><body></body></html>`);
+  assert.equal(result.analytics_detected, true);
+});
+
 test("website provider records unavailable values without inventing traffic", async () => {
   const responses = new Map([
     ["https://example.com/", new Response("<html lang='en'><title>Example</title><h1>Example</h1></html>", { status:200, headers:{"content-type":"text/html"} })],
@@ -37,7 +44,7 @@ test("production state registers six operated websites and preserves traffic as 
   assert.equal(state.website_operations.length, 6);
   assert.equal(state.website_metrics.length, 0);
   assert.equal(state.providers.find((row) => row.id === "public_website_health")?.status, "live");
-  assert.equal(state.providers.find((row) => row.id === "website_analytics_api")?.status, "not_connected");
+  assert.equal(state.providers.find((row) => row.id === "website_analytics_api")?.status, "blocked");
   const brief = generateBrief(state);
   assert.deepEqual(brief.website_summary, {
     sites_tracked:6,
