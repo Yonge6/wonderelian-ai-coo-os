@@ -13,6 +13,7 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.match(script, /timeZone:operatingTimeZone/);
   assert.doesNotMatch(script, /toISOString\(\)\.slice\(0,10\)/);
   assert.match(html, /app\.js\?v=20260815-ops-domain-v3/);
+  assert.match(html, /styles\.css\?v=20260815-logo-full/);
   assert.match(script, /const localHosts=new Set\(\["127\.0\.0\.1","localhost"\]\)/);
   assert.match(script, /!localHosts\.has\(location\.hostname\)/);
   assert.ok(html.indexOf('data-view="apps"') < html.indexOf('data-view="websites"'));
@@ -20,6 +21,7 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.match(html, /data-view="websites" data-index="3"/);
   assert.match(icons, /\.ph\.ph-globe::before\{content:"\\e288"\}/);
   assert.match(await readFile(new URL("../public/styles.css", import.meta.url), "utf8"), /mix-blend-mode:screen/);
+  assert.doesNotMatch(await readFile(new URL("../public/styles.css", import.meta.url), "utf8"), /brand-logo-frame\{[^}]*overflow:hidden/);
 });
 
 test("public dashboard ships the custom domain and accessible Image 2 logo", async () => {
