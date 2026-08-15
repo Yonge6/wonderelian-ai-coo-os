@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T00:57:10.418Z",
+  "generated_at": "2026-08-15T01:03:13.752Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -71,7 +71,7 @@
     "data_through": "2026-08-15"
   },
   "portfolio_summary": "5 apps and 6 websites are tracked. 1 of 5 apps currently reports the primary outcome; recommendations are qualified by data coverage.",
-  "portfolio_summary_zh": "已追踪 5 个应用和 6 个网站。目前 1 个应用上报北极星指标；所有建议均受数据覆盖度约束。",
+  "portfolio_summary_zh": "已追踪 5 个应用和 6 个网站。目前 1 个上报北极星指标；所有建议均受数据覆盖度约束。",
   "what_changed": [],
   "no_material_change": true,
   "winners": [],
