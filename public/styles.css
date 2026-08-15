@@ -38,7 +38,7 @@ a:hover{color:#8de6ff}
 .masthead{position:sticky;top:0;z-index:10;height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:24px 42px;border-bottom:1px solid var(--line);background:rgba(8,13,16,.97)}
 .masthead>div:first-child{align-self:center}
 .eyebrow,.label,.section-no{font-family:"IBM Plex Mono",monospace;color:var(--muted);font-size:.69rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
-.brand-lockup h1{margin:3px 0 0;height:70px;line-height:1}
+.brand-lockup h1{margin:0;height:70px;line-height:1}
 .brand-logo-frame{display:block;width:340px;height:70px;overflow:hidden}
 .brand-logo-frame img{display:block;width:370px;height:auto;max-width:none;transform:translate(-17px,-34px)}
 .header-tools{display:flex;align-items:center;gap:34px}

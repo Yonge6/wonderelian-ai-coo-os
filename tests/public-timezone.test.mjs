@@ -30,4 +30,5 @@ test("public dashboard ships the custom domain and accessible Image 2 logo", asy
   assert.match(index, /rel="canonical" href="https:\/\/ops\.wonderelian\.com\/"/);
   assert.match(index, /<span class="sr-only">AI COO OS<\/span>/);
   assert.match(index, /assets\/ai-coo-logo-image2-v2\.png/);
+  assert.doesNotMatch(index, /WonderElian \/ Operations/);
 });
