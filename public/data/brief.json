@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T02:24:36.821Z",
+  "generated_at": "2026-08-15T03:39:23.314Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -283,7 +283,7 @@
           "last_successful_import": "2026-08-14T09:20:00.000Z",
           "freshness": "manual",
           "age_state": "aging",
-          "age_days": 2.1,
+          "age_days": 2.2,
           "data_available": [
             "impressions",
             "product_page_views",
@@ -399,7 +399,7 @@
           "name": "Six-site Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-08-15T02:17:10.593Z",
+          "last_successful_import": "2026-08-15T03:39:10.001Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -414,18 +414,18 @@
         {
           "id": "website_analytics_api",
           "name": "Google Analytics 4 Website Data",
-          "status": "blocked",
+          "status": "waiting",
           "mode": "official_read_only_api",
-          "last_successful_import": "2026-08-15T02:21:36.814Z",
-          "freshness": "blocked",
+          "last_successful_import": "2026-08-15T03:39:15.970Z",
+          "freshness": "waiting",
           "age_state": "unknown",
           "age_days": null,
           "data_available": [],
-          "authentication_required": true,
-          "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
+          "authentication_required": false,
+          "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
         }
       ],
-      "last_successful_import": "2026-08-15T02:21:36.814Z",
+      "last_successful_import": "2026-08-15T03:39:15.970Z",
       "stale_providers": [],
       "missing_critical_metrics": [],
       "import_errors": [
@@ -443,7 +443,7 @@
         },
         {
           "provider": "website_analytics_api",
-          "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
+          "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
         }
       ],
       "attribution": {
@@ -464,7 +464,7 @@
           "name": "Six-site Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-08-15T02:17:10.593Z",
+          "last_successful_import": "2026-08-15T03:39:10.001Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -479,18 +479,18 @@
         {
           "id": "website_analytics_api",
           "name": "Google Analytics 4 Website Data",
-          "status": "blocked",
+          "status": "waiting",
           "mode": "official_read_only_api",
-          "last_successful_import": "2026-08-15T02:21:36.814Z",
-          "freshness": "blocked",
+          "last_successful_import": "2026-08-15T03:39:15.970Z",
+          "freshness": "waiting",
           "age_state": "unknown",
           "age_days": null,
           "data_available": [],
-          "authentication_required": true,
-          "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
+          "authentication_required": false,
+          "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
         }
       ],
-      "last_successful_import": "2026-08-15T02:21:36.814Z",
+      "last_successful_import": "2026-08-15T03:39:15.970Z",
       "stale_providers": [],
       "missing_critical_metrics": [
         "first_time_downloads"
@@ -498,7 +498,7 @@
       "import_errors": [
         {
           "provider": "website_analytics_api",
-          "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
+          "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
         }
       ],
       "attribution": {
@@ -519,7 +519,7 @@
           "name": "Six-site Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-08-15T02:17:10.593Z",
+          "last_successful_import": "2026-08-15T03:39:10.001Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -534,24 +534,24 @@
         {
           "id": "website_analytics_api",
           "name": "Google Analytics 4 Website Data",
-          "status": "blocked",
+          "status": "waiting",
           "mode": "official_read_only_api",
-          "last_successful_import": "2026-08-15T02:21:36.814Z",
-          "freshness": "blocked",
+          "last_successful_import": "2026-08-15T03:39:15.970Z",
+          "freshness": "waiting",
           "age_state": "unknown",
           "age_days": null,
           "data_available": [],
-          "authentication_required": true,
-          "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
+          "authentication_required": false,
+          "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
         }
       ],
-      "last_successful_import": "2026-08-15T02:21:36.814Z",
+      "last_successful_import": "2026-08-15T03:39:15.970Z",
       "stale_providers": [],
       "missing_critical_metrics": [],
       "import_errors": [
         {
           "provider": "website_analytics_api",
-          "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
+          "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
         }
       ],
       "attribution": {
