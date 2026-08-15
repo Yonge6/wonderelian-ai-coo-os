@@ -18,3 +18,14 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.match(html, /data-view="websites" data-index="3"/);
   assert.match(icons, /\.ph\.ph-globe::before\{content:"\\e288"\}/);
 });
+
+test("public dashboard ships the custom domain and accessible Image 2 logo", async () => {
+  const [index, cname] = await Promise.all([
+    readFile(new URL("../public/index.html", import.meta.url), "utf8"),
+    readFile(new URL("../public/CNAME", import.meta.url), "utf8"),
+  ]);
+  assert.equal(cname.trim(), "ops.wonderelian.com");
+  assert.match(index, /rel="canonical" href="https:\/\/ops\.wonderelian\.com\/"/);
+  assert.match(index, /<span class="sr-only">AI COO OS<\/span>/);
+  assert.match(index, /assets\/ai-coo-logo-image2\.png/);
+});
