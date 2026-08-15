@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-08-15T00:13:27.357Z",
+    "last_updated": "2026-08-15T01:18:43.000Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -1362,7 +1362,7 @@
     },
     {
       "id": "website_analytics_api",
-      "name": "Six-site Website Analytics",
+      "name": "Google Analytics 4 Website Data",
       "type": "website_traffic_attribution",
       "mode": "official_read_only_api",
       "status": "not_connected",
@@ -1391,7 +1391,7 @@
       "authentication_required": true,
       "authentication_status": "not_configured",
       "secrets_stored": false,
-      "error": "NOT CONNECTED — no analytics tags or verified traffic API data are available.",
+      "error": "NOT CONNECTED — GA4 Property, site tags, and read-only Data API access are required.",
       "sla": {
         "expected_latency_hours": 24,
         "stale_after_hours": 72
@@ -1592,6 +1592,15 @@
     }
   ],
   "audit": [
+    {
+      "id": "ga4-provider-preparation-2026-08-15",
+      "at": "2026-08-15T01:18:43.000Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "explicit_user_authorization",
+      "action": "prepare_six_site_ga4_provider",
+      "status": "blocked"
+    },
     {
       "id": "85f01527-d3fb-462f-8ddf-d9f8806256e0",
       "at": "2026-08-15T00:13:25.072Z",

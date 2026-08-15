@@ -7,12 +7,14 @@ export const PROVIDER_SLAS={
   app_store_connect_api:{expected_latency_hours:48,stale_after_hours:96},
   app_store_reviews_api:{expected_latency_hours:24,stale_after_hours:72},
   google_search_console_api:{expected_latency_hours:48,stale_after_hours:96},
+  website_analytics_api:{expected_latency_hours:24,stale_after_hours:72},
 };
 
 export const stableHash=(value)=>createHash("sha256").update(JSON.stringify(value)).digest("hex").slice(0,24);
 
 export function metricStableKey(row){return stableHash([row.app_id,metricName(row),row.period_start,row.period_end,row.provider,row.source_reference,row.dimensions??null]);}
 export function searchStableKey(row){return stableHash([row.app_id,row.date,row.query,row.page,row.country,row.device,row.provider]);}
+export function websiteMetricStableKey(row){return stableHash([row.website_id,metricName(row),row.period_start,row.period_end,row.provider,row.dimensions??null]);}
 
 export function upsertStable(collection,rows,keyFn,{idPrefix="obs"}={}){
   const index=new Map(collection.map((row,position)=>[row.stable_key??keyFn(row),position]));let inserted=0,updated=0,unchanged=0;
@@ -23,6 +25,7 @@ export function upsertStable(collection,rows,keyFn,{idPrefix="obs"}={}){
 export function ingestMetrics(state,rows){const normalized=rows.map((row)=>normalizeMetricRecord(row,{id:row.id??`metric-${metricStableKey(row)}`,now:row.imported_at??new Date().toISOString()}));return upsertStable(state.metrics,normalized,metricStableKey,{idPrefix:"metric"});}
 export function ingestSearch(state,rows){return upsertStable(state.search_observations,rows,searchStableKey,{idPrefix:"search"});}
 export function ingestReviews(state,rows){return upsertStable(state.feedback,rows,(row)=>stableHash([row.app_id,row.provider,row.external_id??row.source_reference]),{idPrefix:"review"});}
+export function ingestWebsiteMetrics(state,rows){return upsertStable(state.website_metrics,rows,websiteMetricStableKey,{idPrefix:"website-metric"});}
 
 export function providerFreshness({dataThrough,status="connected",now=new Date(),sla}){
   if(status==="blocked"||status==="not_connected")return {status,age_hours:null};if(!dataThrough)return {status:"stale",age_hours:null};const ageHours=Math.max(0,(now-new Date(dataThrough))/3_600_000);if(ageHours<=sla.expected_latency_hours)return {status:"healthy",age_hours:Math.round(ageHours*10)/10};if(ageHours<=sla.stale_after_hours)return {status:"delayed",age_hours:Math.round(ageHours*10)/10};return {status:"stale",age_hours:Math.round(ageHours*10)/10};

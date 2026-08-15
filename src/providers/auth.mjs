@@ -23,6 +23,14 @@ export function searchConsoleConfig(env = process.env) {
   };
 }
 
+export function googleAnalyticsConfig(env = process.env) {
+  return {
+    credentialsPath:env.GOOGLE_APPLICATION_CREDENTIALS,
+    accessToken:env.GA4_ACCESS_TOKEN,
+    propertyId:env.GA4_PROPERTY_ID,
+  };
+}
+
 export function missingAppleConfig(config) {
   return ["ASC_ISSUER_ID","ASC_KEY_ID","ASC_PRIVATE_KEY_PATH"].filter((_, index)=>![config.issuerId,config.keyId,config.privateKeyPath][index]);
 }
@@ -32,6 +40,30 @@ export function missingSearchConfig(config) {
   if (!present(config.siteUrl)) missing.push("GSC_SITE_URL");
   if (!present(config.accessToken) && !present(config.credentialsPath)) missing.push("GOOGLE_APPLICATION_CREDENTIALS or GSC_ACCESS_TOKEN");
   return missing;
+}
+
+export function missingGoogleAnalyticsConfig(config) {
+  const missing=[];
+  if (!present(config.propertyId)) missing.push("GA4_PROPERTY_ID");
+  if (!present(config.accessToken) && !present(config.credentialsPath)) missing.push("GOOGLE_APPLICATION_CREDENTIALS or GA4_ACCESS_TOKEN");
+  return missing;
+}
+
+async function createGoogleServiceAccountToken(config,{scope,provider,now=new Date(),fetchFn=fetch,readFileFn=readFile}={}){
+  if (present(config.accessToken)) return config.accessToken;
+  let account;
+  try { account=JSON.parse(await readFileFn(config.credentialsPath,"utf8")); }
+  catch { throw new ProviderUnavailableError(provider,"Credential file cannot be read.",{code:"CREDENTIAL_FILE_UNREADABLE"}); }
+  if (!present(account.client_email)||!present(account.private_key)) throw new ProviderUnavailableError(provider,"Credential file is not a service account key.",{code:"CREDENTIAL_FILE_INVALID"});
+  const issuedAt=Math.floor(now.getTime()/1000),tokenUrl=account.token_uri??"https://oauth2.googleapis.com/token";
+  const header=b64url(JSON.stringify({alg:"RS256",typ:"JWT"}));
+  const payload=b64url(JSON.stringify({iss:account.client_email,scope,aud:tokenUrl,iat:issuedAt,exp:issuedAt+3600}));
+  const input=`${header}.${payload}`;const signer=createSign("RSA-SHA256");signer.update(input);signer.end();
+  const assertion=`${input}.${signer.sign(account.private_key).toString("base64url")}`;
+  const response=await fetchFn(tokenUrl,{method:"POST",headers:{"content-type":"application/x-www-form-urlencoded"},body:new URLSearchParams({grant_type:"urn:ietf:params:oauth:grant-type:jwt-bearer",assertion})});
+  if(!response.ok) throw new ProviderUnavailableError(provider,`OAuth token request failed (${response.status}).`,{code:response.status===401||response.status===403?"AUTH_REJECTED":"TOKEN_REQUEST_FAILED",retryable:response.status>=500||response.status===429});
+  const body=await response.json();if(!present(body.access_token)) throw new ProviderUnavailableError(provider,"OAuth response omitted access token.",{code:"TOKEN_RESPONSE_INVALID"});
+  return body.access_token;
 }
 
 export async function createAppleToken(config, { now = new Date(), lifetimeSeconds = 600, readFileFn = readFile } = {}) {
@@ -49,17 +81,11 @@ export async function createAppleToken(config, { now = new Date(), lifetimeSecon
 export async function createGoogleAccessToken(config, { now = new Date(), fetchFn = fetch, readFileFn = readFile } = {}) {
   if (present(config.accessToken)) return config.accessToken;
   const missing=missingSearchConfig(config);if(missing.length) throw new ProviderAuthRequiredError("search_console",missing);
-  let account;
-  try { account=JSON.parse(await readFileFn(config.credentialsPath,"utf8")); }
-  catch { throw new ProviderUnavailableError("search_console","Credential file cannot be read.",{code:"CREDENTIAL_FILE_UNREADABLE"}); }
-  if (!present(account.client_email)||!present(account.private_key)) throw new ProviderUnavailableError("search_console","Credential file is not a service account key.",{code:"CREDENTIAL_FILE_INVALID"});
-  const issuedAt=Math.floor(now.getTime()/1000),tokenUrl=account.token_uri??"https://oauth2.googleapis.com/token";
-  const header=b64url(JSON.stringify({alg:"RS256",typ:"JWT"}));
-  const payload=b64url(JSON.stringify({iss:account.client_email,scope:"https://www.googleapis.com/auth/webmasters.readonly",aud:tokenUrl,iat:issuedAt,exp:issuedAt+3600}));
-  const input=`${header}.${payload}`;const signer=createSign("RSA-SHA256");signer.update(input);signer.end();
-  const assertion=`${input}.${signer.sign(account.private_key).toString("base64url")}`;
-  const response=await fetchFn(tokenUrl,{method:"POST",headers:{"content-type":"application/x-www-form-urlencoded"},body:new URLSearchParams({grant_type:"urn:ietf:params:oauth:grant-type:jwt-bearer",assertion})});
-  if(!response.ok) throw new ProviderUnavailableError("search_console",`OAuth token request failed (${response.status}).`,{code:response.status===401||response.status===403?"AUTH_REJECTED":"TOKEN_REQUEST_FAILED",retryable:response.status>=500||response.status===429});
-  const body=await response.json();if(!present(body.access_token)) throw new ProviderUnavailableError("search_console","OAuth response omitted access token.",{code:"TOKEN_RESPONSE_INVALID"});
-  return body.access_token;
+  return createGoogleServiceAccountToken(config,{scope:"https://www.googleapis.com/auth/webmasters.readonly",provider:"search_console",now,fetchFn,readFileFn});
+}
+
+export async function createGoogleAnalyticsAccessToken(config,{now=new Date(),fetchFn=fetch,readFileFn=readFile}={}){
+  if (present(config.accessToken)) return config.accessToken;
+  const missing=missingGoogleAnalyticsConfig(config);if(missing.length) throw new ProviderAuthRequiredError("website_analytics_api",missing);
+  return createGoogleServiceAccountToken(config,{scope:"https://www.googleapis.com/auth/analytics.readonly",provider:"website_analytics_api",now,fetchFn,readFileFn});
 }

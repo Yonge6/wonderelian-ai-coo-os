@@ -29,7 +29,7 @@ await store.mutate((next) => {
   for (const website of next.websites) {
     const observation = result.observations.find((row) => row.website_id === website.id);
     website.health_status = observation?.reachable ? "live" : "unavailable";
-    website.analytics_status = observation?.analytics_detected ? "tag_detected" : "not_connected";
+    website.analytics_status = observation?.analytics_detected ? website.analytics_status === "connected" ? "connected" : "tag_detected" : "not_connected";
     website.last_checked_at = now;
   }
 
