@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-08-15T01:18:43.000Z",
+    "last_updated": "2026-08-15T02:21:38.537Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -43,7 +43,7 @@
       "website_analytics": null
     },
     "last_growth_cycle_at": "2026-08-14T15:46:53.809Z",
-    "last_website_health_at": "2026-08-15T00:13:25.072Z"
+    "last_website_health_at": "2026-08-15T02:17:10.593Z"
   },
   "apps": [
     {
@@ -1342,8 +1342,8 @@
         "wendao",
         "xiazi-yesterdays-world"
       ],
-      "last_sync": "2026-08-15T00:13:25.072Z",
-      "last_successful_import": "2026-08-15T00:13:25.072Z",
+      "last_sync": "2026-08-15T02:17:10.593Z",
+      "last_successful_import": "2026-08-15T02:17:10.593Z",
       "data_through": "2026-08-15",
       "freshness": "fresh",
       "data_available": [
@@ -1365,7 +1365,7 @@
       "name": "Google Analytics 4 Website Data",
       "type": "website_traffic_attribution",
       "mode": "official_read_only_api",
-      "status": "not_connected",
+      "status": "blocked",
       "app_ids": [
         "style-atlas",
         "yixiu-meditation",
@@ -1373,10 +1373,10 @@
         "wendao",
         "xiazi-yesterdays-world"
       ],
-      "last_sync": null,
+      "last_sync": "2026-08-15T02:21:36.814Z",
       "last_successful_import": null,
       "data_through": null,
-      "freshness": "not_connected",
+      "freshness": "blocked",
       "data_available": [],
       "data_unavailable": [
         "page_views",
@@ -1389,9 +1389,9 @@
         "cta_clicks"
       ],
       "authentication_required": true,
-      "authentication_status": "not_configured",
+      "authentication_status": "rejected",
       "secrets_stored": false,
-      "error": "NOT CONNECTED — GA4 Property, site tags, and read-only Data API access are required.",
+      "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED",
       "sla": {
         "expected_latency_hours": 24,
         "stale_after_hours": 72
@@ -1551,8 +1551,8 @@
       "provider": "public_website_health",
       "app_id": null,
       "schedule": "daily:08:15:Asia/Shanghai",
-      "last_run": "2026-08-15T00:13:25.072Z",
-      "next_run": "2026-08-16T00:13:25.072Z",
+      "last_run": "2026-08-15T02:17:10.593Z",
+      "next_run": "2026-08-16T02:17:10.593Z",
       "status": "scheduled",
       "duration": null,
       "result": {
@@ -1569,12 +1569,14 @@
       "provider": "website_analytics_api",
       "app_id": null,
       "schedule": "every:1d",
-      "last_run": null,
+      "last_run": "2026-08-15T02:21:36.814Z",
       "next_run": null,
       "status": "blocked",
       "duration": null,
-      "result": null,
-      "error": "NOT CONNECTED — analytics tags and read-only API access are required.",
+      "result": {
+        "records_received": 0
+      },
+      "error": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED",
       "retry_count": 0
     }
   ],
@@ -1592,6 +1594,33 @@
     }
   ],
   "audit": [
+    {
+      "id": "3feb9a8c-b3ff-498a-9b5e-f79fe0e767b7",
+      "at": "2026-08-15T02:21:36.814Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "ga4_website_sync",
+      "action": "sync_six_site_website_analytics",
+      "status": "blocked"
+    },
+    {
+      "id": "369a6fd1-7340-49a8-ad52-914bf1c86487",
+      "at": "2026-08-15T02:17:10.593Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "authorized_website_operations_expansion",
+      "action": "sync_six_website_health",
+      "status": "success"
+    },
+    {
+      "id": "073622a0-ab4f-4c62-8012-66dcf305ffa1",
+      "at": "2026-08-15T02:16:44.247Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "authorized_website_operations_expansion",
+      "action": "sync_six_website_health",
+      "status": "success"
+    },
     {
       "id": "ga4-provider-preparation-2026-08-15",
       "at": "2026-08-15T01:18:43.000Z",
@@ -2600,6 +2629,57 @@
       "records_unchanged": 0,
       "data_through": "2026-08-15",
       "error": null
+    },
+    {
+      "id": "sync-public_website_health-2026-08-15T02-16-44-247Z",
+      "app_id": null,
+      "provider": "public_website_health",
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-15",
+      "started_at": "2026-08-15T02:16:44.247Z",
+      "completed_at": "2026-08-15T02:16:44.247Z",
+      "status": "succeeded",
+      "records_received": 6,
+      "records_inserted": 0,
+      "records_updated": 6,
+      "records_unchanged": 0,
+      "data_through": "2026-08-15",
+      "error": null
+    },
+    {
+      "id": "sync-public_website_health-2026-08-15T02-17-10-593Z",
+      "app_id": null,
+      "provider": "public_website_health",
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-15",
+      "started_at": "2026-08-15T02:17:10.593Z",
+      "completed_at": "2026-08-15T02:17:10.593Z",
+      "status": "succeeded",
+      "records_received": 6,
+      "records_inserted": 0,
+      "records_updated": 6,
+      "records_unchanged": 0,
+      "data_through": "2026-08-15",
+      "error": null
+    },
+    {
+      "id": "sync-website_analytics_api-2026-08-15T02-21-36-814Z",
+      "app_id": null,
+      "provider": "website_analytics_api",
+      "period_start": "2026-05-17",
+      "period_end": "2026-08-14",
+      "started_at": "2026-08-15T02:21:36.814Z",
+      "completed_at": "2026-08-15T02:21:36.814Z",
+      "status": "blocked",
+      "records_received": 0,
+      "records_inserted": 0,
+      "records_updated": 0,
+      "records_unchanged": 0,
+      "data_through": null,
+      "error": {
+        "code": "AUTH_REJECTED",
+        "message": "BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED"
+      }
     }
   ],
   "reconciliations": [],
@@ -2654,8 +2734,8 @@
       "primary_conversion": "app_store_download",
       "operation_status": "active",
       "health_status": "live",
-      "analytics_status": "not_connected",
-      "last_checked_at": "2026-08-15T00:13:25.072Z"
+      "analytics_status": "tag_detected",
+      "last_checked_at": "2026-08-15T02:17:10.593Z"
     },
     {
       "id": "site-yixiu",
@@ -2669,8 +2749,8 @@
       "primary_conversion": "app_discovery",
       "operation_status": "active",
       "health_status": "live",
-      "analytics_status": "not_connected",
-      "last_checked_at": "2026-08-15T00:13:25.072Z"
+      "analytics_status": "tag_detected",
+      "last_checked_at": "2026-08-15T02:17:10.593Z"
     },
     {
       "id": "site-human-design",
@@ -2684,8 +2764,8 @@
       "primary_conversion": "chart_completion",
       "operation_status": "active",
       "health_status": "live",
-      "analytics_status": "not_connected",
-      "last_checked_at": "2026-08-15T00:13:25.072Z"
+      "analytics_status": "tag_detected",
+      "last_checked_at": "2026-08-15T02:17:10.593Z"
     },
     {
       "id": "site-wendao",
@@ -2699,8 +2779,8 @@
       "primary_conversion": "chapter_read",
       "operation_status": "active",
       "health_status": "live",
-      "analytics_status": "not_connected",
-      "last_checked_at": "2026-08-15T00:13:25.072Z"
+      "analytics_status": "tag_detected",
+      "last_checked_at": "2026-08-15T02:17:10.593Z"
     },
     {
       "id": "site-xiazi",
@@ -2715,7 +2795,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "not_connected",
-      "last_checked_at": "2026-08-15T00:13:25.072Z"
+      "last_checked_at": "2026-08-15T02:17:10.593Z"
     },
     {
       "id": "site-wonderelian",
@@ -2729,8 +2809,8 @@
       "primary_conversion": "product_discovery",
       "operation_status": "active",
       "health_status": "live",
-      "analytics_status": "not_connected",
-      "last_checked_at": "2026-08-15T00:13:25.072Z"
+      "analytics_status": "tag_detected",
+      "last_checked_at": "2026-08-15T02:17:10.593Z"
     }
   ],
   "website_observations": [
@@ -2738,7 +2818,7 @@
       "id": "website-health-site-style-atlas-2026-08-15",
       "website_id": "site-style-atlas",
       "app_id": "style-atlas",
-      "observed_at": "2026-08-15T00:13:25.072Z",
+      "observed_at": "2026-08-15T02:17:10.593Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://style-atlas.wonderelian.com/",
       "verification_type": "api_verified",
@@ -2754,7 +2834,7 @@
       "h1": "Art and Design Style Atlas",
       "og_title": "Style Atlas: Art &amp; Design",
       "structured_data_count": 1,
-      "analytics_detected": false,
+      "analytics_detected": true,
       "app_store_link_count": 3,
       "robots_status": 200,
       "robots_valid": true,
@@ -2766,7 +2846,7 @@
       "id": "website-health-site-yixiu-2026-08-15",
       "website_id": "site-yixiu",
       "app_id": "yixiu-meditation",
-      "observed_at": "2026-08-15T00:13:25.072Z",
+      "observed_at": "2026-08-15T02:17:10.593Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://yixiu.wonderelian.com/",
       "verification_type": "api_verified",
@@ -2782,7 +2862,7 @@
       "h1": null,
       "og_title": null,
       "structured_data_count": 0,
-      "analytics_detected": false,
+      "analytics_detected": true,
       "app_store_link_count": 0,
       "robots_status": 404,
       "robots_valid": false,
@@ -2794,7 +2874,7 @@
       "id": "website-health-site-human-design-2026-08-15",
       "website_id": "site-human-design",
       "app_id": "know-yourself",
-      "observed_at": "2026-08-15T00:13:25.072Z",
+      "observed_at": "2026-08-15T02:17:10.593Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://human-design.wonderelian.com/",
       "verification_type": "api_verified",
@@ -2810,7 +2890,7 @@
       "h1": "认识你自己",
       "og_title": "Pluto 人生使用说明书 | Human Design Chart",
       "structured_data_count": 0,
-      "analytics_detected": false,
+      "analytics_detected": true,
       "app_store_link_count": 0,
       "robots_status": 200,
       "robots_valid": true,
@@ -2822,7 +2902,7 @@
       "id": "website-health-site-wendao-2026-08-15",
       "website_id": "site-wendao",
       "app_id": "wendao",
-      "observed_at": "2026-08-15T00:13:25.072Z",
+      "observed_at": "2026-08-15T02:17:10.593Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://wendao.wonderelian.com/",
       "verification_type": "api_verified",
@@ -2838,7 +2918,7 @@
       "h1": null,
       "og_title": null,
       "structured_data_count": 0,
-      "analytics_detected": false,
+      "analytics_detected": true,
       "app_store_link_count": 0,
       "robots_status": 404,
       "robots_valid": false,
@@ -2850,7 +2930,7 @@
       "id": "website-health-site-xiazi-2026-08-15",
       "website_id": "site-xiazi",
       "app_id": "xiazi-yesterdays-world",
-      "observed_at": "2026-08-15T00:13:25.072Z",
+      "observed_at": "2026-08-15T02:17:10.593Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://xiazishuo.com/",
       "verification_type": "api_verified",
@@ -2878,7 +2958,7 @@
       "id": "website-health-site-wonderelian-2026-08-15",
       "website_id": "site-wonderelian",
       "app_id": null,
-      "observed_at": "2026-08-15T00:13:25.072Z",
+      "observed_at": "2026-08-15T02:17:10.593Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://wonderelian.com/",
       "verification_type": "api_verified",
@@ -2894,7 +2974,7 @@
       "h1": null,
       "og_title": "WonderElian | Design, AI &amp; Independent Creative Products",
       "structured_data_count": 1,
-      "analytics_detected": false,
+      "analytics_detected": true,
       "app_store_link_count": 0,
       "robots_status": 200,
       "robots_valid": true,

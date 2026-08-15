@@ -42,6 +42,19 @@ test("website sync waits on empty reports and never invents zero",async()=>{
   assert.equal(state.provider_syncs[0].records_received,0);
 });
 
+test("website sync records rejected property access without overwriting unknown metrics",async()=>{
+  const state={metadata:{data_through:{}},websites:structuredClone(websites),website_metrics:[],provider_syncs:[],providers:[{id:"website_analytics_api",status:"not_connected"}],jobs:[{provider:"website_analytics_api",status:"blocked"}],audit:[]};
+  const provider={health:async()=>({status:"configured"}),fetchPerformance:async()=>{const error=new Error("forbidden");error.code="AUTH_REJECTED";throw error;}};
+  const result=await syncWebsiteAnalyticsState(state,{provider,now:new Date("2026-08-16T00:00:00.000Z")});
+  assert.equal(result.status,"blocked");
+  assert.equal(state.website_metrics.length,0);
+  assert.equal(state.providers[0].status,"blocked");
+  assert.equal(state.providers[0].error,"BLOCKED — GA4 PROPERTY VIEWER ACCESS REQUIRED");
+  assert.equal(state.websites[0].analytics_status,"tag_detected");
+  assert.equal(state.provider_syncs[0].records_received,0);
+  assert.equal(state.audit[0].status,"blocked");
+});
+
 test("website sync imports observations idempotently and connects only observed hosts",async()=>{
   const row={website_id:"site-style-atlas",metric:"page_views",name:"page_views",value:12,unit:"count",period_start:"2026-08-15",period_end:"2026-08-15",dimensions:{hostname:"style-atlas.wonderelian.com"},provider:"website_analytics_api",source:"Google Analytics 4 Data API",source_reference:"ga4:overview",imported_at:"2026-08-16T00:00:00.000Z",verified_at:"2026-08-16T00:00:00.000Z",verification_type:"api_verified",freshness:"fresh",confidence:1};
   const state={metadata:{data_through:{}},websites:structuredClone(websites),website_metrics:[],provider_syncs:[],providers:[{id:"website_analytics_api",status:"not_connected"}],jobs:[{provider:"website_analytics_api",status:"blocked",retry_count:0}],audit:[]};
