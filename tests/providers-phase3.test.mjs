@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { generateKeyPairSync, verify } from "node:crypto";
-import { createAppleToken, missingAppleConfig, missingSearchConfig } from "../src/providers/auth.mjs";
+import { createAppleToken, missingAppleConfig, missingGoogleAnalyticsConfig, missingSearchConfig } from "../src/providers/auth.mjs";
 import { normalizeAnalyticsRows, normalizeCustomerReviews, parseTabular } from "../src/providers/app-store-connect-provider.mjs";
 import { SearchConsoleProvider, normalizeSearchRows } from "../src/providers/search-console-provider.mjs";
 
@@ -17,6 +17,7 @@ test("Apple JWT is ES256, bounded to 20 minutes, and contains no private key mat
 test("configuration checks return only required variable names",()=>{
   assert.deepEqual(missingAppleConfig({}),["ASC_ISSUER_ID","ASC_KEY_ID","ASC_PRIVATE_KEY_PATH"]);
   assert.deepEqual(missingSearchConfig({}),["GSC_SITE_URL","GOOGLE_APPLICATION_CREDENTIALS or GSC_ACCESS_TOKEN"]);
+  assert.deepEqual(missingGoogleAnalyticsConfig({}),["GA4_PROPERTY_ID","GOOGLE_APPLICATION_CREDENTIALS or GA4_ACCESS_TOKEN"]);
 });
 
 test("App Store tabular analytics and reviews normalize official payload shapes",()=>{

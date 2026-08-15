@@ -46,6 +46,7 @@ Copy `.env.example` into your shell configuration and set paths to credential fi
 - production App Store Connect ES256 JWT authentication and official Analytics Reports traversal/download;
 - official App Store customer-review ingestion with stable IDs and conservative Voice-of-Customer classification;
 - Google Search Console `webmasters.readonly` OAuth and paginated Search Analytics ingestion by date, query, page, country, and device;
+- Google Analytics 4 `analytics.readonly` ingestion for six-site traffic, acquisition dimensions, and primary conversion events;
 - idempotent stable-key history, backfill-ready ranges, append-only provider sync evidence, and manual/API reconciliation;
 - explicit `manual_verified`, `api_verified`, `calculated`, and `inferred` source classes;
 - provider-specific healthy, delayed, stale, blocked, and failed states with `data_through` timestamps;
@@ -98,8 +99,11 @@ The maximum real Cycle V2 completed all internal stages, retained the verified 2
 
 See [Phase 3 design](docs/plans/2026-08-14-phase-3-growth-data-spine-design.md), [ADR-0003](docs/adr/0003-official-read-only-growth-providers.md), and the retained [Phase 2 design](docs/plans/2026-08-14-phase-2-continuous-loop-design.md).
 
+Six-site website monitoring is defined by [ADR-0004](docs/adr/0004-six-site-website-operations-spine.md). The authenticated GA4 decision and failure boundaries are defined by [ADR-0005](docs/adr/0005-ga4-six-site-traffic-provider.md).
+
 ## Minimum connection actions
 
 1. Create or provide an App Store Connect key with the required reporting access, keep its `.p8` outside the repo, and set `ASC_ISSUER_ID`, `ASC_KEY_ID`, and `ASC_PRIVATE_KEY_PATH`. If no active ongoing Analytics Report request exists, an Admin must create it once; Apple says initial generation takes 1–2 days.
 2. Enable the Search Console API, grant a service account access to the exact Search Console property, keep its JSON outside the repo, and set `GOOGLE_APPLICATION_CREDENTIALS` plus the exact property string in `GSC_SITE_URL`.
 3. Run `npm run cycle:growth`; the same App Store key supplies read-only customer reviews.
+4. Create one GA4 Property/Web Stream for the six sites, deploy its public Measurement ID to each site, grant the external service account Viewer access, set `GA4_PROPERTY_ID`, and run `npm run sync:website-analytics`.
