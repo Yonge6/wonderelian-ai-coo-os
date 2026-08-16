@@ -38,20 +38,21 @@ test("website provider records unavailable values without inventing traffic", as
   assert.equal("page_views" in result.observations[0], false);
 });
 
-test("production state registers six operated websites and preserves traffic as unavailable", async () => {
+test("production state registers six operated websites and verified GA4 observations", async () => {
   const state = validateState(JSON.parse(await readFile(new URL("../data/state.json", import.meta.url), "utf8")));
   assert.equal(state.websites.length, 6);
   assert.equal(state.website_operations.length, 6);
-  assert.equal(state.website_metrics.length, 0);
+  assert.equal(state.website_metrics.length, 43);
+  assert.equal(state.website_metrics.every((row) => row.verification_type === "api_verified" && row.provider === "website_analytics_api"), true);
   assert.equal(state.providers.find((row) => row.id === "public_website_health")?.status, "live");
-  assert.equal(state.providers.find((row) => row.id === "website_analytics_api")?.status, "waiting");
+  assert.equal(state.providers.find((row) => row.id === "website_analytics_api")?.status, "live");
   const brief = generateBrief(state);
   assert.deepEqual(brief.website_summary, {
     sites_tracked:6,
     sites_live:6,
-    analytics_connected:0,
-    traffic_metrics_available:0,
-    data_through:"2026-08-15",
+    analytics_connected:4,
+    traffic_metrics_available:43,
+    data_through:"2026-08-16",
   });
   assert.equal(brief.portfolio_summary, "5 apps and 6 websites are tracked. 1 of 5 apps currently reports the primary outcome; recommendations are qualified by data coverage.");
   assert.equal(brief.portfolio_summary_zh, "已追踪 5 个应用和 6 个网站。目前 1 个上报北极星指标；所有建议均受数据覆盖度约束。");
