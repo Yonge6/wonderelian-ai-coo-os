@@ -10,7 +10,7 @@
         "last_successful_import": "2026-08-14T09:20:00.000Z",
         "freshness": "manual",
         "age_state": "aging",
-        "age_days": 2.2,
+        "age_days": 3.2,
         "data_available": [
           "impressions",
           "product_page_views",
@@ -126,7 +126,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-15T03:39:10.001Z",
+        "last_successful_import": "2026-08-16T04:43:07.866Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -141,18 +141,27 @@
       {
         "id": "website_analytics_api",
         "name": "Google Analytics 4 Website Data",
-        "status": "waiting",
+        "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-15T03:39:15.970Z",
-        "freshness": "waiting",
+        "last_successful_import": "2026-08-16T04:39:18.589Z",
+        "freshness": "delayed",
         "age_state": "unknown",
         "age_days": null,
-        "data_available": [],
+        "data_available": [
+          "page_views",
+          "active_users",
+          "sessions",
+          "traffic_source",
+          "landing_page",
+          "country",
+          "device",
+          "cta_clicks"
+        ],
         "authentication_required": false,
-        "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
+        "error": null
       }
     ],
-    "last_successful_import": "2026-08-15T03:39:15.970Z",
+    "last_successful_import": "2026-08-16T04:43:07.866Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [
@@ -167,10 +176,6 @@
       {
         "provider": "google_search_console_api",
         "error": "BLOCKED — AUTH REQUIRED"
-      },
-      {
-        "provider": "website_analytics_api",
-        "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
       }
     ],
     "attribution": {
@@ -180,7 +185,7 @@
       "link_coverage": 20,
       "outcome_coverage": 0
     },
-    "coverage_score": 60,
+    "coverage_score": 63,
     "confidence_cap": 0.65
   },
   {
@@ -191,7 +196,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-15T03:39:10.001Z",
+        "last_successful_import": "2026-08-16T04:43:07.866Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -206,28 +211,32 @@
       {
         "id": "website_analytics_api",
         "name": "Google Analytics 4 Website Data",
-        "status": "waiting",
+        "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-15T03:39:15.970Z",
-        "freshness": "waiting",
+        "last_successful_import": "2026-08-16T04:39:18.589Z",
+        "freshness": "delayed",
         "age_state": "unknown",
         "age_days": null,
-        "data_available": [],
+        "data_available": [
+          "page_views",
+          "active_users",
+          "sessions",
+          "traffic_source",
+          "landing_page",
+          "country",
+          "device",
+          "cta_clicks"
+        ],
         "authentication_required": false,
-        "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
+        "error": null
       }
     ],
-    "last_successful_import": "2026-08-15T03:39:15.970Z",
+    "last_successful_import": "2026-08-16T04:43:07.866Z",
     "stale_providers": [],
     "missing_critical_metrics": [
       "first_time_downloads"
     ],
-    "import_errors": [
-      {
-        "provider": "website_analytics_api",
-        "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
-      }
-    ],
+    "import_errors": [],
     "attribution": {
       "published_assets": 0,
       "linked_assets": 0,
@@ -235,7 +244,7 @@
       "link_coverage": null,
       "outcome_coverage": null
     },
-    "coverage_score": 25,
+    "coverage_score": 50,
     "confidence_cap": 0.65
   },
   {
@@ -246,7 +255,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-15T03:39:10.001Z",
+        "last_successful_import": "2026-08-16T04:43:07.866Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -261,26 +270,30 @@
       {
         "id": "website_analytics_api",
         "name": "Google Analytics 4 Website Data",
-        "status": "waiting",
+        "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-15T03:39:15.970Z",
-        "freshness": "waiting",
+        "last_successful_import": "2026-08-16T04:39:18.589Z",
+        "freshness": "delayed",
         "age_state": "unknown",
         "age_days": null,
-        "data_available": [],
+        "data_available": [
+          "page_views",
+          "active_users",
+          "sessions",
+          "traffic_source",
+          "landing_page",
+          "country",
+          "device",
+          "cta_clicks"
+        ],
         "authentication_required": false,
-        "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
+        "error": null
       }
     ],
-    "last_successful_import": "2026-08-15T03:39:15.970Z",
+    "last_successful_import": "2026-08-16T04:43:07.866Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
-    "import_errors": [
-      {
-        "provider": "website_analytics_api",
-        "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
-      }
-    ],
+    "import_errors": [],
     "attribution": {
       "published_assets": 0,
       "linked_assets": 0,
@@ -288,8 +301,8 @@
       "link_coverage": null,
       "outcome_coverage": null
     },
-    "coverage_score": 50,
-    "confidence_cap": 0.65
+    "coverage_score": 100,
+    "confidence_cap": 0.95
   },
   {
     "app_id": "wendao",
@@ -299,7 +312,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-15T03:39:10.001Z",
+        "last_successful_import": "2026-08-16T04:43:07.866Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -314,26 +327,30 @@
       {
         "id": "website_analytics_api",
         "name": "Google Analytics 4 Website Data",
-        "status": "waiting",
+        "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-15T03:39:15.970Z",
-        "freshness": "waiting",
+        "last_successful_import": "2026-08-16T04:39:18.589Z",
+        "freshness": "delayed",
         "age_state": "unknown",
         "age_days": null,
-        "data_available": [],
+        "data_available": [
+          "page_views",
+          "active_users",
+          "sessions",
+          "traffic_source",
+          "landing_page",
+          "country",
+          "device",
+          "cta_clicks"
+        ],
         "authentication_required": false,
-        "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
+        "error": null
       }
     ],
-    "last_successful_import": "2026-08-15T03:39:15.970Z",
+    "last_successful_import": "2026-08-16T04:43:07.866Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
-    "import_errors": [
-      {
-        "provider": "website_analytics_api",
-        "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
-      }
-    ],
+    "import_errors": [],
     "attribution": {
       "published_assets": 0,
       "linked_assets": 0,
@@ -341,8 +358,8 @@
       "link_coverage": null,
       "outcome_coverage": null
     },
-    "coverage_score": 50,
-    "confidence_cap": 0.65
+    "coverage_score": 100,
+    "confidence_cap": 0.95
   },
   {
     "app_id": "xiazi-yesterdays-world",
@@ -352,7 +369,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-15T03:39:10.001Z",
+        "last_successful_import": "2026-08-16T04:43:07.866Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -367,26 +384,30 @@
       {
         "id": "website_analytics_api",
         "name": "Google Analytics 4 Website Data",
-        "status": "waiting",
+        "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-15T03:39:15.970Z",
-        "freshness": "waiting",
+        "last_successful_import": "2026-08-16T04:39:18.589Z",
+        "freshness": "delayed",
         "age_state": "unknown",
         "age_days": null,
-        "data_available": [],
+        "data_available": [
+          "page_views",
+          "active_users",
+          "sessions",
+          "traffic_source",
+          "landing_page",
+          "country",
+          "device",
+          "cta_clicks"
+        ],
         "authentication_required": false,
-        "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
+        "error": null
       }
     ],
-    "last_successful_import": "2026-08-15T03:39:15.970Z",
+    "last_successful_import": "2026-08-16T04:43:07.866Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
-    "import_errors": [
-      {
-        "provider": "website_analytics_api",
-        "error": "WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"
-      }
-    ],
+    "import_errors": [],
     "attribution": {
       "published_assets": 0,
       "linked_assets": 0,
@@ -394,7 +415,7 @@
       "link_coverage": null,
       "outcome_coverage": null
     },
-    "coverage_score": 50,
-    "confidence_cap": 0.65
+    "coverage_score": 100,
+    "confidence_cap": 0.95
   }
 ]
