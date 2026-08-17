@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T03:17:40.468Z",
+  "generated_at": "2026-08-17T07:27:08.776Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -725,7 +725,7 @@
           "last_successful_import": "2026-08-14T09:20:00.000Z",
           "freshness": "manual",
           "age_state": "aging",
-          "age_days": 4.1,
+          "age_days": 4.3,
           "data_available": [
             "impressions",
             "product_page_views",
@@ -841,7 +841,7 @@
           "name": "Six-site Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-08-17T03:17:39.135Z",
+          "last_successful_import": "2026-08-17T07:24:13.366Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -876,7 +876,7 @@
           "error": null
         }
       ],
-      "last_successful_import": "2026-08-17T03:17:39.135Z",
+      "last_successful_import": "2026-08-17T07:24:13.366Z",
       "stale_providers": [],
       "missing_critical_metrics": [],
       "import_errors": [
@@ -911,7 +911,7 @@
           "name": "Six-site Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-08-17T03:17:39.135Z",
+          "last_successful_import": "2026-08-17T07:24:13.366Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -946,7 +946,7 @@
           "error": null
         }
       ],
-      "last_successful_import": "2026-08-17T03:17:39.135Z",
+      "last_successful_import": "2026-08-17T07:24:13.366Z",
       "stale_providers": [],
       "missing_critical_metrics": [
         "first_time_downloads"
