@@ -13,7 +13,9 @@ Style Atlas is the first live operating app. The other four products remain supp
 - Public GitHub Pages: read-only, sanitized, English/Chinese.
 - Local Node app: writable imports, approvals, execution, jobs, and audit.
 
-The Command Center prioritizes Today's Decisions, What Changed, the North Star, and provider-specific Data Freshness. Secondary views cover acquisition, organic search, content attribution, SEO/GEO readiness, Voice of Customer, experiments, execution, data sources, instrumentation maturity, and audit activity.
+The Command Center prioritizes Today's Decisions, What Changed, the North Star, and provider-specific Data Freshness. Secondary views cover acquisition, organic search, content attribution, SEO/GEO readiness, Voice of Customer, experiments, execution, data sources, instrumentation maturity, evidence-gated marketing playbooks, and audit activity.
+
+The Playbooks view adapts product-context, measurement, attribution, content, conversion, ASO, research, experimentation, and growth-loop principles from a pinned open-source reference. It does not install upstream integrations or authorize external execution. Every method is marked `ready`, `waiting_evidence`, or `phase_gated` from the current verified operating state.
 
 ## Run locally
 
@@ -99,7 +101,7 @@ The maximum real Cycle V2 completed all internal stages, retained the verified 2
 
 See [Phase 3 design](docs/plans/2026-08-14-phase-3-growth-data-spine-design.md), [ADR-0003](docs/adr/0003-official-read-only-growth-providers.md), and the retained [Phase 2 design](docs/plans/2026-08-14-phase-2-continuous-loop-design.md).
 
-Six-site website monitoring is defined by [ADR-0004](docs/adr/0004-six-site-website-operations-spine.md). The authenticated GA4 decision and failure boundaries are defined by [ADR-0005](docs/adr/0005-ga4-six-site-traffic-provider.md).
+Six-site website monitoring is defined by [ADR-0004](docs/adr/0004-six-site-website-operations-spine.md). The authenticated GA4 decision and failure boundaries are defined by [ADR-0005](docs/adr/0005-ga4-six-site-traffic-provider.md). The marketing framework adaptation and Phase 4 safety boundary are defined by [ADR-0006](docs/adr/0006-evidence-gated-marketing-playbooks.md).
 
 ## Minimum connection actions
 

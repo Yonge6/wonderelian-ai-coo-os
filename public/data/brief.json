@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T04:46:12.522Z",
+  "generated_at": "2026-08-17T01:47:44.305Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -283,7 +283,7 @@
           "last_successful_import": "2026-08-14T09:20:00.000Z",
           "freshness": "manual",
           "age_state": "aging",
-          "age_days": 3.2,
+          "age_days": 4.1,
           "data_available": [
             "impressions",
             "product_page_views",
@@ -521,6 +521,401 @@
       "confidence_cap": 0.65
     }
   ],
+  "marketing_playbooks": {
+    "source": {
+      "name": "marketingskills",
+      "repository": "https://github.com/coreyhaines31/marketingskills",
+      "commit": "7868cb9251fad80a73d26e488a5ad5f6c4a9f335",
+      "commit_url": "https://github.com/coreyhaines31/marketingskills/commit/7868cb9251fad80a73d26e488a5ad5f6c4a9f335",
+      "license": "MIT",
+      "integration": "principles_adapted_not_vendored"
+    },
+    "policy": {
+      "external_execution": "disabled",
+      "phase4_activation": "disabled",
+      "unknown_metrics": "null",
+      "selection_rule": "evidence_and_phase_gated"
+    },
+    "summary": {
+      "total": 9,
+      "ready": 4,
+      "waiting_evidence": 4,
+      "phase_gated": 1
+    },
+    "recommended": [
+      "product_context",
+      "measurement_plan",
+      "content_engine"
+    ],
+    "playbooks": [
+      {
+        "id": "product_context",
+        "category": "foundation",
+        "name": "Product context before tactics",
+        "name_zh": "先统一产品上下文，再选择战术",
+        "outcome": "Keep positioning, audience, pains, proof, objections, and the north star consistent across operating decisions.",
+        "outcome_zh": "让定位、受众、痛点、证据、异议与北极星指标在所有运营决策中保持一致。",
+        "required_evidence": [
+          "portfolio_inventory",
+          "north_star_defined"
+        ],
+        "base_priority": 96,
+        "next_action": "Use the verified portfolio and north-star context as the required preface for every new growth brief.",
+        "next_action_zh": "将已验证的产品组合与北极星上下文作为每份新增长简报的必备前置条件。",
+        "guardrail": "Context can guide decisions; it cannot substitute for outcome evidence.",
+        "guardrail_zh": "上下文可以指导决策，但不能代替结果证据。",
+        "status": "ready",
+        "priority": 96,
+        "requirements": [
+          {
+            "id": "portfolio_inventory",
+            "met": true,
+            "label": "Verified portfolio inventory",
+            "label_zh": "已验证的产品组合清单"
+          },
+          {
+            "id": "north_star_defined",
+            "met": true,
+            "label": "North star is defined",
+            "label_zh": "已定义北极星指标"
+          }
+        ],
+        "missing_evidence": [],
+        "execution_mode": "manual_or_approval_gated",
+        "external_execution_authorized": false
+      },
+      {
+        "id": "measurement_plan",
+        "category": "measurement",
+        "name": "Decision-led measurement plan",
+        "name_zh": "以决策为导向的测量计划",
+        "outcome": "Track events and metrics only when they answer a named operating decision.",
+        "outcome_zh": "仅追踪能够回答明确运营决策的事件与指标。",
+        "required_evidence": [
+          "verified_acquisition_baseline",
+          "website_analytics"
+        ],
+        "base_priority": 94,
+        "next_action": "Map each website and App Store metric to the decision it changes; keep unsupported outcomes null.",
+        "next_action_zh": "把每个网站与 App Store 指标映射到它会改变的决策；无证据的结果继续保留 null。",
+        "guardrail": "No vanity-metric winner and no missing value converted to zero.",
+        "guardrail_zh": "不以虚荣指标宣布赢家，也不把缺失值转换为 0。",
+        "status": "ready",
+        "priority": 94,
+        "requirements": [
+          {
+            "id": "verified_acquisition_baseline",
+            "met": true,
+            "label": "Verified acquisition baseline",
+            "label_zh": "已验证的获客基线"
+          },
+          {
+            "id": "website_analytics",
+            "met": true,
+            "label": "Verified website analytics",
+            "label_zh": "已验证的网站访问分析"
+          }
+        ],
+        "missing_evidence": [],
+        "execution_mode": "manual_or_approval_gated",
+        "external_execution_authorized": false
+      },
+      {
+        "id": "content_engine",
+        "category": "content",
+        "name": "Searchable and shareable content engine",
+        "name_zh": "可搜索与可分享的内容引擎",
+        "outcome": "Reuse one evidence-backed idea across a useful owned page and high-quality visual content.",
+        "outcome_zh": "将一个有证据支持的创意复用于有用的自有页面和高质量视觉内容。",
+        "required_evidence": [
+          "product_context",
+          "permanent_content_urls",
+          "campaign_paths"
+        ],
+        "base_priority": 86,
+        "next_action": "Score the next content brief by customer impact, content fit, discovery potential, and production cost.",
+        "next_action_zh": "按用户影响、内容匹配度、发现潜力和制作成本为下一份内容简报评分。",
+        "guardrail": "Publishing remains approval-based; no bulk posting, templated community spam, or invented outcomes.",
+        "guardrail_zh": "发布继续走审批；禁止批量发帖、模板化社区刷屏和虚构结果。",
+        "status": "ready",
+        "priority": 86,
+        "requirements": [
+          {
+            "id": "product_context",
+            "met": true,
+            "label": "Product context is available",
+            "label_zh": "产品上下文可用"
+          },
+          {
+            "id": "permanent_content_urls",
+            "met": true,
+            "label": "Permanent content URLs",
+            "label_zh": "内容永久公开 URL"
+          },
+          {
+            "id": "campaign_paths",
+            "met": true,
+            "label": "Content-to-campaign paths",
+            "label_zh": "内容到 Campaign 的路径"
+          }
+        ],
+        "missing_evidence": [],
+        "execution_mode": "manual_or_approval_gated",
+        "external_execution_authorized": false
+      },
+      {
+        "id": "customer_language",
+        "category": "research",
+        "name": "Verified customer-language bank",
+        "name_zh": "已验证的用户语言库",
+        "outcome": "Use reviews and public feedback as evidence for messaging and product hypotheses.",
+        "outcome_zh": "用评论和公开反馈为传播文案与产品假设提供证据。",
+        "required_evidence": [
+          "verified_customer_language"
+        ],
+        "base_priority": 80,
+        "next_action": "Preserve exact review provenance and cluster themes only after repeated evidence appears.",
+        "next_action_zh": "保留评论的精确来源，仅在重复证据出现后聚类主题。",
+        "guardrail": "No synthetic testimonials, inferred consensus, or review theme from an empty dataset.",
+        "guardrail_zh": "禁止合成口碑、推断共识或从空数据生成评论主题。",
+        "status": "ready",
+        "priority": 80,
+        "requirements": [
+          {
+            "id": "verified_customer_language",
+            "met": true,
+            "label": "Verified customer language",
+            "label_zh": "已验证的用户语言"
+          }
+        ],
+        "missing_evidence": [],
+        "execution_mode": "manual_or_approval_gated",
+        "external_execution_authorized": false
+      },
+      {
+        "id": "owned_search_geo",
+        "category": "search",
+        "name": "Owned search and GEO system",
+        "name_zh": "自有搜索与 GEO 内容系统",
+        "outcome": "Build useful, citeable pages whose discovery and acquisition impact can be verified.",
+        "outcome_zh": "建立真正有用、可引用，并能验证发现与获客影响的页面。",
+        "required_evidence": [
+          "technical_search_foundation",
+          "permanent_content_urls",
+          "search_console"
+        ],
+        "base_priority": 90,
+        "next_action": "Maintain the useful-page inventory and wait for verified query/page data before scaling a topic.",
+        "next_action_zh": "维护有用页面资产库，在获得已验证的查询词/页面数据前不扩大某一主题。",
+        "guardrail": "No AI citation claims, keyword winners, or scaled publishing without verified discovery evidence.",
+        "guardrail_zh": "没有已验证的发现证据，不声称 AI 引用、关键词赢家，也不扩大内容发布。",
+        "status": "waiting_evidence",
+        "priority": 78,
+        "requirements": [
+          {
+            "id": "technical_search_foundation",
+            "met": true,
+            "label": "Technical SEO / GEO foundation",
+            "label_zh": "SEO / GEO 技术基础"
+          },
+          {
+            "id": "permanent_content_urls",
+            "met": true,
+            "label": "Permanent content URLs",
+            "label_zh": "内容永久公开 URL"
+          },
+          {
+            "id": "search_console",
+            "met": false,
+            "label": "Verified Search Console observations",
+            "label_zh": "已验证的 Search Console 观测"
+          }
+        ],
+        "missing_evidence": [
+          "search_console"
+        ],
+        "execution_mode": "manual_or_approval_gated",
+        "external_execution_authorized": false
+      },
+      {
+        "id": "landing_conversion",
+        "category": "conversion",
+        "name": "Landing-page conversion diagnosis",
+        "name_zh": "落地页转化诊断",
+        "outcome": "Separate traffic, CTA interaction, App Store page views, and downloads before changing a page.",
+        "outcome_zh": "在修改页面前，分开判断流量、CTA 互动、App Store 页面浏览和首次下载。",
+        "required_evidence": [
+          "website_analytics",
+          "cta_measurement",
+          "app_store_analytics"
+        ],
+        "base_priority": 84,
+        "next_action": "Diagnose the first unsupported funnel step; do not redesign from traffic alone.",
+        "next_action_zh": "先定位漏斗中第一个缺少证据的环节，不因只有流量数据就改版。",
+        "guardrail": "A click is not a download and a page view is not a conversion.",
+        "guardrail_zh": "点击不等于下载，页面浏览也不等于转化。",
+        "status": "waiting_evidence",
+        "priority": 72,
+        "requirements": [
+          {
+            "id": "website_analytics",
+            "met": true,
+            "label": "Verified website analytics",
+            "label_zh": "已验证的网站访问分析"
+          },
+          {
+            "id": "cta_measurement",
+            "met": true,
+            "label": "Verified CTA measurements",
+            "label_zh": "已验证的 CTA 测量"
+          },
+          {
+            "id": "app_store_analytics",
+            "met": false,
+            "label": "Automatic App Store acquisition",
+            "label_zh": "自动 App Store 获客数据"
+          }
+        ],
+        "missing_evidence": [
+          "app_store_analytics"
+        ],
+        "execution_mode": "manual_or_approval_gated",
+        "external_execution_authorized": false
+      },
+      {
+        "id": "app_store_optimization",
+        "category": "store",
+        "name": "Evidence-based App Store optimization",
+        "name_zh": "基于证据的 App Store 优化",
+        "outcome": "Turn acquisition and verified customer language into testable store hypotheses.",
+        "outcome_zh": "把获客数据和已验证的用户语言转化为可测试的商店页假设。",
+        "required_evidence": [
+          "verified_acquisition_baseline",
+          "verified_customer_language",
+          "app_store_analytics"
+        ],
+        "base_priority": 82,
+        "next_action": "Keep metadata ideas as hypotheses until automatic acquisition data is reconciled with the manual baseline.",
+        "next_action_zh": "在自动获客数据与手工基线完成对账前，商店元数据想法只保留为假设。",
+        "guardrail": "No metadata winner without comparable acquisition outcomes.",
+        "guardrail_zh": "没有可比的获客结果，不宣布元数据赢家。",
+        "status": "waiting_evidence",
+        "priority": 70,
+        "requirements": [
+          {
+            "id": "verified_acquisition_baseline",
+            "met": true,
+            "label": "Verified acquisition baseline",
+            "label_zh": "已验证的获客基线"
+          },
+          {
+            "id": "verified_customer_language",
+            "met": true,
+            "label": "Verified customer language",
+            "label_zh": "已验证的用户语言"
+          },
+          {
+            "id": "app_store_analytics",
+            "met": false,
+            "label": "Automatic App Store acquisition",
+            "label_zh": "自动 App Store 获客数据"
+          }
+        ],
+        "missing_evidence": [
+          "app_store_analytics"
+        ],
+        "execution_mode": "manual_or_approval_gated",
+        "external_execution_authorized": false
+      },
+      {
+        "id": "experiment_design",
+        "category": "experimentation",
+        "name": "Evidence-threshold experiments",
+        "name_zh": "证据阈值实验",
+        "outcome": "Define a hypothesis, primary metric, sample threshold, stop rule, and attribution path before launch.",
+        "outcome_zh": "在启动前明确假设、主指标、样本阈值、停止规则与归因路径。",
+        "required_evidence": [
+          "app_store_analytics",
+          "direct_attribution"
+        ],
+        "base_priority": 78,
+        "next_action": "Keep current experiments inconclusive until direct or strong outcome evidence reaches the declared threshold.",
+        "next_action_zh": "在直接或强结果证据达到声明阈值前，现有实验继续保持无结论。",
+        "guardrail": "No winner from directional traffic, partial attribution, or an underpowered sample.",
+        "guardrail_zh": "不从方向性流量、部分归因或样本不足的数据中宣布赢家。",
+        "status": "waiting_evidence",
+        "priority": 54,
+        "requirements": [
+          {
+            "id": "app_store_analytics",
+            "met": false,
+            "label": "Automatic App Store acquisition",
+            "label_zh": "自动 App Store 获客数据"
+          },
+          {
+            "id": "direct_attribution",
+            "met": false,
+            "label": "Direct or strong outcome attribution",
+            "label_zh": "直接或强结果归因"
+          }
+        ],
+        "missing_evidence": [
+          "app_store_analytics",
+          "direct_attribution"
+        ],
+        "execution_mode": "manual_or_approval_gated",
+        "external_execution_authorized": false
+      },
+      {
+        "id": "marketing_loop",
+        "category": "loop",
+        "name": "Measured growth loop",
+        "name_zh": "可测量的增长闭环",
+        "outcome": "Run input → action → output → feedback only when the feedback can change the next cycle.",
+        "outcome_zh": "只有反馈能够改变下一轮时，才运行“输入 → 行动 → 输出 → 反馈”闭环。",
+        "required_evidence": [
+          "phase4_gate",
+          "direct_attribution",
+          "provider_backed_cycle"
+        ],
+        "requires_phase4": true,
+        "base_priority": 76,
+        "next_action": "Remain frozen until the Phase 4 gate and attributable feedback loop are both verified.",
+        "next_action_zh": "在 Phase 4 门禁与可归因反馈闭环均被验证前继续冻结。",
+        "guardrail": "No loop without measurable feedback, an owner, a cadence, and an explicit stop condition.",
+        "guardrail_zh": "没有可测反馈、责任人、节奏和明确停止条件，就不建立闭环。",
+        "status": "phase_gated",
+        "priority": 16,
+        "requirements": [
+          {
+            "id": "phase4_gate",
+            "met": false,
+            "label": "Phase 4 gate is satisfied",
+            "label_zh": "Phase 4 门禁已满足"
+          },
+          {
+            "id": "direct_attribution",
+            "met": false,
+            "label": "Direct or strong outcome attribution",
+            "label_zh": "直接或强结果归因"
+          },
+          {
+            "id": "provider_backed_cycle",
+            "met": false,
+            "label": "Provider-backed COO cycle",
+            "label_zh": "真实 Provider-backed COO 周期"
+          }
+        ],
+        "missing_evidence": [
+          "phase4_gate",
+          "direct_attribution",
+          "provider_backed_cycle"
+        ],
+        "execution_mode": "manual_or_approval_gated",
+        "external_execution_authorized": false
+      }
+    ]
+  },
   "decisions": [
     {
       "app": "Portfolio",

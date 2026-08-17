@@ -12,8 +12,8 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.match(script, /operatingTimeZone="Asia\/Shanghai"/);
   assert.match(script, /timeZone:operatingTimeZone/);
   assert.doesNotMatch(script, /toISOString\(\)\.slice\(0,10\)/);
-  assert.match(html, /app\.js\?v=20260815-ga4-tags/);
-  assert.match(html, /styles\.css\?v=20260815-header-clean/);
+  assert.match(html, /app\.js\?v=20260817-playbooks/);
+  assert.match(html, /styles\.css\?v=20260817-playbooks/);
   assert.doesNotMatch(html, /class="north-star"/);
   assert.match(script, /const localHosts=new Set\(\["127\.0\.0\.1","localhost"\]\)/);
   assert.match(script, /!localHosts\.has\(location\.hostname\)/);
@@ -22,6 +22,8 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.ok(html.indexOf('data-view="apps"') < html.indexOf('data-view="websites"'));
   assert.ok(html.indexOf('data-view="websites"') < html.indexOf('data-view="insights"'));
   assert.match(html, /data-view="websites" data-index="3"/);
+  assert.match(html, /data-view="playbooks" data-index="10"/);
+  assert.ok(html.indexOf('data-view="playbooks"') < html.indexOf('data-view="activity"'));
   assert.match(icons, /\.ph\.ph-globe::before\{content:"\\e288"\}/);
   assert.match(await readFile(new URL("../public/styles.css", import.meta.url), "utf8"), /mix-blend-mode:screen/);
   assert.doesNotMatch(await readFile(new URL("../public/styles.css", import.meta.url), "utf8"), /brand-logo-frame\{[^}]*overflow:hidden/);
