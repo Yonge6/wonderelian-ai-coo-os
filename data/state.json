@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-08-17T03:17:40.323Z",
+    "last_updated": "2026-08-17T07:24:14.211Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -43,7 +43,7 @@
       "website_analytics": "2026-08-16"
     },
     "last_growth_cycle_at": "2026-08-14T15:46:53.809Z",
-    "last_website_health_at": "2026-08-17T03:17:39.135Z"
+    "last_website_health_at": "2026-08-17T07:24:13.366Z"
   },
   "apps": [
     {
@@ -1352,8 +1352,8 @@
         "wendao",
         "xiazi-yesterdays-world"
       ],
-      "last_sync": "2026-08-17T03:17:39.135Z",
-      "last_successful_import": "2026-08-17T03:17:39.135Z",
+      "last_sync": "2026-08-17T07:24:13.366Z",
+      "last_successful_import": "2026-08-17T07:24:13.366Z",
       "data_through": "2026-08-17",
       "freshness": "fresh",
       "data_available": [
@@ -1561,8 +1561,8 @@
       "provider": "public_website_health",
       "app_id": null,
       "schedule": "daily:08:15:Asia/Shanghai",
-      "last_run": "2026-08-17T03:17:39.135Z",
-      "next_run": "2026-08-18T03:17:39.135Z",
+      "last_run": "2026-08-17T07:24:13.366Z",
+      "next_run": "2026-08-18T07:24:13.366Z",
       "status": "scheduled",
       "duration": null,
       "result": {
@@ -1607,6 +1607,28 @@
     }
   ],
   "audit": [
+    {
+      "id": "4fbcf601-9287-4d56-a706-1f17dc45051d",
+      "at": "2026-08-17T07:24:13.366Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "authorized_website_operations_expansion",
+      "action": "sync_six_website_health",
+      "input": {
+        "external_writes": false,
+        "websites": 6
+      },
+      "result": {
+        "reachable": 6,
+        "total": 6,
+        "inserted": 0,
+        "updated": 6,
+        "analytics_tags_detected": 6,
+        "data_through": "2026-08-17"
+      },
+      "status": "success",
+      "error": null
+    },
     {
       "id": "b6a18f6b-2fa0-4350-83e2-ed82e964195e",
       "at": "2026-08-17T03:17:39.135Z",
@@ -3400,6 +3422,22 @@
       "records_unchanged": 0,
       "data_through": "2026-08-17",
       "error": null
+    },
+    {
+      "id": "sync-public_website_health-2026-08-17T07-24-13-366Z",
+      "app_id": null,
+      "provider": "public_website_health",
+      "period_start": "2026-08-17",
+      "period_end": "2026-08-17",
+      "started_at": "2026-08-17T07:24:13.366Z",
+      "completed_at": "2026-08-17T07:24:13.366Z",
+      "status": "succeeded",
+      "records_received": 6,
+      "records_inserted": 0,
+      "records_updated": 6,
+      "records_unchanged": 0,
+      "data_through": "2026-08-17",
+      "error": null
     }
   ],
   "reconciliations": [],
@@ -3455,7 +3493,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-08-17T03:17:39.135Z"
+      "last_checked_at": "2026-08-17T07:24:13.366Z"
     },
     {
       "id": "site-yixiu",
@@ -3470,7 +3508,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-08-17T03:17:39.135Z"
+      "last_checked_at": "2026-08-17T07:24:13.366Z"
     },
     {
       "id": "site-human-design",
@@ -3485,7 +3523,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "tag_detected",
-      "last_checked_at": "2026-08-17T03:17:39.135Z"
+      "last_checked_at": "2026-08-17T07:24:13.366Z"
     },
     {
       "id": "site-wendao",
@@ -3500,7 +3538,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-08-17T03:17:39.135Z"
+      "last_checked_at": "2026-08-17T07:24:13.366Z"
     },
     {
       "id": "site-xiazi",
@@ -3514,8 +3552,8 @@
       "primary_conversion": "poster_engagement",
       "operation_status": "active",
       "health_status": "live",
-      "analytics_status": "not_connected",
-      "last_checked_at": "2026-08-17T03:17:39.135Z"
+      "analytics_status": "tag_detected",
+      "last_checked_at": "2026-08-17T07:24:13.366Z"
     },
     {
       "id": "site-wonderelian",
@@ -3530,7 +3568,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-08-17T03:17:39.135Z"
+      "last_checked_at": "2026-08-17T07:24:13.366Z"
     }
   ],
   "website_observations": [
@@ -3538,7 +3576,7 @@
       "id": "website-health-site-style-atlas-2026-08-17",
       "website_id": "site-style-atlas",
       "app_id": "style-atlas",
-      "observed_at": "2026-08-17T03:17:39.135Z",
+      "observed_at": "2026-08-17T07:24:13.366Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://style-atlas.wonderelian.com/",
       "verification_type": "api_verified",
@@ -3566,7 +3604,7 @@
       "id": "website-health-site-yixiu-2026-08-17",
       "website_id": "site-yixiu",
       "app_id": "yixiu-meditation",
-      "observed_at": "2026-08-17T03:17:39.135Z",
+      "observed_at": "2026-08-17T07:24:13.366Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://yixiu.wonderelian.com/",
       "verification_type": "api_verified",
@@ -3594,7 +3632,7 @@
       "id": "website-health-site-human-design-2026-08-17",
       "website_id": "site-human-design",
       "app_id": "know-yourself",
-      "observed_at": "2026-08-17T03:17:39.135Z",
+      "observed_at": "2026-08-17T07:24:13.366Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://human-design.wonderelian.com/",
       "verification_type": "api_verified",
@@ -3622,7 +3660,7 @@
       "id": "website-health-site-wendao-2026-08-17",
       "website_id": "site-wendao",
       "app_id": "wendao",
-      "observed_at": "2026-08-17T03:17:39.135Z",
+      "observed_at": "2026-08-17T07:24:13.366Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://wendao.wonderelian.com/",
       "verification_type": "api_verified",
@@ -3650,7 +3688,7 @@
       "id": "website-health-site-xiazi-2026-08-17",
       "website_id": "site-xiazi",
       "app_id": "xiazi-yesterdays-world",
-      "observed_at": "2026-08-17T03:17:39.135Z",
+      "observed_at": "2026-08-17T07:24:13.366Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://xiazishuo.com/",
       "verification_type": "api_verified",
@@ -3666,7 +3704,7 @@
       "h1": "昨日世界 .",
       "og_title": null,
       "structured_data_count": 0,
-      "analytics_detected": false,
+      "analytics_detected": true,
       "app_store_link_count": 0,
       "robots_status": 200,
       "robots_valid": true,
@@ -3678,7 +3716,7 @@
       "id": "website-health-site-wonderelian-2026-08-17",
       "website_id": "site-wonderelian",
       "app_id": null,
-      "observed_at": "2026-08-17T03:17:39.135Z",
+      "observed_at": "2026-08-17T07:24:13.366Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://wonderelian.com/",
       "verification_type": "api_verified",
