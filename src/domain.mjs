@@ -70,6 +70,104 @@ export function aggregatePortfolioKpis(state) {
   return result;
 }
 
+const DAILY_WEBSITE_METRICS = ["active_users", "page_views", "sessions", "cta_clicks"];
+const DAILY_APP_METRICS = ["active_users", "first_time_downloads", "product_page_views"];
+
+function nullableSum(values) {
+  const known = values.filter((value) => value !== null && value !== undefined);
+  return known.length ? known.reduce((sum, value) => sum + value, 0) : null;
+}
+
+function rowsForDay(rows, date, name) {
+  return rows.filter((row) => metricName(row) === name && row.period_start === date && row.period_end === date && row.value !== null);
+}
+
+function dayMetric(rows, date, name) {
+  return nullableSum(rowsForDay(rows, date, name).map((row) => row.value));
+}
+
+function coverage(values) {
+  return values.filter((value) => value !== null && value !== undefined).length;
+}
+
+function latestVerifiedAcquisition(state) {
+  const names = ["impressions", "product_page_views", "first_time_downloads"];
+  const rows = state.apps.map((app) => {
+    const metrics = {};
+    const periods = [];
+    for (const name of names) {
+      const row = state.metrics
+        .filter((item) => item.app_id === app.id && metricName(item) === name && item.value !== null)
+        .sort((a,b) => String(b.period_end).localeCompare(String(a.period_end)))[0];
+      metrics[name] = row?.value ?? null;
+      if (row) periods.push({start:row.period_start,end:row.period_end,source:row.verification_type ?? row.provider ?? "verified"});
+    }
+    return {app_id:app.id,metrics,periods};
+  });
+  const distinctPeriods = [...new Set(rows.flatMap((row)=>row.periods.map((period)=>`${period.start}|${period.end}|${period.source}`)))];
+  const firstPeriod = rows.flatMap((row)=>row.periods)[0] ?? null;
+  return {
+    totals:Object.fromEntries(names.map((name)=>[name,nullableSum(rows.map((row)=>row.metrics[name]))])),
+    apps_reporting:Object.fromEntries(names.map((name)=>[name,coverage(rows.map((row)=>row.metrics[name]))])),
+    apps_total:state.apps.length,
+    period_start:distinctPeriods.length === 1 ? firstPeriod.start : null,
+    period_end:distinctPeriods.length === 1 ? firstPeriod.end : null,
+    verification_type:distinctPeriods.length === 1 ? firstPeriod.source : "mixed_verified_periods",
+    rows,
+  };
+}
+
+export function dailyPortfolioSummary(state) {
+  const websiteMetrics = state.website_metrics ?? [];
+  const dailyAppMetrics = state.metrics.filter((row)=>row.period_start === row.period_end && DAILY_APP_METRICS.includes(metricName(row)));
+  const dates = [...new Set([
+    ...websiteMetrics.filter((row)=>DAILY_WEBSITE_METRICS.includes(metricName(row)) && row.value !== null).map((row)=>row.period_end),
+    ...dailyAppMetrics.filter((row)=>row.value !== null).map((row)=>row.period_end),
+  ].filter(Boolean))].sort();
+  const websites = state.websites ?? [];
+  const days = dates.map((date) => {
+    const websiteRows = websites.map((website) => {
+      const rows = websiteMetrics.filter((row)=>row.website_id === website.id);
+      return {
+        website_id:website.id,
+        app_id:website.app_id ?? null,
+        metrics:Object.fromEntries(DAILY_WEBSITE_METRICS.map((name)=>[name,dayMetric(rows,date,name)])),
+      };
+    });
+    const appRows = state.apps.map((app) => {
+      const linkedWebsiteRows = websiteRows.filter((row)=>row.app_id === app.id);
+      const appMetrics = dailyAppMetrics.filter((row)=>row.app_id === app.id);
+      return {
+        app_id:app.id,
+        website_ids:linkedWebsiteRows.map((row)=>row.website_id),
+        h5_metrics:Object.fromEntries(DAILY_WEBSITE_METRICS.map((name)=>[name,nullableSum(linkedWebsiteRows.map((row)=>row.metrics[name]))])),
+        app_metrics:Object.fromEntries(DAILY_APP_METRICS.map((name)=>[name,dayMetric(appMetrics,date,name)])),
+      };
+    });
+    const websiteTotals = Object.fromEntries(DAILY_WEBSITE_METRICS.map((name)=>[name,nullableSum(websiteRows.map((row)=>row.metrics[name]))]));
+    const appTotals = Object.fromEntries(DAILY_APP_METRICS.map((name)=>[name,nullableSum(appRows.map((row)=>row.app_metrics[name]))]));
+    return {
+      date,
+      website_totals:websiteTotals,
+      website_coverage:Object.fromEntries(DAILY_WEBSITE_METRICS.map((name)=>[name,coverage(websiteRows.map((row)=>row.metrics[name]))])),
+      websites_total:websites.length,
+      app_totals:appTotals,
+      app_coverage:Object.fromEntries(DAILY_APP_METRICS.map((name)=>[name,coverage(appRows.map((row)=>row.app_metrics[name]))])),
+      apps_total:state.apps.length,
+      apps:appRows,
+      websites:websiteRows,
+    };
+  });
+  return {
+    latest_date:dates.at(-1) ?? null,
+    available_dates:dates,
+    days,
+    latest_verified_acquisition:latestVerifiedAcquisition(state),
+    uv_definition:"GA4 active_users summed across reporting websites; a person visiting multiple sites may be counted more than once.",
+    missing_value_policy:"Unavailable metrics remain null and render as an em dash; they are never converted to zero.",
+  };
+}
+
 export function rankInsights(insights) {
   return insights
     .filter((item) => item.status === "open")
@@ -182,6 +280,7 @@ export function generateBrief(state) {
       traffic_metrics_available:(state.website_metrics ?? []).filter((metric)=>metric.value !== null).length,
       data_through:state.metadata.data_through?.website_health ?? null,
     },
+    daily_portfolio:dailyPortfolioSummary(state),
     portfolio_summary: `${state.apps.length} apps and ${websites.length} websites are tracked. ${reportingApps} of ${state.apps.length} apps currently ${reportingApps === 1 ? "reports" : "report"} the primary outcome; recommendations are qualified by data coverage.`,
     portfolio_summary_zh: `已追踪 ${state.apps.length} 个应用和 ${websites.length} 个网站。目前 ${reportingApps} 个上报北极星指标；所有建议均受数据覆盖度约束。`,
     what_changed: changes,
