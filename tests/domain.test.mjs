@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { aggregatePortfolioKpis, analyzeFeedback, generateBrief, scoreInsight, transitionAction, transitionExperiment } from "../src/domain.mjs";
+import { aggregatePortfolioKpis, analyzeFeedback, dailyPortfolioSummary, generateBrief, scoreInsight, transitionAction, transitionExperiment } from "../src/domain.mjs";
 
 test("insight score weights impact, urgency, and confidence", () => {
   assert.equal(scoreInsight({ impact: 80, urgency: 60, confidence: 0.5 }), 68);
@@ -24,6 +24,34 @@ test("daily brief returns at most three ranked recommendations", () => {
   const brief=generateBrief(state);
   assert.equal(brief.recommendations.length,3);
   assert.equal(brief.recommendations[0].action,"a4");
+});
+
+test("daily portfolio summary exposes total and per-property UV PV without inventing missing values", () => {
+  const state={
+    apps:[{id:"a"},{id:"b"}],
+    websites:[{id:"site-a",app_id:"a"},{id:"site-b",app_id:"b"},{id:"brand",app_id:null}],
+    metrics:[
+      {app_id:"a",name:"first_time_downloads",value:20,period_start:"2025-10-01",period_end:"2025-12-31",verification_type:"manual_verified"},
+      {app_id:"a",name:"first_time_downloads",value:2,period_start:"2026-01-02",period_end:"2026-01-02",verification_type:"api_verified"},
+    ],
+    website_metrics:[
+      {website_id:"site-a",name:"page_views",value:8,period_start:"2026-01-02",period_end:"2026-01-02"},
+      {website_id:"site-a",name:"active_users",value:3,period_start:"2026-01-02",period_end:"2026-01-02"},
+      {website_id:"site-b",name:"page_views",value:null,period_start:"2026-01-02",period_end:"2026-01-02"},
+      {website_id:"brand",name:"page_views",value:5,period_start:"2026-01-02",period_end:"2026-01-02"},
+      {website_id:"brand",name:"active_users",value:2,period_start:"2026-01-02",period_end:"2026-01-02"},
+    ],
+  };
+  const summary=dailyPortfolioSummary(state),day=summary.days[0];
+  assert.equal(summary.latest_date,"2026-01-02");
+  assert.equal(day.website_totals.page_views,13);
+  assert.equal(day.website_totals.active_users,5);
+  assert.equal(day.website_totals.sessions,null);
+  assert.equal(day.website_coverage.page_views,2);
+  assert.equal(day.app_totals.first_time_downloads,2);
+  assert.equal(day.apps.find((row)=>row.app_id==="b").h5_metrics.page_views,null);
+  assert.equal(day.websites.find((row)=>row.website_id==="site-b").metrics.active_users,null);
+  assert.match(summary.uv_definition,/may be counted more than once/);
 });
 
 test("feedback analysis detects repeated severe themes without inventing evidence", () => {
