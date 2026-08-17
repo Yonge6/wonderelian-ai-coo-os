@@ -10,7 +10,7 @@
         "last_successful_import": "2026-08-14T09:20:00.000Z",
         "freshness": "manual",
         "age_state": "aging",
-        "age_days": 3.2,
+        "age_days": 4.1,
         "data_available": [
           "impressions",
           "product_page_views",

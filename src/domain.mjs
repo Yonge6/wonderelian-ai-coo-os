@@ -1,5 +1,6 @@
 import { calculateDataHealth, metricName, validateMetricRecord } from "./metrics.mjs";
 import { requiredApproval, scoreDecision } from "./operations.mjs";
+import { evaluateMarketingPlaybooks } from "./marketing-playbooks.mjs";
 
 export const ACTION_TRANSITIONS = {
   proposed: ["approved", "rejected"],
@@ -189,6 +190,7 @@ export function generateBrief(state) {
     problems: [...changes.filter((item)=>item.direction === "falling"), ...ranked.filter((item)=>item.category === "measurement")].slice(0,3),
     opportunities: ranked.filter((item)=>item.category !== "measurement").slice(0,3),
     data_risks: dataRisks,
+    marketing_playbooks: evaluateMarketingPlaybooks(state),
     decisions: recommendations,
     recommendations,
   };
