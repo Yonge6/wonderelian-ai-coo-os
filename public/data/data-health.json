@@ -10,7 +10,7 @@
         "last_successful_import": "2026-08-14T09:20:00.000Z",
         "freshness": "manual",
         "age_state": "aging",
-        "age_days": 4.3,
+        "age_days": 5.1,
         "data_available": [
           "impressions",
           "product_page_views",
@@ -349,7 +349,10 @@
     ],
     "last_successful_import": "2026-08-17T07:24:13.366Z",
     "stale_providers": [],
-    "missing_critical_metrics": [],
+    "missing_critical_metrics": [
+      "first_time_downloads",
+      "product_page_views"
+    ],
     "import_errors": [],
     "attribution": {
       "published_assets": 0,
@@ -358,8 +361,8 @@
       "link_coverage": null,
       "outcome_coverage": null
     },
-    "coverage_score": 100,
-    "confidence_cap": 0.95
+    "coverage_score": 50,
+    "confidence_cap": 0.65
   },
   {
     "app_id": "xiazi-yesterdays-world",

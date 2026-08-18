@@ -8,13 +8,14 @@ test("command center ships bilingual total and per-property daily portfolio tele
     readFile(new URL("../public/app.js",import.meta.url),"utf8"),
     readFile(new URL("../public/styles.css",import.meta.url),"utf8"),
   ]);
-  assert.match(html,/20260817-daily-portfolio/);
+  assert.match(html,/20260818-wendao-launch/);
   assert.match(script,/每日组合数据/);
   assert.match(script,/Website UV/);
   assert.match(script,/App 日活/);
   assert.match(script,/brief\.daily_portfolio/);
   assert.match(script,/data-daily-date/);
   assert.match(script,/cross-site visitors may repeat/);
+  assert.match(script,/app\.app_store_url/);
   assert.match(styles,/\.telemetry-rack/);
   assert.match(styles,/\.telemetry-table/);
 });

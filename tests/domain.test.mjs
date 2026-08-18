@@ -26,6 +26,19 @@ test("daily brief returns at most three ranked recommendations", () => {
   assert.equal(brief.recommendations[0].action,"a4");
 });
 
+test("daily brief includes verified operational launches without fabricating performance", () => {
+  const state={
+    metadata:{primary_outcome:"downloads"},apps:[{id:"wendao",name:"Wendao: Daodejing",name_zh:"三慢问道",platforms:["iOS","web"],kpis:["first_time_downloads"]}],
+    metrics:[],content:[],insights:[],websites:[],providers:[],jobs:[],attributions:[],
+    detections:[{id:"launch",app_id:"wendao",type:"operational_change",metric:"app_store_launch",label:"Wendao is live",label_zh:"三慢问道已上线",severity:"high",current_value:"live",previous_baseline:"not listed",evidence:"Official Apple lookup verified the listing."}],
+  };
+  const brief=generateBrief(state);
+  assert.equal(brief.no_material_change,false);
+  assert.equal(brief.what_changed.length,1);
+  assert.equal(brief.what_changed[0].metric,"app_store_launch");
+  assert.equal(brief.kpis.first_time_downloads.value,null);
+});
+
 test("daily portfolio summary exposes total and per-property UV PV without inventing missing values", () => {
   const state={
     apps:[{id:"a"},{id:"b"}],

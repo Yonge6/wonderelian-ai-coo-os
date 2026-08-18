@@ -12,8 +12,8 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.match(script, /operatingTimeZone="Asia\/Shanghai"/);
   assert.match(script, /timeZone:operatingTimeZone/);
   assert.doesNotMatch(script, /toISOString\(\)\.slice\(0,10\)/);
-  assert.match(html, /app\.js\?v=20260817-daily-portfolio/);
-  assert.match(html, /styles\.css\?v=20260817-daily-portfolio/);
+  assert.match(html, /app\.js\?v=20260818-wendao-launch/);
+  assert.match(html, /styles\.css\?v=20260818-wendao-launch/);
   assert.doesNotMatch(html, /class="north-star"/);
   assert.match(script, /const localHosts=new Set\(\["127\.0\.0\.1","localhost"\]\)/);
   assert.match(script, /!localHosts\.has\(location\.hostname\)/);
