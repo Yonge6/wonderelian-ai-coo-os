@@ -46,6 +46,9 @@ const copy={
   },
 };
 
+copy.en.tag_detected="tag installed — no data yet";
+copy.zh.tag_detected="已装标签，暂无数据";
+
 let locale=localStorage.getItem("ai-coo-locale")==="zh"?"zh":"en",state,brief,feedbackAnalysis,dataHealth,view="command",dailyDate=null;
 const t=(key)=>copy[locale][key]??copy.en[key]??key;
 const pick=(object,key)=>locale==="zh"&&object?.[`${key}_zh`]?object[`${key}_zh`]:object?.[key];
