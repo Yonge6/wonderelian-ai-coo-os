@@ -17,3 +17,8 @@ test("public sanitizer publishes audit summaries without private payloads",()=>{
   assert.equal(clean.audit[1].result,"https://example.com/evidence");
   assert.doesNotThrow(()=>assertPublicDataSafe(clean));
 });
+test("public sanitizer strips automation prompts, thread ids, and local paths",()=>{
+  const clean=sanitizePublicData({jobs:[{id:"job",name:"Safe task",prompt:"private",target_thread_id:"thread",session_data:{id:"private"},config:{source_path:"/Users/person/task"}}]});
+  assert.deepEqual(clean,{jobs:[{id:"job",name:"Safe task"}]});
+  assert.doesNotThrow(()=>assertPublicDataSafe(clean));
+});

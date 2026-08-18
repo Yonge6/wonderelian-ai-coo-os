@@ -1,4 +1,4 @@
-const PRIVATE_KEYS = /^(asset_path|password|passwd|secret|token|access_token|refresh_token|cookie|cookies|authorization|auth_header|oauth|credentials|credential|private_id|approval_id|session|session_data|execution_log|config|required_configuration|approvals|operating_memory|ingestion_runs)$/i;
+const PRIVATE_KEYS = /^(asset_path|password|passwd|secret|token|access_token|refresh_token|cookie|cookies|authorization|auth_header|oauth|credentials|credential|private_id|approval_id|session|session_data|execution_log|config|prompt|target_thread_id|required_configuration|approvals|operating_memory|ingestion_runs)$/i;
 const SENSITIVE_PATTERNS = [
   { name:"local absolute path", pattern:/(?:\/Users\/|\/home\/|[A-Za-z]:\\Users\\)/ },
   { name:"email address", pattern:/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i },
