@@ -27,6 +27,12 @@ test("command center ships an evidence-backed bilingual daily operations module"
   assert.match(styles, /\.distribution-ledger/);
 
   assert.ok(state.jobs.length > 0);
+  const growthAutomation = state.jobs.find((item) => item.id === "job-codex-style-atlas-growth");
+  assert.ok(growthAutomation);
+  assert.equal(growthAutomation.name_zh, "Style Atlas 全球下载增长运营");
+  assert.equal(growthAutomation.schedule, "daily:20:30:Asia/Shanghai");
+  assert.equal(growthAutomation.result.attributable_downloads, null);
+  assert.match(script, /每天 \$\{match\[1\]\}:\$\{match\[2\]\}（北京时间）/);
   assert.ok(state.audit.length > 0);
   const published = state.content.filter((item) => item.status === "published");
   assert.ok(published.length > 0);
