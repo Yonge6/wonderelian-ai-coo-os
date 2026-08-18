@@ -8,12 +8,12 @@ import {
 } from "../src/providers/codex-automation-provider.mjs";
 
 const source = `
-id = "style-atlas"
+id = "style-atlas-analytics"
 kind = "heartbeat"
-name = "Style Atlas 全球下载增长运营"
+name = "WonderElian AI COO 统一运营与 Analytics 监测"
 prompt = "private operating instructions"
 status = "ACTIVE"
-rrule = "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR,SA,SU;BYHOUR=20;BYMINUTE=30"
+rrule = "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR,SA,SU;BYHOUR=3,9,15,20;BYMINUTE=30"
 target_thread_id = "private-thread"
 `;
 
@@ -30,10 +30,10 @@ test("daily Beijing automation is normalized without prompt or thread metadata",
     lastRun: "2026-08-17T12:59:00.000Z",
     result: { verified_publications: 4, attributable_downloads: null },
   });
-  assert.equal(dailyScheduleFromRrule(metadata.rrule), "daily:20:30:Asia/Shanghai");
-  assert.equal(nextShanghaiDailyRun(job.schedule, new Date("2026-08-18T03:00:00.000Z")), "2026-08-18T12:30:00.000Z");
+  assert.equal(dailyScheduleFromRrule(metadata.rrule), "daily:03:30,09:30,15:30,20:30:Asia/Shanghai");
+  assert.equal(nextShanghaiDailyRun(job.schedule, new Date("2026-08-18T03:00:00.000Z")), "2026-08-18T07:30:00.000Z");
   assert.equal(job.status, "scheduled");
-  assert.equal(job.name_zh, "Style Atlas 全球下载增长运营");
+  assert.equal(job.name_zh, "WonderElian AI COO 统一运营与 Analytics 监测");
   assert.equal(job.result.attributable_downloads, null);
   assert.equal(JSON.stringify(job).includes("private"), false);
 });
@@ -41,6 +41,6 @@ test("daily Beijing automation is normalized without prompt or thread metadata",
 test("adapter rejects unrelated Codex automations", () => {
   assert.throws(
     () => normalizeCodexAutomation({ ...parsePublicAutomationMetadata(source), id: "another-app" }),
-    /Only the approved Style Atlas automation/,
+    /Only the approved unified AI COO automation/,
   );
 });
