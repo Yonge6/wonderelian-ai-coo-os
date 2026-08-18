@@ -241,7 +241,7 @@ export function generateBrief(state) {
     });
     return { ...item, confidence, score:decisionScore.score, decision_score:decisionScore };
   }).sort((a,b)=>b.score-a.score).slice(0,3);
-  const changes = (state.detections ?? []).filter((item)=>item.type === "metric_change" && item.severity !== "low").slice(0,3);
+  const changes = (state.detections ?? []).filter((item)=>["metric_change","operational_change"].includes(item.type) && item.severity !== "low").slice(0,3);
   const dataHealth = calculateDataHealth(state);
   const dataRisks = dataHealth.filter((item)=>item.missing_critical_metrics.length || item.stale_providers.length || item.import_errors.length).slice(0,3);
   const recommendations = ranked.map((item) => ({

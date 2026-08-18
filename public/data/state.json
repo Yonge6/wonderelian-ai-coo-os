@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-08-17T07:24:14.211Z",
+    "last_updated": "2026-08-18T01:22:12.000Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -31,7 +31,7 @@
         "minimum_sample_size": 100
       }
     },
-    "last_brief_at": "2026-08-14T23:56:32.000Z",
+    "last_brief_at": "2026-08-18T01:22:12.000Z",
     "growth_data_spine": "official_read_only_providers",
     "growth_cycle_version": "v2",
     "data_through": {
@@ -155,18 +155,31 @@
     },
     {
       "id": "wendao",
-      "name": "Wendao",
-      "name_zh": "问道",
+      "name": "Wendao: Daodejing",
+      "name_zh": "三慢问道",
       "slug": "wendao",
-      "description": null,
-      "category": "Wisdom",
+      "description": "A bilingual reading and reflection companion for the Daodejing.",
+      "category": "Books",
       "platform": [
+        "iOS",
         "web"
       ],
       "platforms": [
+        "iOS",
         "web"
       ],
-      "app_store_url": null,
+      "app_store_url": "https://apps.apple.com/us/app/wendao-daodejing/id6796945428",
+      "app_store_id": "6796945428",
+      "app_store_status": "live",
+      "app_store_version": "1.0",
+      "app_store_release_date": "2026-08-17T14:42:24.000Z",
+      "app_store_verified_at": "2026-08-18T01:22:12.000Z",
+      "app_store_verified_storefronts": [
+        "US",
+        "HK",
+        "SG"
+      ],
+      "app_store_mainland_china_status": "unavailable",
       "website_url": "https://wendao.wonderelian.com/",
       "status": "active",
       "primary_market": null,
@@ -177,11 +190,14 @@
       "keywords": [],
       "competitors": [],
       "social_accounts": [],
-      "kpis": [],
+      "kpis": [
+        "first_time_downloads",
+        "product_page_views"
+      ],
       "content_themes": [],
       "owner": "WonderElian",
       "created_at": null,
-      "updated_at": "2026-08-14T09:20:00.000Z"
+      "updated_at": "2026-08-18T01:22:12.000Z"
     },
     {
       "id": "xiazi-yesterdays-world",
@@ -1598,6 +1614,15 @@
   ],
   "audit": [
     {
+      "id": "audit-wendao-app-store-launch-20260818",
+      "at": "2026-08-18T01:22:12.000Z",
+      "actor": "Codex COO",
+      "app_id": "wendao",
+      "source": "official_apple_itunes_lookup_api",
+      "action": "verify_and_register_app_store_launch",
+      "status": "success"
+    },
+    {
       "id": "4fbcf601-9287-4d56-a706-1f17dc45051d",
       "at": "2026-08-17T07:24:13.366Z",
       "actor": "AI COO OS",
@@ -1873,6 +1898,27 @@
     }
   ],
   "detections": [
+    {
+      "id": "operational-change-wendao-app-store-launch-20260818",
+      "app_id": "wendao",
+      "type": "operational_change",
+      "metric": "app_store_launch",
+      "label": "Wendao: Daodejing is live on the App Store",
+      "label_zh": "三慢问道 App Store 已上线",
+      "current_value": "live",
+      "previous_baseline": "not listed",
+      "absolute_change": null,
+      "percentage_change": null,
+      "sample_size": null,
+      "confidence": 1,
+      "severity": "high",
+      "direction": "neutral",
+      "detected_at": "2026-08-18T01:22:12.000Z",
+      "evidence": "Apple's official lookup returns product ID 6796945428, version 1.0, and the public US App Store URL.",
+      "evidence_zh": "Apple 官方查询已返回产品 ID 6796945428、版本 1.0 及公开美国区 App Store 地址。",
+      "source_reference": "https://itunes.apple.com/lookup?id=6796945428&country=us",
+      "verification_type": "api_verified"
+    },
     {
       "id": "data-risk-feed-style-atlas",
       "app_id": "style-atlas",

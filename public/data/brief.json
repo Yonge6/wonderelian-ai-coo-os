@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T07:27:08.776Z",
+  "generated_at": "2026-08-18T01:27:46.463Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -514,8 +514,30 @@
   },
   "portfolio_summary": "5 apps and 6 websites are tracked. 1 of 5 apps currently reports the primary outcome; recommendations are qualified by data coverage.",
   "portfolio_summary_zh": "已追踪 5 个应用和 6 个网站。目前 1 个上报北极星指标；所有建议均受数据覆盖度约束。",
-  "what_changed": [],
-  "no_material_change": true,
+  "what_changed": [
+    {
+      "id": "operational-change-wendao-app-store-launch-20260818",
+      "app_id": "wendao",
+      "type": "operational_change",
+      "metric": "app_store_launch",
+      "label": "Wendao: Daodejing is live on the App Store",
+      "label_zh": "三慢问道 App Store 已上线",
+      "current_value": "live",
+      "previous_baseline": "not listed",
+      "absolute_change": null,
+      "percentage_change": null,
+      "sample_size": null,
+      "confidence": 1,
+      "severity": "high",
+      "direction": "neutral",
+      "detected_at": "2026-08-18T01:22:12.000Z",
+      "evidence": "Apple's official lookup returns product ID 6796945428, version 1.0, and the public US App Store URL.",
+      "evidence_zh": "Apple 官方查询已返回产品 ID 6796945428、版本 1.0 及公开美国区 App Store 地址。",
+      "source_reference": "https://itunes.apple.com/lookup?id=6796945428&country=us",
+      "verification_type": "api_verified"
+    }
+  ],
+  "no_material_change": false,
   "winners": [],
   "problems": [
     {
@@ -725,7 +747,7 @@
           "last_successful_import": "2026-08-14T09:20:00.000Z",
           "freshness": "manual",
           "age_state": "aging",
-          "age_days": 4.3,
+          "age_days": 5.1,
           "data_available": [
             "impressions",
             "product_page_views",
@@ -950,6 +972,66 @@
       "stale_providers": [],
       "missing_critical_metrics": [
         "first_time_downloads"
+      ],
+      "import_errors": [],
+      "attribution": {
+        "published_assets": 0,
+        "linked_assets": 0,
+        "measured_assets": 0,
+        "link_coverage": null,
+        "outcome_coverage": null
+      },
+      "coverage_score": 50,
+      "confidence_cap": 0.65
+    },
+    {
+      "app_id": "wendao",
+      "providers": [
+        {
+          "id": "public_website_health",
+          "name": "Six-site Public Health Monitor",
+          "status": "live",
+          "mode": "scheduled_read_only_http",
+          "last_successful_import": "2026-08-17T07:24:13.366Z",
+          "freshness": "fresh",
+          "age_state": "unknown",
+          "age_days": null,
+          "data_available": [
+            "http_status",
+            "technical_seo",
+            "analytics_tag_detection"
+          ],
+          "authentication_required": false,
+          "error": null
+        },
+        {
+          "id": "website_analytics_api",
+          "name": "Google Analytics 4 Website Data",
+          "status": "live",
+          "mode": "official_read_only_api",
+          "last_successful_import": "2026-08-17T03:17:06.489Z",
+          "freshness": "delayed",
+          "age_state": "unknown",
+          "age_days": null,
+          "data_available": [
+            "page_views",
+            "active_users",
+            "sessions",
+            "traffic_source",
+            "landing_page",
+            "country",
+            "device",
+            "cta_clicks"
+          ],
+          "authentication_required": false,
+          "error": null
+        }
+      ],
+      "last_successful_import": "2026-08-17T07:24:13.366Z",
+      "stale_providers": [],
+      "missing_critical_metrics": [
+        "first_time_downloads",
+        "product_page_views"
       ],
       "import_errors": [],
       "attribution": {
