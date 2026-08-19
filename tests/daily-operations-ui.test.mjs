@@ -63,6 +63,8 @@ test("operations log exposes schedules, verified outcomes, permanent URLs, and n
   assert.match(script, /attribution_path:"Attribution path"/);
   assert.match(script, /attribution_path:"归因链路"/);
   assert.match(script, /target="_blank" rel="noreferrer"/);
+  assert.match(script, /class="evidence-url"/);
+  assert.match(script, /new URL\(url\)\.hostname/);
   assert.match(script, /fmt\(item\.first_time_downloads\)/);
   assert.doesNotMatch(script, /item\.first_time_downloads\s*\?\?\s*0/);
 });
