@@ -3,8 +3,16 @@ import { JsonStore } from "./store.mjs";
 import { ingestWebsiteMetrics, providerFreshness, PROVIDER_SLAS } from "./growth-data.mjs";
 import { Ga4WebsiteProvider } from "./providers/ga4-website-provider.mjs";
 
-const isoDate=(date)=>date.toISOString().slice(0,10);
-const daysBefore=(date,days)=>{const copy=new Date(date);copy.setUTCDate(copy.getUTCDate()-days);return copy;};
+const calendarDay=(date,timeZone="Asia/Shanghai")=>{
+  const parts=Object.fromEntries(new Intl.DateTimeFormat("en-CA",{
+    year:"numeric",month:"2-digit",day:"2-digit",timeZone,
+  }).formatToParts(date).map(({type,value})=>[type,value]));
+  return `${parts.year}-${parts.month}-${parts.day}`;
+};
+const shiftCalendarDay=(day,offset)=>{
+  const [year,month,date]=day.split("-").map(Number),shifted=new Date(Date.UTC(year,month-1,date+offset));
+  return shifted.toISOString().slice(0,10);
+};
 
 function appendSync(state,{at,status,counts={received:0,inserted:0,updated:0,unchanged:0},dataThrough=null,error=null,periodStart=null,periodEnd=null}){
   state.provider_syncs.push({id:`sync-website_analytics_api-${at.replace(/[:.]/g,"-")}`,app_id:null,provider:"website_analytics_api",period_start:periodStart,period_end:periodEnd,started_at:at,completed_at:at,status,records_received:counts.received,records_inserted:counts.inserted,records_updated:counts.updated,records_unchanged:counts.unchanged,data_through:dataThrough,error});
@@ -13,7 +21,7 @@ function appendSync(state,{at,status,counts={received:0,inserted:0,updated:0,unc
 export async function syncWebsiteAnalyticsState(state,{provider=new Ga4WebsiteProvider(),now=new Date(),backfillDays=90}={}){
   const at=now.toISOString(),health=await provider.health(),providerState=state.providers.find((row)=>row.id==="website_analytics_api"),job=state.jobs.find((row)=>row.provider==="website_analytics_api");
   if(health.status==="blocked")return {status:"blocked",records_received:0,data_through:null,missing:health.missing};
-  const periodStart=isoDate(daysBefore(now,backfillDays)),periodEnd=isoDate(daysBefore(now,1));
+  const today=calendarDay(now),periodStart=shiftCalendarDay(today,-backfillDays),periodEnd=shiftCalendarDay(today,-1);
   let result;
   try {
     result=await provider.fetchPerformance({websites:state.websites,startDate:periodStart,endDate:periodEnd,now:at});

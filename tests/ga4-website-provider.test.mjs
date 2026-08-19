@@ -42,6 +42,19 @@ test("website sync waits on empty reports and never invents zero",async()=>{
   assert.equal(state.provider_syncs[0].records_received,0);
 });
 
+test("website sync uses the latest complete Beijing calendar day",async()=>{
+  const state={metadata:{data_through:{}},websites:structuredClone(websites),website_metrics:[],provider_syncs:[],providers:[{id:"website_analytics_api",status:"not_connected"}],jobs:[{provider:"website_analytics_api",status:"blocked"}],audit:[]};
+  let requested=null;
+  const provider={
+    health:async()=>({status:"configured"}),
+    fetchPerformance:async(input)=>{requested=input;return{observations:[],data_through:null};},
+  };
+  await syncWebsiteAnalyticsState(state,{provider,now:new Date("2026-08-19T23:30:00.000Z")});
+  assert.equal(requested.startDate,"2026-05-22");
+  assert.equal(requested.endDate,"2026-08-19");
+  assert.equal(state.provider_syncs[0].period_end,"2026-08-19");
+});
+
 test("website sync records rejected property access without overwriting unknown metrics",async()=>{
   const state={metadata:{data_through:{}},websites:structuredClone(websites),website_metrics:[],provider_syncs:[],providers:[{id:"website_analytics_api",status:"not_connected"}],jobs:[{provider:"website_analytics_api",status:"blocked"}],audit:[]};
   const provider={health:async()=>({status:"configured"}),fetchPerformance:async()=>{const error=new Error("forbidden");error.code="AUTH_REJECTED";throw error;}};

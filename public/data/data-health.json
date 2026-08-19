@@ -10,7 +10,7 @@
         "last_successful_import": "2026-08-14T09:20:00.000Z",
         "freshness": "manual",
         "age_state": "aging",
-        "age_days": 6.6,
+        "age_days": 7,
         "data_available": [
           "impressions",
           "product_page_views",
@@ -126,7 +126,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-19T12:58:07.892Z",
+        "last_successful_import": "2026-08-19T23:28:11.200Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -143,8 +143,8 @@
         "name": "Google Analytics 4 Website Data",
         "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-19T12:58:08.761Z",
-        "freshness": "delayed",
+        "last_successful_import": "2026-08-19T23:31:45.901Z",
+        "freshness": "healthy",
         "age_state": "unknown",
         "age_days": null,
         "data_available": [
@@ -161,7 +161,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-19T12:58:08.761Z",
+    "last_successful_import": "2026-08-19T23:31:45.901Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [
@@ -196,7 +196,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-19T12:58:07.892Z",
+        "last_successful_import": "2026-08-19T23:28:11.200Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -213,8 +213,8 @@
         "name": "Google Analytics 4 Website Data",
         "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-19T12:58:08.761Z",
-        "freshness": "delayed",
+        "last_successful_import": "2026-08-19T23:31:45.901Z",
+        "freshness": "healthy",
         "age_state": "unknown",
         "age_days": null,
         "data_available": [
@@ -231,7 +231,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-19T12:58:08.761Z",
+    "last_successful_import": "2026-08-19T23:31:45.901Z",
     "stale_providers": [],
     "missing_critical_metrics": [
       "first_time_downloads"
@@ -255,7 +255,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-19T12:58:07.892Z",
+        "last_successful_import": "2026-08-19T23:28:11.200Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -272,8 +272,8 @@
         "name": "Google Analytics 4 Website Data",
         "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-19T12:58:08.761Z",
-        "freshness": "delayed",
+        "last_successful_import": "2026-08-19T23:31:45.901Z",
+        "freshness": "healthy",
         "age_state": "unknown",
         "age_days": null,
         "data_available": [
@@ -290,7 +290,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-19T12:58:08.761Z",
+    "last_successful_import": "2026-08-19T23:31:45.901Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [],
@@ -312,7 +312,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-19T12:58:07.892Z",
+        "last_successful_import": "2026-08-19T23:28:11.200Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -329,8 +329,8 @@
         "name": "Google Analytics 4 Website Data",
         "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-19T12:58:08.761Z",
-        "freshness": "delayed",
+        "last_successful_import": "2026-08-19T23:31:45.901Z",
+        "freshness": "healthy",
         "age_state": "unknown",
         "age_days": null,
         "data_available": [
@@ -347,7 +347,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-19T12:58:08.761Z",
+    "last_successful_import": "2026-08-19T23:31:45.901Z",
     "stale_providers": [],
     "missing_critical_metrics": [
       "first_time_downloads",
@@ -372,7 +372,7 @@
         "name": "Six-site Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-19T12:58:07.892Z",
+        "last_successful_import": "2026-08-19T23:28:11.200Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -389,8 +389,8 @@
         "name": "Google Analytics 4 Website Data",
         "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-19T12:58:08.761Z",
-        "freshness": "delayed",
+        "last_successful_import": "2026-08-19T23:31:45.901Z",
+        "freshness": "healthy",
         "age_state": "unknown",
         "age_days": null,
         "data_available": [
@@ -407,7 +407,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-19T12:58:08.761Z",
+    "last_successful_import": "2026-08-19T23:31:45.901Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [],
