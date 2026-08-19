@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T13:00:17.159Z",
+  "generated_at": "2026-08-19T13:41:31.005Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -1101,7 +1101,7 @@
           "last_successful_import": "2026-08-14T09:20:00.000Z",
           "freshness": "manual",
           "age_state": "aging",
-          "age_days": 6.5,
+          "age_days": 6.6,
           "data_available": [
             "impressions",
             "product_page_views",
