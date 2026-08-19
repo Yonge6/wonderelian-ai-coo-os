@@ -31,12 +31,22 @@ test("command center ships an evidence-backed bilingual daily operations module"
   assert.ok(growthAutomation);
   assert.equal(growthAutomation.name_zh, "WonderElian AI COO 统一运营与 Analytics 监测");
   assert.equal(growthAutomation.schedule, "daily:03:30,09:30,15:30,20:30:Asia/Shanghai");
+  assert.equal(growthAutomation.last_run, "2026-08-19T12:31:39.368Z");
+  assert.equal(growthAutomation.result.verified_publications, 4);
+  assert.equal(growthAutomation.result.community_replies, 3);
   assert.equal(growthAutomation.result.attributable_downloads, null);
   assert.match(script, /每天 \$\{times\}（北京时间）/);
   assert.ok(state.audit.length > 0);
   const published = state.content.filter((item) => item.status === "published");
   assert.ok(published.length > 0);
   assert.equal(published.every((item) => item.publish_url || item.url), true);
+  const currentRun = published.filter((item) => item.published_at === "2026-08-19");
+  assert.equal(currentRun.length, 7);
+  assert.deepEqual(
+    currentRun.map((item) => item.channel_id).sort(),
+    ["instagram", "pinterest", "pinterest", "pinterest", "tiktok", "tiktok", "tiktok"],
+  );
+  assert.equal(currentRun.every((item) => item.first_time_downloads === null), true);
 });
 
 test("operations log exposes schedules, verified outcomes, permanent URLs, and null-safe attribution", async () => {
