@@ -67,4 +67,13 @@ test("operations log exposes schedules, verified outcomes, permanent URLs, and n
   assert.match(script, /new URL\(url\)\.hostname/);
   assert.match(script, /fmt\(item\.first_time_downloads\)/);
   assert.doesNotMatch(script, /item\.first_time_downloads\s*\?\?\s*0/);
+  assert.match(script, /const contentPageSize=10/);
+  assert.match(script, /function sortedPublishedContent\(\)/);
+  assert.match(script, /String\(b\.published_at\?\?""\)\.localeCompare\(String\(a\.published_at\?\?""\)\)/);
+  assert.match(script, /String\(b\.id\)\.localeCompare\(String\(a\.id\)\)/);
+  assert.match(script, /pageItems=published\.slice\(\(contentPage-1\)\*contentPageSize,contentPage\*contentPageSize\)/);
+  assert.match(script, /data-content-page=/);
+  assert.match(script, /previous_page:"Previous"/);
+  assert.match(script, /previous_page:"上一页"/);
+  assert.ok(script.indexOf('<span>01</span><h3>${t("content_distribution")}') < script.indexOf('<span>02</span><h3>${t("scheduled_tasks")}'));
 });
