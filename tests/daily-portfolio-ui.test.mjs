@@ -8,7 +8,7 @@ test("command center ships bilingual total and per-property daily portfolio tele
     readFile(new URL("../public/app.js",import.meta.url),"utf8"),
     readFile(new URL("../public/styles.css",import.meta.url),"utf8"),
   ]);
-  assert.match(html,/20260819-traffic-trends/);
+  assert.match(html,/20260819-content-first/);
   assert.match(script,/每日组合数据/);
   assert.match(script,/Website UV/);
   assert.match(script,/App 日活/);
@@ -30,6 +30,8 @@ test("command center ships bilingual total and per-property daily portfolio tele
   assert.match(styles,/\.telemetry-table/);
   assert.match(styles,/\.traffic-trends/);
   assert.match(styles,/\.trend-grid-cards/);
+  assert.match(styles,/\.telemetry-title select,\.trend-controls select/);
+  assert.match(styles,/\.trend-controls select option/);
   assert.match(styles,/\.portfolio-ledgers>\.telemetry-ledger:first-child\{order:2\}/);
   assert.match(styles,/\.portfolio-ledgers>\.telemetry-ledger:last-child\{order:1\}/);
 });
