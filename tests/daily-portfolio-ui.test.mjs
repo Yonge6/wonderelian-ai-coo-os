@@ -8,7 +8,7 @@ test("command center ships bilingual total and per-property daily portfolio tele
     readFile(new URL("../public/app.js",import.meta.url),"utf8"),
     readFile(new URL("../public/styles.css",import.meta.url),"utf8"),
   ]);
-  assert.match(html,/20260819-content-first/);
+  assert.match(html,/20260821-maker-seven-site/);
   assert.match(script,/每日组合数据/);
   assert.match(script,/Website UV/);
   assert.match(script,/App 日活/);

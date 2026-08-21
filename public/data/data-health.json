@@ -10,7 +10,7 @@
         "last_successful_import": "2026-08-14T09:20:00.000Z",
         "freshness": "manual",
         "age_state": "stale",
-        "age_days": 8.1,
+        "age_days": 8.4,
         "data_available": [
           "impressions",
           "product_page_views",
@@ -123,10 +123,10 @@
       },
       {
         "id": "public_website_health",
-        "name": "Six-site Public Health Monitor",
+        "name": "Portfolio Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-21T01:12:28.426Z",
+        "last_successful_import": "2026-08-21T08:51:01.288Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -161,7 +161,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-21T01:12:31.390Z",
+    "last_successful_import": "2026-08-21T08:51:01.288Z",
     "stale_providers": [
       "manual_app_store_connect"
     ],
@@ -195,10 +195,10 @@
     "providers": [
       {
         "id": "public_website_health",
-        "name": "Six-site Public Health Monitor",
+        "name": "Portfolio Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-21T01:12:28.426Z",
+        "last_successful_import": "2026-08-21T08:51:01.288Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -233,7 +233,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-21T01:12:31.390Z",
+    "last_successful_import": "2026-08-21T08:51:01.288Z",
     "stale_providers": [],
     "missing_critical_metrics": [
       "first_time_downloads"
@@ -254,10 +254,10 @@
     "providers": [
       {
         "id": "public_website_health",
-        "name": "Six-site Public Health Monitor",
+        "name": "Portfolio Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-21T01:12:28.426Z",
+        "last_successful_import": "2026-08-21T08:51:01.288Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -292,7 +292,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-21T01:12:31.390Z",
+    "last_successful_import": "2026-08-21T08:51:01.288Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [],
@@ -311,10 +311,10 @@
     "providers": [
       {
         "id": "public_website_health",
-        "name": "Six-site Public Health Monitor",
+        "name": "Portfolio Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-21T01:12:28.426Z",
+        "last_successful_import": "2026-08-21T08:51:01.288Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -349,7 +349,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-21T01:12:31.390Z",
+    "last_successful_import": "2026-08-21T08:51:01.288Z",
     "stale_providers": [],
     "missing_critical_metrics": [
       "first_time_downloads",
@@ -371,10 +371,10 @@
     "providers": [
       {
         "id": "public_website_health",
-        "name": "Six-site Public Health Monitor",
+        "name": "Portfolio Public Health Monitor",
         "status": "live",
         "mode": "scheduled_read_only_http",
-        "last_successful_import": "2026-08-21T01:12:28.426Z",
+        "last_successful_import": "2026-08-21T08:51:01.288Z",
         "freshness": "fresh",
         "age_state": "unknown",
         "age_days": null,
@@ -409,7 +409,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-21T01:12:31.390Z",
+    "last_successful_import": "2026-08-21T08:51:01.288Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [],

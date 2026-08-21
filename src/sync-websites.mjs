@@ -76,7 +76,7 @@ await store.mutate((next) => {
     actor:process.env.GITHUB_ACTIONS ? "GitHub Actions" : "AI COO OS",
     app_id:null,
     source:process.env.GITHUB_ACTIONS ? "scheduled_website_health" : "authorized_website_operations_expansion",
-    action:"sync_six_website_health",
+    action:"sync_portfolio_website_health",
     input:{external_writes:false, websites:next.websites.length},
     result:{reachable, total:next.websites.length, inserted, updated, analytics_tags_detected:result.observations.filter((row) => row.analytics_detected).length, data_through:result.data_through},
     status:reachable === next.websites.length ? "success" : "partial",

@@ -8,6 +8,7 @@
     "build:static": "node src/build-static.mjs",
     "migrate:phase2": "node src/migrate-phase2.mjs",
     "migrate:phase3": "node src/migrate-phase3.mjs",
+    "migrate:maker-business-lab": "node src/migrate-maker-business-lab.mjs",
     "cycle": "node src/run-cycle.mjs",
     "cycle:growth": "node src/run-growth-cycle.mjs",
     "sync:websites": "node src/sync-websites.mjs",
