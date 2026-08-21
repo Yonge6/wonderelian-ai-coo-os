@@ -72,7 +72,7 @@ fi
 grep -q "20260821-maker-seven-site" "$ROOT/index.html"
 grep -q "site-maker-business-lab" "$ROOT/data/state.json"
 grep -q '"sites_tracked": 7' "$ROOT/data/brief.json"
-curl -fsS -H "Host: ops.wonderelian.com" http://127.0.0.1/ \
+curl -fsS --resolve "ops.wonderelian.com:443:127.0.0.1" https://ops.wonderelian.com/ \
   | grep -q "20260821-maker-seven-site"
 
 echo "DEPLOY_OK_MAKER_SEVEN_SITE_98acd50"
