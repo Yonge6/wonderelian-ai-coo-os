@@ -57,7 +57,7 @@ async function main(){
   const store=new JsonStore(fileURLToPath(new URL("../data/state.json",import.meta.url))),provider=new Ga4WebsiteProvider(),health=await provider.health();
   if(health.status==="blocked"){console.error(`WEBSITE_ANALYTICS_BLOCKED missing=${health.missing.join(",")}`);process.exitCode=2;return;}
   const outcome=await store.mutate((state)=>syncWebsiteAnalyticsState(state,{provider}));
-  console.log(`WEBSITE_ANALYTICS_${outcome.status.toUpperCase()} received=${outcome.records_received} data_through=${outcome.data_through??"null"}`);
+  console.log(`WEBSITE_ANALYTICS_${outcome.status.toUpperCase()} received=${outcome.received??outcome.records_received??0} data_through=${outcome.data_through??"null"}`);
 }
 
 if(process.argv[1]===fileURLToPath(import.meta.url))await main();
