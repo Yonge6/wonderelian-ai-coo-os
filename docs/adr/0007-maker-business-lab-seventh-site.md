@@ -1,6 +1,6 @@
 # ADR 0007: Maker Business Lab as the seventh operated website
 
-**Status:** Accepted  
+**Status:** Accepted
 **Date:** 2026-08-21
 
 ## Context
