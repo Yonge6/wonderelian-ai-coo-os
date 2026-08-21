@@ -49,6 +49,24 @@ async function fetchText(fetchFn, url) {
   };
 }
 
+function sameOriginScriptUrls(html, root) {
+  const urls = [];
+  for (const tag of html.match(/<script\b[^>]*\bsrc\s*=\s*["'][^"']+["'][^>]*>/gi) ?? []) {
+    const source = attribute(tag, "src");
+    if (!source) continue;
+    try {
+      const url = new URL(source, root);
+      if (url.origin === root.origin && !urls.includes(url.href)) urls.push(url.href);
+    } catch {}
+  }
+  return urls.slice(0, 24);
+}
+
+async function analyticsDetectedInScripts(fetchFn, html, root) {
+  const scripts = await Promise.all(sameOriginScriptUrls(html, root).map((url) => fetchText(fetchFn, url).catch(() => null)));
+  return scripts.some((script) => script?.ok && ANALYTICS_PATTERN.test(script.body));
+}
+
 export function inspectWebsiteHtml(html) {
   return {
     lang:html.match(/<html\b[^>]*\blang\s*=\s*["']([^"']+)/i)?.[1] ?? null,
@@ -79,6 +97,7 @@ export class WebsiteHealthProvider {
         fetchText(this.fetchFn, new URL("/sitemap.xml", root)).catch(() => null),
       ]);
       const inspected = inspectWebsiteHtml(page.body);
+      if (!inspected.analytics_detected) inspected.analytics_detected = await analyticsDetectedInScripts(this.fetchFn, page.body, root);
       return {
         id:`website-health-${site.id}-${day}`,
         website_id:site.id,

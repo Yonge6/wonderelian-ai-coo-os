@@ -32,14 +32,14 @@ export async function syncWebsiteAnalyticsState(state,{provider=new Ga4WebsitePr
     if(providerState)Object.assign(providerState,{status,last_sync:at,freshness:status,authentication_required:authRejected,authentication_status:authRejected?"rejected":"configured",error:message});
     if(job)Object.assign(job,{last_run:at,next_run:null,status,result:{records_received:0},error:message});
     appendSync(state,{at,status,dataThrough:null,error:{code:error?.code??"PROVIDER_UNAVAILABLE",message},periodStart,periodEnd});
-    state.audit.unshift({id:crypto.randomUUID(),at,actor:"AI COO OS",app_id:null,source:"ga4_website_sync",action:"sync_six_site_website_analytics",input:{external_writes:false},result:{status,records_received:0,data_through:null},status,error:{code:error?.code??"PROVIDER_UNAVAILABLE",message}});
+    state.audit.unshift({id:crypto.randomUUID(),at,actor:"AI COO OS",app_id:null,source:"ga4_website_sync",action:"sync_portfolio_website_analytics",input:{external_writes:false},result:{status,records_received:0,data_through:null},status,error:{code:error?.code??"PROVIDER_UNAVAILABLE",message}});
     return {status,records_received:0,data_through:null,error:message};
   }
   if(!result.observations.length){
     if(providerState)Object.assign(providerState,{status:"waiting",last_sync:at,freshness:"waiting",authentication_required:false,authentication_status:"configured",error:"WAITING — GA4 HAS NOT RETURNED VERIFIED WEBSITE OBSERVATIONS"});
     if(job)Object.assign(job,{last_run:at,next_run:null,status:"waiting",result:{records_received:0},error:"WAITING — GA4 OBSERVATIONS"});
     appendSync(state,{at,status:"waiting",dataThrough:null,periodStart,periodEnd});
-    state.audit.unshift({id:crypto.randomUUID(),at,actor:"AI COO OS",app_id:null,source:"ga4_website_sync",action:"sync_six_site_website_analytics",input:{external_writes:false},result:{status:"waiting",records_received:0,data_through:null},status:"waiting",error:null});
+    state.audit.unshift({id:crypto.randomUUID(),at,actor:"AI COO OS",app_id:null,source:"ga4_website_sync",action:"sync_portfolio_website_analytics",input:{external_writes:false},result:{status:"waiting",records_received:0,data_through:null},status:"waiting",error:null});
     return {status:"waiting",records_received:0,data_through:null};
   }
   const counts=ingestWebsiteMetrics(state,result.observations),observedSites=new Set(result.observations.map((row)=>row.website_id));
@@ -49,7 +49,7 @@ export async function syncWebsiteAnalyticsState(state,{provider=new Ga4WebsitePr
   if(job)Object.assign(job,{last_run:at,next_run:new Date(now.getTime()+86_400_000).toISOString(),status:"scheduled",result:{records_received:counts.received,records_inserted:counts.inserted,records_updated:counts.updated,data_through:result.data_through},error:null,retry_count:0});
   state.metadata.data_through={...(state.metadata.data_through??{}),website_analytics:result.data_through};
   appendSync(state,{at,status:"succeeded",counts,dataThrough:result.data_through,periodStart,periodEnd});
-  state.audit.unshift({id:crypto.randomUUID(),at,actor:"AI COO OS",app_id:null,source:"ga4_website_sync",action:"sync_six_site_website_analytics",input:{external_writes:false},result:{status:"success",...counts,data_through:result.data_through,sites_observed:observedSites.size},status:"success",error:null});
+  state.audit.unshift({id:crypto.randomUUID(),at,actor:"AI COO OS",app_id:null,source:"ga4_website_sync",action:"sync_portfolio_website_analytics",input:{external_writes:false},result:{status:"success",...counts,data_through:result.data_through,sites_observed:observedSites.size},status:"success",error:null});
   return {status:"succeeded",...counts,data_through:result.data_through,sites_observed:observedSites.size};
 }
 

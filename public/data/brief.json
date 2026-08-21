@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T01:18:02.270Z",
+  "generated_at": "2026-08-21T08:53:07.498Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -64,8 +64,8 @@
     }
   },
   "website_summary": {
-    "sites_tracked": 6,
-    "sites_live": 6,
+    "sites_tracked": 7,
+    "sites_live": 7,
     "analytics_connected": 5,
     "traffic_metrics_available": 362,
     "data_through": "2026-08-21"
@@ -95,7 +95,7 @@
           "sessions": 4,
           "cta_clicks": 2
         },
-        "websites_total": 6,
+        "websites_total": 7,
         "app_totals": {
           "active_users": null,
           "first_time_downloads": null,
@@ -254,6 +254,16 @@
               "sessions": 32,
               "cta_clicks": 20
             }
+          },
+          {
+            "website_id": "site-maker-business-lab",
+            "app_id": null,
+            "metrics": {
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
+              "cta_clicks": null
+            }
           }
         ]
       },
@@ -271,7 +281,7 @@
           "sessions": 3,
           "cta_clicks": 2
         },
-        "websites_total": 6,
+        "websites_total": 7,
         "app_totals": {
           "active_users": null,
           "first_time_downloads": null,
@@ -430,6 +440,16 @@
               "sessions": 1,
               "cta_clicks": 6
             }
+          },
+          {
+            "website_id": "site-maker-business-lab",
+            "app_id": null,
+            "metrics": {
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
+              "cta_clicks": null
+            }
           }
         ]
       },
@@ -447,7 +467,7 @@
           "sessions": 5,
           "cta_clicks": 3
         },
-        "websites_total": 6,
+        "websites_total": 7,
         "app_totals": {
           "active_users": null,
           "first_time_downloads": null,
@@ -606,6 +626,16 @@
               "sessions": 28,
               "cta_clicks": 30
             }
+          },
+          {
+            "website_id": "site-maker-business-lab",
+            "app_id": null,
+            "metrics": {
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
+              "cta_clicks": null
+            }
           }
         ]
       },
@@ -623,7 +653,7 @@
           "sessions": 5,
           "cta_clicks": 3
         },
-        "websites_total": 6,
+        "websites_total": 7,
         "app_totals": {
           "active_users": null,
           "first_time_downloads": null,
@@ -782,6 +812,16 @@
               "sessions": 1,
               "cta_clicks": 10
             }
+          },
+          {
+            "website_id": "site-maker-business-lab",
+            "app_id": null,
+            "metrics": {
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
+              "cta_clicks": null
+            }
           }
         ]
       },
@@ -799,7 +839,7 @@
           "sessions": 5,
           "cta_clicks": 3
         },
-        "websites_total": 6,
+        "websites_total": 7,
         "app_totals": {
           "active_users": null,
           "first_time_downloads": null,
@@ -958,6 +998,16 @@
               "sessions": 1,
               "cta_clicks": 6
             }
+          },
+          {
+            "website_id": "site-maker-business-lab",
+            "app_id": null,
+            "metrics": {
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
+              "cta_clicks": null
+            }
           }
         ]
       },
@@ -975,7 +1025,7 @@
           "sessions": 5,
           "cta_clicks": 3
         },
-        "websites_total": 6,
+        "websites_total": 7,
         "app_totals": {
           "active_users": null,
           "first_time_downloads": null,
@@ -1134,6 +1184,16 @@
               "sessions": 11,
               "cta_clicks": 2
             }
+          },
+          {
+            "website_id": "site-maker-business-lab",
+            "app_id": null,
+            "metrics": {
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
+              "cta_clicks": null
+            }
           }
         ]
       }
@@ -1220,8 +1280,8 @@
     "uv_definition": "GA4 active_users summed across reporting websites; a person visiting multiple sites may be counted more than once.",
     "missing_value_policy": "Unavailable metrics remain null and render as an em dash; they are never converted to zero."
   },
-  "portfolio_summary": "5 apps and 6 websites are tracked. 1 of 5 apps currently reports the primary outcome; recommendations are qualified by data coverage.",
-  "portfolio_summary_zh": "已追踪 5 个应用和 6 个网站。目前 1 个上报北极星指标；所有建议均受数据覆盖度约束。",
+  "portfolio_summary": "5 apps and 7 websites are tracked. 1 of 5 apps currently reports the primary outcome; recommendations are qualified by data coverage.",
+  "portfolio_summary_zh": "已追踪 5 个应用和 7 个网站。目前 1 个上报北极星指标；所有建议均受数据覆盖度约束。",
   "what_changed": [
     {
       "id": "operational-change-wendao-app-store-launch-20260818",
@@ -1455,7 +1515,7 @@
           "last_successful_import": "2026-08-14T09:20:00.000Z",
           "freshness": "manual",
           "age_state": "stale",
-          "age_days": 8.1,
+          "age_days": 8.4,
           "data_available": [
             "impressions",
             "product_page_views",
@@ -1568,10 +1628,10 @@
         },
         {
           "id": "public_website_health",
-          "name": "Six-site Public Health Monitor",
+          "name": "Portfolio Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-08-21T01:12:28.426Z",
+          "last_successful_import": "2026-08-21T08:51:01.288Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -1606,7 +1666,7 @@
           "error": null
         }
       ],
-      "last_successful_import": "2026-08-21T01:12:31.390Z",
+      "last_successful_import": "2026-08-21T08:51:01.288Z",
       "stale_providers": [
         "manual_app_store_connect"
       ],
@@ -1640,10 +1700,10 @@
       "providers": [
         {
           "id": "public_website_health",
-          "name": "Six-site Public Health Monitor",
+          "name": "Portfolio Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-08-21T01:12:28.426Z",
+          "last_successful_import": "2026-08-21T08:51:01.288Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -1678,7 +1738,7 @@
           "error": null
         }
       ],
-      "last_successful_import": "2026-08-21T01:12:31.390Z",
+      "last_successful_import": "2026-08-21T08:51:01.288Z",
       "stale_providers": [],
       "missing_critical_metrics": [
         "first_time_downloads"
@@ -1699,10 +1759,10 @@
       "providers": [
         {
           "id": "public_website_health",
-          "name": "Six-site Public Health Monitor",
+          "name": "Portfolio Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-08-21T01:12:28.426Z",
+          "last_successful_import": "2026-08-21T08:51:01.288Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -1737,7 +1797,7 @@
           "error": null
         }
       ],
-      "last_successful_import": "2026-08-21T01:12:31.390Z",
+      "last_successful_import": "2026-08-21T08:51:01.288Z",
       "stale_providers": [],
       "missing_critical_metrics": [
         "first_time_downloads",

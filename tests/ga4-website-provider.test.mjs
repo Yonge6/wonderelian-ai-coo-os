@@ -21,6 +21,15 @@ test("GA4 normalization keeps hostname dimensions and verified primary events",(
   assert.equal(observations.every((row)=>row.verification_type==="api_verified"),true);
 });
 
+test("GA4 normalization supports the Maker Business Lab recommendation event",()=>{
+  const makerWebsites=[{id:"site-maker-business-lab",url:"https://maker.wonderelian.com/",analytics_status:"tag_detected",primary_conversion:"recommendation_click"}];
+  const observations=normalizeGa4Reports({
+    events:report(["date","hostName","eventName"],["eventCount"],[[["20260821","maker.wonderelian.com","recommendation_click"],[2]]]),
+  },{websites:makerWebsites,propertyId:"123",now:"2026-08-21T10:00:00.000Z"});
+  assert.equal(observations.find((row)=>row.metric==="recommendation_click")?.value,2);
+  assert.equal(observations.find((row)=>row.metric==="cta_clicks")?.value,2);
+});
+
 test("GA4 provider uses the official endpoint and a read-only report body",async()=>{
   const requests=[];const fetchFn=async(url,options)=>{requests.push({url,body:JSON.parse(options.body)});return new Response(JSON.stringify(report(["date","hostName"],["screenPageViews"],[])),{status:200,headers:{"content-type":"application/json"}});};
   const provider=new Ga4WebsiteProvider({config:{propertyId:"123",accessToken:"test-token",credentialsPath:null},fetchFn,tokenFactory:async()=>"test-token"});

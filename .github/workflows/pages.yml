@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Refresh six-site public health
+      - name: Refresh portfolio website health
         if: github.event_name != 'push'
         run: npm run sync:websites
       - run: npm run check

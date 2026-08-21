@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-08-21T01:18:02.027Z",
+    "last_updated": "2026-08-21T08:53:06.786Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -43,7 +43,7 @@
       "website_analytics": "2026-08-20"
     },
     "last_growth_cycle_at": "2026-08-14T15:46:53.809Z",
-    "last_website_health_at": "2026-08-21T01:12:28.426Z"
+    "last_website_health_at": "2026-08-21T08:51:01.288Z"
   },
   "apps": [
     {
@@ -1735,7 +1735,7 @@
     },
     {
       "id": "public_website_health",
-      "name": "Six-site Public Health Monitor",
+      "name": "Portfolio Public Health Monitor",
       "type": "website_health_seo",
       "mode": "scheduled_read_only_http",
       "status": "live",
@@ -1746,8 +1746,8 @@
         "wendao",
         "xiazi-yesterdays-world"
       ],
-      "last_sync": "2026-08-21T01:12:28.426Z",
-      "last_successful_import": "2026-08-21T01:12:28.426Z",
+      "last_sync": "2026-08-21T08:51:01.288Z",
+      "last_successful_import": "2026-08-21T08:51:01.288Z",
       "data_through": "2026-08-21",
       "freshness": "fresh",
       "data_available": [
@@ -1762,7 +1762,16 @@
       "sla": {
         "expected_latency_hours": 24,
         "stale_after_hours": 48
-      }
+      },
+      "website_ids": [
+        "site-style-atlas",
+        "site-yixiu",
+        "site-human-design",
+        "site-wendao",
+        "site-xiazi",
+        "site-wonderelian",
+        "site-maker-business-lab"
+      ]
     },
     {
       "id": "website_analytics_api",
@@ -1799,7 +1808,16 @@
       "sla": {
         "expected_latency_hours": 24,
         "stale_after_hours": 72
-      }
+      },
+      "website_ids": [
+        "site-style-atlas",
+        "site-yixiu",
+        "site-human-design",
+        "site-wendao",
+        "site-xiazi",
+        "site-wonderelian",
+        "site-maker-business-lab"
+      ]
     }
   ],
   "jobs": [
@@ -1955,13 +1973,13 @@
       "provider": "public_website_health",
       "app_id": null,
       "schedule": "daily:08:15:Asia/Shanghai",
-      "last_run": "2026-08-21T01:12:28.426Z",
-      "next_run": "2026-08-22T01:12:28.426Z",
+      "last_run": "2026-08-21T08:51:01.288Z",
+      "next_run": "2026-08-22T08:51:01.288Z",
       "status": "scheduled",
       "duration": null,
       "result": {
-        "records_received": 6,
-        "reachable": 6,
+        "records_received": 7,
+        "reachable": 7,
         "data_through": "2026-08-21"
       },
       "error": null,
@@ -1995,7 +2013,7 @@
       "name_zh": "WonderElian AI COO 统一运营与 Analytics 监测",
       "schedule": "daily:03:30,09:30,15:30,20:30:Asia/Shanghai",
       "last_run": "2026-08-19T12:31:39.368Z",
-      "next_run": "2026-08-21T01:30:00.000Z",
+      "next_run": "2026-08-21T12:30:00.000Z",
       "status": "scheduled",
       "duration": null,
       "result": {
@@ -2040,6 +2058,71 @@
         "tiktok_self_post": "blocked_blank_studio",
         "x_self_post": "blocked_platform_suspension",
         "attributable_downloads": null
+      },
+      "status": "success",
+      "error": null
+    },
+    {
+      "id": "26d65501-31ab-4112-9167-cb05c46c38b4",
+      "at": "2026-08-21T08:51:01.288Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "authorized_website_operations_expansion",
+      "action": "sync_portfolio_website_health",
+      "input": {
+        "external_writes": false,
+        "websites": 7
+      },
+      "result": {
+        "reachable": 7,
+        "total": 7,
+        "inserted": 0,
+        "updated": 7,
+        "analytics_tags_detected": 7,
+        "data_through": "2026-08-21"
+      },
+      "status": "success",
+      "error": null
+    },
+    {
+      "id": "e5fc7d7e-dae8-4f63-9d5c-de1a668606e5",
+      "at": "2026-08-21T08:49:56.874Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "authorized_website_operations_expansion",
+      "action": "sync_portfolio_website_health",
+      "input": {
+        "external_writes": false,
+        "websites": 7
+      },
+      "result": {
+        "reachable": 7,
+        "total": 7,
+        "inserted": 1,
+        "updated": 6,
+        "analytics_tags_detected": 6,
+        "data_through": "2026-08-21"
+      },
+      "status": "success",
+      "error": null
+    },
+    {
+      "id": "18474ccb-f39a-402c-9b4a-14517394b868",
+      "at": "2026-08-21T08:49:56.742Z",
+      "actor": "Codex COO",
+      "app_id": null,
+      "source": "active_user_authorization",
+      "action": "register_maker_business_lab_operations",
+      "input": {
+        "website": "https://maker.wonderelian.com/",
+        "external_writes": false,
+        "product_repository_changes": false
+      },
+      "result": {
+        "website_id": "site-maker-business-lab",
+        "websites_tracked": 7,
+        "analytics_status": "tag_detected",
+        "verified_traffic_observations": 0
       },
       "status": "success",
       "error": null
@@ -4414,6 +4497,38 @@
       "records_unchanged": 222,
       "data_through": "2026-08-20",
       "error": null
+    },
+    {
+      "id": "sync-public_website_health-2026-08-21T08-49-56-874Z",
+      "app_id": null,
+      "provider": "public_website_health",
+      "period_start": "2026-08-21",
+      "period_end": "2026-08-21",
+      "started_at": "2026-08-21T08:49:56.874Z",
+      "completed_at": "2026-08-21T08:49:56.874Z",
+      "status": "succeeded",
+      "records_received": 7,
+      "records_inserted": 1,
+      "records_updated": 6,
+      "records_unchanged": 0,
+      "data_through": "2026-08-21",
+      "error": null
+    },
+    {
+      "id": "sync-public_website_health-2026-08-21T08-51-01-288Z",
+      "app_id": null,
+      "provider": "public_website_health",
+      "period_start": "2026-08-21",
+      "period_end": "2026-08-21",
+      "started_at": "2026-08-21T08:51:01.288Z",
+      "completed_at": "2026-08-21T08:51:01.288Z",
+      "status": "succeeded",
+      "records_received": 7,
+      "records_inserted": 0,
+      "records_updated": 7,
+      "records_unchanged": 0,
+      "data_through": "2026-08-21",
+      "error": null
     }
   ],
   "reconciliations": [],
@@ -4469,7 +4584,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-08-21T01:12:28.426Z"
+      "last_checked_at": "2026-08-21T08:51:01.288Z"
     },
     {
       "id": "site-yixiu",
@@ -4484,7 +4599,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-08-21T01:12:28.426Z"
+      "last_checked_at": "2026-08-21T08:51:01.288Z"
     },
     {
       "id": "site-human-design",
@@ -4499,7 +4614,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "tag_detected",
-      "last_checked_at": "2026-08-21T01:12:28.426Z"
+      "last_checked_at": "2026-08-21T08:51:01.288Z"
     },
     {
       "id": "site-wendao",
@@ -4514,7 +4629,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-08-21T01:12:28.426Z"
+      "last_checked_at": "2026-08-21T08:51:01.288Z"
     },
     {
       "id": "site-xiazi",
@@ -4529,7 +4644,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-08-21T01:12:28.426Z"
+      "last_checked_at": "2026-08-21T08:51:01.288Z"
     },
     {
       "id": "site-wonderelian",
@@ -4544,7 +4659,22 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-08-21T01:12:28.426Z"
+      "last_checked_at": "2026-08-21T08:51:01.288Z"
+    },
+    {
+      "id": "site-maker-business-lab",
+      "app_id": null,
+      "name": "Maker Business Lab",
+      "name_zh": "Maker Business Lab",
+      "url": "https://maker.wonderelian.com/",
+      "kind": "business_tool",
+      "hosting": "github_pages",
+      "market": "united_states",
+      "primary_conversion": "recommendation_click",
+      "operation_status": "active",
+      "health_status": "live",
+      "analytics_status": "tag_detected",
+      "last_checked_at": "2026-08-21T08:51:01.288Z"
     }
   ],
   "website_observations": [
@@ -4552,7 +4682,7 @@
       "id": "website-health-site-style-atlas-2026-08-21",
       "website_id": "site-style-atlas",
       "app_id": "style-atlas",
-      "observed_at": "2026-08-21T01:12:28.426Z",
+      "observed_at": "2026-08-21T08:51:01.288Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://style-atlas.wonderelian.com/",
       "verification_type": "api_verified",
@@ -4580,7 +4710,7 @@
       "id": "website-health-site-yixiu-2026-08-21",
       "website_id": "site-yixiu",
       "app_id": "yixiu-meditation",
-      "observed_at": "2026-08-21T01:12:28.426Z",
+      "observed_at": "2026-08-21T08:51:01.288Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://yixiu.wonderelian.com/",
       "verification_type": "api_verified",
@@ -4608,7 +4738,7 @@
       "id": "website-health-site-human-design-2026-08-21",
       "website_id": "site-human-design",
       "app_id": "know-yourself",
-      "observed_at": "2026-08-21T01:12:28.426Z",
+      "observed_at": "2026-08-21T08:51:01.288Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://human-design.wonderelian.com/",
       "verification_type": "api_verified",
@@ -4636,14 +4766,14 @@
       "id": "website-health-site-wendao-2026-08-21",
       "website_id": "site-wendao",
       "app_id": "wendao",
-      "observed_at": "2026-08-21T01:12:28.426Z",
+      "observed_at": "2026-08-21T08:51:01.288Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://wendao.wonderelian.com/",
       "verification_type": "api_verified",
       "reachable": true,
       "http_status": 200,
       "final_url": "https://wendao.wonderelian.com/",
-      "server": "GitHub.com",
+      "server": "nginx/1.26.3",
       "content_type": "text/html; charset=utf-8",
       "lang": "zh-CN",
       "title": "三慢问道 · 流动人生",
@@ -4654,9 +4784,9 @@
       "structured_data_count": 0,
       "analytics_detected": true,
       "app_store_link_count": 0,
-      "robots_status": 404,
+      "robots_status": 200,
       "robots_valid": false,
-      "sitemap_status": 404,
+      "sitemap_status": 200,
       "sitemap_valid": false,
       "error": null
     },
@@ -4664,7 +4794,7 @@
       "id": "website-health-site-xiazi-2026-08-21",
       "website_id": "site-xiazi",
       "app_id": "xiazi-yesterdays-world",
-      "observed_at": "2026-08-21T01:12:28.426Z",
+      "observed_at": "2026-08-21T08:51:01.288Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://xiazishuo.com/",
       "verification_type": "api_verified",
@@ -4692,7 +4822,7 @@
       "id": "website-health-site-wonderelian-2026-08-21",
       "website_id": "site-wonderelian",
       "app_id": null,
-      "observed_at": "2026-08-21T01:12:28.426Z",
+      "observed_at": "2026-08-21T08:51:01.288Z",
       "source": "Public HTTP and HTML probe",
       "source_reference": "https://wonderelian.com/",
       "verification_type": "api_verified",
@@ -4708,6 +4838,34 @@
       "h1": null,
       "og_title": "WonderElian | Design, AI &amp; Independent Creative Products",
       "structured_data_count": 1,
+      "analytics_detected": true,
+      "app_store_link_count": 0,
+      "robots_status": 200,
+      "robots_valid": true,
+      "sitemap_status": 200,
+      "sitemap_valid": true,
+      "error": null
+    },
+    {
+      "id": "website-health-site-maker-business-lab-2026-08-21",
+      "website_id": "site-maker-business-lab",
+      "app_id": null,
+      "observed_at": "2026-08-21T08:51:01.288Z",
+      "source": "Public HTTP and HTML probe",
+      "source_reference": "https://maker.wonderelian.com/",
+      "verification_type": "api_verified",
+      "reachable": true,
+      "http_status": 200,
+      "final_url": "https://maker.wonderelian.com/",
+      "server": "GitHub.com",
+      "content_type": "text/html; charset=utf-8",
+      "lang": "en",
+      "title": "Maker Business Lab — Turn Maker Skills Into Business Numbers",
+      "description": "Find maker products worth selling, calculate realistic profit and payback, and match your business to the right production setup.",
+      "canonical": "https://maker.wonderelian.com/",
+      "h1": "Choose your next winning product.",
+      "og_title": "Maker Business Lab",
+      "structured_data_count": 0,
       "analytics_detected": true,
       "app_store_link_count": 0,
       "robots_status": 200,
@@ -14126,10 +14284,24 @@
       "app_id": null,
       "priority": "P0",
       "status": "audited",
-      "title": "Turn the portfolio into the six-site discovery hub",
-      "title_zh": "把品牌站变成六站发现中枢",
-      "next_action": "Add a clear visible H1, verified links to all five products and measurable product-discovery clicks.",
-      "next_action_zh": "增加清晰可见的 H1、五个产品的已验证链接，并测量产品发现点击。",
+      "title": "Turn the portfolio into the seven-site discovery hub",
+      "title_zh": "把品牌站变成七站发现中枢",
+      "next_action": "Add a clear visible H1, verified links to all six products and measurable product-discovery clicks.",
+      "next_action_zh": "增加清晰可见的 H1、六个产品的已验证链接，并测量产品发现点击。",
+      "page_views": null,
+      "cta_clicks": null,
+      "conversions": null
+    },
+    {
+      "id": "webop-maker-business-lab-growth",
+      "website_id": "site-maker-business-lab",
+      "app_id": null,
+      "priority": "P0",
+      "status": "active",
+      "title": "Grow qualified maker-business decisions and attributable recommendations",
+      "title_zh": "增长高意向创客商业决策与可归因推荐",
+      "next_action": "Connect the existing PostHog or first-party event stream to a verified read-only Provider, then measure opportunity discovery and recommendation clicks without changing product logic.",
+      "next_action_zh": "将现有 PostHog 或第一方事件流接入已验证的只读 Provider，再测量机会发现与推荐点击，不改变产品逻辑。",
       "page_views": null,
       "cta_clicks": null,
       "conversions": null
