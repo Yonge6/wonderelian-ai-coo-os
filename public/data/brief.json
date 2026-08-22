@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T08:53:07.498Z",
+  "generated_at": "2026-08-22T00:32:49.428Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -1284,6 +1284,27 @@
   "portfolio_summary_zh": "已追踪 5 个应用和 7 个网站。目前 1 个上报北极星指标；所有建议均受数据覆盖度约束。",
   "what_changed": [
     {
+      "id": "operational-change-yixiu-v1-3-live-20260822",
+      "app_id": "yixiu-meditation",
+      "type": "operational_change",
+      "metric": "app_store_version_release",
+      "label": "Yixiu v1.3 is live on the App Store",
+      "label_zh": "一休冥想 v1.3 已在 App Store 上线",
+      "current_value": "1.3",
+      "previous_baseline": "1.2",
+      "absolute_change": null,
+      "percentage_change": null,
+      "sample_size": null,
+      "confidence": 1,
+      "severity": "high",
+      "direction": "neutral",
+      "detected_at": "2026-08-21T23:57:57.000Z",
+      "evidence": "Apple's official lookup returns version 1.3, the public product URL and the current release notes.",
+      "evidence_zh": "Apple 官方 Lookup API 已返回版本 1.3、公开产品地址与当前版本说明。",
+      "source_reference": "https://itunes.apple.com/lookup?id=1461182261&country=us",
+      "verification_type": "api_verified"
+    },
+    {
       "id": "operational-change-wendao-app-store-launch-20260818",
       "app_id": "wendao",
       "type": "operational_change",
@@ -1515,7 +1536,7 @@
           "last_successful_import": "2026-08-14T09:20:00.000Z",
           "freshness": "manual",
           "age_state": "stale",
-          "age_days": 8.4,
+          "age_days": 9,
           "data_available": [
             "impressions",
             "product_page_views",
@@ -1741,7 +1762,10 @@
       "last_successful_import": "2026-08-21T08:51:01.288Z",
       "stale_providers": [],
       "missing_critical_metrics": [
-        "first_time_downloads"
+        "first_time_downloads",
+        "product_page_views",
+        "trial_starts",
+        "paid_conversions"
       ],
       "import_errors": [],
       "attribution": {

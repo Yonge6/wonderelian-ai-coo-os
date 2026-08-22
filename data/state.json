@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-08-21T08:53:06.786Z",
+    "last_updated": "2026-08-22T00:31:21.306Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -89,15 +89,17 @@
       "owner": "WonderElian",
       "location": "Wuhan, China",
       "created_at": null,
-      "updated_at": "2026-08-14T09:20:00.000Z"
+      "updated_at": "2026-08-21T23:57:57.000Z",
+      "promotion_priority": null,
+      "promotion_status": "paused_by_owner"
     },
     {
       "id": "yixiu-meditation",
       "name": "Yixiu Meditation",
       "name_zh": "一休冥想",
       "slug": "yixiu-meditation",
-      "description": null,
-      "category": "Meditation",
+      "description": "Nature sounds, immersive scenes and water breathing for sleep, focus and quiet pauses.",
+      "category": "Health & Fitness",
       "platform": [
         "iOS",
         "web"
@@ -106,22 +108,48 @@
         "iOS",
         "web"
       ],
-      "app_store_url": null,
+      "app_store_url": "https://apps.apple.com/us/app/yixiu-white-noise-sleep/id1461182261",
       "website_url": "https://yixiu.wonderelian.com/",
       "status": "active",
-      "primary_market": null,
-      "target_audience": null,
-      "positioning": null,
-      "monetization_model": null,
-      "acquisition_channels": [],
-      "keywords": [],
+      "primary_market": "global",
+      "target_audience": "People seeking nature sounds for sleep, focus and quiet pauses.",
+      "positioning": "A no-account, no-ad nature-sound space for sleep, focus and breathing at your own pace.",
+      "monetization_model": "freemium with monthly and annual Yixiu Plus subscriptions",
+      "acquisition_channels": [
+        "search",
+        "social",
+        "owned_web",
+        "community"
+      ],
+      "keywords": [
+        "nature sounds",
+        "white noise",
+        "sleep",
+        "focus",
+        "water breathing"
+      ],
       "competitors": [],
       "social_accounts": [],
-      "kpis": [],
-      "content_themes": [],
+      "kpis": [
+        "first_time_downloads",
+        "product_page_views",
+        "trial_starts",
+        "paid_conversions"
+      ],
+      "content_themes": [
+        "sleep rituals",
+        "focus soundscapes",
+        "water breathing",
+        "quiet product trust",
+        "Yixiu Plus value"
+      ],
       "owner": "WonderElian",
       "created_at": null,
-      "updated_at": "2026-08-14T09:20:00.000Z"
+      "updated_at": "2026-08-21T23:57:57.000Z",
+      "app_store_version": "1.3",
+      "app_store_release_date": "2026-08-21T23:57:57.000Z",
+      "promotion_priority": 1,
+      "promotion_status": "active_highest_priority"
     },
     {
       "id": "know-yourself",
@@ -2008,19 +2036,22 @@
       "id": "job-codex-ai-coo-unified",
       "type": "run_codex_ai_coo_automation",
       "provider": "codex_automation",
-      "app_id": "style-atlas",
-      "name": "WonderElian AI COO Unified Operations and Analytics Monitoring",
-      "name_zh": "WonderElian AI COO 统一运营与 Analytics 监测",
+      "app_id": "yixiu-meditation",
+      "name": "WonderElian AI COO Yixiu Growth and Analytics Monitoring",
+      "name_zh": "WonderElian AI COO 一休冥想增长与 Analytics 监测",
       "schedule": "daily:03:30,09:30,15:30,20:30:Asia/Shanghai",
       "last_run": "2026-08-19T12:31:39.368Z",
       "next_run": "2026-08-21T12:30:00.000Z",
       "status": "scheduled",
       "duration": null,
       "result": {
-        "verified_publications": 4,
-        "community_replies": 3,
-        "seo_endpoints_verified": 0,
-        "attributable_downloads": null
+        "growth_priority": "yixiu_highest",
+        "style_atlas_promotion": "paused",
+        "verified_publications": 0,
+        "community_replies": 0,
+        "attributable_downloads": null,
+        "trial_starts": null,
+        "paid_conversions": null
       },
       "error": null,
       "retry_count": 0,
@@ -2028,6 +2059,18 @@
     }
   ],
   "events": [
+    {
+      "id": "event-yixiu-v1-3-live-20260822",
+      "type": "app_store_release",
+      "app_id": "yixiu-meditation",
+      "entity_id": "yixiu-v1-3",
+      "at": "2026-08-21T23:57:57.000Z",
+      "source": "official_apple_itunes_lookup_api",
+      "payload": {
+        "version": "1.3",
+        "url": "https://apps.apple.com/us/app/yixiu-white-noise-sleep/id1461182261"
+      }
+    },
     {
       "id": "event-x-hierarchy-guide-published",
       "type": "content_published",
@@ -2041,6 +2084,30 @@
     }
   ],
   "audit": [
+    {
+      "id": "audit-yixiu-v1-3-growth-priority-20260822",
+      "at": "2026-08-21T23:57:57.000Z",
+      "actor": "Codex COO",
+      "app_id": "yixiu-meditation",
+      "source": "explicit_user_priority + official_apple_itunes_lookup_api",
+      "action": "verify_yixiu_v1_3_and_make_yixiu_highest_growth_priority",
+      "input": {
+        "external_writes": false,
+        "style_atlas_active_promotion": false
+      },
+      "result": {
+        "version": "1.3",
+        "app_store_url": "https://apps.apple.com/us/app/yixiu-white-noise-sleep/id1461182261",
+        "yixiu_promotion": "active_highest_priority",
+        "style_atlas_promotion": "paused_by_owner",
+        "automation_updated_in_place": true,
+        "first_time_downloads": null,
+        "trial_starts": null,
+        "paid_conversions": null
+      },
+      "status": "success",
+      "error": null
+    },
     {
       "id": "audit-sync-style-atlas-growth-20260819",
       "at": "2026-08-19T12:31:39.368Z",
@@ -3140,6 +3207,27 @@
     }
   ],
   "detections": [
+    {
+      "id": "operational-change-yixiu-v1-3-live-20260822",
+      "app_id": "yixiu-meditation",
+      "type": "operational_change",
+      "metric": "app_store_version_release",
+      "label": "Yixiu v1.3 is live on the App Store",
+      "label_zh": "一休冥想 v1.3 已在 App Store 上线",
+      "current_value": "1.3",
+      "previous_baseline": "1.2",
+      "absolute_change": null,
+      "percentage_change": null,
+      "sample_size": null,
+      "confidence": 1,
+      "severity": "high",
+      "direction": "neutral",
+      "detected_at": "2026-08-21T23:57:57.000Z",
+      "evidence": "Apple's official lookup returns version 1.3, the public product URL and the current release notes.",
+      "evidence_zh": "Apple 官方 Lookup API 已返回版本 1.3、公开产品地址与当前版本说明。",
+      "source_reference": "https://itunes.apple.com/lookup?id=1461182261&country=us",
+      "verification_type": "api_verified"
+    },
     {
       "id": "operational-change-wendao-app-store-launch-20260818",
       "app_id": "wendao",

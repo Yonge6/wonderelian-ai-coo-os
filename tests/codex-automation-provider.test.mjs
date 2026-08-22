@@ -10,7 +10,7 @@ import {
 const source = `
 id = "style-atlas-analytics"
 kind = "heartbeat"
-name = "WonderElian AI COO 统一运营与 Analytics 监测"
+name = "WonderElian AI COO 一休冥想增长与 Analytics 监测"
 prompt = "private operating instructions"
 status = "ACTIVE"
 rrule = "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR,SA,SU;BYHOUR=3,9,15,20;BYMINUTE=30"
@@ -33,7 +33,8 @@ test("daily Beijing automation is normalized without prompt or thread metadata",
   assert.equal(dailyScheduleFromRrule(metadata.rrule), "daily:03:30,09:30,15:30,20:30:Asia/Shanghai");
   assert.equal(nextShanghaiDailyRun(job.schedule, new Date("2026-08-18T03:00:00.000Z")), "2026-08-18T07:30:00.000Z");
   assert.equal(job.status, "scheduled");
-  assert.equal(job.name_zh, "WonderElian AI COO 统一运营与 Analytics 监测");
+  assert.equal(job.name_zh, "WonderElian AI COO 一休冥想增长与 Analytics 监测");
+  assert.equal(job.app_id, "yixiu-meditation");
   assert.equal(job.result.attributable_downloads, null);
   assert.equal(JSON.stringify(job).includes("private"), false);
 });

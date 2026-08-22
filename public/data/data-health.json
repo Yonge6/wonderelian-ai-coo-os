@@ -10,7 +10,7 @@
         "last_successful_import": "2026-08-14T09:20:00.000Z",
         "freshness": "manual",
         "age_state": "stale",
-        "age_days": 8.4,
+        "age_days": 9,
         "data_available": [
           "impressions",
           "product_page_views",
@@ -236,7 +236,10 @@
     "last_successful_import": "2026-08-21T08:51:01.288Z",
     "stale_providers": [],
     "missing_critical_metrics": [
-      "first_time_downloads"
+      "first_time_downloads",
+      "product_page_views",
+      "trial_starts",
+      "paid_conversions"
     ],
     "import_errors": [],
     "attribution": {
