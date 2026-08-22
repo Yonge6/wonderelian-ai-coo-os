@@ -3,7 +3,7 @@ set -euo pipefail
 
 readonly PUBLIC_COMMIT="02d3b9d5bc8830d5e29693e15ba7c148034a2661"
 readonly ROOT="${OPS_ROOT:-/srv/wonderelian/ops.wonderelian.com}"
-readonly RAW_BASE="https://raw.githubusercontent.com/Yonge6/wonderelian-ai-coo-os/${PUBLIC_COMMIT}/public"
+readonly ARCHIVE_URL="https://github.com/Yonge6/wonderelian-ai-coo-os/archive/${PUBLIC_COMMIT}.tar.gz"
 
 readonly -a FILES=(
   "index.html"
@@ -27,15 +27,20 @@ readonly TEMP_DIR="$(mktemp -d /tmp/ai-coo-maker-seven-site.XXXXXX)"
 readonly BACKUP_DIR="/srv/wonderelian/backups/ops-maker-seven-site-$(date +%Y%m%d%H%M%S)"
 trap 'rm -rf "$TEMP_DIR"' EXIT
 
+echo "FETCH_ARCHIVE_START"
+curl --retry 5 --retry-all-errors --connect-timeout 15 --max-time 300 \
+  -fsSL "$ARCHIVE_URL" -o "$TEMP_DIR/source.tar.gz"
+tar -xzf "$TEMP_DIR/source.tar.gz" -C "$TEMP_DIR"
+readonly SOURCE_PUBLIC="$TEMP_DIR/wonderelian-ai-coo-os-${PUBLIC_COMMIT}/public"
+
 for file in "${FILES[@]}"; do
-  mkdir -p "$TEMP_DIR/$(dirname "$file")"
-  curl --retry 3 --retry-all-errors --connect-timeout 15 --max-time 120 \
-    -fsSL "$RAW_BASE/$file" -o "$TEMP_DIR/$file"
-  actual="$(sha256sum "$TEMP_DIR/$file" | cut -d' ' -f1)"
+  test -f "$SOURCE_PUBLIC/$file"
+  actual="$(sha256sum "$SOURCE_PUBLIC/$file" | cut -d' ' -f1)"
   test "$actual" = "${EXPECTED_SHA256[$file]}"
 done
+echo "ARCHIVE_HASHES_OK"
 
-python3 - "$TEMP_DIR" <<'PY'
+python3 - "$SOURCE_PUBLIC" <<'PY'
 import json
 import pathlib
 import sys
@@ -66,7 +71,7 @@ PY
 mkdir -p "$BACKUP_DIR/data"
 for file in "${FILES[@]}"; do
   cp -a "$ROOT/$file" "$BACKUP_DIR/$file"
-  cp "$TEMP_DIR/$file" "$ROOT/$file"
+  cp "$SOURCE_PUBLIC/$file" "$ROOT/$file"
   chmod 0644 "$ROOT/$file"
 done
 
