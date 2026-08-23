@@ -3,7 +3,7 @@ set -euo pipefail
 
 readonly PUBLIC_COMMIT="18ae1f842c2ac60b95dd7b14878ce6d290064b43"
 readonly ROOT="${OPS_ROOT:-/srv/wonderelian/ops.wonderelian.com}"
-readonly RAW_BASE_URL="https://raw.githubusercontent.com/Yonge6/wonderelian-ai-coo-os/${PUBLIC_COMMIT}/public/data"
+readonly RAW_BASE_URL="https://cdn.jsdelivr.net/gh/Yonge6/wonderelian-ai-coo-os@${PUBLIC_COMMIT}/public/data"
 readonly TEMP_DIR="$(mktemp -d /tmp/ai-coo-maker-ga4-audit.XXXXXX)"
 readonly BACKUP_DIR="/srv/wonderelian/backups/ops-maker-ga4-audit-$(date +%Y%m%d%H%M%S)"
 trap 'rm -rf "$TEMP_DIR"' EXIT
