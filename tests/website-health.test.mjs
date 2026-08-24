@@ -65,8 +65,8 @@ test("production state registers seven operated websites and verified GA4 observ
   const maker = state.websites.find((row) => row.id === "site-maker-business-lab");
   assert.equal(maker?.url, "https://maker.wonderelian.com/");
   assert.equal(maker?.primary_conversion, "recommendation_click");
-  assert.equal(maker?.analytics_status, "tag_detected");
-  assert.equal(state.website_metrics.some((row) => row.website_id === maker.id), false);
+  assert.equal(maker?.analytics_status, "connected");
+  assert.equal(state.website_metrics.some((row) => row.website_id === maker.id && row.period_end === "2026-08-23"), true);
   assert.ok(state.website_metrics.length > 0);
   assert.equal(state.website_metrics.every((row) => row.verification_type === "api_verified" && row.provider === "website_analytics_api"), true);
   assert.equal(
@@ -79,7 +79,7 @@ test("production state registers seven operated websites and verified GA4 observ
   assert.deepEqual(brief.website_summary, {
     sites_tracked:7,
     sites_live:7,
-    analytics_connected:5,
+    analytics_connected:6,
     traffic_metrics_available:state.website_metrics.filter((row) => row.value !== null).length,
     data_through:state.metadata.data_through.website_health,
   });
