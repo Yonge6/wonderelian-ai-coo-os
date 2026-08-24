@@ -143,7 +143,7 @@
         "name": "Google Analytics 4 Website Data",
         "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-24T01:18:14.771Z",
+        "last_successful_import": "2026-08-24T02:36:35.814Z",
         "freshness": "delayed",
         "age_state": "unknown",
         "age_days": null,
@@ -161,7 +161,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-24T01:18:14.771Z",
+    "last_successful_import": "2026-08-24T02:36:35.814Z",
     "stale_providers": [
       "manual_app_store_connect"
     ],
@@ -215,7 +215,7 @@
         "name": "Google Analytics 4 Website Data",
         "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-24T01:18:14.771Z",
+        "last_successful_import": "2026-08-24T02:36:35.814Z",
         "freshness": "delayed",
         "age_state": "unknown",
         "age_days": null,
@@ -233,7 +233,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-24T01:18:14.771Z",
+    "last_successful_import": "2026-08-24T02:36:35.814Z",
     "stale_providers": [],
     "missing_critical_metrics": [
       "first_time_downloads",
@@ -277,7 +277,7 @@
         "name": "Google Analytics 4 Website Data",
         "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-24T01:18:14.771Z",
+        "last_successful_import": "2026-08-24T02:36:35.814Z",
         "freshness": "delayed",
         "age_state": "unknown",
         "age_days": null,
@@ -295,7 +295,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-24T01:18:14.771Z",
+    "last_successful_import": "2026-08-24T02:36:35.814Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [],
@@ -334,7 +334,7 @@
         "name": "Google Analytics 4 Website Data",
         "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-24T01:18:14.771Z",
+        "last_successful_import": "2026-08-24T02:36:35.814Z",
         "freshness": "delayed",
         "age_state": "unknown",
         "age_days": null,
@@ -352,7 +352,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-24T01:18:14.771Z",
+    "last_successful_import": "2026-08-24T02:36:35.814Z",
     "stale_providers": [],
     "missing_critical_metrics": [
       "first_time_downloads",
@@ -394,7 +394,7 @@
         "name": "Google Analytics 4 Website Data",
         "status": "live",
         "mode": "official_read_only_api",
-        "last_successful_import": "2026-08-24T01:18:14.771Z",
+        "last_successful_import": "2026-08-24T02:36:35.814Z",
         "freshness": "delayed",
         "age_state": "unknown",
         "age_days": null,
@@ -412,7 +412,7 @@
         "error": null
       }
     ],
-    "last_successful_import": "2026-08-24T01:18:14.771Z",
+    "last_successful_import": "2026-08-24T02:36:35.814Z",
     "stale_providers": [],
     "missing_critical_metrics": [],
     "import_errors": [],

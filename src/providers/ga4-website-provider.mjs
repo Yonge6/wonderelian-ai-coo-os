@@ -1,7 +1,7 @@
 import { createGoogleAnalyticsAccessToken, googleAnalyticsConfig, missingGoogleAnalyticsConfig } from "./auth.mjs";
 import { ProviderUnavailableError } from "./contracts.mjs";
 
-const PRIMARY_EVENTS=new Set(["app_store_download","app_discovery","chart_completion","chapter_read","poster_engagement","product_discovery","recommendation_click"]);
+const PRIMARY_EVENTS=new Set(["app_store_download","app_discovery","yixiu_download_click","chart_completion","chapter_read","poster_engagement","product_discovery","recommendation_click"]);
 const REPORTS=[
   {id:"overview",dimensions:["date","hostName"],metrics:["screenPageViews","activeUsers","sessions"]},
   {id:"sources",dimensions:["date","hostName","sessionSourceMedium"],metrics:["sessions"]},

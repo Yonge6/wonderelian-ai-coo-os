@@ -30,6 +30,15 @@ test("GA4 normalization supports the Maker Business Lab recommendation event",()
   assert.equal(observations.find((row)=>row.metric==="cta_clicks")?.value,2);
 });
 
+test("GA4 normalization counts the Yixiu App Store click as a primary CTA",()=>{
+  const yixiuWebsites=[{id:"site-yixiu",url:"https://yixiu.wonderelian.com/",analytics_status:"connected",primary_conversion:"app_discovery"}];
+  const observations=normalizeGa4Reports({
+    events:report(["date","hostName","eventName"],["eventCount"],[[["20260823","yixiu.wonderelian.com","yixiu_download_click"],[4]]]),
+  },{websites:yixiuWebsites,propertyId:"123",now:"2026-08-24T00:00:00.000Z"});
+  assert.equal(observations.find((row)=>row.metric==="yixiu_download_click")?.value,4);
+  assert.equal(observations.find((row)=>row.metric==="cta_clicks")?.value,4);
+});
+
 test("GA4 provider uses the official endpoint and a read-only report body",async()=>{
   const requests=[];const fetchFn=async(url,options)=>{requests.push({url,body:JSON.parse(options.body)});return new Response(JSON.stringify(report(["date","hostName"],["screenPageViews"],[])),{status:200,headers:{"content-type":"application/json"}});};
   const provider=new Ga4WebsiteProvider({config:{propertyId:"123",accessToken:"test-token",credentialsPath:null},fetchFn,tokenFactory:async()=>"test-token"});
