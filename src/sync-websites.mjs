@@ -28,8 +28,15 @@ await store.mutate((next) => {
 
   for (const website of next.websites) {
     const observation = result.observations.find((row) => row.website_id === website.id);
+    const hasVerifiedTraffic = next.website_metrics.some((row) =>
+      row.website_id === website.id &&
+      row.provider === "website_analytics_api" &&
+      row.verification_type === "api_verified",
+    );
     website.health_status = observation?.reachable ? "live" : "unavailable";
-    website.analytics_status = observation?.analytics_detected ? website.analytics_status === "connected" ? "connected" : "tag_detected" : "not_connected";
+    website.analytics_status = hasVerifiedTraffic || website.analytics_status === "connected"
+      ? "connected"
+      : observation?.analytics_detected ? "tag_detected" : "not_connected";
     website.last_checked_at = now;
   }
 
