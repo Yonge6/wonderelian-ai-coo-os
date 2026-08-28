@@ -82,7 +82,7 @@ sha256sum \
   > "$AFTER_DATA_HASHES"
 cmp -s "$BEFORE_DATA_HASHES" "$AFTER_DATA_HASHES" || rollback
 
-curl -fsS -H "Host: ops.wonderelian.com" http://127.0.0.1/ \
+curl -kfsS --resolve "ops.wonderelian.com:443:127.0.0.1" https://ops.wonderelian.com/ \
   | grep -q "20260828-activity-pagination" || rollback
 
 echo "DEPLOY_OK_PAGINATION_20260828_02301DC"
