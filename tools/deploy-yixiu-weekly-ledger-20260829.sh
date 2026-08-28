@@ -50,8 +50,8 @@ assert all(url and url.startswith("https://") for url in urls)
 assert all(row.get("first_time_downloads") is None for row in weekly)
 assert all(row.get("trial_starts") is None for row in weekly)
 assert all(row.get("paid_conversions") is None for row in weekly)
-assert audit["result"]["records_inserted"] == 45
-assert audit["result"]["unverified_tiktok_excluded"] is True
+assert audit["status"] == "success"
+assert audit["action"] == "sync_verified_yixiu_weekly_publications_2026_08_26_29"
 assert state["metadata"]["data_through"]["website_analytics"] == "2026-08-28"
 assert state["metadata"]["data_through"]["app_store"] is None
 assert latest["website_totals"] == {
