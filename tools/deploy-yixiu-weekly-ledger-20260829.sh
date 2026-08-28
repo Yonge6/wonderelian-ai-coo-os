@@ -94,8 +94,10 @@ for file in "${FILES[@]}"; do
 done
 
 curl -kfsS --resolve "ops.wonderelian.com:443:127.0.0.1" https://ops.wonderelian.com/ \
-  | grep -q "20260829-yixiu-weekly-ledger" || rollback
+  -o "$TEMP_DIR/loopback-index.html" || rollback
+grep -q "20260829-yixiu-weekly-ledger" "$TEMP_DIR/loopback-index.html" || rollback
 curl -kfsS --resolve "ops.wonderelian.com:443:127.0.0.1" https://ops.wonderelian.com/data/state.json \
-  | grep -q '"id": "audit-yixiu-weekly-publications-20260829"' || rollback
+  -o "$TEMP_DIR/loopback-state.json" || rollback
+grep -q '"id": "audit-yixiu-weekly-publications-20260829"' "$TEMP_DIR/loopback-state.json" || rollback
 
 echo "DEPLOY_OK_YIXIU_WEEKLY_LEDGER_20260829_A1279EF"
