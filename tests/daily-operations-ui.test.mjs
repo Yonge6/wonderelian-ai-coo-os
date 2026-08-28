@@ -75,14 +75,15 @@ test("operations log exposes schedules, verified outcomes, permanent URLs, and n
   assert.match(script, /fmt\(item\.first_time_downloads\)/);
   assert.doesNotMatch(script, /item\.first_time_downloads\s*\?\?\s*0/);
   assert.match(script, /const activityPageSize=6/);
+  assert.match(script, /const activityContentPageSize=10/);
   assert.match(script, /function sortedPublishedContent\(\)/);
-  assert.match(script, /function paginateActivity\(items,key\)/);
+  assert.match(script, /function paginateActivity\(items,key,pageSize=activityPageSize\)/);
   assert.match(script, /function activityPagination\(key,label,page\)/);
   assert.match(script, /String\(b\.published_at\?\?""\)\.localeCompare\(String\(a\.published_at\?\?""\)\)/);
   assert.match(script, /String\(b\.id\)\.localeCompare\(String\(a\.id\)\)/);
-  assert.match(script, /items:items\.slice\(\(current-1\)\*activityPageSize,current\*activityPageSize\)/);
+  assert.match(script, /items:items\.slice\(\(current-1\)\*pageSize,current\*pageSize\)/);
   assert.match(script, /data-activity-page=/);
-  assert.match(script, /paginateActivity\(published,"content"\)/);
+  assert.match(script, /paginateActivity\(published,"content",activityContentPageSize\)/);
   assert.match(script, /paginateActivity\(state\.jobs,"jobs"\)/);
   assert.match(script, /paginateActivity\(state\.audit,"audit"\)/);
   assert.match(script, /paginateActivity\(state\.cycles\.slice\(\)\.reverse\(\),"cycles"\)/);

@@ -10,7 +10,7 @@
         "last_successful_import": "2026-08-14T09:20:00.000Z",
         "freshness": "manual",
         "age_state": "stale",
-        "age_days": 15.9,
+        "age_days": 16,
         "data_available": [
           "impressions",
           "product_page_views",
@@ -243,13 +243,13 @@
     ],
     "import_errors": [],
     "attribution": {
-      "published_assets": 53,
-      "linked_assets": 37,
+      "published_assets": 98,
+      "linked_assets": 82,
       "measured_assets": 0,
-      "link_coverage": 70,
+      "link_coverage": 84,
       "outcome_coverage": 0
     },
-    "coverage_score": 57,
+    "coverage_score": 61,
     "confidence_cap": 0.65
   },
   {
