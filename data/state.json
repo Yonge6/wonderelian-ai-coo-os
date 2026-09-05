@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-09-05T03:21:20.079Z",
+    "last_updated": "2026-09-05T12:36:17.866Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -145,9 +145,9 @@
       ],
       "owner": "WonderElian",
       "created_at": null,
-      "updated_at": "2026-08-21T23:57:57.000Z",
-      "app_store_version": "1.3",
-      "app_store_release_date": "2026-08-21T23:57:57.000Z",
+      "updated_at": "2026-09-04T22:45:01.000Z",
+      "app_store_version": "1.9",
+      "app_store_release_date": "2026-09-04T22:45:01.000Z",
       "promotion_priority": 1,
       "promotion_status": "active_highest_priority"
     },
@@ -5368,6 +5368,18 @@
   ],
   "events": [
     {
+      "id": "event-yixiu-v1-9-live-20260905",
+      "type": "app_store_release",
+      "app_id": "yixiu-meditation",
+      "entity_id": "yixiu-v1-9",
+      "at": "2026-09-04T22:45:01.000Z",
+      "source": "official_apple_itunes_lookup_api",
+      "payload": {
+        "version": "1.9",
+        "url": "https://apps.apple.com/us/app/yixiu-white-noise-sleep/id1461182261"
+      }
+    },
+    {
       "id": "event-yixiu-v1-3-live-20260822",
       "type": "app_store_release",
       "app_id": "yixiu-meditation",
@@ -5392,6 +5404,27 @@
     }
   ],
   "audit": [
+    {
+      "id": "audit-yixiu-v1-9-public-version-20260905",
+      "at": "2026-09-05T12:30:00.000Z",
+      "actor": "AI COO OS",
+      "app_id": "yixiu-meditation",
+      "source": "explicit_user_request + official_apple_itunes_lookup_api",
+      "action": "verify_and_update_yixiu_public_app_store_version",
+      "input": {
+        "external_writes": false
+      },
+      "result": {
+        "previous_version": "1.8",
+        "version": "1.9",
+        "app_store_url": "https://apps.apple.com/us/app/yixiu-white-noise-sleep/id1461182261",
+        "first_time_downloads": null,
+        "trial_starts": null,
+        "paid_conversions": null
+      },
+      "status": "success",
+      "error": null
+    },
     {
       "id": "audit-yixiu-publications-20260904",
       "at": "2026-09-05T03:21:20.072Z",
@@ -7674,6 +7707,27 @@
     }
   ],
   "detections": [
+    {
+      "id": "operational-change-yixiu-v1-9-live-20260905",
+      "app_id": "yixiu-meditation",
+      "type": "operational_change",
+      "metric": "app_store_version_release",
+      "label": "Yixiu v1.9 is live on the App Store",
+      "label_zh": "一休冥想 v1.9 已在 App Store 上线",
+      "current_value": "1.9",
+      "previous_baseline": "1.8",
+      "absolute_change": null,
+      "percentage_change": null,
+      "sample_size": null,
+      "confidence": 1,
+      "severity": "high",
+      "direction": "neutral",
+      "detected_at": "2026-09-04T22:45:01.000Z",
+      "evidence": "Apple's official lookup returns version 1.9, the public product URL and the current release date.",
+      "evidence_zh": "Apple 官方 Lookup API 已返回版本 1.9、公开产品地址与当前发布日期。",
+      "source_reference": "https://itunes.apple.com/lookup?id=1461182261&country=us",
+      "verification_type": "api_verified"
+    },
     {
       "id": "operational-change-yixiu-v1-3-live-20260822",
       "app_id": "yixiu-meditation",

@@ -10,6 +10,7 @@
     "migrate:phase3": "node src/migrate-phase3.mjs",
     "migrate:maker-business-lab": "node src/migrate-maker-business-lab.mjs",
     "migrate:yixiu-growth-priority": "node src/migrate-yixiu-growth-priority.mjs",
+    "migrate:yixiu-v1-9": "node src/migrate-yixiu-v1-9.mjs",
     "cycle": "node src/run-cycle.mjs",
     "cycle:growth": "node src/run-growth-cycle.mjs",
     "sync:websites": "node src/sync-websites.mjs",

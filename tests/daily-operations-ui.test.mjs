@@ -38,10 +38,11 @@ test("command center ships an evidence-backed bilingual daily operations module"
   assert.equal(growthAutomation.result.attributable_downloads, null);
   const yixiu = state.apps.find((item) => item.id === "yixiu-meditation");
   const styleAtlas = state.apps.find((item) => item.id === "style-atlas");
-  assert.equal(yixiu.app_store_version, "1.3");
+  assert.equal(yixiu.app_store_version, "1.9");
   assert.equal(yixiu.promotion_status, "active_highest_priority");
   assert.equal(styleAtlas.promotion_status, "paused_by_owner");
   assert.ok(state.detections.some((item) => item.id === "operational-change-yixiu-v1-3-live-20260822"));
+  assert.ok(state.detections.some((item) => item.id === "operational-change-yixiu-v1-9-live-20260905"));
   assert.match(script, /每天 \$\{times\}（北京时间）/);
   assert.ok(state.audit.length > 0);
   const published = state.content.filter((item) => item.status === "published");
