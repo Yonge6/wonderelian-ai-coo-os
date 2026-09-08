@@ -15,8 +15,8 @@ const job = normalizeCodexAutomation(metadata, {
   now,
   lastRun: verifiedAt,
   result: {
-    verified_publications: 4,
-    community_replies: 3,
+    verified_publications: 0,
+    community_replies: 0,
     seo_endpoints_verified: 0,
     attributable_downloads: null,
   },
@@ -130,20 +130,19 @@ await store.mutate((state) => {
   if (xChannel) xChannel.status = "blocked_platform_suspension";
   state.audit = state.audit.filter((item) => item.id !== "audit-sync-codex-style-atlas-automation-20260818");
   const auditId = "audit-sync-unified-ai-coo-automation-20260818";
-  if (!state.audit.some((item) => item.id === auditId)) {
-    state.audit.unshift({
-      id: auditId,
-      at: now.toISOString(),
-      actor: "AI COO OS",
-      app_id: "style-atlas",
-      source: "codex_automation_metadata_and_verified_ops_log",
-      action: "sync_unified_codex_automation_registry",
-      input: { external_writes: false },
-      result: "Registered the single active AI COO heartbeat in the current task: Analytics checks at 03:30, 09:30, 15:30 and 20:30 Beijing, with growth operations only at 20:30; the old task target was removed.",
-      status: "success",
-      error: null,
-    });
-  }
+  state.audit = state.audit.filter((item) => item.id !== auditId);
+  state.audit.unshift({
+    id: auditId,
+    at: now.toISOString(),
+    actor: "AI COO OS",
+    app_id: "style-atlas",
+    source: "codex_automation_metadata_and_verified_ops_log",
+    action: "sync_unified_codex_automation_registry",
+    input: { external_writes: false },
+    result: "Registered the single active AI COO heartbeat in the current task: seven-site data sync and Analytics checks at 08:30 Beijing, with Yixiu growth and the retained Analytics check at 20:30; the 03:30 and 15:30 checks remain disabled.",
+    status: "success",
+    error: null,
+  });
   const growthAuditId = "audit-sync-style-atlas-growth-20260819";
   state.audit = state.audit.filter((item) => item.id !== growthAuditId);
   state.audit.unshift({
