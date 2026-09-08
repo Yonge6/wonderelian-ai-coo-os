@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-readonly PUBLIC_COMMIT="e9e0ced64c41546025638a09765ac13e61b689c8"
+readonly PUBLIC_COMMIT="607af8d8729bac9b68acded4c1aef99aad5453cf"
 readonly ROOT="${OPS_ROOT:-/srv/wonderelian/ops.wonderelian.com}"
 readonly RAW_BASE_URL="https://raw.githubusercontent.com/Yonge6/wonderelian-ai-coo-os/${PUBLIC_COMMIT}/public/data"
 readonly TEMP_DIR="$(mktemp -d /tmp/ai-coo-ga4-20260907.XXXXXX)"
@@ -14,8 +14,8 @@ for file in state.json brief.json data-health.json; do
 done
 
 printf '%s  %s\n' \
-  "aaa33946a54634a8024fde9c787efeb74c4a1305dac26624e2a9e1da56eb28ca" "$TEMP_DIR/state.json" \
-  "c33aca4a602f954f07754e7535c49f8797ee327ac70f8f19758bff4af77815dd" "$TEMP_DIR/brief.json" \
+  "d1aa1d45b10480afddc91e5c235dae97c8cbeacb7c7339a764cd54061b2b7c9b" "$TEMP_DIR/state.json" \
+  "abdd2cfcf7740108498f62436390c2748a57fbd1cba3def73916dad1abc1be7f" "$TEMP_DIR/brief.json" \
   "a84c76650c8049f91d5005983488836dd497b5d3451d431e137c0f777b750ca5" "$TEMP_DIR/data-health.json" \
   | sha256sum -c -
 
@@ -35,6 +35,7 @@ yixiu = next(row for row in latest["websites"] if row["website_id"] == "site-yix
 human_design = next(row for row in latest["websites"] if row["website_id"] == "site-human-design")
 maker = next(row for row in latest["websites"] if row["website_id"] == "site-maker-business-lab")
 app = next(row for row in state["apps"] if row["id"] == "yixiu-meditation")
+automation = next(row for row in state["jobs"] if row["id"] == "job-codex-ai-coo-unified")
 
 assert len(state["websites"]) == 7
 assert state["metadata"]["data_through"]["website_analytics"] == "2026-09-07"
@@ -71,6 +72,7 @@ assert maker["metrics"] == {
     "cta_clicks": None,
 }
 assert app["app_store_version"] == "1.9"
+assert automation["schedule"] == "daily:08:30,20:30:Asia/Shanghai"
 assert len(state["content"]) == 145
 assert all(row.get("first_time_downloads") is None for row in state["content"])
 assert all(row.get("trial_starts") is None for row in state["content"])
@@ -99,4 +101,4 @@ fi
 grep -q '"website_analytics": "2026-09-07"' "$ROOT/data/state.json"
 grep -q '"latest_date": "2026-09-07"' "$ROOT/data/brief.json"
 grep -q '"active_users": 22' "$ROOT/data/brief.json"
-echo "DEPLOY_OK_GA4_20260907_E9E0CED"
+echo "DEPLOY_OK_GA4_20260907_607AF8D"
