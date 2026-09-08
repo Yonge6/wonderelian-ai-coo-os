@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-09-08T00:36:30.991Z",
+    "last_updated": "2026-09-08T00:47:14.708Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -5337,19 +5337,16 @@
       "app_id": "yixiu-meditation",
       "name": "WonderElian AI COO Yixiu Growth and Analytics Monitoring",
       "name_zh": "WonderElian AI COO 一休冥想增长与 Analytics 监测",
-      "schedule": "daily:03:30,09:30,15:30,20:30:Asia/Shanghai",
+      "schedule": "daily:08:30,20:30:Asia/Shanghai",
       "last_run": "2026-08-19T12:31:39.368Z",
-      "next_run": "2026-08-21T12:30:00.000Z",
+      "next_run": "2026-09-08T12:30:00.000Z",
       "status": "scheduled",
       "duration": null,
       "result": {
-        "growth_priority": "yixiu_highest",
-        "style_atlas_promotion": "paused",
         "verified_publications": 0,
         "community_replies": 0,
-        "attributable_downloads": null,
-        "trial_starts": null,
-        "paid_conversions": null
+        "seo_endpoints_verified": 0,
+        "attributable_downloads": null
       },
       "error": null,
       "retry_count": 0,
@@ -5394,6 +5391,25 @@
     }
   ],
   "audit": [
+    {
+      "id": "audit-sync-style-atlas-growth-20260819",
+      "at": "2026-08-19T12:31:39.368Z",
+      "actor": "AI COO OS",
+      "app_id": "style-atlas",
+      "source": "verified_ops_log_and_public_url_readback",
+      "action": "sync_verified_style_atlas_growth_outcomes",
+      "status": "success"
+    },
+    {
+      "id": "audit-sync-unified-ai-coo-automation-20260818",
+      "at": "2026-09-08T00:47:14.697Z",
+      "actor": "AI COO OS",
+      "app_id": "style-atlas",
+      "source": "codex_automation_metadata_and_verified_ops_log",
+      "action": "sync_unified_codex_automation_registry",
+      "status": "success",
+      "result": "Registered the single active AI COO heartbeat in the current task: seven-site data sync and Analytics checks at 08:30 Beijing, with Yixiu growth and the retained Analytics check at 20:30; the 03:30 and 15:30 checks remain disabled."
+    },
     {
       "id": "audit-ops-publications-20260907",
       "at": "2026-09-08T00:30:00.000Z",
@@ -5971,15 +5987,6 @@
       "status": "success"
     },
     {
-      "id": "audit-sync-style-atlas-growth-20260819",
-      "at": "2026-08-19T12:31:39.368Z",
-      "actor": "AI COO OS",
-      "app_id": "style-atlas",
-      "source": "verified_ops_log_and_public_url_readback",
-      "action": "sync_verified_style_atlas_growth_outcomes",
-      "status": "success"
-    },
-    {
       "id": "26d65501-31ab-4112-9167-cb05c46c38b4",
       "at": "2026-08-21T08:51:01.288Z",
       "actor": "AI COO OS",
@@ -6104,16 +6111,6 @@
       "source": "authorized_website_operations_expansion",
       "action": "sync_six_website_health",
       "status": "success"
-    },
-    {
-      "id": "audit-sync-unified-ai-coo-automation-20260818",
-      "at": "2026-08-18T03:30:13.060Z",
-      "actor": "AI COO OS",
-      "app_id": "style-atlas",
-      "source": "codex_automation_metadata_and_verified_ops_log",
-      "action": "sync_unified_codex_automation_registry",
-      "status": "success",
-      "result": "Registered the single active AI COO heartbeat in the current task: Analytics checks at 03:30, 09:30, 15:30 and 20:30 Beijing, with growth operations only at 20:30; the old task target was removed."
     },
     {
       "id": "917c00ab-cb27-4e58-923b-e2caca51eace",

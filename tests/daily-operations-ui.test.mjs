@@ -31,7 +31,7 @@ test("command center ships an evidence-backed bilingual daily operations module"
   assert.ok(growthAutomation);
   assert.equal(growthAutomation.name_zh, "WonderElian AI COO 一休冥想增长与 Analytics 监测");
   assert.equal(growthAutomation.app_id, "yixiu-meditation");
-  assert.equal(growthAutomation.schedule, "daily:03:30,09:30,15:30,20:30:Asia/Shanghai");
+  assert.equal(growthAutomation.schedule, "daily:08:30,20:30:Asia/Shanghai");
   assert.equal(growthAutomation.last_run, "2026-08-19T12:31:39.368Z");
   assert.equal(growthAutomation.result.verified_publications, 0);
   assert.equal(growthAutomation.result.community_replies, 0);
