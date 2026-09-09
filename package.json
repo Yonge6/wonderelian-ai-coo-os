@@ -11,6 +11,7 @@
     "migrate:maker-business-lab": "node src/migrate-maker-business-lab.mjs",
     "migrate:yixiu-growth-priority": "node src/migrate-yixiu-growth-priority.mjs",
     "migrate:yixiu-v1-9": "node src/migrate-yixiu-v1-9.mjs",
+    "migrate:yixiu-v1-10": "node src/migrate-yixiu-v1-10.mjs",
     "cycle": "node src/run-cycle.mjs",
     "cycle:growth": "node src/run-growth-cycle.mjs",
     "sync:websites": "node src/sync-websites.mjs",
@@ -18,6 +19,7 @@
     "sync:ops-publications:2026-09-05": "node src/sync-ops-publications-2026-09-05.mjs",
     "sync:ops-publications:2026-09-06": "node src/sync-ops-publications-2026-09-06.mjs",
     "sync:ops-publications:2026-09-07": "node src/sync-ops-publications-2026-09-07.mjs",
+    "sync:ops-publications:2026-09-08": "node src/sync-ops-publications-2026-09-08.mjs",
     "sync:codex-automations": "node src/sync-codex-automations.mjs",
     "test": "node --test tests/*.test.mjs",
     "check": "node src/check.mjs"
