@@ -162,6 +162,10 @@ export function dailyPortfolioSummary(state) {
     latest_date:dates.at(-1) ?? null,
     available_dates:dates,
     days,
+    cumulative:(state.website_cumulative??[]).filter(row=>row.verification_type==="api_verified").map(row=>{
+      const siteRows=websites.map(site=>({website_id:site.id,app_id:site.app_id??null,metrics:row.websites.find(item=>item.website_id===site.id)?.metrics??Object.fromEntries(DAILY_WEBSITE_METRICS.map(name=>[name,null]))}));
+      return {date:row.period_end,period_start:row.period_start,period_end:row.period_end,website_totals:row.totals,websites:siteRows,websites_total:websites.length,website_coverage:Object.fromEntries(DAILY_WEBSITE_METRICS.map(name=>[name,coverage(siteRows.map(site=>site.metrics[name]))])),apps_total:state.apps.length,app_totals:Object.fromEntries(DAILY_APP_METRICS.map(name=>[name,null])),app_coverage:Object.fromEntries(DAILY_APP_METRICS.map(name=>[name,0])),apps:state.apps.map(app=>{const linked=siteRows.filter(site=>site.app_id===app.id);return {app_id:app.id,website_ids:linked.map(site=>site.website_id),h5_metrics:Object.fromEntries(DAILY_WEBSITE_METRICS.map(name=>[name,nullableSum(linked.map(site=>site.metrics[name]))])),app_metrics:Object.fromEntries(DAILY_APP_METRICS.map(name=>[name,null]))};})};
+    }),
     latest_verified_acquisition:latestVerifiedAcquisition(state),
     uv_definition:"GA4 active_users summed across reporting websites; a person visiting multiple sites may be counted more than once.",
     missing_value_policy:"Unavailable metrics remain null and render as an em dash; they are never converted to zero.",
