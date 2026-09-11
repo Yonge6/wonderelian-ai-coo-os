@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-09-11T01:10:52.425Z",
+    "last_updated": "2026-09-11T01:43:40.932Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -5403,6 +5403,14 @@
     }
   ],
   "audit": [
+    {
+      "id": "7ca6a3c6-36ac-4af6-892a-f8fdecbe6374",
+      "at": "2026-09-11T01:42:26.221Z",
+      "actor": "Codex",
+      "source": "Google Analytics 4 Data API",
+      "action": "sync_cumulative_website_analytics",
+      "status": "success"
+    },
     {
       "id": "audit-ops-publications-20260910",
       "at": "2026-09-11T00:30:00.000Z",
@@ -65565,6 +65573,2114 @@
       "level": 0,
       "updated_at": "2026-08-14T15:46:53.809Z",
       "source": "calculated_from_verified_coverage"
+    }
+  ],
+  "website_cumulative": [
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-15",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 1,
+            "page_views": 1,
+            "sessions": 1,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 2,
+            "page_views": 4,
+            "sessions": 2,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 6,
+            "page_views": 11,
+            "sessions": 6,
+            "cta_clicks": 11
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 20,
+            "page_views": 62,
+            "sessions": 32,
+            "cta_clicks": 20
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 21,
+        "page_views": 78,
+        "sessions": 33,
+        "cta_clicks": 31
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-16",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 1,
+            "page_views": 1,
+            "sessions": 1,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 5,
+            "page_views": 7,
+            "sessions": 5,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 9,
+            "page_views": 24,
+            "sessions": 17,
+            "cta_clicks": 22
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 39,
+            "page_views": 130,
+            "sessions": 66,
+            "cta_clicks": 26
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 45,
+        "page_views": 162,
+        "sessions": 77,
+        "cta_clicks": 48
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-17",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 5,
+            "page_views": 11,
+            "sessions": 5,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 15,
+            "page_views": 65,
+            "sessions": 18,
+            "cta_clicks": 1
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 13,
+            "page_views": 33,
+            "sessions": 27,
+            "cta_clicks": 41
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 1,
+            "page_views": 1,
+            "sessions": 1,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 57,
+            "page_views": 179,
+            "sessions": 94,
+            "cta_clicks": 56
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 70,
+        "page_views": 289,
+        "sessions": 115,
+        "cta_clicks": 98
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-18",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 8,
+            "page_views": 18,
+            "sessions": 11,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 22,
+            "page_views": 76,
+            "sessions": 26,
+            "cta_clicks": 1
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 25,
+            "page_views": 59,
+            "sessions": 44,
+            "cta_clicks": 68
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 2,
+            "page_views": 3,
+            "sessions": 3,
+            "cta_clicks": 1
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 68,
+            "page_views": 205,
+            "sessions": 111,
+            "cta_clicks": 66
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 97,
+        "page_views": 361,
+        "sessions": 155,
+        "cta_clicks": 136
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-19",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 10,
+            "page_views": 20,
+            "sessions": 13,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 27,
+            "page_views": 90,
+            "sessions": 35,
+            "cta_clicks": 1
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 30,
+            "page_views": 73,
+            "sessions": 54,
+            "cta_clicks": 81
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 3,
+            "page_views": 16,
+            "sessions": 8,
+            "cta_clicks": 2
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 73,
+            "page_views": 221,
+            "sessions": 119,
+            "cta_clicks": 72
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 108,
+        "page_views": 420,
+        "sessions": 182,
+        "cta_clicks": 156
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-20",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 13,
+            "page_views": 27,
+            "sessions": 21,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 29,
+            "page_views": 93,
+            "sessions": 38,
+            "cta_clicks": 1
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 32,
+            "page_views": 86,
+            "sessions": 62,
+            "cta_clicks": 93
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 6,
+            "page_views": 30,
+            "sessions": 15,
+            "cta_clicks": 4
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 76,
+            "page_views": 233,
+            "sessions": 130,
+            "cta_clicks": 74
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 120,
+        "page_views": 469,
+        "sessions": 211,
+        "cta_clicks": 172
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-21",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 19,
+            "page_views": 34,
+            "sessions": 28,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 30,
+            "page_views": 95,
+            "sessions": 40,
+            "cta_clicks": 1
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 35,
+            "page_views": 90,
+            "sessions": 66,
+            "cta_clicks": 96
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 14,
+            "page_views": 38,
+            "sessions": 23,
+            "cta_clicks": 4
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 78,
+            "page_views": 252,
+            "sessions": 138,
+            "cta_clicks": 75
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 139,
+        "page_views": 509,
+        "sessions": 240,
+        "cta_clicks": 176
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-22",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 20,
+            "page_views": 35,
+            "sessions": 29,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 31,
+            "page_views": 97,
+            "sessions": 42,
+            "cta_clicks": 1
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 35,
+            "page_views": 92,
+            "sessions": 68,
+            "cta_clicks": 98
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 17,
+            "page_views": 44,
+            "sessions": 27,
+            "cta_clicks": 4
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 80,
+            "page_views": 261,
+            "sessions": 145,
+            "cta_clicks": 75
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 146,
+        "page_views": 529,
+        "sessions": 256,
+        "cta_clicks": 178
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-23",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 21,
+            "page_views": 37,
+            "sessions": 31,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 34,
+            "page_views": 121,
+            "sessions": 47,
+            "cta_clicks": 1
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 36,
+            "page_views": 95,
+            "sessions": 71,
+            "cta_clicks": 101
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 20,
+            "page_views": 51,
+            "sessions": 32,
+            "cta_clicks": 4
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 86,
+            "page_views": 272,
+            "sessions": 155,
+            "cta_clicks": 75
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 2,
+            "page_views": 9,
+            "sessions": 6,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 160,
+        "page_views": 585,
+        "sessions": 280,
+        "cta_clicks": 181
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-24",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 22,
+            "page_views": 39,
+            "sessions": 33,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 53,
+            "page_views": 155,
+            "sessions": 75,
+            "cta_clicks": 1
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 38,
+            "page_views": 103,
+            "sessions": 77,
+            "cta_clicks": 108
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 21,
+            "page_views": 53,
+            "sessions": 34,
+            "cta_clicks": 4
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 87,
+            "page_views": 281,
+            "sessions": 163,
+            "cta_clicks": 78
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 4,
+            "page_views": 73,
+            "sessions": 14,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 184,
+        "page_views": 704,
+        "sessions": 324,
+        "cta_clicks": 191
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-25",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 22,
+            "page_views": 39,
+            "sessions": 33,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 64,
+            "page_views": 179,
+            "sessions": 93,
+            "cta_clicks": 1
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 38,
+            "page_views": 110,
+            "sessions": 80,
+            "cta_clicks": 115
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 24,
+            "page_views": 58,
+            "sessions": 39,
+            "cta_clicks": 4
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 90,
+            "page_views": 289,
+            "sessions": 170,
+            "cta_clicks": 78
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 4,
+            "page_views": 73,
+            "sessions": 14,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 201,
+        "page_views": 748,
+        "sessions": 352,
+        "cta_clicks": 198
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-26",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 22,
+            "page_views": 40,
+            "sessions": 34,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 70,
+            "page_views": 193,
+            "sessions": 102,
+            "cta_clicks": 10
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 39,
+            "page_views": 117,
+            "sessions": 87,
+            "cta_clicks": 122
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 25,
+            "page_views": 60,
+            "sessions": 41,
+            "cta_clicks": 4
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 91,
+            "page_views": 296,
+            "sessions": 175,
+            "cta_clicks": 78
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 4,
+            "page_views": 135,
+            "sessions": 17,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 210,
+        "page_views": 841,
+        "sessions": 372,
+        "cta_clicks": 214
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-27",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 23,
+            "page_views": 41,
+            "sessions": 35,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 83,
+            "page_views": 213,
+            "sessions": 117,
+            "cta_clicks": 10
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 42,
+            "page_views": 150,
+            "sessions": 101,
+            "cta_clicks": 150
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 28,
+            "page_views": 75,
+            "sessions": 49,
+            "cta_clicks": 7
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 96,
+            "page_views": 319,
+            "sessions": 186,
+            "cta_clicks": 79
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 4,
+            "page_views": 137,
+            "sessions": 19,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 233,
+        "page_views": 935,
+        "sessions": 416,
+        "cta_clicks": 246
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-28",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 23,
+            "page_views": 41,
+            "sessions": 35,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 107,
+            "page_views": 254,
+            "sessions": 150,
+            "cta_clicks": 10
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 46,
+            "page_views": 174,
+            "sessions": 114,
+            "cta_clicks": 175
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 30,
+            "page_views": 93,
+            "sessions": 59,
+            "cta_clicks": 7
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 99,
+            "page_views": 322,
+            "sessions": 189,
+            "cta_clicks": 79
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 4,
+            "page_views": 138,
+            "sessions": 20,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 266,
+        "page_views": 1022,
+        "sessions": 475,
+        "cta_clicks": 271
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-29",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 23,
+            "page_views": 41,
+            "sessions": 35,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 127,
+            "page_views": 301,
+            "sessions": 181,
+            "cta_clicks": 10
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 47,
+            "page_views": 175,
+            "sessions": 115,
+            "cta_clicks": 176
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 30,
+            "page_views": 94,
+            "sessions": 60,
+            "cta_clicks": 8
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 99,
+            "page_views": 325,
+            "sessions": 190,
+            "cta_clicks": 79
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 5,
+            "page_views": 187,
+            "sessions": 29,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 287,
+        "page_views": 1123,
+        "sessions": 517,
+        "cta_clicks": 273
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-30",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 23,
+            "page_views": 41,
+            "sessions": 35,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 139,
+            "page_views": 326,
+            "sessions": 196,
+            "cta_clicks": 12
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 50,
+            "page_views": 183,
+            "sessions": 119,
+            "cta_clicks": 183
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 31,
+            "page_views": 95,
+            "sessions": 61,
+            "cta_clicks": 8
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 104,
+            "page_views": 331,
+            "sessions": 196,
+            "cta_clicks": 79
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 7,
+            "page_views": 265,
+            "sessions": 42,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 308,
+        "page_views": 1241,
+        "sessions": 553,
+        "cta_clicks": 282
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-08-31",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 23,
+            "page_views": 41,
+            "sessions": 35,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 169,
+            "page_views": 387,
+            "sessions": 237,
+            "cta_clicks": 16
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 52,
+            "page_views": 186,
+            "sessions": 123,
+            "cta_clicks": 186
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 31,
+            "page_views": 97,
+            "sessions": 63,
+            "cta_clicks": 11
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 106,
+            "page_views": 355,
+            "sessions": 201,
+            "cta_clicks": 79
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 7,
+            "page_views": 351,
+            "sessions": 48,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 340,
+        "page_views": 1417,
+        "sessions": 603,
+        "cta_clicks": 292
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-09-01",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 23,
+            "page_views": 41,
+            "sessions": 35,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 194,
+            "page_views": 421,
+            "sessions": 266,
+            "cta_clicks": 17
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 54,
+            "page_views": 188,
+            "sessions": 125,
+            "cta_clicks": 188
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 31,
+            "page_views": 100,
+            "sessions": 65,
+            "cta_clicks": 11
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 108,
+            "page_views": 359,
+            "sessions": 205,
+            "cta_clicks": 111
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 9,
+            "page_views": 367,
+            "sessions": 53,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 367,
+        "page_views": 1476,
+        "sessions": 644,
+        "cta_clicks": 327
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-09-02",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 23,
+            "page_views": 41,
+            "sessions": 35,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 232,
+            "page_views": 482,
+            "sessions": 310,
+            "cta_clicks": 18
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 54,
+            "page_views": 188,
+            "sessions": 125,
+            "cta_clicks": 188
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 33,
+            "page_views": 102,
+            "sessions": 67,
+            "cta_clicks": 11
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 115,
+            "page_views": 399,
+            "sessions": 219,
+            "cta_clicks": 112
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 9,
+            "page_views": 377,
+            "sessions": 57,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 413,
+        "page_views": 1589,
+        "sessions": 705,
+        "cta_clicks": 329
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-09-03",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 27,
+            "page_views": 50,
+            "sessions": 43,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 250,
+            "page_views": 525,
+            "sessions": 337,
+            "cta_clicks": 97
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 62,
+            "page_views": 217,
+            "sessions": 144,
+            "cta_clicks": 218
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 39,
+            "page_views": 123,
+            "sessions": 77,
+            "cta_clicks": 15
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 128,
+            "page_views": 429,
+            "sessions": 239,
+            "cta_clicks": 133
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 10,
+            "page_views": 396,
+            "sessions": 60,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 455,
+        "page_views": 1740,
+        "sessions": 770,
+        "cta_clicks": 463
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-09-04",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 28,
+            "page_views": 52,
+            "sessions": 44,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 260,
+            "page_views": 545,
+            "sessions": 352,
+            "cta_clicks": 97
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 65,
+            "page_views": 228,
+            "sessions": 152,
+            "cta_clicks": 231
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 41,
+            "page_views": 128,
+            "sessions": 80,
+            "cta_clicks": 15
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 132,
+            "page_views": 439,
+            "sessions": 247,
+            "cta_clicks": 136
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 11,
+            "page_views": 401,
+            "sessions": 64,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 476,
+        "page_views": 1793,
+        "sessions": 806,
+        "cta_clicks": 479
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-09-05",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 29,
+            "page_views": 53,
+            "sessions": 45,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 269,
+            "page_views": 597,
+            "sessions": 370,
+            "cta_clicks": 98
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 83,
+            "page_views": 256,
+            "sessions": 173,
+            "cta_clicks": 268
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 43,
+            "page_views": 138,
+            "sessions": 85,
+            "cta_clicks": 15
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 132,
+            "page_views": 444,
+            "sessions": 250,
+            "cta_clicks": 138
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 12,
+            "page_views": 402,
+            "sessions": 65,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 507,
+        "page_views": 1890,
+        "sessions": 848,
+        "cta_clicks": 519
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-09-06",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 31,
+            "page_views": 59,
+            "sessions": 50,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 285,
+            "page_views": 623,
+            "sessions": 389,
+            "cta_clicks": 98
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 83,
+            "page_views": 257,
+            "sessions": 174,
+            "cta_clicks": 269
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 44,
+            "page_views": 160,
+            "sessions": 94,
+            "cta_clicks": 21
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 134,
+            "page_views": 449,
+            "sessions": 252,
+            "cta_clicks": 141
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 13,
+            "page_views": 405,
+            "sessions": 66,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 526,
+        "page_views": 1953,
+        "sessions": 880,
+        "cta_clicks": 529
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-09-07",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 31,
+            "page_views": 59,
+            "sessions": 50,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 299,
+            "page_views": 648,
+            "sessions": 408,
+            "cta_clicks": 102
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 84,
+            "page_views": 258,
+            "sessions": 175,
+            "cta_clicks": 270
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 46,
+            "page_views": 176,
+            "sessions": 106,
+            "cta_clicks": 21
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 134,
+            "page_views": 451,
+            "sessions": 253,
+            "cta_clicks": 143
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 13,
+            "page_views": 409,
+            "sessions": 67,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 542,
+        "page_views": 2001,
+        "sessions": 913,
+        "cta_clicks": 536
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-09-08",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 31,
+            "page_views": 59,
+            "sessions": 50,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 305,
+            "page_views": 662,
+            "sessions": 418,
+            "cta_clicks": 102
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 91,
+            "page_views": 272,
+            "sessions": 187,
+            "cta_clicks": 285
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 46,
+            "page_views": 181,
+            "sessions": 109,
+            "cta_clicks": 21
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 135,
+            "page_views": 456,
+            "sessions": 256,
+            "cta_clicks": 143
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 13,
+            "page_views": 409,
+            "sessions": 67,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 556,
+        "page_views": 2039,
+        "sessions": 939,
+        "cta_clicks": 551
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-09-09",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 32,
+            "page_views": 60,
+            "sessions": 51,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 313,
+            "page_views": 675,
+            "sessions": 427,
+            "cta_clicks": 102
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 98,
+            "page_views": 291,
+            "sessions": 197,
+            "cta_clicks": 304
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 46,
+            "page_views": 186,
+            "sessions": 112,
+            "cta_clicks": 22
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 141,
+            "page_views": 468,
+            "sessions": 268,
+            "cta_clicks": 148
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 13,
+            "page_views": 411,
+            "sessions": 69,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 577,
+        "page_views": 2091,
+        "sessions": 974,
+        "cta_clicks": 576
+      }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-09-10",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-09-11T01:42:26.221Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 37,
+            "page_views": 71,
+            "sessions": 57,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 329,
+            "page_views": 703,
+            "sessions": 450,
+            "cta_clicks": 107
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": null,
+            "page_views": null,
+            "sessions": null,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 101,
+            "page_views": 298,
+            "sessions": 203,
+            "cta_clicks": 309
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 54,
+            "page_views": 197,
+            "sessions": 123,
+            "cta_clicks": 22
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 154,
+            "page_views": 505,
+            "sessions": 291,
+            "cta_clicks": 160
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 14,
+            "page_views": 457,
+            "sessions": 74,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 618,
+        "page_views": 2231,
+        "sessions": 1038,
+        "cta_clicks": 598
+      }
     }
   ]
 }

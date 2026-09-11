@@ -2,6 +2,7 @@ import { fileURLToPath } from "node:url";
 import { JsonStore } from "./store.mjs";
 import { ingestWebsiteMetrics, providerFreshness, PROVIDER_SLAS } from "./growth-data.mjs";
 import { Ga4WebsiteProvider } from "./providers/ga4-website-provider.mjs";
+import { syncWebsiteCumulative } from "./sync-website-cumulative.mjs";
 
 const calendarDay=(date,timeZone="Asia/Shanghai")=>{
   const parts=Object.fromEntries(new Intl.DateTimeFormat("en-CA",{
@@ -57,6 +58,7 @@ async function main(){
   const store=new JsonStore(fileURLToPath(new URL("../data/state.json",import.meta.url))),provider=new Ga4WebsiteProvider(),health=await provider.health();
   if(health.status==="blocked"){console.error(`WEBSITE_ANALYTICS_BLOCKED missing=${health.missing.join(",")}`);process.exitCode=2;return;}
   const outcome=await store.mutate((state)=>syncWebsiteAnalyticsState(state,{provider}));
+  if(outcome.status==="succeeded")await store.mutate(state=>syncWebsiteCumulative(state,{provider}));
   console.log(`WEBSITE_ANALYTICS_${outcome.status.toUpperCase()} received=${outcome.received??outcome.records_received??0} data_through=${outcome.data_through??"null"}`);
 }
 
