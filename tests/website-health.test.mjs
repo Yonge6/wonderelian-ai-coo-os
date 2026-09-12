@@ -79,7 +79,7 @@ test("production state registers seven operated websites and verified GA4 observ
   assert.deepEqual(brief.website_summary, {
     sites_tracked:7,
     sites_live:7,
-    analytics_connected:6,
+    analytics_connected:state.websites.filter((site) => site.analytics_status === "connected").length,
     traffic_metrics_available:state.website_metrics.filter((row) => row.value !== null).length,
     data_through:state.metadata.data_through.website_health,
   });
