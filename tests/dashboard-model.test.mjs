@@ -45,7 +45,8 @@ test('overview shows current evidence without historical jobs or baselines; all 
   const overview=vm.runInContext('command()',context);
   assert.match(overview,/累计组合数据/);assert.match(overview,/需要关注/);assert.match(overview,/最近公开内容/);
   assert.doesNotMatch(overview,/Phase 4|今日决策|v1\.3|App Store verified 90|下次运行/);
-  assert.equal((overview.match(/<article><span>/g)??[]).length,4);
+  assert.equal((overview.match(/<article><span>/g)??[]).length,8);
+  assert.match(overview,/网站数据/);assert.match(overview,/App 数据/);assert.match(overview,/App 数据截至/);
   for(const name of ['appsView','websitesView','contentView','sourcesView','activityView'])assert.ok(vm.runInContext(name+'()',context).length>500);
   vm.runInContext('portfolioMode="daily"; dailyDate=brief.daily_portfolio.available_dates[0]',context);
   assert.ok(vm.runInContext('trafficTrendPoints(brief.daily_portfolio,"page_views").every(p=>p.label<=dailyDate)',context));

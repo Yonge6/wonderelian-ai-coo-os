@@ -71,7 +71,7 @@ export function aggregatePortfolioKpis(state) {
 }
 
 const DAILY_WEBSITE_METRICS = ["active_users", "page_views", "sessions", "cta_clicks"];
-const DAILY_APP_METRICS = ["active_users", "first_time_downloads", "product_page_views"];
+const DAILY_APP_METRICS = ["impressions", "product_page_views", "first_time_downloads", "redownloads", "active_devices", "app_sessions", "trial_starts", "paid_conversions", "active_paid_subscriptions"];
 
 function nullableSum(values) {
   const known = values.filter((value) => value !== null && value !== undefined);
@@ -120,10 +120,9 @@ function latestVerifiedAcquisition(state) {
 export function dailyPortfolioSummary(state) {
   const websiteMetrics = state.website_metrics ?? [];
   const dailyAppMetrics = state.metrics.filter((row)=>row.period_start === row.period_end && DAILY_APP_METRICS.includes(metricName(row)));
-  const dates = [...new Set([
-    ...websiteMetrics.filter((row)=>DAILY_WEBSITE_METRICS.includes(metricName(row)) && row.value !== null).map((row)=>row.period_end),
-    ...dailyAppMetrics.filter((row)=>row.value !== null).map((row)=>row.period_end),
-  ].filter(Boolean))].sort();
+  const websiteDates=[...new Set(websiteMetrics.filter((row)=>DAILY_WEBSITE_METRICS.includes(metricName(row))&&row.value!==null).map((row)=>row.period_end).filter(Boolean))].sort();
+  const appDates=[...new Set(dailyAppMetrics.filter((row)=>row.value!==null).map((row)=>row.period_end).filter(Boolean))].sort();
+  const dates=[...new Set([...websiteDates,...appDates])].sort();
   const websites = state.websites ?? [];
   const days = dates.map((date) => {
     const websiteRows = websites.map((website) => {
@@ -158,9 +157,23 @@ export function dailyPortfolioSummary(state) {
       websites:websiteRows,
     };
   });
+  const appDays=appDates.map((date)=>{
+    const apps=state.apps.map((app)=>{const rows=dailyAppMetrics.filter((row)=>row.app_id===app.id);return{app_id:app.id,data_through:state.metadata?.data_through?.app_store_apps?.[app.id]??null,metrics:Object.fromEntries(DAILY_APP_METRICS.map((name)=>[name,dayMetric(rows,date,name)]))};});
+    return{date,totals:Object.fromEntries(DAILY_APP_METRICS.map((name)=>[name,nullableSum(apps.map((app)=>app.metrics[name]))])),coverage:Object.fromEntries(DAILY_APP_METRICS.map((name)=>[name,coverage(apps.map((app)=>app.metrics[name]))])),apps_total:state.apps.length,apps};
+  });
+  const appCumulativeRows=state.apps.map((app)=>{
+    const days=appDays.map((day)=>day.apps.find((row)=>row.app_id===app.id));
+    return{app_id:app.id,data_through:state.metadata?.data_through?.app_store_apps?.[app.id]??null,metrics:Object.fromEntries(DAILY_APP_METRICS.map((name)=>[name,nullableSum(days.map((day)=>day?.metrics?.[name]))]))};
+  });
+  const appCumulative={period_start:appDates[0]??null,period_end:appDates.at(-1)??null,totals:Object.fromEntries(DAILY_APP_METRICS.map((name)=>[name,nullableSum(appCumulativeRows.map((app)=>app.metrics[name]))])),coverage:Object.fromEntries(DAILY_APP_METRICS.map((name)=>[name,coverage(appCumulativeRows.map((app)=>app.metrics[name]))])),apps_total:state.apps.length,apps:appCumulativeRows};
   return {
-    latest_date:dates.at(-1) ?? null,
-    available_dates:dates,
+    latest_date:websiteDates.at(-1) ?? null,
+    available_dates:websiteDates,
+    website_latest_date:websiteDates.at(-1)??null,
+    website_available_dates:websiteDates,
+    app_latest_date:appDates.at(-1)??null,
+    app_available_dates:appDates,
+    app_portfolio:{latest_date:appDates.at(-1)??null,available_dates:appDates,days:appDays,cumulative:appCumulative,data_through_by_app:state.metadata?.data_through?.app_store_apps??{}},
     days,
     cumulative:(state.website_cumulative??[]).filter(row=>row.verification_type==="api_verified").map(row=>{
       const siteRows=websites.map(site=>({website_id:site.id,app_id:site.app_id??null,metrics:row.websites.find(item=>item.website_id===site.id)?.metrics??Object.fromEntries(DAILY_WEBSITE_METRICS.map(name=>[name,null]))}));

@@ -6,7 +6,7 @@ test("existing publication evidence, manual baselines and product priority remai
   const state=JSON.parse(await readFile(new URL("../public/data/state.json",import.meta.url),"utf8"));
   assert.equal(state.apps.find(x=>x.id==="yixiu-meditation").promotion_status,"active_highest_priority");
   assert.equal(state.apps.find(x=>x.id==="style-atlas").promotion_status,"paused_by_owner");
-  assert.equal(state.providers.find(x=>x.id==="app_store_connect_api").status,"waiting");
+  assert.equal(state.providers.find(x=>x.id==="app_store_connect_api").status,"partial");
   assert.ok(state.content.filter(x=>x.status==="published").every(x=>x.publish_url||x.url));
   assert.ok(state.metrics.some(x=>(x.metric??x.name)==="first_time_downloads"&&x.value===24&&x.period_end==="2026-08-12"));
 });

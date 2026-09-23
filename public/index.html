@@ -7,18 +7,25 @@
   <meta name="description" content="Local command center for WonderElian's consumer app portfolio.">
   <link rel="canonical" href="https://ops.wonderelian.com/">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./vendor/phosphor/style.css">
+  <link rel="stylesheet" href="./vendor/phosphor/style.css?v=20260923-appdata">
+  <script src="./theme.js?v=20260923-appdata"></script>
   <link rel="stylesheet" href="./styles.css?v=20260923-focused">
+  <link rel="stylesheet" href="./orbit.css?v=20260923-appdata">
 </head>
 <body>
   <header class="masthead">
     <div class="brand-lockup">
       <h1>
         <span class="sr-only">AI COO OS</span>
-        <span class="brand-logo-frame" aria-hidden="true"><img src="./assets/ai-coo-logo-image2-v2.png" alt=""></span>
+        <span class="brand-logo-frame" aria-hidden="true"><img src="./assets/ai-coo-orbit-logo.png" alt="" width="600" height="200"></span>
       </h1>
     </div>
+    <div class="masthead-title"><strong data-i18n="orbital_title">Operations core</strong><span data-i18n="orbital_subtitle">Connect products. Understand the evidence.</span></div>
     <div class="header-tools">
+      <div class="theme-switch" role="group" aria-label="Color theme">
+        <button data-theme-choice="light" aria-pressed="false"><i class="ph ph-sun" aria-hidden="true"></i><span data-i18n="theme_light">Day</span></button>
+        <button data-theme-choice="dark" aria-pressed="true"><i class="ph ph-moon" aria-hidden="true"></i><span data-i18n="theme_dark">Night</span></button>
+      </div>
       <div class="locale-switch" aria-label="Language"><button data-locale="en" class="active">EN</button><button data-locale="zh">中文</button></div>
     </div>
   </header>
@@ -50,6 +57,6 @@
   <template id="form-template">
     <form class="panel form-panel"><h2></h2><div class="fields"></div><button type="submit">Save</button><p class="form-status" role="status"></p></form>
   </template>
-  <script type="module" src="./app.js?v=20260923-focused"></script>
+  <script type="module" src="./app.js?v=20260923-appdata"></script>
 </body>
 </html>

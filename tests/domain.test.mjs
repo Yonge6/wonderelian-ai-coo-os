@@ -41,7 +41,7 @@ test("daily brief includes verified operational launches without fabricating per
 
 test("daily portfolio summary exposes total and per-property UV PV without inventing missing values", () => {
   const state={
-    apps:[{id:"a"},{id:"b"}],
+    metadata:{data_through:{app_store_apps:{a:"2026-01-02",b:null}}},apps:[{id:"a"},{id:"b"}],
     websites:[{id:"site-a",app_id:"a"},{id:"site-b",app_id:"b"},{id:"brand",app_id:null}],
     metrics:[
       {app_id:"a",name:"first_time_downloads",value:20,period_start:"2025-10-01",period_end:"2025-12-31",verification_type:"manual_verified"},
@@ -62,6 +62,11 @@ test("daily portfolio summary exposes total and per-property UV PV without inven
   assert.equal(day.website_totals.sessions,null);
   assert.equal(day.website_coverage.page_views,2);
   assert.equal(day.app_totals.first_time_downloads,2);
+  assert.equal(summary.website_latest_date,"2026-01-02");
+  assert.equal(summary.app_latest_date,"2026-01-02");
+  assert.equal(summary.app_portfolio.cumulative.totals.first_time_downloads,2);
+  assert.equal(summary.app_portfolio.cumulative.apps.find((row)=>row.app_id==="b").metrics.first_time_downloads,null);
+  assert.equal(summary.app_portfolio.data_through_by_app.b,null);
   assert.equal(day.apps.find((row)=>row.app_id==="b").h5_metrics.page_views,null);
   assert.equal(day.websites.find((row)=>row.website_id==="site-b").metrics.active_users,null);
   assert.match(summary.uv_definition,/may be counted more than once/);

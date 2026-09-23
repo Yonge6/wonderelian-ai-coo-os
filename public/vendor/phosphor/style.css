@@ -31,3 +31,12 @@
 .ph.ph-database::before{content:"\e1de"}
 .ph.ph-clipboard-text::before{content:"\e198"}
 .ph.ph-target::before{content:"\e47c"}
+.ph.ph-sun::before{content:"\e472"}
+.ph.ph-moon::before{content:"\e330"}
+.ph.ph-desktop::before{content:"\e560"}
+.ph.ph-calendar-blank::before{content:"\e10a"}
+.ph.ph-arrow-clockwise::before{content:"\e036"}
+.ph.ph-download-simple::before{content:"\e20c"}
+.ph.ph-chart-line::before{content:"\e154"}
+.ph.ph-arrow-up-right::before{content:"\e092"}
+.ph.ph-info::before{content:"\e2ce"}
