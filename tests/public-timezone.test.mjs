@@ -14,7 +14,7 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.match(script, /function latestOperatingDay\(\)/);
   assert.match(script, /snapshot_updated/);
   assert.doesNotMatch(script, /toISOString\(\)\.slice\(0,10\)/);
-  assert.match(html, /app\.js\?v=20260923-orbit/);
+  assert.match(html, /app\.js\?v=20260923-appdata/);
   assert.match(html, /styles\.css\?v=20260923-focused/);
   assert.doesNotMatch(html, /class="north-star"/);
   assert.match(script, /const localHosts=new Set\(\["127\.0\.0\.1","localhost"\]\)/);
@@ -39,8 +39,8 @@ test("public dashboard ships the custom domain and accessible selected orbital l
   assert.match(index, /rel="canonical" href="https:\/\/ops\.wonderelian\.com\/"/);
   assert.match(index, /<span class="sr-only">AI COO OS<\/span>/);
   assert.match(index, /assets\/ai-coo-orbit-logo\.png/);
-  assert.match(index, /theme\.js\?v=20260923-orbit/);
-  assert.match(index, /orbit\.css\?v=20260923-orbit/);
+  assert.match(index, /theme\.js\?v=20260923-appdata/);
+  assert.match(index, /orbit\.css\?v=20260923-appdata/);
   assert.equal((index.match(/data-theme-choice=/g)??[]).length,2);
   assert.doesNotMatch(index,/data-theme-choice="system"/);
   assert.doesNotMatch(index, /WonderElian \/ Operations/);
