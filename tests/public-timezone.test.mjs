@@ -14,7 +14,7 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.match(script, /function latestOperatingDay\(\)/);
   assert.match(script, /snapshot_updated/);
   assert.doesNotMatch(script, /toISOString\(\)\.slice\(0,10\)/);
-  assert.match(html, /app\.js\?v=20260923-focused/);
+  assert.match(html, /app\.js\?v=20260923-orbit/);
   assert.match(html, /styles\.css\?v=20260923-focused/);
   assert.doesNotMatch(html, /class="north-star"/);
   assert.match(script, /const localHosts=new Set\(\["127\.0\.0\.1","localhost"\]\)/);
@@ -30,7 +30,7 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.doesNotMatch(await readFile(new URL("../public/styles.css", import.meta.url), "utf8"), /brand-logo-frame\{[^}]*overflow:hidden/);
 });
 
-test("public dashboard ships the custom domain and accessible Image 2 logo", async () => {
+test("public dashboard ships the custom domain and accessible selected orbital logo", async () => {
   const [index, cname] = await Promise.all([
     readFile(new URL("../public/index.html", import.meta.url), "utf8"),
     readFile(new URL("../public/CNAME", import.meta.url), "utf8"),
@@ -38,6 +38,10 @@ test("public dashboard ships the custom domain and accessible Image 2 logo", asy
   assert.equal(cname.trim(), "ops.wonderelian.com");
   assert.match(index, /rel="canonical" href="https:\/\/ops\.wonderelian\.com\/"/);
   assert.match(index, /<span class="sr-only">AI COO OS<\/span>/);
-  assert.match(index, /assets\/ai-coo-logo-image2-v2\.png/);
+  assert.match(index, /assets\/ai-coo-orbit-logo\.png/);
+  assert.match(index, /theme\.js\?v=20260923-orbit/);
+  assert.match(index, /orbit\.css\?v=20260923-orbit/);
+  assert.equal((index.match(/data-theme-choice=/g)??[]).length,2);
+  assert.doesNotMatch(index,/data-theme-choice="system"/);
   assert.doesNotMatch(index, /WonderElian \/ Operations/);
 });

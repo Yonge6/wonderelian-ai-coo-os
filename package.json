@@ -16,6 +16,7 @@
     "cycle:growth": "node src/run-growth-cycle.mjs",
     "sync:websites": "node src/sync-websites.mjs",
     "sync:website-analytics": "node src/sync-website-analytics.mjs",
+    "sync:app-store-analytics": "node src/sync-app-store-analytics.mjs",
     "sync:ops-publications:2026-09-05": "node src/sync-ops-publications-2026-09-05.mjs",
     "sync:ops-publications:2026-09-06": "node src/sync-ops-publications-2026-09-06.mjs",
     "sync:ops-publications:2026-09-07": "node src/sync-ops-publications-2026-09-07.mjs",

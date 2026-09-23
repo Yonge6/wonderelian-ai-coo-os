@@ -11,4 +11,5 @@ test("portfolio retains bilingual daily and cumulative controls with explicit UV
   assert.match(script,/latest=points\.at\(-1\)/);
   assert.match(script,/through:dailyDate/);
   assert.match(script,/siteRows=new Map/);
+  for(const text of ["网站数据","App 数据","App 数据截至","appTelemetryPanel","app_portfolio","privacy-thresholded"])assert.ok(script.includes(text));
 });
