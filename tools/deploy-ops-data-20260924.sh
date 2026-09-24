@@ -3,8 +3,8 @@ set -euo pipefail
 
 readonly commit=e33f37facc601f2d699c5e8446767e8030fb06eb
 readonly site=/srv/wonderelian/ops.wonderelian.com
-readonly stage=/srv/wonderelian/.ops-data-20260924
-readonly backup=/srv/wonderelian/backups/ops-before-data-20260924
+readonly stage=/srv/wonderelian/.ops-data-20260924-retry1
+readonly backup=/srv/wonderelian/backups/ops-before-data-20260924-retry1
 readonly base="https://cdn.jsdelivr.net/gh/Yonge6/wonderelian-ai-coo-os@${commit}/public/data"
 
 test -d "$site/data"
@@ -31,7 +31,7 @@ for file in state brief data-health feedback-analysis; do
   jq -e . "$stage/data/$file.json" >/dev/null
 done
 jq -e '.daily_portfolio.website_latest_date == "2026-09-23" and .daily_portfolio.app_latest_date == "2026-09-21"' "$stage/data/brief.json" >/dev/null
-jq -e '[.content[] | select(.published_at >= "2026-09-23T00:00:00+08:00" and .status == "published")] | length >= 28' "$stage/data/state.json" >/dev/null
+jq -e '[.content[] | select(.published_at == "2026-09-23" and .status == "published" and ((.publish_url // .url // "") | length > 0))] | length >= 28' "$stage/data/state.json" >/dev/null
 nginx -t
 
 exchange() {
