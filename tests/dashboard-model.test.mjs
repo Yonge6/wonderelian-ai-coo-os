@@ -38,7 +38,7 @@ test('CSV keeps unknowns blank, preserves zero, and prevents formula execution',
 test('overview shows current evidence without historical jobs or baselines; all six useful views render',async()=>{
   const [script,stateText,briefText,html]=await Promise.all(['public/app.js','public/data/state.json','public/data/brief.json','public/index.html'].map(p=>readFile(new URL('../'+p,import.meta.url),'utf8')));
   const context=vm.createContext({...model,Intl,Date,URL,URLSearchParams,console,localStorage:{getItem:()=> 'zh'},location:{protocol:'https:',hostname:'ops.wonderelian.com',search:'',hash:''},document:{body:{dataset:{}},querySelector:()=>null}});
-  const code=script.replace(/^import[^\n]+\n/,'').split('document.querySelectorAll("nav [data-view]")')[0];
+  const code=script.replace(/^import[^\n]+\n/gm,'').split('document.querySelectorAll("nav [data-view]")')[0];
   vm.runInContext(code,context);
   context.fixture=JSON.parse(stateText);context.fixtureBrief=JSON.parse(briefText);
   vm.runInContext('state=fixture;brief=fixtureBrief;',context);
@@ -51,6 +51,6 @@ test('overview shows current evidence without historical jobs or baselines; all 
   vm.runInContext('portfolioMode="daily"; dailyDate=brief.daily_portfolio.available_dates[0]',context);
   assert.ok(vm.runInContext('trafficTrendPoints(brief.daily_portfolio,"page_views").every(p=>p.label<=dailyDate)',context));
   const mainNav=html.split('<details class="nav-archive">')[0];
-  assert.equal((mainNav.match(/data-view=/g)??[]).length,6);
+  assert.equal((mainNav.match(/data-view=/g)??[]).length,7);
   assert.match(vm.runInContext('activityView()',context),/不是实时调度器/);
 });

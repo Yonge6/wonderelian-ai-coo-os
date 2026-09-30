@@ -1,0 +1,11 @@
+.usage-projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0}
+.usage-projects button{text-align:left;padding:18px;border:1px solid var(--line,#39505a);border-radius:12px;background:var(--panel,#152027);color:inherit;min-width:0}
+.usage-projects button[aria-pressed=true]{border-color:#75cfc1;box-shadow:inset 0 3px #75cfc1}
+.usage-projects strong,.usage-projects span{display:block}.usage-projects span{font-size:12px;opacity:.65;margin-top:8px}
+.usage-toolbar{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.usage-toolbar h3{margin-right:auto}
+.usage-status{font-size:12px;padding:7px 10px;border-radius:5px;background:#669f9022}
+.usage-provenance{font-size:12px;opacity:.7;line-height:1.8}.usage-notice{padding:14px 18px;border-left:3px solid #75cfc1;line-height:1.7;background:#669f9012}
+.usage-panel{margin-top:20px}.usage-panel>p{font-size:13px;opacity:.7;line-height:1.7}
+.usage-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.usage-metric{min-width:0;padding:16px 0}.usage-metric>span{font-size:13px;opacity:.75}.usage-metric>strong{display:block;font-size:32px;font-weight:500;margin-top:10px;font-variant-numeric:tabular-nums}.usage-metric small{font-size:14px;margin-left:5px}.usage-metric p{font-size:12px;opacity:.7}.usage-legacy{margin-top:20px;font-size:13px;overflow-wrap:anywhere}
+html[data-theme=light] .usage-projects button{background:#f6f8f7}
+@media(max-width:700px){.usage-projects{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.usage-projects button{padding:13px}.usage-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.usage-toolbar{gap:10px}.usage-metric>strong{font-size:27px}}

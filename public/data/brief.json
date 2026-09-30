@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T00:33:11.058Z",
+  "generated_at": "2026-09-30T04:37:40.459Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -25606,7 +25606,7 @@
           "last_successful_import": "2026-08-14T09:20:00.000Z",
           "freshness": "manual",
           "age_state": "stale",
-          "age_days": 48,
+          "age_days": 48.2,
           "data_available": [
             "impressions",
             "product_page_views",
@@ -25685,8 +25685,8 @@
           "mode": "official_read_only_api",
           "last_successful_import": "2026-09-23T02:59:50.893Z",
           "freshness": "fresh",
-          "age_state": "aging",
-          "age_days": 6.9,
+          "age_state": "stale",
+          "age_days": 7.1,
           "data_available": [
             "app_store_taps",
             "app_store_taps_unique",
@@ -25770,7 +25770,8 @@
       ],
       "last_successful_import": "2026-09-30T00:32:27.974Z",
       "stale_providers": [
-        "manual_app_store_connect"
+        "manual_app_store_connect",
+        "app_store_connect_api"
       ],
       "missing_critical_metrics": [],
       "import_errors": [
