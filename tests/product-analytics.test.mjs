@@ -29,3 +29,18 @@ test("every report scopes to exact Yixiu hostname", async () => {
   assert.equal(r.status,"waiting_for_events");
   assert.equal(r.retention.d7,null);
 });
+test("native reports are restricted to the configured iOS stream", async () => {
+  const calls=[]; const provider=new ProductAnalyticsProvider();
+  provider.runReport=async options=>{calls.push(options);return {rows:[]};};
+  await provider.fetchUsage({startDate:"2026-09-01",endDate:"2026-09-29",iosStreamId:"12345"});
+  assert.ok(calls.every(c=>c.dimensionFilter.andGroup.expressions.some(e=>e.filter.fieldName==="streamId"&&e.filter.stringFilter.value==="12345")));
+  assert.ok(calls.every(c=>c.dimensionFilter.andGroup.expressions.some(e=>e.filter.fieldName==="platform"&&e.filter.stringFilter.value==="iOS")));
+  await assert.rejects(provider.fetchUsage({iosStreamId:"not-an-id"}),{code:"INVALID_STREAM"});
+});
+test("failed content dimension query preserves previous sound observations", async () => {
+  const state={audit:[],product_analytics:{projects:[{id:"yixiu",h5:{content:{rows:[{scene:"rain",seconds:45}]}}}]}};
+  const provider={health:async()=>({status:"configured"}),fetchUsage:async()=>({status:"waiting_for_events",content:{error_code:"DENIED",rows:[]}})};
+  const result=await syncProductAnalyticsState(state,{provider,iosStreamId:null});
+  assert.equal(result.projects[0].h5.content.rows[0].seconds,45);
+  assert.equal(result.projects[0].h5.content.status,"unavailable");
+});

@@ -6,6 +6,8 @@ archive="${2:?uploaded archive}"
 archive_sha="${3:?SHA256}"
 baseline_index="${4:?current index SHA256}"
 baseline_state="${5:-}"
+release="${6:-product-usage-20260930}"
+[[ "$release" =~ ^product-usage-20260930(-r[0-9]+)?$ ]] || exit 2
 case "$surface" in
   yixiu) host=yixiu.wonderelian.com ;;
   ops) host=ops.wonderelian.com ;;
@@ -13,8 +15,8 @@ case "$surface" in
 esac
 [[ "$archive" == /tmp/product-usage-20260930-*.tar.gz ]] || exit 2
 site="/srv/wonderelian/$host"
-stage="/srv/wonderelian/.product-usage-20260930-$surface"
-backup="/srv/wonderelian/backups/product-usage-20260930-$surface"
+stage="/srv/wonderelian/.$release-$surface"
+backup="/srv/wonderelian/backups/$release-$surface"
 test -d "$site"
 test ! -e "$stage"
 test ! -e "$backup"
@@ -64,5 +66,5 @@ for file in "${files[@]}"; do
   test "$observed" = "$expected"
 done
 trap - ERR
-echo "DEPLOY_OK_PRODUCT_USAGE_20260930_$surface"
+echo "DEPLOY_OK_${release}_$surface"
 echo "BACKUP=$backup"
