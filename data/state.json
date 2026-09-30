@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-09-30T00:33:10.388Z",
+    "last_updated": "2026-09-30T04:37:39.738Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -11803,6 +11803,32 @@
     }
   ],
   "audit": [
+    {
+      "id": "d71b332d-cd74-49f0-af11-5d9845325620",
+      "at": "2026-09-30T04:37:35.004Z",
+      "actor": "AI COO OS",
+      "app_id": "yixiu-meditation",
+      "source": "ga4_product_usage",
+      "action": "sync_product_usage",
+      "result": {
+        "status": "waiting_for_events",
+        "project_count": 6
+      },
+      "status": "success"
+    },
+    {
+      "id": "3e553cc5-c627-4265-9fd8-e19295974770",
+      "at": "2026-09-30T04:23:10.433Z",
+      "actor": "AI COO OS",
+      "app_id": "yixiu-meditation",
+      "source": "ga4_product_usage",
+      "action": "sync_product_usage",
+      "result": {
+        "status": "waiting_for_events",
+        "project_count": 6
+      },
+      "status": "success"
+    },
     {
       "id": "audit-ops-publications-20260929",
       "at": "2026-09-30T00:33:10.388Z",
@@ -123354,5 +123380,112 @@
         "cta_clicks": 784
       }
     }
-  ]
+  ],
+  "product_analytics": {
+    "schema_version": 1,
+    "generated_at": "2026-09-30T04:37:35.004Z",
+    "source": "Google Analytics 4 Data API",
+    "projects": [
+      {
+        "id": "yixiu",
+        "name": "Yixiu Meditation",
+        "name_zh": "一休冥想",
+        "hostname": "yixiu.wonderelian.com",
+        "website_id": "site-yixiu",
+        "status": "partial",
+        "h5": {
+          "status": "waiting_for_events",
+          "period_start": "2026-09-02",
+          "period_end": "2026-09-29",
+          "timezone": "Asia/Shanghai",
+          "verified_at": "2026-09-30T04:37:38.954Z",
+          "source": "Google Analytics 4 Data API",
+          "data_quality": {
+            "thresholded": false,
+            "sampled": false
+          },
+          "overview": {
+            "totalUsers": 333,
+            "sessions": 498
+          },
+          "events": [],
+          "legacy_events": [
+            {
+              "event": "yixiu_playback_start",
+              "count": 454,
+              "users": 179
+            },
+            {
+              "event": "yixiu_download_click",
+              "count": 105,
+              "users": 21
+            }
+          ],
+          "daily": [],
+          "content": {
+            "status": "waiting_for_custom_dimension",
+            "rows": [],
+            "error_code": "API_REQUEST_FAILED"
+          },
+          "retention": {
+            "status": "cohort_integration_pending",
+            "d1": null,
+            "d7": null
+          },
+          "revenue": {
+            "status": "waiting_for_apple",
+            "paid_conversions": null,
+            "trial_starts": null,
+            "revenue": null
+          }
+        },
+        "ios": {
+          "status": "waiting_for_firebase_link",
+          "events": [],
+          "period_start": null,
+          "period_end": null
+        }
+      },
+      {
+        "id": "wendao",
+        "name": "Wendao",
+        "name_zh": "三慢问道",
+        "status": "planned",
+        "h5": null,
+        "ios": null
+      },
+      {
+        "id": "xiazi",
+        "name": "Xiazi",
+        "name_zh": "虾子曰",
+        "status": "planned",
+        "h5": null,
+        "ios": null
+      },
+      {
+        "id": "style-atlas",
+        "name": "Style Atlas",
+        "name_zh": "艺术风格图鉴",
+        "status": "planned",
+        "h5": null,
+        "ios": null
+      },
+      {
+        "id": "maker",
+        "name": "Maker Business Lab",
+        "name_zh": "Maker Business Lab",
+        "status": "planned",
+        "h5": null,
+        "ios": null
+      },
+      {
+        "id": "wonderelian",
+        "name": "WonderElian",
+        "name_zh": "WonderElian",
+        "status": "planned",
+        "h5": null,
+        "ios": null
+      }
+    ]
+  }
 }
