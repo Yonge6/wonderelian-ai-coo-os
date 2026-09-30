@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-09-30T05:31:37.520Z",
+    "last_updated": "2026-09-30T14:36:07.830Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -47,7 +47,9 @@
         "know-yourself": null,
         "wendao": null,
         "xiazi-yesterdays-world": null
-      }
+      },
+      "app_store_sales": "2026-09-29",
+      "app_store_finance": "2026-09-30"
     },
     "last_growth_cycle_at": "2026-08-14T15:46:53.809Z",
     "last_website_health_at": "2026-09-30T00:32:26.139Z"
@@ -11459,6 +11461,35 @@
         "site-wonderelian",
         "site-maker-business-lab"
       ]
+    },
+    {
+      "id": "app_store_sales_and_trends_ui",
+      "name": "App Store Connect Sales and Trends",
+      "type": "sales_finance",
+      "mode": "official_ui_manual_snapshot",
+      "status": "available",
+      "app_ids": [
+        "wendao",
+        "yixiu-meditation",
+        "style-atlas",
+        "wonderelian",
+        "maker-business-lab",
+        "xiazi-yesterdays-world"
+      ],
+      "last_sync": "2026-09-30T14:36:07.826Z",
+      "last_successful_import": "2026-09-30T14:36:07.826Z",
+      "data_through": "2026-09-29",
+      "freshness": "manual",
+      "data_available": [
+        "app_units",
+        "in_app_purchase_units",
+        "sales_amount",
+        "estimated_total_proceeds"
+      ],
+      "authentication_required": true,
+      "authentication_status": "browser_session_verified",
+      "secrets_stored": false,
+      "error": null
     }
   ],
   "jobs": [
@@ -11793,6 +11824,16 @@
     }
   ],
   "audit": [
+    {
+      "id": "ca1adb99-9914-41fa-b1fd-46a6c0321849",
+      "at": "2026-09-30T14:36:07.826Z",
+      "actor": "Codex",
+      "app_id": "wendao",
+      "source": "official_app_store_connect_ui",
+      "action": "import_verified_app_store_sales_and_finance_snapshot",
+      "status": "success",
+      "result": "Imported verified App Store sales through 2026-09-29; reconciled 2 Wendao lifetime purchases to 11.41 CNY estimated proceeds."
+    },
     {
       "id": "26121f89-bb45-4d78-b8b8-406a2590366f",
       "at": "2026-09-30T05:31:33.227Z",
@@ -120920,5 +120961,86 @@
         "ios": null
       }
     ]
-  }
+  },
+  "app_store_sales_snapshots": [
+    {
+      "id": "app-store-sales-2026-09-29",
+      "period_start": "2026-08-30",
+      "period_end": "2026-09-29",
+      "timezone": "UTC",
+      "source": "App Store Connect Sales and Trends",
+      "source_reference": "sales-and-trends:app-units:2026-08-30:2026-09-29",
+      "verification_type": "manual_verified_official_ui",
+      "verified_at": "2026-09-30T14:22:00.000Z",
+      "totals": {
+        "app_units": 78,
+        "in_app_purchase_units": 2,
+        "sales_amount": 1.77,
+        "sales_currency": "USD"
+      },
+      "apps": [
+        {
+          "app_id": "wendao",
+          "name": "Wendao AI: Daodejing",
+          "name_zh": "问道 AI：道德经",
+          "app_store_id": "6796945428",
+          "app_units": 34,
+          "in_app_purchase_units": 2
+        },
+        {
+          "app_id": "yixiu-meditation",
+          "name": "Yixiu: White Noise & Sleep",
+          "name_zh": "一休冥想：白噪音与静心",
+          "app_store_id": "1461182261",
+          "app_units": 18,
+          "in_app_purchase_units": null
+        },
+        {
+          "app_id": "style-atlas",
+          "name": "Style Atlas: Art & Design",
+          "name_zh": "Style Atlas：艺术与设计",
+          "app_store_id": "6787447019",
+          "app_units": 12,
+          "in_app_purchase_units": null
+        },
+        {
+          "app_id": "wonderelian",
+          "name": "WonderElian",
+          "name_zh": "WonderElian",
+          "app_store_id": "6806903403",
+          "app_units": 10,
+          "in_app_purchase_units": null
+        },
+        {
+          "app_id": "maker-business-lab",
+          "name": "Maker Business Lab",
+          "name_zh": "Maker Business Lab",
+          "app_store_id": "6806765660",
+          "app_units": 3,
+          "in_app_purchase_units": null
+        },
+        {
+          "app_id": "xiazi-yesterdays-world",
+          "name": "Xiazi Says",
+          "name_zh": "虾子曰",
+          "app_store_id": "6799621217",
+          "app_units": 1,
+          "in_app_purchase_units": null
+        }
+      ],
+      "financial": {
+        "month": "2026-09",
+        "updated_on": "2026-09-30",
+        "territory": "China mainland",
+        "currency": "CNY",
+        "total_units": 2,
+        "estimated_total_proceeds": 11.41,
+        "matched_app_id": "wendao",
+        "matched_product": "Wendao Complete Reading Lifetime",
+        "match_basis": "The September financial report contains two China-mainland units, and the same account's Sales and Trends report contains exactly two in-app-purchase units, both assigned to this Wendao lifetime product.",
+        "item_level_proceeds_available": false
+      },
+      "imported_at": "2026-09-30T14:36:07.826Z"
+    }
+  ]
 }
