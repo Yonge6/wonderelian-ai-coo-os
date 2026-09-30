@@ -1,8 +1,9 @@
 import { fileURLToPath } from "node:url";
 import { JsonStore } from "./store.mjs";
 import { ProductAnalyticsProvider, pendingProductSnapshot } from "./providers/product-analytics-provider.mjs";
+import { loadYixiuIosStreamId } from "./product-analytics-config.mjs";
 
-export async function syncProductAnalyticsState(state, { provider = new ProductAnalyticsProvider(), now = new Date(), iosStreamId = process.env.YIXIU_IOS_STREAM_ID } = {}) {
+export async function syncProductAnalyticsState(state, { provider = new ProductAnalyticsProvider(), now = new Date(), iosStreamId, loadStreamId = loadYixiuIosStreamId } = {}) {
   const snapshot = pendingProductSnapshot(now.toISOString());
   const day = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit" }).format(now);
   const shift = offset => new Date(Date.parse(`${day}T00:00:00Z`) + offset * 86400000).toISOString().slice(0, 10);
@@ -18,6 +19,10 @@ export async function syncProductAnalyticsState(state, { provider = new ProductA
   } catch (error) {
     const previous = state.product_analytics?.projects?.find(item => item.id === "yixiu")?.h5;
     project.h5 = { ...(previous ?? { events: [], period_start: null, period_end: null }), status: "unavailable", error_code: error.code ?? "PROVIDER_UNAVAILABLE" };
+  }
+  if (iosStreamId === undefined) {
+    try { iosStreamId = await loadStreamId(); }
+    catch (error) { project.ios = { ...project.ios, status: "unavailable", error_code: error.code ?? "INVALID_USAGE_CONFIG" }; }
   }
   if (iosStreamId) {
     try { project.ios = await provider.fetchUsage({startDate:shift(-28),endDate:shift(-1),iosStreamId}); }

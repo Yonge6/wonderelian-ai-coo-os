@@ -1,5 +1,5 @@
 import { freshness, verifiedPublications, filterPublications, trafficPoints, csvText } from "./dashboard-model.js?v=20260923-focused";
-import { usageView } from "./product-usage.js?v=20260930";
+import { usageView } from "./product-usage.js?v=20260930-firebase";
 let usageProject="yixiu", usageSurface="h5";
 const root=document.querySelector("#app");
 const localHosts=new Set(["127.0.0.1","localhost"]);

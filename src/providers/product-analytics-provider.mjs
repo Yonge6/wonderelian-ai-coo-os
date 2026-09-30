@@ -52,7 +52,8 @@ export class ProductAnalyticsProvider extends Ga4WebsiteProvider {
     };
     try {
       const scenes = await this.runReport({ ...options, dimensions: ["customEvent:scene_id", "eventName"], metrics: ["eventCount", "totalUsers", "eventValue"] });
-      result.content = { status: scenes.rows?.length ? "collecting" : "waiting_for_events", rows: reportRows(scenes).filter(row => row["customEvent:scene_id"] !== "(not set)" && row.eventName.startsWith("yixiu_v2_")).map(row => ({ scene: row["customEvent:scene_id"], event: row.eventName, count: row.eventCount, users: row.totalUsers, seconds: row.eventName === "yixiu_v2_listen_time" ? row.eventValue : null })) };
+      const rows = reportRows(scenes).filter(row => row["customEvent:scene_id"] && row["customEvent:scene_id"] !== "(not set)" && row.eventName.startsWith("yixiu_v2_")).map(row => ({ scene: row["customEvent:scene_id"], event: row.eventName, count: row.eventCount, users: row.totalUsers, seconds: row.eventName === "yixiu_v2_listen_time" ? row.eventValue : null }));
+      result.content = { status: rows.length ? "collecting" : "waiting_for_events", rows };
     } catch (error) { result.content.error_code = error.code ?? "CUSTOM_DIMENSION_UNAVAILABLE"; }
     return result;
   }

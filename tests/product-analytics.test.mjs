@@ -44,3 +44,13 @@ test("failed content dimension query preserves previous sound observations", asy
   assert.equal(result.projects[0].h5.content.rows[0].seconds,45);
   assert.equal(result.projects[0].h5.content.status,"unavailable");
 });
+test("unassigned or legacy scenes cannot imply current content collection", async () => {
+  const provider=new ProductAnalyticsProvider();
+  provider.runReport=async options=>options.dimensions.includes("customEvent:scene_id")?{
+    dimensionHeaders:[{name:"customEvent:scene_id"},{name:"eventName"}],metricHeaders:[],
+    rows:[{dimensionValues:[{value:"(not set)"},{value:"yixiu_v2_playback_start"}]},{dimensionValues:[{value:"rain"},{value:"yixiu_playback_start"}]}],
+  }:{rows:[]};
+  const result=await provider.fetchUsage({startDate:"2026-09-01",endDate:"2026-09-29"});
+  assert.equal(result.content.status,"waiting_for_events");
+  assert.deepEqual(result.content.rows,[]);
+});
