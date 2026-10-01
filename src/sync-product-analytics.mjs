@@ -31,8 +31,19 @@ export async function syncProductAnalyticsState(state, { provider = new ProductA
       project.ios={...(previous??{events:[],period_start:null,period_end:null}),status:"unavailable",error_code:error.code??"PROVIDER_UNAVAILABLE"};
     }
   }
+  for (const item of snapshot.projects.slice(1)) {
+    item.ios = item.web_only ? null : {status:"waiting_for_firebase_link",events:[],period_start:null,period_end:null};
+    try {
+      item.h5 = await provider.fetchProjectUsage({project:item,startDate:shift(-28),endDate:shift(-1)});
+      item.status = item.h5.status;
+    } catch (error) {
+      const previous = state.product_analytics?.projects?.find(p=>p.id===item.id)?.h5;
+      item.h5 = {...(previous??{events:[],overview:null,period_start:null,period_end:null}),status:"unavailable",error_code:error.code??"PROVIDER_UNAVAILABLE"};
+      item.status = "unavailable";
+    }
+  }
   state.product_analytics = snapshot;
-  state.audit.unshift({ id: crypto.randomUUID(), at: now.toISOString(), actor: "AI COO OS", app_id: "yixiu-meditation", source: "ga4_product_usage", action: "sync_product_usage", result: { status: project.h5.status, project_count: 6 }, status: project.h5.status === "unavailable" ? "blocked" : "success" });
+  state.audit.unshift({ id: crypto.randomUUID(), at: now.toISOString(), actor: "AI COO OS", app_id: null, source: "ga4_product_usage", action: "sync_product_usage", result: { status: project.h5.status, project_count: snapshot.projects.length }, status: snapshot.projects.some(p=>p.h5?.status==="unavailable") ? "partial" : "success" });
   return snapshot;
 }
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

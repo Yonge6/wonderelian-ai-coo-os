@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T01:43:51.523Z",
+  "generated_at": "2026-10-01T05:56:24.796Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -66,8 +66,8 @@
   "website_summary": {
     "sites_tracked": 7,
     "sites_live": 7,
-    "analytics_connected": 7,
-    "traffic_metrics_available": 4064,
+    "analytics_connected": 6,
+    "traffic_metrics_available": 3935,
     "data_through": "2026-10-01"
   },
   "daily_portfolio": {
@@ -10337,15 +10337,15 @@
       {
         "date": "2026-09-11",
         "website_totals": {
-          "active_users": 25,
-          "page_views": 51,
-          "sessions": 29,
+          "active_users": 23,
+          "page_views": 47,
+          "sessions": 27,
           "cta_clicks": 6
         },
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 2
         },
         "websites_total": 7,
@@ -10425,9 +10425,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 2,
-              "page_views": 4,
-              "sessions": 2,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -10514,9 +10514,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 2,
-              "page_views": 4,
-              "sessions": 2,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -10565,15 +10565,15 @@
       {
         "date": "2026-09-12",
         "website_totals": {
-          "active_users": 26,
-          "page_views": 64,
-          "sessions": 42,
+          "active_users": 25,
+          "page_views": 56,
+          "sessions": 37,
           "cta_clicks": 10
         },
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 2
         },
         "websites_total": 7,
@@ -10653,9 +10653,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 1,
-              "page_views": 8,
-              "sessions": 5,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -10742,9 +10742,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 1,
-              "page_views": 8,
-              "sessions": 5,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -10793,15 +10793,15 @@
       {
         "date": "2026-09-13",
         "website_totals": {
-          "active_users": 25,
-          "page_views": 72,
-          "sessions": 36,
+          "active_users": 22,
+          "page_views": 67,
+          "sessions": 32,
           "cta_clicks": 25
         },
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 1
         },
         "websites_total": 7,
@@ -10881,9 +10881,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 3,
-              "page_views": 5,
-              "sessions": 4,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -10970,9 +10970,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 3,
-              "page_views": 5,
-              "sessions": 4,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -11021,15 +11021,15 @@
       {
         "date": "2026-09-14",
         "website_totals": {
-          "active_users": 54,
-          "page_views": 114,
-          "sessions": 67,
+          "active_users": 51,
+          "page_views": 109,
+          "sessions": 64,
           "cta_clicks": 23
         },
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 3
         },
         "websites_total": 7,
@@ -11109,9 +11109,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 3,
-              "page_views": 5,
-              "sessions": 3,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -11198,9 +11198,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 3,
-              "page_views": 5,
-              "sessions": 3,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -11249,15 +11249,15 @@
       {
         "date": "2026-09-15",
         "website_totals": {
-          "active_users": 37,
-          "page_views": 112,
-          "sessions": 66,
+          "active_users": 36,
+          "page_views": 111,
+          "sessions": 65,
           "cta_clicks": 48
         },
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "websites_total": 7,
@@ -11337,9 +11337,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -11426,9 +11426,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -11477,15 +11477,15 @@
       {
         "date": "2026-09-16",
         "website_totals": {
-          "active_users": 41,
-          "page_views": 94,
-          "sessions": 59,
+          "active_users": 36,
+          "page_views": 66,
+          "sessions": 44,
           "cta_clicks": 15
         },
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 2
         },
         "websites_total": 7,
@@ -11565,9 +11565,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 5,
-              "page_views": 28,
-              "sessions": 15,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -11654,9 +11654,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 5,
-              "page_views": 28,
-              "sessions": 15,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -11705,15 +11705,15 @@
       {
         "date": "2026-09-17",
         "website_totals": {
-          "active_users": 30,
-          "page_views": 51,
-          "sessions": 40,
+          "active_users": 28,
+          "page_views": 48,
+          "sessions": 37,
           "cta_clicks": 11
         },
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 2
         },
         "websites_total": 7,
@@ -11793,9 +11793,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 2,
-              "page_views": 3,
-              "sessions": 3,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -11882,9 +11882,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 2,
-              "page_views": 3,
-              "sessions": 3,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -11935,13 +11935,13 @@
         "website_totals": {
           "active_users": 24,
           "page_views": 43,
-          "sessions": 32,
+          "sessions": 31,
           "cta_clicks": 5
         },
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 3
         },
         "websites_total": 7,
@@ -12021,9 +12021,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 0,
-              "page_views": 0,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -12110,9 +12110,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 0,
-              "page_views": 0,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -12389,15 +12389,15 @@
       {
         "date": "2026-09-20",
         "website_totals": {
-          "active_users": 17,
-          "page_views": 23,
-          "sessions": 20,
+          "active_users": 15,
+          "page_views": 20,
+          "sessions": 18,
           "cta_clicks": 2
         },
         "website_coverage": {
-          "active_users": 6,
-          "page_views": 6,
-          "sessions": 6,
+          "active_users": 5,
+          "page_views": 5,
+          "sessions": 5,
           "cta_clicks": 2
         },
         "websites_total": 7,
@@ -12477,9 +12477,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 2,
-              "page_views": 3,
-              "sessions": 2,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -12566,9 +12566,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 2,
-              "page_views": 3,
-              "sessions": 2,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -12617,15 +12617,15 @@
       {
         "date": "2026-09-21",
         "website_totals": {
-          "active_users": 35,
-          "page_views": 79,
-          "sessions": 49,
+          "active_users": 33,
+          "page_views": 76,
+          "sessions": 46,
           "cta_clicks": 8
         },
         "website_coverage": {
-          "active_users": 6,
-          "page_views": 6,
-          "sessions": 6,
+          "active_users": 5,
+          "page_views": 5,
+          "sessions": 5,
           "cta_clicks": 2
         },
         "websites_total": 7,
@@ -12705,9 +12705,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 2,
-              "page_views": 3,
-              "sessions": 3,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -12794,9 +12794,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 2,
-              "page_views": 3,
-              "sessions": 3,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -12845,15 +12845,15 @@
       {
         "date": "2026-09-22",
         "website_totals": {
-          "active_users": 30,
-          "page_views": 56,
-          "sessions": 39,
+          "active_users": 28,
+          "page_views": 54,
+          "sessions": 37,
           "cta_clicks": 6
         },
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 3
         },
         "websites_total": 7,
@@ -12933,9 +12933,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 2,
-              "page_views": 2,
-              "sessions": 2,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -13022,9 +13022,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 2,
-              "page_views": 2,
-              "sessions": 2,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -13073,15 +13073,15 @@
       {
         "date": "2026-09-23",
         "website_totals": {
-          "active_users": 24,
-          "page_views": 95,
-          "sessions": 27,
+          "active_users": 23,
+          "page_views": 94,
+          "sessions": 26,
           "cta_clicks": 5
         },
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 3
         },
         "websites_total": 7,
@@ -13161,9 +13161,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -13250,9 +13250,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -13529,15 +13529,15 @@
       {
         "date": "2026-09-25",
         "website_totals": {
-          "active_users": 22,
-          "page_views": 33,
-          "sessions": 23,
+          "active_users": 21,
+          "page_views": 32,
+          "sessions": 22,
           "cta_clicks": 2
         },
         "website_coverage": {
-          "active_users": 6,
-          "page_views": 6,
-          "sessions": 6,
+          "active_users": 5,
+          "page_views": 5,
+          "sessions": 5,
           "cta_clicks": 1
         },
         "websites_total": 7,
@@ -13617,9 +13617,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -13706,9 +13706,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -13757,15 +13757,15 @@
       {
         "date": "2026-09-26",
         "website_totals": {
-          "active_users": 12,
-          "page_views": 11,
-          "sessions": 15,
+          "active_users": 11,
+          "page_views": 10,
+          "sessions": 14,
           "cta_clicks": null
         },
         "website_coverage": {
-          "active_users": 6,
-          "page_views": 6,
-          "sessions": 6,
+          "active_users": 5,
+          "page_views": 5,
+          "sessions": 5,
           "cta_clicks": 0
         },
         "websites_total": 7,
@@ -13845,9 +13845,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -13934,9 +13934,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -13985,15 +13985,15 @@
       {
         "date": "2026-09-27",
         "website_totals": {
-          "active_users": 18,
-          "page_views": 24,
-          "sessions": 21,
+          "active_users": 17,
+          "page_views": 23,
+          "sessions": 20,
           "cta_clicks": 1
         },
         "website_coverage": {
-          "active_users": 6,
-          "page_views": 6,
-          "sessions": 6,
+          "active_users": 5,
+          "page_views": 5,
+          "sessions": 5,
           "cta_clicks": 1
         },
         "websites_total": 7,
@@ -14073,9 +14073,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -14162,9 +14162,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -14213,15 +14213,15 @@
       {
         "date": "2026-09-28",
         "website_totals": {
-          "active_users": 17,
-          "page_views": 27,
-          "sessions": 22,
+          "active_users": 16,
+          "page_views": 26,
+          "sessions": 21,
           "cta_clicks": 2
         },
         "website_coverage": {
-          "active_users": 6,
-          "page_views": 6,
-          "sessions": 6,
+          "active_users": 5,
+          "page_views": 5,
+          "sessions": 5,
           "cta_clicks": 2
         },
         "websites_total": 7,
@@ -14301,9 +14301,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -14390,9 +14390,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -14441,15 +14441,15 @@
       {
         "date": "2026-09-29",
         "website_totals": {
-          "active_users": 25,
-          "page_views": 53,
-          "sessions": 30,
+          "active_users": 24,
+          "page_views": 52,
+          "sessions": 29,
           "cta_clicks": 5
         },
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 2
         },
         "websites_total": 7,
@@ -14529,9 +14529,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -14618,9 +14618,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 1,
-              "page_views": 1,
-              "sessions": 1,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -14669,15 +14669,15 @@
       {
         "date": "2026-09-30",
         "website_totals": {
-          "active_users": 18,
-          "page_views": 32,
-          "sessions": 29,
+          "active_users": 16,
+          "page_views": 28,
+          "sessions": 27,
           "cta_clicks": 6
         },
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 2
         },
         "websites_total": 7,
@@ -14757,9 +14757,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 2,
-              "page_views": 4,
-              "sessions": 2,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -14846,9 +14846,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 2,
-              "page_views": 4,
-              "sessions": 2,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -20881,10 +20881,10 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-10",
         "website_totals": {
-          "active_users": 618,
-          "page_views": 2231,
-          "sessions": 1038,
-          "cta_clicks": 598
+          "active_users": 619,
+          "page_views": 2244,
+          "sessions": 1039,
+          "cta_clicks": 601
         },
         "websites": [
           {
@@ -20892,7 +20892,7 @@
             "app_id": "style-atlas",
             "metrics": {
               "active_users": 37,
-              "page_views": 71,
+              "page_views": 74,
               "sessions": 57,
               "cta_clicks": null
             }
@@ -20902,7 +20902,7 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 329,
-              "page_views": 703,
+              "page_views": 707,
               "sessions": 450,
               "cta_clicks": 107
             }
@@ -20921,10 +20921,10 @@
             "website_id": "site-wendao",
             "app_id": "wendao",
             "metrics": {
-              "active_users": 101,
-              "page_views": 298,
-              "sessions": 203,
-              "cta_clicks": 309
+              "active_users": 102,
+              "page_views": 299,
+              "sessions": 204,
+              "cta_clicks": 311
             }
           },
           {
@@ -20932,7 +20932,7 @@
             "app_id": "xiazi-yesterdays-world",
             "metrics": {
               "active_users": 54,
-              "page_views": 197,
+              "page_views": 199,
               "sessions": 123,
               "cta_clicks": 22
             }
@@ -20942,9 +20942,9 @@
             "app_id": null,
             "metrics": {
               "active_users": 154,
-              "page_views": 505,
-              "sessions": 291,
-              "cta_clicks": 160
+              "page_views": 506,
+              "sessions": 292,
+              "cta_clicks": 161
             }
           },
           {
@@ -20952,7 +20952,7 @@
             "app_id": null,
             "metrics": {
               "active_users": 14,
-              "page_views": 457,
+              "page_views": 459,
               "sessions": 74,
               "cta_clicks": null
             }
@@ -20996,7 +20996,7 @@
             ],
             "h5_metrics": {
               "active_users": 37,
-              "page_views": 71,
+              "page_views": 74,
               "sessions": 57,
               "cta_clicks": null
             },
@@ -21019,7 +21019,7 @@
             ],
             "h5_metrics": {
               "active_users": 329,
-              "page_views": 703,
+              "page_views": 707,
               "sessions": 450,
               "cta_clicks": 107
             },
@@ -21064,10 +21064,10 @@
               "site-wendao"
             ],
             "h5_metrics": {
-              "active_users": 101,
-              "page_views": 298,
-              "sessions": 203,
-              "cta_clicks": 309
+              "active_users": 102,
+              "page_views": 299,
+              "sessions": 204,
+              "cta_clicks": 311
             },
             "app_metrics": {
               "impressions": null,
@@ -21088,7 +21088,7 @@
             ],
             "h5_metrics": {
               "active_users": 54,
-              "page_views": 197,
+              "page_views": 199,
               "sessions": 123,
               "cta_clicks": 22
             },
@@ -21111,10 +21111,10 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-11",
         "website_totals": {
-          "active_users": 635,
-          "page_views": 2286,
-          "sessions": 1065,
-          "cta_clicks": 606
+          "active_users": 634,
+          "page_views": 2291,
+          "sessions": 1064,
+          "cta_clicks": 607
         },
         "websites": [
           {
@@ -21132,7 +21132,7 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 338,
-              "page_views": 734,
+              "page_views": 743,
               "sessions": 466,
               "cta_clicks": 107
             }
@@ -21141,9 +21141,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 2,
-              "page_views": 4,
-              "sessions": 2,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -21154,7 +21154,7 @@
               "active_users": 102,
               "page_views": 301,
               "sessions": 206,
-              "cta_clicks": 312
+              "cta_clicks": 313
             }
           },
           {
@@ -21162,7 +21162,7 @@
             "app_id": "xiazi-yesterdays-world",
             "metrics": {
               "active_users": 56,
-              "page_views": 202,
+              "page_views": 201,
               "sessions": 125,
               "cta_clicks": 26
             }
@@ -21172,7 +21172,7 @@
             "app_id": null,
             "metrics": {
               "active_users": 157,
-              "page_views": 509,
+              "page_views": 510,
               "sessions": 296,
               "cta_clicks": 161
             }
@@ -21190,9 +21190,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -21249,7 +21249,7 @@
             ],
             "h5_metrics": {
               "active_users": 338,
-              "page_views": 734,
+              "page_views": 743,
               "sessions": 466,
               "cta_clicks": 107
             },
@@ -21271,9 +21271,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 2,
-              "page_views": 4,
-              "sessions": 2,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -21297,7 +21297,7 @@
               "active_users": 102,
               "page_views": 301,
               "sessions": 206,
-              "cta_clicks": 312
+              "cta_clicks": 313
             },
             "app_metrics": {
               "impressions": null,
@@ -21318,7 +21318,7 @@
             ],
             "h5_metrics": {
               "active_users": 56,
-              "page_views": 202,
+              "page_views": 201,
               "sessions": 125,
               "cta_clicks": 26
             },
@@ -21341,9 +21341,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-12",
         "website_totals": {
-          "active_users": 650,
-          "page_views": 2350,
-          "sessions": 1104,
+          "active_users": 651,
+          "page_views": 2347,
+          "sessions": 1101,
           "cta_clicks": 617
         },
         "websites": [
@@ -21351,9 +21351,9 @@
             "website_id": "site-style-atlas",
             "app_id": "style-atlas",
             "metrics": {
-              "active_users": 39,
-              "page_views": 77,
-              "sessions": 60,
+              "active_users": 40,
+              "page_views": 78,
+              "sessions": 61,
               "cta_clicks": null
             }
           },
@@ -21361,9 +21361,9 @@
             "website_id": "site-yixiu",
             "app_id": "yixiu-meditation",
             "metrics": {
-              "active_users": 349,
-              "page_views": 762,
-              "sessions": 479,
+              "active_users": 350,
+              "page_views": 767,
+              "sessions": 481,
               "cta_clicks": 107
             }
           },
@@ -21371,9 +21371,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 2,
-              "page_views": 9,
-              "sessions": 6,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -21382,7 +21382,7 @@
             "app_id": "wendao",
             "metrics": {
               "active_users": 103,
-              "page_views": 309,
+              "page_views": 308,
               "sessions": 212,
               "cta_clicks": 320
             }
@@ -21392,7 +21392,7 @@
             "app_id": "xiazi-yesterdays-world",
             "metrics": {
               "active_users": 57,
-              "page_views": 217,
+              "page_views": 218,
               "sessions": 135,
               "cta_clicks": 29
             }
@@ -21420,9 +21420,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -21455,9 +21455,9 @@
               "site-style-atlas"
             ],
             "h5_metrics": {
-              "active_users": 39,
-              "page_views": 77,
-              "sessions": 60,
+              "active_users": 40,
+              "page_views": 78,
+              "sessions": 61,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -21478,9 +21478,9 @@
               "site-yixiu"
             ],
             "h5_metrics": {
-              "active_users": 349,
-              "page_views": 762,
-              "sessions": 479,
+              "active_users": 350,
+              "page_views": 767,
+              "sessions": 481,
               "cta_clicks": 107
             },
             "app_metrics": {
@@ -21501,9 +21501,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 2,
-              "page_views": 9,
-              "sessions": 6,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -21525,7 +21525,7 @@
             ],
             "h5_metrics": {
               "active_users": 103,
-              "page_views": 309,
+              "page_views": 308,
               "sessions": 212,
               "cta_clicks": 320
             },
@@ -21548,7 +21548,7 @@
             ],
             "h5_metrics": {
               "active_users": 57,
-              "page_views": 217,
+              "page_views": 218,
               "sessions": 135,
               "cta_clicks": 29
             },
@@ -21571,10 +21571,10 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-13",
         "website_totals": {
-          "active_users": 669,
-          "page_views": 2427,
-          "sessions": 1138,
-          "cta_clicks": 641
+          "active_users": 667,
+          "page_views": 2416,
+          "sessions": 1128,
+          "cta_clicks": 642
         },
         "websites": [
           {
@@ -21592,7 +21592,7 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 354,
-              "page_views": 790,
+              "page_views": 794,
               "sessions": 490,
               "cta_clicks": 107
             }
@@ -21601,9 +21601,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 5,
-              "page_views": 17,
-              "sessions": 11,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -21612,18 +21612,18 @@
             "app_id": "wendao",
             "metrics": {
               "active_users": 106,
-              "page_views": 334,
+              "page_views": 335,
               "sessions": 223,
-              "cta_clicks": 344
+              "cta_clicks": 345
             }
           },
           {
             "website_id": "site-xiazi",
             "app_id": "xiazi-yesterdays-world",
             "metrics": {
-              "active_users": 58,
-              "page_views": 221,
-              "sessions": 137,
+              "active_users": 59,
+              "page_views": 222,
+              "sessions": 138,
               "cta_clicks": 29
             }
           },
@@ -21641,18 +21641,18 @@
             "website_id": "site-maker-business-lab",
             "app_id": null,
             "metrics": {
-              "active_users": 14,
+              "active_users": 15,
               "page_views": 464,
-              "sessions": 77,
+              "sessions": 78,
               "cta_clicks": null
             }
           }
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -21709,7 +21709,7 @@
             ],
             "h5_metrics": {
               "active_users": 354,
-              "page_views": 790,
+              "page_views": 794,
               "sessions": 490,
               "cta_clicks": 107
             },
@@ -21731,9 +21731,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 5,
-              "page_views": 17,
-              "sessions": 11,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -21755,9 +21755,9 @@
             ],
             "h5_metrics": {
               "active_users": 106,
-              "page_views": 334,
+              "page_views": 335,
               "sessions": 223,
-              "cta_clicks": 344
+              "cta_clicks": 345
             },
             "app_metrics": {
               "impressions": null,
@@ -21777,9 +21777,9 @@
               "site-xiazi"
             ],
             "h5_metrics": {
-              "active_users": 58,
-              "page_views": 221,
-              "sessions": 137,
+              "active_users": 59,
+              "page_views": 222,
+              "sessions": 138,
               "cta_clicks": 29
             },
             "app_metrics": {
@@ -21801,10 +21801,10 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-14",
         "website_totals": {
-          "active_users": 706,
-          "page_views": 2530,
-          "sessions": 1200,
-          "cta_clicks": 664
+          "active_users": 701,
+          "page_views": 2525,
+          "sessions": 1188,
+          "cta_clicks": 665
         },
         "websites": [
           {
@@ -21821,9 +21821,9 @@
             "website_id": "site-yixiu",
             "app_id": "yixiu-meditation",
             "metrics": {
-              "active_users": 382,
-              "page_views": 842,
-              "sessions": 526,
+              "active_users": 383,
+              "page_views": 856,
+              "sessions": 527,
               "cta_clicks": 110
             }
           },
@@ -21831,9 +21831,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 7,
-              "page_views": 22,
-              "sessions": 14,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -21844,7 +21844,7 @@
               "active_users": 109,
               "page_views": 346,
               "sessions": 230,
-              "cta_clicks": 356
+              "cta_clicks": 357
             }
           },
           {
@@ -21853,7 +21853,7 @@
             "metrics": {
               "active_users": 63,
               "page_views": 237,
-              "sessions": 147,
+              "sessions": 148,
               "cta_clicks": 37
             }
           },
@@ -21862,7 +21862,7 @@
             "app_id": null,
             "metrics": {
               "active_users": 164,
-              "page_views": 528,
+              "page_views": 531,
               "sessions": 310,
               "cta_clicks": 161
             }
@@ -21880,9 +21880,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -21938,9 +21938,9 @@
               "site-yixiu"
             ],
             "h5_metrics": {
-              "active_users": 382,
-              "page_views": 842,
-              "sessions": 526,
+              "active_users": 383,
+              "page_views": 856,
+              "sessions": 527,
               "cta_clicks": 110
             },
             "app_metrics": {
@@ -21961,9 +21961,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 7,
-              "page_views": 22,
-              "sessions": 14,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -21987,7 +21987,7 @@
               "active_users": 109,
               "page_views": 346,
               "sessions": 230,
-              "cta_clicks": 356
+              "cta_clicks": 357
             },
             "app_metrics": {
               "impressions": null,
@@ -22009,7 +22009,7 @@
             "h5_metrics": {
               "active_users": 63,
               "page_views": 237,
-              "sessions": 147,
+              "sessions": 148,
               "cta_clicks": 37
             },
             "app_metrics": {
@@ -22031,10 +22031,10 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-15",
         "website_totals": {
-          "active_users": 725,
-          "page_views": 2646,
-          "sessions": 1260,
-          "cta_clicks": 705
+          "active_users": 719,
+          "page_views": 2636,
+          "sessions": 1244,
+          "cta_clicks": 713
         },
         "websites": [
           {
@@ -22052,7 +22052,7 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 394,
-              "page_views": 892,
+              "page_views": 899,
               "sessions": 553,
               "cta_clicks": 111
             }
@@ -22061,9 +22061,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 8,
-              "page_views": 23,
-              "sessions": 15,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -22072,9 +22072,9 @@
             "app_id": "wendao",
             "metrics": {
               "active_users": 110,
-              "page_views": 375,
+              "page_views": 378,
               "sessions": 246,
-              "cta_clicks": 386
+              "cta_clicks": 391
             }
           },
           {
@@ -22082,9 +22082,9 @@
             "app_id": "xiazi-yesterdays-world",
             "metrics": {
               "active_users": 65,
-              "page_views": 248,
+              "page_views": 250,
               "sessions": 155,
-              "cta_clicks": 43
+              "cta_clicks": 45
             }
           },
           {
@@ -22092,9 +22092,9 @@
             "app_id": null,
             "metrics": {
               "active_users": 168,
-              "page_views": 549,
+              "page_views": 550,
               "sessions": 322,
-              "cta_clicks": 165
+              "cta_clicks": 166
             }
           },
           {
@@ -22110,9 +22110,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -22169,7 +22169,7 @@
             ],
             "h5_metrics": {
               "active_users": 394,
-              "page_views": 892,
+              "page_views": 899,
               "sessions": 553,
               "cta_clicks": 111
             },
@@ -22191,9 +22191,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 8,
-              "page_views": 23,
-              "sessions": 15,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -22215,9 +22215,9 @@
             ],
             "h5_metrics": {
               "active_users": 110,
-              "page_views": 375,
+              "page_views": 378,
               "sessions": 246,
-              "cta_clicks": 386
+              "cta_clicks": 391
             },
             "app_metrics": {
               "impressions": null,
@@ -22238,9 +22238,9 @@
             ],
             "h5_metrics": {
               "active_users": 65,
-              "page_views": 248,
+              "page_views": 250,
               "sessions": 155,
-              "cta_clicks": 43
+              "cta_clicks": 45
             },
             "app_metrics": {
               "impressions": null,
@@ -22261,10 +22261,10 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-16",
         "website_totals": {
-          "active_users": 749,
-          "page_views": 2752,
-          "sessions": 1317,
-          "cta_clicks": 730
+          "active_users": 741,
+          "page_views": 2710,
+          "sessions": 1286,
+          "cta_clicks": 728
         },
         "websites": [
           {
@@ -22272,8 +22272,8 @@
             "app_id": "style-atlas",
             "metrics": {
               "active_users": 44,
-              "page_views": 91,
-              "sessions": 73,
+              "page_views": 92,
+              "sessions": 74,
               "cta_clicks": null
             }
           },
@@ -22282,7 +22282,7 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 411,
-              "page_views": 933,
+              "page_views": 937,
               "sessions": 580,
               "cta_clicks": 111
             }
@@ -22291,9 +22291,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 11,
-              "page_views": 49,
-              "sessions": 30,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -22304,7 +22304,7 @@
               "active_users": 114,
               "page_views": 392,
               "sessions": 255,
-              "cta_clicks": 407
+              "cta_clicks": 405
             }
           },
           {
@@ -22332,7 +22332,7 @@
             "app_id": null,
             "metrics": {
               "active_users": 16,
-              "page_views": 474,
+              "page_views": 476,
               "sessions": 83,
               "cta_clicks": null
             }
@@ -22340,9 +22340,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -22376,8 +22376,8 @@
             ],
             "h5_metrics": {
               "active_users": 44,
-              "page_views": 91,
-              "sessions": 73,
+              "page_views": 92,
+              "sessions": 74,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -22399,7 +22399,7 @@
             ],
             "h5_metrics": {
               "active_users": 411,
-              "page_views": 933,
+              "page_views": 937,
               "sessions": 580,
               "cta_clicks": 111
             },
@@ -22421,9 +22421,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 11,
-              "page_views": 49,
-              "sessions": 30,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -22447,7 +22447,7 @@
               "active_users": 114,
               "page_views": 392,
               "sessions": 255,
-              "cta_clicks": 407
+              "cta_clicks": 405
             },
             "app_metrics": {
               "impressions": null,
@@ -22491,9 +22491,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-17",
         "website_totals": {
-          "active_users": 764,
-          "page_views": 2811,
-          "sessions": 1350,
+          "active_users": 756,
+          "page_views": 2758,
+          "sessions": 1319,
           "cta_clicks": 739
         },
         "websites": [
@@ -22512,8 +22512,8 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 418,
-              "page_views": 963,
-              "sessions": 594,
+              "page_views": 964,
+              "sessions": 596,
               "cta_clicks": 113
             }
           },
@@ -22521,9 +22521,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 12,
-              "page_views": 54,
-              "sessions": 33,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -22532,8 +22532,8 @@
             "app_id": "wendao",
             "metrics": {
               "active_users": 116,
-              "page_views": 401,
-              "sessions": 262,
+              "page_views": 402,
+              "sessions": 261,
               "cta_clicks": 414
             }
           },
@@ -22552,7 +22552,7 @@
             "app_id": null,
             "metrics": {
               "active_users": 173,
-              "page_views": 563,
+              "page_views": 562,
               "sessions": 334,
               "cta_clicks": 167
             }
@@ -22570,9 +22570,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -22629,8 +22629,8 @@
             ],
             "h5_metrics": {
               "active_users": 418,
-              "page_views": 963,
-              "sessions": 594,
+              "page_views": 964,
+              "sessions": 596,
               "cta_clicks": 113
             },
             "app_metrics": {
@@ -22651,9 +22651,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 12,
-              "page_views": 54,
-              "sessions": 33,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -22675,8 +22675,8 @@
             ],
             "h5_metrics": {
               "active_users": 116,
-              "page_views": 401,
-              "sessions": 262,
+              "page_views": 402,
+              "sessions": 261,
               "cta_clicks": 414
             },
             "app_metrics": {
@@ -22721,9 +22721,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-18",
         "website_totals": {
-          "active_users": 778,
-          "page_views": 2854,
-          "sessions": 1381,
+          "active_users": 770,
+          "page_views": 2801,
+          "sessions": 1347,
           "cta_clicks": 744
         },
         "websites": [
@@ -22731,9 +22731,9 @@
             "website_id": "site-style-atlas",
             "app_id": "style-atlas",
             "metrics": {
-              "active_users": 46,
-              "page_views": 95,
-              "sessions": 78,
+              "active_users": 47,
+              "page_views": 96,
+              "sessions": 79,
               "cta_clicks": null
             }
           },
@@ -22751,9 +22751,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 12,
-              "page_views": 54,
-              "sessions": 34,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -22800,9 +22800,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -22835,9 +22835,9 @@
               "site-style-atlas"
             ],
             "h5_metrics": {
-              "active_users": 46,
-              "page_views": 95,
-              "sessions": 78,
+              "active_users": 47,
+              "page_views": 96,
+              "sessions": 79,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -22881,9 +22881,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 12,
-              "page_views": 54,
-              "sessions": 34,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -22951,9 +22951,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-19",
         "website_totals": {
-          "active_users": 790,
-          "page_views": 2882,
-          "sessions": 1407,
+          "active_users": 782,
+          "page_views": 2830,
+          "sessions": 1372,
           "cta_clicks": 744
         },
         "websites": [
@@ -22962,7 +22962,7 @@
             "app_id": "style-atlas",
             "metrics": {
               "active_users": 48,
-              "page_views": 98,
+              "page_views": 99,
               "sessions": 83,
               "cta_clicks": null
             }
@@ -22972,7 +22972,7 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 437,
-              "page_views": 1008,
+              "page_views": 1009,
               "sessions": 629,
               "cta_clicks": 114
             }
@@ -22981,9 +22981,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 12,
-              "page_views": 54,
-              "sessions": 34,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -23030,9 +23030,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -23066,7 +23066,7 @@
             ],
             "h5_metrics": {
               "active_users": 48,
-              "page_views": 98,
+              "page_views": 99,
               "sessions": 83,
               "cta_clicks": null
             },
@@ -23089,7 +23089,7 @@
             ],
             "h5_metrics": {
               "active_users": 437,
-              "page_views": 1008,
+              "page_views": 1009,
               "sessions": 629,
               "cta_clicks": 114
             },
@@ -23111,9 +23111,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 12,
-              "page_views": 54,
-              "sessions": 34,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -23181,9 +23181,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-20",
         "website_totals": {
-          "active_users": 804,
-          "page_views": 2906,
-          "sessions": 1427,
+          "active_users": 796,
+          "page_views": 2853,
+          "sessions": 1392,
           "cta_clicks": 746
         },
         "websites": [
@@ -23202,7 +23202,7 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 447,
-              "page_views": 1021,
+              "page_views": 1024,
               "sessions": 642,
               "cta_clicks": 115
             }
@@ -23211,9 +23211,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 13,
-              "page_views": 57,
-              "sessions": 36,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -23241,9 +23241,9 @@
             "website_id": "site-wonderelian",
             "app_id": null,
             "metrics": {
-              "active_users": 177,
-              "page_views": 575,
-              "sessions": 345,
+              "active_users": 178,
+              "page_views": 576,
+              "sessions": 346,
               "cta_clicks": 168
             }
           },
@@ -23260,9 +23260,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -23319,7 +23319,7 @@
             ],
             "h5_metrics": {
               "active_users": 447,
-              "page_views": 1021,
+              "page_views": 1024,
               "sessions": 642,
               "cta_clicks": 115
             },
@@ -23341,9 +23341,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 13,
-              "page_views": 57,
-              "sessions": 36,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -23411,9 +23411,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-21",
         "website_totals": {
-          "active_users": 825,
-          "page_views": 2980,
-          "sessions": 1473,
+          "active_users": 816,
+          "page_views": 2929,
+          "sessions": 1436,
           "cta_clicks": 754
         },
         "websites": [
@@ -23432,7 +23432,7 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 456,
-              "page_views": 1046,
+              "page_views": 1049,
               "sessions": 660,
               "cta_clicks": 115
             }
@@ -23441,9 +23441,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 14,
-              "page_views": 59,
-              "sessions": 38,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -23451,8 +23451,8 @@
             "website_id": "site-wendao",
             "app_id": "wendao",
             "metrics": {
-              "active_users": 117,
-              "page_views": 410,
+              "active_users": 118,
+              "page_views": 411,
               "sessions": 269,
               "cta_clicks": 422
             }
@@ -23462,8 +23462,8 @@
             "app_id": "xiazi-yesterdays-world",
             "metrics": {
               "active_users": 71,
-              "page_views": 275,
-              "sessions": 171,
+              "page_views": 278,
+              "sessions": 172,
               "cta_clicks": 49
             }
           },
@@ -23472,7 +23472,7 @@
             "app_id": null,
             "metrics": {
               "active_users": 182,
-              "page_views": 595,
+              "page_views": 596,
               "sessions": 357,
               "cta_clicks": 168
             }
@@ -23490,9 +23490,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -23549,7 +23549,7 @@
             ],
             "h5_metrics": {
               "active_users": 456,
-              "page_views": 1046,
+              "page_views": 1049,
               "sessions": 660,
               "cta_clicks": 115
             },
@@ -23571,9 +23571,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 14,
-              "page_views": 59,
-              "sessions": 38,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -23594,8 +23594,8 @@
               "site-wendao"
             ],
             "h5_metrics": {
-              "active_users": 117,
-              "page_views": 410,
+              "active_users": 118,
+              "page_views": 411,
               "sessions": 269,
               "cta_clicks": 422
             },
@@ -23618,8 +23618,8 @@
             ],
             "h5_metrics": {
               "active_users": 71,
-              "page_views": 275,
-              "sessions": 171,
+              "page_views": 278,
+              "sessions": 172,
               "cta_clicks": 49
             },
             "app_metrics": {
@@ -23641,9 +23641,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-22",
         "website_totals": {
-          "active_users": 841,
-          "page_views": 3047,
-          "sessions": 1513,
+          "active_users": 831,
+          "page_views": 2992,
+          "sessions": 1473,
           "cta_clicks": 760
         },
         "websites": [
@@ -23652,7 +23652,7 @@
             "app_id": "style-atlas",
             "metrics": {
               "active_users": 54,
-              "page_views": 124,
+              "page_views": 126,
               "sessions": 95,
               "cta_clicks": null
             }
@@ -23662,8 +23662,8 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 468,
-              "page_views": 1076,
-              "sessions": 680,
+              "page_views": 1079,
+              "sessions": 681,
               "cta_clicks": 116
             }
           },
@@ -23671,9 +23671,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 15,
-              "page_views": 61,
-              "sessions": 41,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -23702,8 +23702,8 @@
             "app_id": null,
             "metrics": {
               "active_users": 182,
-              "page_views": 599,
-              "sessions": 360,
+              "page_views": 600,
+              "sessions": 361,
               "cta_clicks": 170
             }
           },
@@ -23720,9 +23720,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -23756,7 +23756,7 @@
             ],
             "h5_metrics": {
               "active_users": 54,
-              "page_views": 124,
+              "page_views": 126,
               "sessions": 95,
               "cta_clicks": null
             },
@@ -23779,8 +23779,8 @@
             ],
             "h5_metrics": {
               "active_users": 468,
-              "page_views": 1076,
-              "sessions": 680,
+              "page_views": 1079,
+              "sessions": 681,
               "cta_clicks": 116
             },
             "app_metrics": {
@@ -23801,9 +23801,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 15,
-              "page_views": 61,
-              "sessions": 41,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -23871,9 +23871,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-23",
         "website_totals": {
-          "active_users": 853,
-          "page_views": 3174,
-          "sessions": 1541,
+          "active_users": 843,
+          "page_views": 3129,
+          "sessions": 1501,
           "cta_clicks": 765
         },
         "websites": [
@@ -23892,8 +23892,8 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 473,
-              "page_views": 1091,
-              "sessions": 692,
+              "page_views": 1095,
+              "sessions": 693,
               "cta_clicks": 116
             }
           },
@@ -23901,9 +23901,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 17,
-              "page_views": 63,
-              "sessions": 42,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -23922,7 +23922,7 @@
             "app_id": "xiazi-yesterdays-world",
             "metrics": {
               "active_users": 76,
-              "page_views": 292,
+              "page_views": 293,
               "sessions": 184,
               "cta_clicks": 52
             }
@@ -23931,9 +23931,9 @@
             "website_id": "site-wonderelian",
             "app_id": null,
             "metrics": {
-              "active_users": 185,
-              "page_views": 640,
-              "sessions": 368,
+              "active_users": 186,
+              "page_views": 644,
+              "sessions": 369,
               "cta_clicks": 171
             }
           },
@@ -23942,17 +23942,17 @@
             "app_id": null,
             "metrics": {
               "active_users": 24,
-              "page_views": 543,
-              "sessions": 98,
+              "page_views": 552,
+              "sessions": 97,
               "cta_clicks": null
             }
           }
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -24009,8 +24009,8 @@
             ],
             "h5_metrics": {
               "active_users": 473,
-              "page_views": 1091,
-              "sessions": 692,
+              "page_views": 1095,
+              "sessions": 693,
               "cta_clicks": 116
             },
             "app_metrics": {
@@ -24031,9 +24031,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 17,
-              "page_views": 63,
-              "sessions": 42,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -24078,7 +24078,7 @@
             ],
             "h5_metrics": {
               "active_users": 76,
-              "page_views": 292,
+              "page_views": 293,
               "sessions": 184,
               "cta_clicks": 52
             },
@@ -24101,9 +24101,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-24",
         "website_totals": {
-          "active_users": 867,
-          "page_views": 3255,
-          "sessions": 1568,
+          "active_users": 856,
+          "page_views": 3194,
+          "sessions": 1527,
           "cta_clicks": 776
         },
         "websites": [
@@ -24122,8 +24122,8 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 482,
-              "page_views": 1118,
-              "sessions": 705,
+              "page_views": 1117,
+              "sessions": 706,
               "cta_clicks": 116
             }
           },
@@ -24131,9 +24131,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 17,
-              "page_views": 63,
-              "sessions": 42,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -24152,7 +24152,7 @@
             "app_id": "xiazi-yesterdays-world",
             "metrics": {
               "active_users": 77,
-              "page_views": 301,
+              "page_views": 303,
               "sessions": 189,
               "cta_clicks": 52
             }
@@ -24162,7 +24162,7 @@
             "app_id": null,
             "metrics": {
               "active_users": 188,
-              "page_views": 667,
+              "page_views": 668,
               "sessions": 374,
               "cta_clicks": 182
             }
@@ -24180,9 +24180,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -24239,8 +24239,8 @@
             ],
             "h5_metrics": {
               "active_users": 482,
-              "page_views": 1118,
-              "sessions": 705,
+              "page_views": 1117,
+              "sessions": 706,
               "cta_clicks": 116
             },
             "app_metrics": {
@@ -24261,9 +24261,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 17,
-              "page_views": 63,
-              "sessions": 42,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -24308,7 +24308,7 @@
             ],
             "h5_metrics": {
               "active_users": 77,
-              "page_views": 301,
+              "page_views": 303,
               "sessions": 189,
               "cta_clicks": 52
             },
@@ -24331,9 +24331,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-25",
         "website_totals": {
-          "active_users": 883,
-          "page_views": 3284,
-          "sessions": 1592,
+          "active_users": 872,
+          "page_views": 3226,
+          "sessions": 1549,
           "cta_clicks": 778
         },
         "websites": [
@@ -24341,9 +24341,9 @@
             "website_id": "site-style-atlas",
             "app_id": "style-atlas",
             "metrics": {
-              "active_users": 60,
-              "page_views": 136,
-              "sessions": 105,
+              "active_users": 61,
+              "page_views": 137,
+              "sessions": 106,
               "cta_clicks": null
             }
           },
@@ -24352,7 +24352,7 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 491,
-              "page_views": 1127,
+              "page_views": 1131,
               "sessions": 718,
               "cta_clicks": 118
             }
@@ -24361,9 +24361,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 18,
-              "page_views": 64,
-              "sessions": 43,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -24382,7 +24382,7 @@
             "app_id": "xiazi-yesterdays-world",
             "metrics": {
               "active_users": 78,
-              "page_views": 306,
+              "page_views": 308,
               "sessions": 191,
               "cta_clicks": 52
             }
@@ -24402,7 +24402,7 @@
             "app_id": null,
             "metrics": {
               "active_users": 27,
-              "page_views": 565,
+              "page_views": 564,
               "sessions": 105,
               "cta_clicks": null
             }
@@ -24410,9 +24410,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -24445,9 +24445,9 @@
               "site-style-atlas"
             ],
             "h5_metrics": {
-              "active_users": 60,
-              "page_views": 136,
-              "sessions": 105,
+              "active_users": 61,
+              "page_views": 137,
+              "sessions": 106,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -24469,7 +24469,7 @@
             ],
             "h5_metrics": {
               "active_users": 491,
-              "page_views": 1127,
+              "page_views": 1131,
               "sessions": 718,
               "cta_clicks": 118
             },
@@ -24491,9 +24491,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 18,
-              "page_views": 64,
-              "sessions": 43,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -24538,7 +24538,7 @@
             ],
             "h5_metrics": {
               "active_users": 78,
-              "page_views": 306,
+              "page_views": 308,
               "sessions": 191,
               "cta_clicks": 52
             },
@@ -24561,9 +24561,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-26",
         "website_totals": {
-          "active_users": 894,
-          "page_views": 3296,
-          "sessions": 1608,
+          "active_users": 882,
+          "page_views": 3237,
+          "sessions": 1564,
           "cta_clicks": 778
         },
         "websites": [
@@ -24571,9 +24571,9 @@
             "website_id": "site-style-atlas",
             "app_id": "style-atlas",
             "metrics": {
-              "active_users": 61,
-              "page_views": 137,
-              "sessions": 107,
+              "active_users": 62,
+              "page_views": 138,
+              "sessions": 108,
               "cta_clicks": null
             }
           },
@@ -24582,7 +24582,7 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 496,
-              "page_views": 1133,
+              "page_views": 1137,
               "sessions": 725,
               "cta_clicks": 118
             }
@@ -24591,9 +24591,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 19,
-              "page_views": 65,
-              "sessions": 44,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -24612,7 +24612,7 @@
             "app_id": "xiazi-yesterdays-world",
             "metrics": {
               "active_users": 80,
-              "page_views": 308,
+              "page_views": 310,
               "sessions": 193,
               "cta_clicks": 52
             }
@@ -24632,7 +24632,7 @@
             "app_id": null,
             "metrics": {
               "active_users": 28,
-              "page_views": 566,
+              "page_views": 565,
               "sessions": 107,
               "cta_clicks": null
             }
@@ -24640,9 +24640,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -24675,9 +24675,9 @@
               "site-style-atlas"
             ],
             "h5_metrics": {
-              "active_users": 61,
-              "page_views": 137,
-              "sessions": 107,
+              "active_users": 62,
+              "page_views": 138,
+              "sessions": 108,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -24699,7 +24699,7 @@
             ],
             "h5_metrics": {
               "active_users": 496,
-              "page_views": 1133,
+              "page_views": 1137,
               "sessions": 725,
               "cta_clicks": 118
             },
@@ -24721,9 +24721,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 19,
-              "page_views": 65,
-              "sessions": 44,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -24768,7 +24768,7 @@
             ],
             "h5_metrics": {
               "active_users": 80,
-              "page_views": 308,
+              "page_views": 310,
               "sessions": 193,
               "cta_clicks": 52
             },
@@ -24791,9 +24791,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-27",
         "website_totals": {
-          "active_users": 908,
-          "page_views": 3357,
-          "sessions": 1635,
+          "active_users": 894,
+          "page_views": 3292,
+          "sessions": 1590,
           "cta_clicks": 779
         },
         "websites": [
@@ -24812,7 +24812,7 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 506,
-              "page_views": 1152,
+              "page_views": 1153,
               "sessions": 739,
               "cta_clicks": 119
             }
@@ -24821,9 +24821,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 20,
-              "page_views": 66,
-              "sessions": 45,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -24870,9 +24870,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -24929,7 +24929,7 @@
             ],
             "h5_metrics": {
               "active_users": 506,
-              "page_views": 1152,
+              "page_views": 1153,
               "sessions": 739,
               "cta_clicks": 119
             },
@@ -24951,9 +24951,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 20,
-              "page_views": 66,
-              "sessions": 45,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -25021,9 +25021,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-28",
         "website_totals": {
-          "active_users": 918,
-          "page_views": 3383,
-          "sessions": 1655,
+          "active_users": 903,
+          "page_views": 3318,
+          "sessions": 1609,
           "cta_clicks": 781
         },
         "websites": [
@@ -25042,7 +25042,7 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 512,
-              "page_views": 1165,
+              "page_views": 1166,
               "sessions": 749,
               "cta_clicks": 120
             }
@@ -25051,9 +25051,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 21,
-              "page_views": 67,
-              "sessions": 46,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -25082,7 +25082,7 @@
             "app_id": null,
             "metrics": {
               "active_users": 192,
-              "page_views": 705,
+              "page_views": 706,
               "sessions": 384,
               "cta_clicks": 182
             }
@@ -25100,9 +25100,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -25159,7 +25159,7 @@
             ],
             "h5_metrics": {
               "active_users": 512,
-              "page_views": 1165,
+              "page_views": 1166,
               "sessions": 749,
               "cta_clicks": 120
             },
@@ -25181,9 +25181,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 21,
-              "page_views": 67,
-              "sessions": 46,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -25251,10 +25251,10 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-29",
         "website_totals": {
-          "active_users": 934,
-          "page_views": 3433,
-          "sessions": 1685,
-          "cta_clicks": 784
+          "active_users": 918,
+          "page_views": 3370,
+          "sessions": 1636,
+          "cta_clicks": 786
         },
         "websites": [
           {
@@ -25262,7 +25262,7 @@
             "app_id": "style-atlas",
             "metrics": {
               "active_users": 64,
-              "page_views": 150,
+              "page_views": 149,
               "sessions": 117,
               "cta_clicks": null
             }
@@ -25272,18 +25272,18 @@
             "app_id": "yixiu-meditation",
             "metrics": {
               "active_users": 522,
-              "page_views": 1185,
+              "page_views": 1191,
               "sessions": 765,
-              "cta_clicks": 122
+              "cta_clicks": 124
             }
           },
           {
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 22,
-              "page_views": 68,
-              "sessions": 47,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -25330,9 +25330,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -25366,7 +25366,7 @@
             ],
             "h5_metrics": {
               "active_users": 64,
-              "page_views": 150,
+              "page_views": 149,
               "sessions": 117,
               "cta_clicks": null
             },
@@ -25389,9 +25389,9 @@
             ],
             "h5_metrics": {
               "active_users": 522,
-              "page_views": 1185,
+              "page_views": 1191,
               "sessions": 765,
-              "cta_clicks": 122
+              "cta_clicks": 124
             },
             "app_metrics": {
               "impressions": null,
@@ -25411,9 +25411,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 22,
-              "page_views": 68,
-              "sessions": 47,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -25481,9 +25481,9 @@
         "period_start": "2026-08-15",
         "period_end": "2026-09-30",
         "website_totals": {
-          "active_users": 946,
-          "page_views": 3501,
-          "sessions": 1718,
+          "active_users": 929,
+          "page_views": 3429,
+          "sessions": 1669,
           "cta_clicks": 792
         },
         "websites": [
@@ -25511,9 +25511,9 @@
             "website_id": "site-human-design",
             "app_id": "know-yourself",
             "metrics": {
-              "active_users": 23,
-              "page_views": 72,
-              "sessions": 49,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             }
           },
@@ -25560,9 +25560,9 @@
         ],
         "websites_total": 7,
         "website_coverage": {
-          "active_users": 7,
-          "page_views": 7,
-          "sessions": 7,
+          "active_users": 6,
+          "page_views": 6,
+          "sessions": 6,
           "cta_clicks": 4
         },
         "apps_total": 5,
@@ -25641,9 +25641,9 @@
               "site-human-design"
             ],
             "h5_metrics": {
-              "active_users": 23,
-              "page_views": 72,
-              "sessions": 49,
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
               "cta_clicks": null
             },
             "app_metrics": {
@@ -26066,7 +26066,7 @@
           "last_successful_import": "2026-08-14T09:20:00.000Z",
           "freshness": "manual",
           "age_state": "stale",
-          "age_days": 49.1,
+          "age_days": 49.2,
           "data_available": [
             "impressions",
             "product_page_views",
@@ -26146,7 +26146,7 @@
           "last_successful_import": "2026-09-23T02:59:50.893Z",
           "freshness": "fresh",
           "age_state": "stale",
-          "age_days": 7.9,
+          "age_days": 8.1,
           "data_available": [
             "app_store_taps",
             "app_store_taps_unique",
@@ -26193,7 +26193,7 @@
           "name": "Portfolio Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-10-01T00:33:00.684Z",
+          "last_successful_import": "2026-10-01T05:54:52.310Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -26246,7 +26246,7 @@
           "error": null
         }
       ],
-      "last_successful_import": "2026-10-01T01:43:51.135Z",
+      "last_successful_import": "2026-10-01T05:54:52.310Z",
       "stale_providers": [
         "manual_app_store_connect",
         "app_store_connect_api"
@@ -26308,7 +26308,7 @@
           "name": "Portfolio Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-10-01T00:33:00.684Z",
+          "last_successful_import": "2026-10-01T05:54:52.310Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -26361,7 +26361,7 @@
           "error": null
         }
       ],
-      "last_successful_import": "2026-10-01T01:43:51.135Z",
+      "last_successful_import": "2026-10-01T05:54:52.310Z",
       "stale_providers": [],
       "missing_critical_metrics": [
         "first_time_downloads",
@@ -26417,7 +26417,7 @@
           "name": "Portfolio Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-10-01T00:33:00.684Z",
+          "last_successful_import": "2026-10-01T05:54:52.310Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -26452,7 +26452,7 @@
           "error": null
         }
       ],
-      "last_successful_import": "2026-10-01T00:33:02.465Z",
+      "last_successful_import": "2026-10-01T05:54:52.310Z",
       "stale_providers": [],
       "missing_critical_metrics": [],
       "import_errors": [
