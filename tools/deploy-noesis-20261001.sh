@@ -21,7 +21,7 @@ nginx -t
 # Reject paths outside the exact frontend delta before extracting anything.
 while IFS= read -r entry; do
   case "$entry" in
-    noesis.js|noesis.css|assets/noesis-crystal-dark.png|assets/noesis-crystal-light.png|assets/noesis-mark.png|app.js|index.html) ;;
+    assets/|noesis.js|noesis.css|assets/noesis-crystal-dark.png|assets/noesis-crystal-light.png|assets/noesis-mark.png|app.js|index.html) ;;
     *) echo UNEXPECTED_ARCHIVE_ENTRY; exit 3 ;;
   esac
 done < <(tar -tzf "$archive")
