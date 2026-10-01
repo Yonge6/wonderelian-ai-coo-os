@@ -18,7 +18,7 @@ test('every non-Yixiu project is scoped to its verified hostname, not another pr
 });
 test('Buer empty data, web-only products and unconnected native Apps are honest',()=>{
  const projects=PRODUCT_PROJECTS.map(p=>({...p,status:'waiting_for_events',h5:{events:[],status:'waiting_for_events'},ios:{status:'waiting_for_firebase_link'}}));
- const html=usageView({projects},{locale:'zh',projectId:'buer'});assert.match(html,/不二见己/);assert.match(html,/需在不二见己产品端修复/);assert.doesNotMatch(html,/播放质量/);
+ const html=usageView({projects},{locale:'zh',projectId:'buer'});assert.match(html,/不二见己/);assert.match(html,/等待 GA4 正式报表返回/);assert.doesNotMatch(html,/播放质量/);
  assert.doesNotMatch(usageView({projects},{projectId:'maker',surface:'ios'}),/data-usage-surface="ios"/);
  assert.match(usageView({projects},{locale:'zh',projectId:'wendao',surface:'ios'}),/网站访问不代表 App 使用/);
 });

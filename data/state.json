@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-10-01T05:54:54.295Z",
+    "last_updated": "2026-10-01T06:07:10.281Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -11943,6 +11943,21 @@
   ],
   "audit": [
     {
+      "id": "dd65e39d-5ec5-433f-9bf3-c09d2e25742d",
+      "at": "2026-10-01T06:07:10.235Z",
+      "actor": "Codex",
+      "source": "explicit_owner_approval_and_public_verification",
+      "app_id": "know-yourself",
+      "action": "enable_buer_hostname_analytics",
+      "result": {
+        "instrumentation": "enabled_verified",
+        "official_processed_metrics": null,
+        "production_repository": "Buer-only analytics delta",
+        "legacy_site_unchanged": true
+      },
+      "status": "success"
+    },
+    {
       "id": "82143367-3a06-45ea-a6b6-9349383216f0",
       "at": "2026-10-01T05:54:52.310Z",
       "actor": "AI COO OS",
@@ -19451,7 +19466,14 @@
       "analytics_status": "tag_detected",
       "last_checked_at": "2026-10-01T05:54:52.310Z",
       "description": "Your AI growth companion Doudoulong. Explore Human Design, HUMAN 3.0 interviews and personal experiences to choose actions and reflect on progress.",
-      "description_zh": "你的专属 AI 成长伙伴 豆豆龙。结合人类图自我观察、HUMAN 3.0 四领域访谈与个人经历，明确行动并持续复盘。"
+      "description_zh": "你的专属 AI 成长伙伴 豆豆龙。结合人类图自我观察、HUMAN 3.0 四领域访谈与个人经历，明确行动并持续复盘。",
+      "instrumentation": {
+        "status": "enabled_verified",
+        "verified_at": "2026-10-01T06:07:10.235Z",
+        "source": "Public HTTPS hash and browser iframe configuration readback",
+        "artifact_commit": "439e9fe4d9c5c67534729709150ef0585ca64a75",
+        "scope": "Website page views and consent-gated chart_completion; no birth details or conversation content"
+      }
     },
     {
       "id": "site-wendao",
@@ -118075,8 +118097,8 @@
       "status": "audited",
       "title": "Measure Buer Within discovery and meaningful use",
       "title_zh": "衡量不二见己的发现与真实使用",
-      "next_action": "Correct the product-side analytics hostname guard, then verify events with the official GA4 API.",
-      "next_action_zh": "在产品仓库修正统计脚本的域名限制，再通过官方 GA4 API 验证事件。",
+      "next_action": "Wait for processed GA4 observations in the existing daily read-only sync; do not substitute verification visits or legacy hostname metrics.",
+      "next_action_zh": "通过现有每日只读同步等待 GA4 正式数据，不把验收访问或旧域名流量当作新站增长。",
       "page_views": null,
       "cta_clicks": null,
       "conversions": null
