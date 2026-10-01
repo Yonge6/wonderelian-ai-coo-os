@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import vm from 'node:vm';
 import * as model from '../public/dashboard-model.js';
+import {noesisHero} from '../public/noesis.js';
 
 test('freshness uses the previous complete Beijing day and never implies freshness for missing data',()=>{
   const now=new Date('2026-09-22T17:00:00Z');
@@ -37,7 +38,7 @@ test('CSV keeps unknowns blank, preserves zero, and prevents formula execution',
 
 test('overview shows current evidence without historical jobs or baselines; all six useful views render',async()=>{
   const [script,stateText,briefText,html]=await Promise.all(['public/app.js','public/data/state.json','public/data/brief.json','public/index.html'].map(p=>readFile(new URL('../'+p,import.meta.url),'utf8')));
-  const context=vm.createContext({...model,Intl,Date,URL,URLSearchParams,console,localStorage:{getItem:()=> 'zh'},location:{protocol:'https:',hostname:'ops.wonderelian.com',search:'',hash:''},document:{body:{dataset:{}},querySelector:()=>null}});
+  const context=vm.createContext({...model,noesisHero,Intl,Date,URL,URLSearchParams,console,localStorage:{getItem:()=> 'zh'},location:{protocol:'https:',hostname:'ops.wonderelian.com',search:'',hash:''},document:{body:{dataset:{}},querySelector:()=>null}});
   const code=script.replace(/^import[^\n]+\n/gm,'').split('document.querySelectorAll("nav [data-view]")')[0];
   vm.runInContext(code,context);
   context.fixture=JSON.parse(stateText);context.fixtureBrief=JSON.parse(briefText);
