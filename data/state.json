@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-10-01T00:33:58.465Z",
+    "last_updated": "2026-10-01T01:43:51.138Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -48,7 +48,7 @@
         "wendao": null,
         "xiazi-yesterdays-world": null
       },
-      "app_store_sales": "2026-09-29",
+      "app_store_sales": "2026-09-30",
       "app_store_finance": "2026-09-30"
     },
     "last_growth_cycle_at": "2026-08-14T15:46:53.809Z",
@@ -11591,12 +11591,11 @@
         "yixiu-meditation",
         "style-atlas",
         "wonderelian",
-        "maker-business-lab",
-        "xiazi-yesterdays-world"
+        "maker-business-lab"
       ],
-      "last_sync": "2026-09-30T14:36:07.826Z",
-      "last_successful_import": "2026-09-30T14:36:07.826Z",
-      "data_through": "2026-09-29",
+      "last_sync": "2026-10-01T01:43:51.135Z",
+      "last_successful_import": "2026-10-01T01:43:51.135Z",
+      "data_through": "2026-09-30",
       "freshness": "manual",
       "data_available": [
         "app_units",
@@ -11942,6 +11941,16 @@
     }
   ],
   "audit": [
+    {
+      "id": "e17f1f68-8140-4257-b064-580bc2e1a570",
+      "at": "2026-10-01T01:43:51.135Z",
+      "actor": "Codex",
+      "app_id": "wendao",
+      "source": "official_app_store_connect_ui",
+      "action": "import_verified_app_store_sales_and_finance_snapshot",
+      "result": "Imported verified App Store sales through 2026-09-30; reconciled 2 Wendao lifetime purchases to 11.41 CNY estimated proceeds.",
+      "status": "success"
+    },
     {
       "id": "audit-ops-publications-20260930",
       "at": "2026-10-01T00:33:58.465Z",
@@ -126413,6 +126422,77 @@
         "item_level_proceeds_available": false
       },
       "imported_at": "2026-09-30T14:36:07.826Z"
+    },
+    {
+      "id": "app-store-sales-2026-09-30",
+      "period_start": "2026-09-01",
+      "period_end": "2026-09-30",
+      "timezone": "UTC",
+      "source": "App Store Connect Sales and Trends",
+      "source_reference": "sales-and-trends:app-units:2026-09-01:2026-09-30",
+      "verification_type": "manual_verified_official_ui",
+      "verified_at": "2026-10-01T01:42:00.000Z",
+      "totals": {
+        "app_units": 72,
+        "in_app_purchase_units": 2,
+        "sales_amount": 1.77,
+        "sales_currency": "USD"
+      },
+      "apps": [
+        {
+          "app_id": "wendao",
+          "name": "Wendao AI: Daodejing",
+          "name_zh": "问道 AI：道德经",
+          "app_store_id": "6796945428",
+          "app_units": 32,
+          "in_app_purchase_units": 2
+        },
+        {
+          "app_id": "yixiu-meditation",
+          "name": "Yixiu: White Noise & Sleep",
+          "name_zh": "一休冥想：白噪音与静心",
+          "app_store_id": "1461182261",
+          "app_units": 16,
+          "in_app_purchase_units": null
+        },
+        {
+          "app_id": "style-atlas",
+          "name": "Style Atlas: Art & Design",
+          "name_zh": "Style Atlas：艺术与设计",
+          "app_store_id": "6787447019",
+          "app_units": 11,
+          "in_app_purchase_units": null
+        },
+        {
+          "app_id": "wonderelian",
+          "name": "WonderElian",
+          "name_zh": "WonderElian",
+          "app_store_id": "6806903403",
+          "app_units": 10,
+          "in_app_purchase_units": null
+        },
+        {
+          "app_id": "maker-business-lab",
+          "name": "Maker Business Lab",
+          "name_zh": "Maker Business Lab",
+          "app_store_id": "6806765660",
+          "app_units": 3,
+          "in_app_purchase_units": null
+        }
+      ],
+      "financial": {
+        "month": "2026-09",
+        "updated_on": "2026-09-30",
+        "territory": "China mainland",
+        "currency": "CNY",
+        "total_units": 2,
+        "estimated_total_proceeds": 11.41,
+        "matched_app_id": "wendao",
+        "matched_product": "Wendao Complete Reading Lifetime",
+        "match_basis": "The September financial report contains two China-mainland units, and the same account's Sales and Trends report contains exactly two in-app-purchase units, both assigned to this Wendao lifetime product.",
+        "item_level_proceeds_available": false
+      },
+      "imported_at": "2026-10-01T01:43:51.135Z"
     }
   ]
 }

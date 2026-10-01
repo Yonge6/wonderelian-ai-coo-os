@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T00:34:39.312Z",
+  "generated_at": "2026-10-01T01:43:51.523Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -26066,7 +26066,7 @@
           "last_successful_import": "2026-08-14T09:20:00.000Z",
           "freshness": "manual",
           "age_state": "stale",
-          "age_days": 49,
+          "age_days": 49.1,
           "data_available": [
             "impressions",
             "product_page_views",
@@ -26232,7 +26232,7 @@
           "name": "App Store Connect Sales and Trends",
           "status": "available",
           "mode": "official_ui_manual_snapshot",
-          "last_successful_import": "2026-09-30T14:36:07.826Z",
+          "last_successful_import": "2026-10-01T01:43:51.135Z",
           "freshness": "manual",
           "age_state": "unknown",
           "age_days": null,
@@ -26246,7 +26246,7 @@
           "error": null
         }
       ],
-      "last_successful_import": "2026-10-01T00:33:02.465Z",
+      "last_successful_import": "2026-10-01T01:43:51.135Z",
       "stale_providers": [
         "manual_app_store_connect",
         "app_store_connect_api"
@@ -26347,7 +26347,7 @@
           "name": "App Store Connect Sales and Trends",
           "status": "available",
           "mode": "official_ui_manual_snapshot",
-          "last_successful_import": "2026-09-30T14:36:07.826Z",
+          "last_successful_import": "2026-10-01T01:43:51.135Z",
           "freshness": "manual",
           "age_state": "unknown",
           "age_days": null,
@@ -26361,7 +26361,7 @@
           "error": null
         }
       ],
-      "last_successful_import": "2026-10-01T00:33:02.465Z",
+      "last_successful_import": "2026-10-01T01:43:51.135Z",
       "stale_providers": [],
       "missing_critical_metrics": [
         "first_time_downloads",
