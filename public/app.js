@@ -1,5 +1,6 @@
 import { freshness, verifiedPublications, filterPublications, trafficPoints, csvText } from "./dashboard-model.js?v=20260923-focused";
 import { usageView } from "./product-usage.js?v=20260930-firebase";
+import { noesisHero } from "./noesis.js?v=20261001";
 let usageProject="yixiu", usageSurface="h5";
 const root=document.querySelector("#app");
 const localHosts=new Set(["127.0.0.1","localhost"]);
@@ -132,20 +133,10 @@ function orbitalOverview(){
   const metrics=[["website_uv","active_users"],["website_pv","page_views"],["daily_sessions","sessions"],["daily_cta","cta_clicks"]];
   const rows=new Map((current?.websites??[]).map(x=>[x.website_id,x])),f=freshness(summary.latest_date);
   const selectedSite=state.websites.find(site=>site.id===trendScope),selectedRow=rows.get(trendScope);
-  const total=state.websites.length,covered=state.websites.filter(site=>Object.values(rows.get(site.id)?.metrics??{}).some(v=>v!=null)).length;
-  const nodes=[
-    ["yixiu.wonderelian.com",50,12.3,"top"],["style-atlas.wonderelian.com",25.1,30,"left"],
-    ["human-design.wonderelian.com",18.4,57.3,"left"],["wendao.wonderelian.com",37,78.8,"bottom"],
-    ["xiazishuo.com",63.4,78.9,"bottom"],["maker.wonderelian.com",82.4,57,"right"],
-    ["wonderelian.com",75.4,29.5,"right"]
-  ];
-  const positioned=state.websites.map((site,index)=>{
-    const host=new URL(site.url).hostname.replace(/^www\./,""),position=nodes.find(n=>n[0]===host)??nodes[index%nodes.length];
-    return {site,host,position};
-  });
-  const metricRow=selectedSite?selectedRow?.metrics:current?.website_totals;
+  const total=state.websites.length;
   return `<section class="orbital-overview" aria-label="${t(portfolioMode==="cumulative"?"cumulative_portfolio":"daily_portfolio")}">
     <h3 class="sr-only">${t(portfolioMode==="cumulative"?"cumulative_portfolio":"daily_portfolio")}</h3>
+    ${noesisHero({current,snapshot:[...(state.app_store_sales_snapshots??[])].sort((a,b)=>String(a.period_end).localeCompare(String(b.period_end))).at(-1),sites:state.websites,scope:trendScope,locale,mode:portfolioMode})}
     <div class="orbital-toolbar">
       <div class="portfolio-mode" role="group" aria-label="${t("period")}">${["daily","cumulative"].map(mode=>`<button data-portfolio-mode="${mode}" aria-pressed="${portfolioMode===mode}" class="${portfolioMode===mode?"active":""}">${t(mode==="cumulative"?"cumulative_view":"single_day")}</button>`).join("")}</div>
       <label class="orbital-date"><i class="ph ph-calendar-blank" aria-hidden="true"></i><span class="sr-only">${t("through_selected")}</span><select data-daily-date ${dates.length?"":"disabled"}>${dates.slice().reverse().map(d=>`<option ${d===dailyDate?"selected":""}>${esc(d)}</option>`).join("")}</select></label>
@@ -155,14 +146,6 @@ function orbitalOverview(){
     </div>
     <p class="refresh-message" role="status">${esc(refreshMessage)}</p>
     <div class="orbital-period"><span>${t("website_data")} · ${esc(current?.period_start??dailyDate??"—")} — ${esc(current?.period_end??dailyDate??"—")} · ${t(portfolioMode==="cumulative"?"cumulative_view":"single_day")}</span><span>${t("snapshot_updated")} ${date(state.metadata.last_updated)}</span></div>
-    <div class="telemetry-rack orbit-metrics">${metrics.map(([key,metric])=>`<article><span>${t(key)}</span><strong>${fmt(metricRow?.[metric])}</strong><small>${selectedSite?esc(pick(selectedSite,"name")):coverageText(current?.website_coverage?.[metric]??0,total)}</small></article>`).join("")}</div>
-    <div class="orbit-stage" aria-label="${t("orbital_hint")}">
-      <img class="orbit-art orbit-art-dark" src="./assets/orbit-system-dark.png" alt="" width="1896" height="830" fetchpriority="high">
-      <img class="orbit-art orbit-art-light" src="./assets/orbit-system-light.png" alt="" width="1896" height="830" loading="lazy">
-      <button class="orbit-core ${!selectedSite?"selected":""}" data-orbit-site="portfolio" aria-label="${t("orbital_reset")}" aria-pressed="${!selectedSite}"><strong>${covered}<span> / ${total}</span></strong><span>${t("orbital_coverage")}</span><small>${t("orbital_reset")}</small></button>
-      ${positioned.map(({site,host,position})=>`<button class="orbit-node orbit-node-${position[3]} ${site.id===trendScope?"selected":""}" style="--orbit-x:${position[1]}%;--orbit-y:${position[2]}%" data-orbit-site="${esc(site.id)}" aria-pressed="${site.id===trendScope}"><strong>${esc(pick(site,"name"))}</strong><small>${esc(host)}</small></button>`).join("")}
-      <p class="orbit-caption">${t("orbital_snapshot")}<span>${t("orbital_hint")}</span></p>
-    </div>
     ${selectedSite?`<div class="orbit-selection" role="status"><div><small>${t("orbital_selected")}</small><strong>${esc(pick(selectedSite,"name"))}</strong></div><span>${selectedRow&&Object.values(selectedRow.metrics??{}).some(v=>v!=null)?t("coverage_note"):t("orbital_missing")}</span><a href="${esc(selectedSite.url)}" target="_blank" rel="noreferrer">${t("orbital_open")} <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a><button data-orbit-site="portfolio">${t("orbital_reset")}</button></div>`:""}
     <article class="telemetry-ledger orbit-ledger"><header><h4>${t("website_data")} · ${t("website_breakdown")}</h4><span>${total} ${t("orbital_sites")}</span></header><div class="telemetry-table-wrap"><table class="telemetry-table"><thead><tr><th>${t("websites")}</th><th>UV</th><th>PV</th><th>${t("daily_sessions")}</th><th>${t("daily_cta")}</th><th>${t("coverage")}</th></tr></thead><tbody>${state.websites.map(site=>{const row=rows.get(site.id),known=metrics.filter(([,key])=>row?.metrics?.[key]!=null).length;return `<tr class="${site.id===trendScope?"orbit-selected-row":""}"><th><a href="${esc(site.url)}" target="_blank" rel="noreferrer">${esc(pick(site,"name"))} <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a><small>${esc(new URL(site.url).hostname)}</small></th>${metrics.map(([,key])=>`<td>${fmt(row?.metrics?.[key])}</td>`).join("")}<td>${known}/4</td></tr>`;}).join("")}</tbody></table></div></article>
     ${appTelemetryPanel(summary)}
