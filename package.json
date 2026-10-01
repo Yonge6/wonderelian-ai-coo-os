@@ -32,6 +32,7 @@
     "sync:ops-publications:2026-09-26": "node src/sync-ops-publications-2026-09-26.mjs",
     "sync:ops-publications:2026-09-28": "node src/sync-ops-publications-2026-09-28.mjs",
     "sync:ops-publications:2026-09-29": "node src/sync-ops-publications-2026-09-29.mjs",
+    "sync:ops-publications:2026-09-30": "node src/sync-ops-publications-2026-09-30.mjs",
     "sync:codex-automations": "node src/sync-codex-automations.mjs",
     "test": "node --test tests/*.test.mjs",
     "check": "node src/check.mjs"
