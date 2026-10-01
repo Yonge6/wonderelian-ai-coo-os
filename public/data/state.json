@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-10-01T06:07:10.281Z",
+    "last_updated": "2026-10-01T09:17:20.921Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -11932,6 +11932,24 @@
     }
   ],
   "audit": [
+    {
+      "id": "eea7d295-5db4-4b60-b81d-7936eccecd07",
+      "at": "2026-10-01T09:17:05.546Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "ga4_product_usage",
+      "action": "sync_product_usage",
+      "status": "success"
+    },
+    {
+      "id": "05ce55ea-3d09-4d0d-889c-35e779e51d87",
+      "at": "2026-10-01T07:00:31.580Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "ga4_product_usage",
+      "action": "sync_product_usage",
+      "status": "success"
+    },
     {
       "id": "dd65e39d-5ec5-433f-9bf3-c09d2e25742d",
       "at": "2026-10-01T06:07:10.235Z",
@@ -119161,7 +119179,7 @@
   ],
   "product_analytics": {
     "schema_version": 1,
-    "generated_at": "2026-10-01T05:52:31.668Z",
+    "generated_at": "2026-10-01T09:17:05.546Z",
     "source": "Google Analytics 4 Data API",
     "projects": [
       {
@@ -119176,7 +119194,7 @@
           "period_start": "2026-09-03",
           "period_end": "2026-09-30",
           "timezone": "Asia/Shanghai",
-          "verified_at": "2026-10-01T05:52:35.076Z",
+          "verified_at": "2026-10-01T09:17:09.006Z",
           "source": "Google Analytics 4 Data API",
           "data_quality": {
             "thresholded": false,
@@ -119420,7 +119438,7 @@
           "period_start": "2026-09-03",
           "period_end": "2026-09-30",
           "timezone": "Asia/Shanghai",
-          "verified_at": "2026-10-01T05:52:39.306Z",
+          "verified_at": "2026-10-01T09:17:10.600Z",
           "source": "Google Analytics 4 Data API",
           "data_quality": {
             "thresholded": false,
@@ -119459,7 +119477,7 @@
           "hostname": "wendao.wonderelian.com",
           "period_start": "2026-09-03",
           "period_end": "2026-09-30",
-          "verified_at": "2026-10-01T05:52:41.776Z",
+          "verified_at": "2026-10-01T09:17:12.596Z",
           "timezone": "Asia/Shanghai",
           "overview": {
             "totalUsers": 73,
@@ -119678,7 +119696,7 @@
           "hostname": "xiazishuo.com",
           "period_start": "2026-09-03",
           "period_end": "2026-09-30",
-          "verified_at": "2026-10-01T05:52:44.294Z",
+          "verified_at": "2026-10-01T09:17:14.066Z",
           "timezone": "Asia/Shanghai",
           "overview": {
             "totalUsers": 52,
@@ -119922,7 +119940,7 @@
           "hostname": "style-atlas.wonderelian.com",
           "period_start": "2026-09-03",
           "period_end": "2026-09-30",
-          "verified_at": "2026-10-01T05:52:45.961Z",
+          "verified_at": "2026-10-01T09:17:15.516Z",
           "timezone": "Asia/Shanghai",
           "overview": {
             "totalUsers": 44,
@@ -120145,7 +120163,7 @@
           "hostname": "maker.wonderelian.com",
           "period_start": "2026-09-03",
           "period_end": "2026-09-30",
-          "verified_at": "2026-10-01T05:52:47.494Z",
+          "verified_at": "2026-10-01T09:17:16.995Z",
           "timezone": "Asia/Shanghai",
           "overview": {
             "totalUsers": 26,
@@ -120389,7 +120407,7 @@
           "hostname": "wonderelian.com",
           "period_start": "2026-09-03",
           "period_end": "2026-09-30",
-          "verified_at": "2026-10-01T05:52:49.397Z",
+          "verified_at": "2026-10-01T09:17:18.371Z",
           "timezone": "Asia/Shanghai",
           "overview": {
             "totalUsers": 91,
@@ -120637,13 +120655,14 @@
           "status": "waiting_for_events",
           "source": "Google Analytics 4 Data API",
           "hostname": "buer.wonderelian.com",
+          "surface": "h5",
           "period_start": "2026-09-03",
           "period_end": "2026-09-30",
-          "verified_at": "2026-10-01T05:52:50.940Z",
+          "verified_at": "2026-10-01T09:17:19.693Z",
           "timezone": "Asia/Shanghai",
-          "overview": null,
           "events": [],
           "daily": [],
+          "overview": null,
           "data_quality": {
             "thresholded": false,
             "sampled": false
@@ -120653,16 +120672,36 @@
             "d7": null
           },
           "revenue": {
-            "trial_starts": null,
+            "revenue": null,
             "paid_conversions": null,
-            "revenue": null
+            "trial_starts": null
           }
         },
         "ios": {
-          "status": "waiting_for_firebase_link",
+          "status": "waiting_for_events",
+          "source": "Google Analytics 4 Data API",
+          "hostname": null,
+          "surface": "ios",
+          "period_start": "2026-09-03",
+          "period_end": "2026-09-30",
+          "verified_at": "2026-10-01T09:17:20.921Z",
+          "timezone": "Asia/Shanghai",
           "events": [],
-          "period_start": null,
-          "period_end": null
+          "daily": [],
+          "overview": null,
+          "data_quality": {
+            "thresholded": false,
+            "sampled": false
+          },
+          "retention": {
+            "d1": null,
+            "d7": null
+          },
+          "revenue": {
+            "revenue": null,
+            "paid_conversions": null,
+            "trial_starts": null
+          }
         }
       }
     ]
