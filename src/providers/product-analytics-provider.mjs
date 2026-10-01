@@ -2,11 +2,12 @@ import { Ga4WebsiteProvider } from "./ga4-website-provider.mjs";
 
 export const PRODUCT_PROJECTS = [
   { id: "yixiu", name: "Yixiu Meditation", name_zh: "一休冥想", hostname: "yixiu.wonderelian.com", website_id: "site-yixiu" },
-  { id: "wendao", name: "Wendao", name_zh: "三慢问道" },
-  { id: "xiazi", name: "Xiazi", name_zh: "虾子曰" },
-  { id: "style-atlas", name: "Style Atlas", name_zh: "艺术风格图鉴" },
-  { id: "maker", name: "Maker Business Lab", name_zh: "Maker Business Lab" },
-  { id: "wonderelian", name: "WonderElian", name_zh: "WonderElian" },
+  { id: "wendao", name: "Wendao", name_zh: "三慢问道", hostname: "wendao.wonderelian.com" },
+  { id: "xiazi", name: "Xiazi", name_zh: "虾子曰", hostname: "xiazishuo.com" },
+  { id: "style-atlas", name: "Style Atlas", name_zh: "艺术风格图鉴", hostname: "style-atlas.wonderelian.com" },
+  { id: "maker", name: "Maker Business Lab", name_zh: "Maker Business Lab", hostname: "maker.wonderelian.com", web_only: true },
+  { id: "wonderelian", name: "WonderElian", name_zh: "WonderElian", hostname: "wonderelian.com", web_only: true },
+  { id: "buer", name: "Buer Within", name_zh: "不二见己", hostname: "buer.wonderelian.com" },
 ];
 const numeric = value => value === undefined || value === null || value === "" ? null : Number.isFinite(Number(value)) ? Number(value) : null;
 export function reportRows(report) {
@@ -25,6 +26,16 @@ export function pendingProductSnapshot(now = new Date().toISOString()) {
   return { schema_version: 1, generated_at: now, source: "Google Analytics 4 Data API", projects: PRODUCT_PROJECTS.map(project => ({ ...project, status: "planned", h5: null, ios: null })) };
 }
 export class ProductAnalyticsProvider extends Ga4WebsiteProvider {
+  async fetchProjectUsage({ project, startDate, endDate }) {
+    if (!PRODUCT_PROJECTS.some(item => item.id === project.id && item.hostname === project.hostname)) throw new Error("Unknown product hostname");
+    const options = {startDate, endDate, dimensionFilter:{filter:{fieldName:"hostName",inListFilter:{values:[project.hostname, `www.${project.hostname}`],caseSensitive:false}}}};
+    const overview = await this.runReport({...options,dimensions:[],metrics:["totalUsers","activeUsers","screenPageViews","sessions","engagedSessions","userEngagementDuration"]});
+    const events = await this.runReport({...options,dimensions:["eventName"],metrics:["eventCount","totalUsers"]});
+    const daily = await this.runReport({...options,dimensions:["date"],metrics:["totalUsers","screenPageViews","sessions"]});
+    const reports=[overview,events,daily];
+    const rows=reportRows(events).map(row=>({event:row.eventName,count:row.eventCount,users:row.totalUsers}));
+    return {status:rows.length?"collecting":"waiting_for_events",source:"Google Analytics 4 Data API",hostname:project.hostname,period_start:startDate,period_end:endDate,verified_at:new Date().toISOString(),timezone:overview.metadata?.timeZone??null,overview:reportRows(overview)[0]??null,events:rows,daily:reportRows(daily),data_quality:{thresholded:reports.some(r=>r.metadata?.subjectToThresholding),sampled:reports.some(r=>r.metadata?.samplingMetadatas?.length)},retention:{d1:null,d7:null},revenue:{trial_starts:null,paid_conversions:null,revenue:null}};
+  }
   async fetchUsage({ startDate, endDate, iosStreamId }) {
     if (iosStreamId && !/^\d+$/.test(iosStreamId)) throw Object.assign(new Error("Invalid stream ID"), {code:"INVALID_STREAM"});
     const scope = iosStreamId ? {andGroup:{expressions:[

@@ -2,9 +2,9 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { normalizeUsageEvents, pendingProductSnapshot, ProductAnalyticsProvider } from "../src/providers/product-analytics-provider.mjs";
 import { syncProductAnalyticsState } from "../src/sync-product-analytics.mjs";
-test("six projects, no fabricated metrics", () => {
+test("seven projects, no fabricated metrics", () => {
   const snapshot = pendingProductSnapshot();
-  assert.equal(snapshot.projects.length, 6);
+  assert.equal(snapshot.projects.length, 7);
   assert.ok(snapshot.projects.every(p => p.h5 === null && p.ios === null));
 });
 test("old playback clicks never become confirmed starts or seconds", () => {
