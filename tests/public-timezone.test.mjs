@@ -14,7 +14,7 @@ test("public dashboard renders operating dates in Beijing time", async () => {
   assert.match(script, /function latestOperatingDay\(\)/);
   assert.match(script, /snapshot_updated/);
   assert.doesNotMatch(script, /toISOString\(\)\.slice\(0,10\)/);
-  assert.match(html, /app\.js\?v=20261001-all-projects/);
+  assert.match(html, /app\.js\?v=20261001-atlas-usage/);
   assert.match(html, /styles\.css\?v=20260930-app-sales/);
   assert.doesNotMatch(html, /class="north-star"/);
   assert.match(script, /const localHosts=new Set\(\["127\.0\.0\.1","localhost"\]\)/);

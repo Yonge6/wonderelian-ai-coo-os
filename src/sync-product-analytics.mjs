@@ -1,9 +1,9 @@
 import { fileURLToPath } from "node:url";
 import { JsonStore } from "./store.mjs";
 import { ProductAnalyticsProvider, pendingProductSnapshot } from "./providers/product-analytics-provider.mjs";
-import { loadYixiuIosStreamId, loadBuerIosStreamId } from "./product-analytics-config.mjs";
+import { loadYixiuIosStreamId, loadBuerIosStreamId, loadStyleAtlasIosStreamId } from "./product-analytics-config.mjs";
 
-export async function syncProductAnalyticsState(state, { provider = new ProductAnalyticsProvider(), now = new Date(), iosStreamId, loadStreamId = loadYixiuIosStreamId, buerIosStreamId, loadBuerStreamId = loadBuerIosStreamId } = {}) {
+export async function syncProductAnalyticsState(state, { provider = new ProductAnalyticsProvider(), now = new Date(), iosStreamId, loadStreamId = loadYixiuIosStreamId, buerIosStreamId, loadBuerStreamId = loadBuerIosStreamId, styleAtlasIosStreamId, loadStyleAtlasStreamId = loadStyleAtlasIosStreamId } = {}) {
   const snapshot = pendingProductSnapshot(now.toISOString());
   const day = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit" }).format(now);
   const shift = offset => new Date(Date.parse(`${day}T00:00:00Z`) + offset * 86400000).toISOString().slice(0, 10);
@@ -32,14 +32,30 @@ export async function syncProductAnalyticsState(state, { provider = new ProductA
     }
   }
   for (const item of snapshot.projects.slice(1)) {
+    if (item.id === 'style-atlas') {
+      const previous = state.product_analytics?.projects?.find(p => p.id === item.id);
+      if (previous?.legacy_h5) item.legacy_h5 = previous.legacy_h5;
+      else if (previous?.h5 && !previous.h5.surface) item.legacy_h5 = previous.h5;
+    }
     item.ios = item.web_only ? null : {status:"waiting_for_firebase_link",events:[],period_start:null,period_end:null};
     try {
-      item.h5 = item.id==='buer' ? await provider.fetchBuerUsage({startDate:shift(-28),endDate:shift(-1)}) : await provider.fetchProjectUsage({project:item,startDate:shift(-28),endDate:shift(-1)});
+      item.h5 = item.id === 'style-atlas' ? await provider.fetchStyleAtlasUsage({startDate:shift(-28),endDate:shift(-1)}) : item.id==='buer' ? await provider.fetchBuerUsage({startDate:shift(-28),endDate:shift(-1)}) : await provider.fetchProjectUsage({project:item,startDate:shift(-28),endDate:shift(-1)});
+      const previousContent = state.product_analytics?.projects?.find(p => p.id === item.id)?.h5?.content;
+      if (item.h5.content?.error_code && previousContent?.rows?.length) item.h5.content = { ...previousContent, status: 'unavailable', error_code: item.h5.content.error_code };
       item.status = item.h5.status;
     } catch (error) {
       const previous = state.product_analytics?.projects?.find(p=>p.id===item.id)?.h5;
       item.h5 = {...(previous??{events:[],overview:null,period_start:null,period_end:null}),status:"unavailable",error_code:error.code??"PROVIDER_UNAVAILABLE"};
       item.status = "unavailable";
+    }
+    if (item.id === 'style-atlas') {
+      try {
+        const stream = styleAtlasIosStreamId === undefined ? await loadStyleAtlasStreamId() : styleAtlasIosStreamId;
+        if (stream) item.ios = await provider.fetchStyleAtlasUsage({ startDate: shift(-28), endDate: shift(-1), iosStreamId: stream });
+      } catch (error) {
+        const previous = state.product_analytics?.projects?.find(p => p.id === item.id)?.ios;
+        item.ios = { ...(previous ?? { events: [], period_start: null, period_end: null }), status: 'unavailable', error_code: error.code ?? 'PROVIDER_UNAVAILABLE' };
+      }
     }
     if(item.id==='buer') {
       try {

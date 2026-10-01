@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-10-01T09:17:20.921Z",
+    "last_updated": "2026-10-01T12:51:02.882Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -11932,6 +11932,15 @@
     }
   ],
   "audit": [
+    {
+      "id": "2e9d2383-0bf7-4236-a451-0a3f203beacd",
+      "at": "2026-10-01T12:50:59.636Z",
+      "actor": "Codex",
+      "app_id": "style-atlas",
+      "source": "ga4_product_usage",
+      "action": "sync_style_atlas_usage",
+      "status": "partial"
+    },
     {
       "id": "eea7d295-5db4-4b60-b81d-7936eccecd07",
       "at": "2026-10-01T09:17:05.546Z",
@@ -119179,7 +119188,7 @@
   ],
   "product_analytics": {
     "schema_version": 1,
-    "generated_at": "2026-10-01T09:17:05.546Z",
+    "generated_at": "2026-10-01T12:50:59.636Z",
     "source": "Google Analytics 4 Data API",
     "projects": [
       {
@@ -119933,8 +119942,7 @@
         "name": "Style Atlas",
         "name_zh": "艺术风格图鉴",
         "hostname": "style-atlas.wonderelian.com",
-        "status": "collecting",
-        "h5": {
+        "legacy_h5": {
           "status": "collecting",
           "source": "Google Analytics 4 Data API",
           "hostname": "style-atlas.wonderelian.com",
@@ -120143,11 +120151,44 @@
             "revenue": null
           }
         },
+        "status": "waiting_for_events",
         "ios": {
           "status": "waiting_for_firebase_link",
           "events": [],
           "period_start": null,
           "period_end": null
+        },
+        "h5": {
+          "status": "waiting_for_events",
+          "source": "Google Analytics 4 Data API",
+          "surface": "h5",
+          "hostname": "style-atlas.wonderelian.com",
+          "period_start": "2026-09-03",
+          "period_end": "2026-09-30",
+          "verified_at": "2026-10-01T12:51:02.578Z",
+          "timezone": "Asia/Shanghai",
+          "events": [],
+          "daily": [],
+          "overview": {
+            "totalUsers": 44,
+            "sessions": 83
+          },
+          "data_quality": {
+            "thresholded": false,
+            "sampled": false
+          },
+          "content": {
+            "status": "verified",
+            "rows": []
+          },
+          "retention": {
+            "d1": null,
+            "d7": null
+          },
+          "revenue": {
+            "revenue": null,
+            "paid_conversions": null
+          }
         }
       },
       {

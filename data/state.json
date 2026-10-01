@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-10-01T09:17:20.921Z",
+    "last_updated": "2026-10-01T12:51:02.882Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -11942,6 +11942,19 @@
     }
   ],
   "audit": [
+    {
+      "id": "2e9d2383-0bf7-4236-a451-0a3f203beacd",
+      "at": "2026-10-01T12:50:59.636Z",
+      "actor": "Codex",
+      "app_id": "style-atlas",
+      "source": "ga4_product_usage",
+      "action": "sync_style_atlas_usage",
+      "result": {
+        "h5": "waiting_for_events",
+        "ios": "waiting_for_firebase_link"
+      },
+      "status": "partial"
+    },
     {
       "id": "eea7d295-5db4-4b60-b81d-7936eccecd07",
       "at": "2026-10-01T09:17:05.546Z",
@@ -121893,7 +121906,7 @@
   ],
   "product_analytics": {
     "schema_version": 1,
-    "generated_at": "2026-10-01T09:17:05.546Z",
+    "generated_at": "2026-10-01T12:50:59.636Z",
     "source": "Google Analytics 4 Data API",
     "projects": [
       {
@@ -122647,221 +122660,45 @@
         "name": "Style Atlas",
         "name_zh": "艺术风格图鉴",
         "hostname": "style-atlas.wonderelian.com",
-        "status": "collecting",
+        "legacy_h5": {"status":"collecting","source":"Google Analytics 4 Data API","hostname":"style-atlas.wonderelian.com","period_start":"2026-09-03","period_end":"2026-09-30","verified_at":"2026-10-01T09:17:15.516Z","timezone":"Asia/Shanghai","overview":{"totalUsers":44,"activeUsers":44,"screenPageViews":108,"sessions":83,"engagedSessions":36,"userEngagementDuration":2397},"events":[{"event":"page_view","count":108,"users":42},{"event":"session_start","count":63,"users":36},{"event":"user_engagement","count":33,"users":16},{"event":"scroll","count":30,"users":12},{"event":"first_visit","count":28,"users":28}],"daily":[{"date":"20260910","totalUsers":6,"screenPageViews":14,"sessions":6},{"date":"20260922","totalUsers":6,"screenPageViews":15,"sessions":7},{"date":"20260921","totalUsers":5,"screenPageViews":12,"sessions":5},{"date":"20260925","totalUsers":5,"screenPageViews":5,"sessions":5},{"date":"20260903","totalUsers":4,"screenPageViews":9,"sessions":8},{"date":"20260913","totalUsers":4,"screenPageViews":5,"sessions":5},{"date":"20260923","totalUsers":4,"screenPageViews":4,"sessions":4},{"date":"20260929","totalUsers":4,"screenPageViews":6,"sessions":4},{"date":"20260906","totalUsers":3,"screenPageViews":6,"sessions":5},{"date":"20260914","totalUsers":3,"screenPageViews":3,"sessions":3},{"date":"20260917","totalUsers":3,"screenPageViews":2,"sessions":3},{"date":"20260919","totalUsers":3,"screenPageViews":3,"sessions":4},{"date":"20260928","totalUsers":3,"screenPageViews":3,"sessions":3},{"date":"20260911","totalUsers":2,"screenPageViews":2,"sessions":2},{"date":"20260912","totalUsers":2,"screenPageViews":2,"sessions":2},{"date":"20260915","totalUsers":2,"screenPageViews":3,"sessions":3},{"date":"20260918","totalUsers":2,"screenPageViews":2,"sessions":2},{"date":"20260924","totalUsers":2,"screenPageViews":2,"sessions":2},{"date":"20260926","totalUsers":2,"screenPageViews":1,"sessions":2},{"date":"20260927","totalUsers":2,"screenPageViews":2,"sessions":2},{"date":"20260904","totalUsers":1,"screenPageViews":2,"sessions":1},{"date":"20260905","totalUsers":1,"screenPageViews":1,"sessions":1},{"date":"20260909","totalUsers":1,"screenPageViews":1,"sessions":1},{"date":"20260916","totalUsers":1,"screenPageViews":3,"sessions":2},{"date":"20260930","totalUsers":1,"screenPageViews":0,"sessions":1}],"data_quality":{"thresholded":false,"sampled":false},"retention":{"d1":null,"d7":null},"revenue":{"trial_starts":null,"paid_conversions":null,"revenue":null}},
+        "status": "waiting_for_events",
+        "ios": {
+          "status": "waiting_for_firebase_link",
+          "events": [],
+          "period_start": null,
+          "period_end": null
+        },
         "h5": {
-          "status": "collecting",
+          "status": "waiting_for_events",
           "source": "Google Analytics 4 Data API",
+          "surface": "h5",
           "hostname": "style-atlas.wonderelian.com",
           "period_start": "2026-09-03",
           "period_end": "2026-09-30",
-          "verified_at": "2026-10-01T09:17:15.516Z",
+          "verified_at": "2026-10-01T12:51:02.578Z",
           "timezone": "Asia/Shanghai",
+          "events": [],
+          "daily": [],
           "overview": {
             "totalUsers": 44,
-            "activeUsers": 44,
-            "screenPageViews": 108,
-            "sessions": 83,
-            "engagedSessions": 36,
-            "userEngagementDuration": 2397
+            "sessions": 83
           },
-          "events": [
-            {
-              "event": "page_view",
-              "count": 108,
-              "users": 42
-            },
-            {
-              "event": "session_start",
-              "count": 63,
-              "users": 36
-            },
-            {
-              "event": "user_engagement",
-              "count": 33,
-              "users": 16
-            },
-            {
-              "event": "scroll",
-              "count": 30,
-              "users": 12
-            },
-            {
-              "event": "first_visit",
-              "count": 28,
-              "users": 28
-            }
-          ],
-          "daily": [
-            {
-              "date": "20260910",
-              "totalUsers": 6,
-              "screenPageViews": 14,
-              "sessions": 6
-            },
-            {
-              "date": "20260922",
-              "totalUsers": 6,
-              "screenPageViews": 15,
-              "sessions": 7
-            },
-            {
-              "date": "20260921",
-              "totalUsers": 5,
-              "screenPageViews": 12,
-              "sessions": 5
-            },
-            {
-              "date": "20260925",
-              "totalUsers": 5,
-              "screenPageViews": 5,
-              "sessions": 5
-            },
-            {
-              "date": "20260903",
-              "totalUsers": 4,
-              "screenPageViews": 9,
-              "sessions": 8
-            },
-            {
-              "date": "20260913",
-              "totalUsers": 4,
-              "screenPageViews": 5,
-              "sessions": 5
-            },
-            {
-              "date": "20260923",
-              "totalUsers": 4,
-              "screenPageViews": 4,
-              "sessions": 4
-            },
-            {
-              "date": "20260929",
-              "totalUsers": 4,
-              "screenPageViews": 6,
-              "sessions": 4
-            },
-            {
-              "date": "20260906",
-              "totalUsers": 3,
-              "screenPageViews": 6,
-              "sessions": 5
-            },
-            {
-              "date": "20260914",
-              "totalUsers": 3,
-              "screenPageViews": 3,
-              "sessions": 3
-            },
-            {
-              "date": "20260917",
-              "totalUsers": 3,
-              "screenPageViews": 2,
-              "sessions": 3
-            },
-            {
-              "date": "20260919",
-              "totalUsers": 3,
-              "screenPageViews": 3,
-              "sessions": 4
-            },
-            {
-              "date": "20260928",
-              "totalUsers": 3,
-              "screenPageViews": 3,
-              "sessions": 3
-            },
-            {
-              "date": "20260911",
-              "totalUsers": 2,
-              "screenPageViews": 2,
-              "sessions": 2
-            },
-            {
-              "date": "20260912",
-              "totalUsers": 2,
-              "screenPageViews": 2,
-              "sessions": 2
-            },
-            {
-              "date": "20260915",
-              "totalUsers": 2,
-              "screenPageViews": 3,
-              "sessions": 3
-            },
-            {
-              "date": "20260918",
-              "totalUsers": 2,
-              "screenPageViews": 2,
-              "sessions": 2
-            },
-            {
-              "date": "20260924",
-              "totalUsers": 2,
-              "screenPageViews": 2,
-              "sessions": 2
-            },
-            {
-              "date": "20260926",
-              "totalUsers": 2,
-              "screenPageViews": 1,
-              "sessions": 2
-            },
-            {
-              "date": "20260927",
-              "totalUsers": 2,
-              "screenPageViews": 2,
-              "sessions": 2
-            },
-            {
-              "date": "20260904",
-              "totalUsers": 1,
-              "screenPageViews": 2,
-              "sessions": 1
-            },
-            {
-              "date": "20260905",
-              "totalUsers": 1,
-              "screenPageViews": 1,
-              "sessions": 1
-            },
-            {
-              "date": "20260909",
-              "totalUsers": 1,
-              "screenPageViews": 1,
-              "sessions": 1
-            },
-            {
-              "date": "20260916",
-              "totalUsers": 1,
-              "screenPageViews": 3,
-              "sessions": 2
-            },
-            {
-              "date": "20260930",
-              "totalUsers": 1,
-              "screenPageViews": 0,
-              "sessions": 1
-            }
-          ],
           "data_quality": {
             "thresholded": false,
             "sampled": false
+          },
+          "content": {
+            "status": "verified",
+            "rows": []
           },
           "retention": {
             "d1": null,
             "d7": null
           },
           "revenue": {
-            "trial_starts": null,
-            "paid_conversions": null,
-            "revenue": null
+            "revenue": null,
+            "paid_conversions": null
           }
-        },
-        "ios": {
-          "status": "waiting_for_firebase_link",
-          "events": [],
-          "period_start": null,
-          "period_end": null
         }
       },
       {

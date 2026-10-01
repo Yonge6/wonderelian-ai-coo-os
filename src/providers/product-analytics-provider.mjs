@@ -26,6 +26,27 @@ export function pendingProductSnapshot(now = new Date().toISOString()) {
   return { schema_version: 1, generated_at: now, source: "Google Analytics 4 Data API", projects: PRODUCT_PROJECTS.map(project => ({ ...project, status: "planned", h5: null, ios: null })) };
 }
 export class ProductAnalyticsProvider extends Ga4WebsiteProvider {
+  async fetchStyleAtlasUsage({ startDate, endDate, iosStreamId }) {
+    if (iosStreamId && !/^\d+$/.test(iosStreamId)) throw Object.assign(new Error('Invalid stream ID'), { code: 'INVALID_STREAM' });
+    const scope = iosStreamId ? { andGroup: { expressions: [
+      { filter: { fieldName: 'streamId', stringFilter: { matchType: 'EXACT', value: iosStreamId } } },
+      { filter: { fieldName: 'platform', stringFilter: { matchType: 'EXACT', value: 'iOS' } } },
+    ] } } : { filter: { fieldName: 'hostName', stringFilter: { matchType: 'EXACT', value: 'style-atlas.wonderelian.com', caseSensitive: true } } };
+    const options = { startDate, endDate, dimensionFilter: scope };
+    const events = await this.runReport({ ...options, dimensions: ['eventName'], metrics: ['eventCount', 'totalUsers', 'eventValue'] });
+    const daily = await this.runReport({ ...options, dimensions: ['date', 'eventName'], metrics: ['eventCount', 'totalUsers', 'eventValue'] });
+    const overview = await this.runReport({ ...options, dimensions: [], metrics: ['totalUsers', 'sessions'] });
+    const normalize = report => reportRows(report).filter(r => /^atlas_v1_[a-z_]+$/.test(r.eventName)).map(r => ({ event: r.eventName, count: r.eventCount, users: r.totalUsers, ...(r.date ? { date: r.date } : {}), seconds: ['atlas_v1_active_time', 'atlas_v1_reading_time'].includes(r.eventName) ? r.eventValue : null }));
+    const rows = normalize(events);
+    const result = { status: rows.length ? 'collecting' : 'waiting_for_events', source: 'Google Analytics 4 Data API', surface: iosStreamId ? 'ios' : 'h5', hostname: iosStreamId ? null : 'style-atlas.wonderelian.com', period_start: startDate, period_end: endDate, verified_at: new Date().toISOString(), timezone: events.metadata?.timeZone ?? null, events: rows, daily: normalize(daily), overview: reportRows(overview)[0] ?? null, data_quality: { thresholded: [events, daily, overview].some(r => r.metadata?.subjectToThresholding), sampled: [events, daily, overview].some(r => r.metadata?.samplingMetadatas?.length) }, content: { status: 'waiting_for_custom_dimension', rows: [] }, retention: { d1: null, d7: null }, revenue: { revenue: null, paid_conversions: null } };
+    try {
+      const content = await this.runReport({ ...options, dimensions: ['contentId', 'eventName'], metrics: ['eventCount', 'totalUsers', 'eventValue'] });
+      result.content = { status: 'verified', rows: reportRows(content).filter(r => /^atlas_v1_[a-z_]+$/.test(r.eventName) && r.contentId && r.contentId !== '(not set)').map(r => ({ style: r.contentId, event: r.eventName, count: r.eventCount, users: r.totalUsers, seconds: r.eventName === 'atlas_v1_reading_time' ? r.eventValue : null })) };
+      result.data_quality.thresholded ||= Boolean(content.metadata?.subjectToThresholding);
+      result.data_quality.sampled ||= Boolean(content.metadata?.samplingMetadatas?.length);
+    } catch (error) { result.content.error_code = error.code ?? 'DIMENSION_UNAVAILABLE'; }
+    return result;
+  }
   async fetchBuerUsage({startDate,endDate,iosStreamId}) {
     if(iosStreamId&&!/^\d+$/.test(iosStreamId))throw Object.assign(new Error('Invalid stream ID'),{code:'INVALID_STREAM'});
     const scope=iosStreamId?{andGroup:{expressions:[
