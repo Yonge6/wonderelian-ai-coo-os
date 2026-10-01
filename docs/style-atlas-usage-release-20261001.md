@@ -20,3 +20,11 @@ The confirmed browser account `hustyy986@gmail.com` lacks access to reference Fi
 Production deployment changed only `index.html`, `app.js`, `product-usage.js` and `data/state.json`, with HTTPS SHA-256 readback and nginx validation. Backup: `/srv/wonderelian/backups/atlas-usage-20261001-ops`. The builder merges only Style Atlas changes into the current production snapshot to preserve concurrent updates elsewhere.
 
 QA: 112/112 tests passed, covering provider isolation, built-in content dimension, duration values, null handling, stale evidence, bilingual UI, native config rejection and partial-failure auditing. State validation passed. Web transport wire testing intercepts outbound collection and does not inject synthetic production metrics.
+
+## Later same-day Firebase activation
+
+The earlier permission blocker was resolved by reusing the already-signed-in administrator `wondereilan@gmail.com`, exactly as Yixiu did; no change to `hustyy986@gmail.com` or any account role was required. Style Atlas was registered separately in the existing free project and linked to the existing GA4 property. Its machine-local `styleAtlasIosStreamId` mapping was verified in the official stream-details UI; Yixiu, Buer and Web streams were preserved.
+
+Both Style Atlas H5 and iOS Data API queries now succeed, with status `waiting_for_events` for September 3–30. The native connection is verified, not production user activity. On the public iOS tab, the Firebase-pending message is replaced by a verified-connection notice that still requires a distributed instrumented App and consent.
+
+Bounded ops deployment read back successfully; backup `/srv/wonderelian/backups/atlas-usage-20261001-ops-r2`. Native config and privacy manifest are bundled in the Style Atlas main target only. Complete App packaging is still blocked by insufficient system space to restore the matching Xcode runtime; no new App Store submission was made.

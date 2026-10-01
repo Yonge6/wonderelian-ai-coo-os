@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-10-01T12:51:02.882Z",
+    "last_updated": "2026-10-01T14:36:50.431Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -11932,6 +11932,15 @@
     }
   ],
   "audit": [
+    {
+      "id": "4a8debad-5b72-4f9c-801a-3e287d6f2ea9",
+      "at": "2026-10-01T14:36:39.811Z",
+      "actor": "Codex",
+      "app_id": "style-atlas",
+      "source": "ga4_product_usage",
+      "action": "sync_style_atlas_usage",
+      "status": "success"
+    },
     {
       "id": "2e9d2383-0bf7-4236-a451-0a3f203beacd",
       "at": "2026-10-01T12:50:59.636Z",
@@ -119188,7 +119197,7 @@
   ],
   "product_analytics": {
     "schema_version": 1,
-    "generated_at": "2026-10-01T12:50:59.636Z",
+    "generated_at": "2026-10-01T14:36:39.811Z",
     "source": "Google Analytics 4 Data API",
     "projects": [
       {
@@ -119942,6 +119951,36 @@
         "name": "Style Atlas",
         "name_zh": "艺术风格图鉴",
         "hostname": "style-atlas.wonderelian.com",
+        "status": "waiting_for_events",
+        "ios": {
+          "status": "waiting_for_events",
+          "source": "Google Analytics 4 Data API",
+          "surface": "ios",
+          "hostname": null,
+          "period_start": "2026-09-03",
+          "period_end": "2026-09-30",
+          "verified_at": "2026-10-01T14:36:49.729Z",
+          "timezone": "Asia/Shanghai",
+          "events": [],
+          "daily": [],
+          "overview": null,
+          "data_quality": {
+            "thresholded": false,
+            "sampled": false
+          },
+          "content": {
+            "status": "verified",
+            "rows": []
+          },
+          "retention": {
+            "d1": null,
+            "d7": null
+          },
+          "revenue": {
+            "revenue": null,
+            "paid_conversions": null
+          }
+        },
         "legacy_h5": {
           "status": "collecting",
           "source": "Google Analytics 4 Data API",
@@ -120151,13 +120190,6 @@
             "revenue": null
           }
         },
-        "status": "waiting_for_events",
-        "ios": {
-          "status": "waiting_for_firebase_link",
-          "events": [],
-          "period_start": null,
-          "period_end": null
-        },
         "h5": {
           "status": "waiting_for_events",
           "source": "Google Analytics 4 Data API",
@@ -120165,7 +120197,7 @@
           "hostname": "style-atlas.wonderelian.com",
           "period_start": "2026-09-03",
           "period_end": "2026-09-30",
-          "verified_at": "2026-10-01T12:51:02.578Z",
+          "verified_at": "2026-10-01T14:36:44.675Z",
           "timezone": "Asia/Shanghai",
           "events": [],
           "daily": [],
