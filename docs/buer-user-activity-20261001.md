@@ -36,3 +36,11 @@ Event counts are not user-funnel conversions. GA4 engagement duration is not Yix
 ## Verification
 
 Local browser: Chinese navigation label, seven project selectors, Wendao real metrics/events, Buer honest empty state, Buer intro and link, no active Human Design link, 390 px viewport without horizontal page overflow. Audit trail includes migration, provider query, cumulative refresh and public health probe.
+
+## October 1 owner-approved recovery and activation
+
+The owner explicitly approved old OPS backup recovery and the Buer product-repository patch. Seven exact September 24–29 backup directories were downloaded to the local operations recovery archive; every one of 371 regular files matched SHA-256 before server removal. September 30 and October 1 rollback copies remain. Archive SHA-256: `2e0e87eec2990aed211ec6232a041a4765e9babd73c9c1fc4fa29076d2898c33`.
+
+The filesystem's ordinary-user available count is zero; inspection found about 1.7 GiB of free blocks reserved for the existing root deployment identity. No filesystem reserve policy was changed. The bounded deployment enforces 1 GiB actual free space, backs up seven replaced files, and preserves every NOESIS design asset.
+
+Buer source commits `c4a14ca` and `6f46eb0` allow only the old and new production hostnames, use the matching canonical page location/title/cookie scope, and version nested resources. Native/insecure/unknown-host exclusions and consent-gated chart events remain unchanged. No birth values, query strings, referrers or conversation content are collected by this change. All 150 product unit tests passed. Independent artifact commit `439e9fe4d9c5c67534729709150ef0585ca64a75` was published by Pages run `36822899309` (success). Four public artifacts return HTTP 200 with matching hashes; the live iframe configuration is initialized for Buer. Browser verification visits are not acquisition evidence. Processed Buer GA4 observations remain null until the existing daily report imports them.
