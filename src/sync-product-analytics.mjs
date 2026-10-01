@@ -1,9 +1,9 @@
 import { fileURLToPath } from "node:url";
 import { JsonStore } from "./store.mjs";
 import { ProductAnalyticsProvider, pendingProductSnapshot } from "./providers/product-analytics-provider.mjs";
-import { loadYixiuIosStreamId } from "./product-analytics-config.mjs";
+import { loadYixiuIosStreamId, loadBuerIosStreamId } from "./product-analytics-config.mjs";
 
-export async function syncProductAnalyticsState(state, { provider = new ProductAnalyticsProvider(), now = new Date(), iosStreamId, loadStreamId = loadYixiuIosStreamId } = {}) {
+export async function syncProductAnalyticsState(state, { provider = new ProductAnalyticsProvider(), now = new Date(), iosStreamId, loadStreamId = loadYixiuIosStreamId, buerIosStreamId, loadBuerStreamId = loadBuerIosStreamId } = {}) {
   const snapshot = pendingProductSnapshot(now.toISOString());
   const day = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit" }).format(now);
   const shift = offset => new Date(Date.parse(`${day}T00:00:00Z`) + offset * 86400000).toISOString().slice(0, 10);
@@ -34,16 +34,25 @@ export async function syncProductAnalyticsState(state, { provider = new ProductA
   for (const item of snapshot.projects.slice(1)) {
     item.ios = item.web_only ? null : {status:"waiting_for_firebase_link",events:[],period_start:null,period_end:null};
     try {
-      item.h5 = await provider.fetchProjectUsage({project:item,startDate:shift(-28),endDate:shift(-1)});
+      item.h5 = item.id==='buer' ? await provider.fetchBuerUsage({startDate:shift(-28),endDate:shift(-1)}) : await provider.fetchProjectUsage({project:item,startDate:shift(-28),endDate:shift(-1)});
       item.status = item.h5.status;
     } catch (error) {
       const previous = state.product_analytics?.projects?.find(p=>p.id===item.id)?.h5;
       item.h5 = {...(previous??{events:[],overview:null,period_start:null,period_end:null}),status:"unavailable",error_code:error.code??"PROVIDER_UNAVAILABLE"};
       item.status = "unavailable";
     }
+    if(item.id==='buer') {
+      try {
+        const stream=buerIosStreamId===undefined?await loadBuerStreamId():buerIosStreamId;
+        if(stream)item.ios=await provider.fetchBuerUsage({startDate:shift(-28),endDate:shift(-1),iosStreamId:stream});
+      } catch(error) {
+        const previous=state.product_analytics?.projects?.find(p=>p.id==='buer')?.ios;
+        item.ios={...(previous??{events:[],period_start:null,period_end:null}),status:'unavailable',error_code:error.code??'PROVIDER_UNAVAILABLE'};
+      }
+    }
   }
   state.product_analytics = snapshot;
-  state.audit.unshift({ id: crypto.randomUUID(), at: now.toISOString(), actor: "AI COO OS", app_id: null, source: "ga4_product_usage", action: "sync_product_usage", result: { status: project.h5.status, project_count: snapshot.projects.length }, status: snapshot.projects.some(p=>p.h5?.status==="unavailable") ? "partial" : "success" });
+  state.audit.unshift({ id: crypto.randomUUID(), at: now.toISOString(), actor: "AI COO OS", app_id: null, source: "ga4_product_usage", action: "sync_product_usage", result: { status: project.h5.status, project_count: snapshot.projects.length }, status: snapshot.projects.some(p=>p.h5?.status==="unavailable" || p.ios?.status==="unavailable") ? "partial" : "success" });
   return snapshot;
 }
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

@@ -1,5 +1,5 @@
 import { freshness, verifiedPublications, filterPublications, trafficPoints, csvText } from "./dashboard-model.js?v=20260923-focused";
-import { usageView } from "./product-usage.js?v=20261001-all-projects";
+import { usageView } from "./product-usage.js?v=20261001-buer-usage";
 import { noesisHero } from "./noesis.js?v=20261001";
 let usageProject="yixiu", usageSurface="h5";
 const root=document.querySelector("#app");
