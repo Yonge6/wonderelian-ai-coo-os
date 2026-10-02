@@ -5,7 +5,7 @@ export const PRODUCT_PROJECTS = [
   { id: "wendao", name: "Wendao", name_zh: "三慢问道", hostname: "wendao.wonderelian.com" },
   { id: "xiazi", name: "Xiazi", name_zh: "虾子曰", hostname: "xiazishuo.com" },
   { id: "style-atlas", name: "Style Atlas", name_zh: "艺术风格图鉴", hostname: "style-atlas.wonderelian.com" },
-  { id: "maker", name: "Maker Business Lab", name_zh: "Maker Business Lab", hostname: "maker.wonderelian.com", web_only: true },
+  { id: "maker", name: "Maker Business Lab", name_zh: "Maker Business Lab", hostname: "maker.wonderelian.com" },
   { id: "wonderelian", name: "WonderElian", name_zh: "WonderElian", hostname: "wonderelian.com", web_only: true },
   { id: "buer", name: "Buer Within", name_zh: "不二见己", hostname: "buer.wonderelian.com" },
 ];
@@ -26,6 +26,32 @@ export function pendingProductSnapshot(now = new Date().toISOString()) {
   return { schema_version: 1, generated_at: now, source: "Google Analytics 4 Data API", projects: PRODUCT_PROJECTS.map(project => ({ ...project, status: "planned", h5: null, ios: null })) };
 }
 export class ProductAnalyticsProvider extends Ga4WebsiteProvider {
+  async fetchMakerUsage({ startDate, endDate, surface = "h5" }) {
+    if (!['h5', 'ios'].includes(surface)) throw Object.assign(new Error('Invalid Maker surface'), { code: 'INVALID_SURFACE' });
+    const prefix = surface === 'ios' ? 'maker_ios_v1_' : 'maker_v1_';
+    const scope = { andGroup: { expressions: [
+      { filter: { fieldName: 'hostName', stringFilter: { matchType: 'EXACT', value: 'maker.wonderelian.com', caseSensitive: true } } },
+      { filter: { fieldName: 'eventName', stringFilter: { matchType: 'FULL_REGEXP', value: `${prefix}[a-z_]+`, caseSensitive: true } } },
+    ] } };
+    const options = { startDate, endDate, dimensionFilter: scope };
+    const events = await this.runReport({ ...options, dimensions: ['eventName'], metrics: ['eventCount', 'totalUsers'] });
+    const daily = await this.runReport({ ...options, dimensions: ['date', 'eventName'], metrics: ['eventCount', 'totalUsers'] });
+    const overview = await this.runReport({ ...options, dimensions: [], metrics: ['totalUsers', 'sessions', 'engagedSessions', 'userEngagementDuration'] });
+    const normalize = report => reportRows(report)
+      .filter(row => row.eventName?.startsWith(prefix))
+      .map(row => ({ event: row.eventName, count: row.eventCount, users: row.totalUsers, ...(row.date ? { date: row.date } : {}) }));
+    const rows = normalize(events);
+    return {
+      status: rows.length ? 'collecting' : 'waiting_for_events',
+      source: 'Google Analytics 4 Data API',
+      collection_method: surface === 'ios' ? 'consented_ios_webview' : 'website',
+      hostname: 'maker.wonderelian.com', surface, period_start: startDate, period_end: endDate,
+      verified_at: new Date().toISOString(), timezone: events.metadata?.timeZone ?? null,
+      overview: reportRows(overview)[0] ?? null, events: rows, daily: normalize(daily),
+      data_quality: { thresholded: [events, daily, overview].some(report => report.metadata?.subjectToThresholding), sampled: [events, daily, overview].some(report => report.metadata?.samplingMetadatas?.length) },
+      retention: { d1: null, d7: null }, revenue: { revenue: null, paid_conversions: null },
+    };
+  }
   async fetchStyleAtlasUsage({ startDate, endDate, iosStreamId }) {
     if (iosStreamId && !/^\d+$/.test(iosStreamId)) throw Object.assign(new Error('Invalid stream ID'), { code: 'INVALID_STREAM' });
     const scope = iosStreamId ? { andGroup: { expressions: [

@@ -39,7 +39,7 @@ export async function syncProductAnalyticsState(state, { provider = new ProductA
     }
     item.ios = item.web_only ? null : {status:"waiting_for_firebase_link",events:[],period_start:null,period_end:null};
     try {
-      item.h5 = item.id === 'style-atlas' ? await provider.fetchStyleAtlasUsage({startDate:shift(-28),endDate:shift(-1)}) : item.id==='buer' ? await provider.fetchBuerUsage({startDate:shift(-28),endDate:shift(-1)}) : await provider.fetchProjectUsage({project:item,startDate:shift(-28),endDate:shift(-1)});
+      item.h5 = item.id === 'style-atlas' ? await provider.fetchStyleAtlasUsage({startDate:shift(-28),endDate:shift(-1)}) : item.id==='buer' ? await provider.fetchBuerUsage({startDate:shift(-28),endDate:shift(-1)}) : item.id==='maker' ? await provider.fetchMakerUsage({startDate:shift(-28),endDate:shift(-1),surface:'h5'}) : await provider.fetchProjectUsage({project:item,startDate:shift(-28),endDate:shift(-1)});
       const previousContent = state.product_analytics?.projects?.find(p => p.id === item.id)?.h5?.content;
       if (item.h5.content?.error_code && previousContent?.rows?.length) item.h5.content = { ...previousContent, status: 'unavailable', error_code: item.h5.content.error_code };
       item.status = item.h5.status;
@@ -63,6 +63,14 @@ export async function syncProductAnalyticsState(state, { provider = new ProductA
         if(stream)item.ios=await provider.fetchBuerUsage({startDate:shift(-28),endDate:shift(-1),iosStreamId:stream});
       } catch(error) {
         const previous=state.product_analytics?.projects?.find(p=>p.id==='buer')?.ios;
+        item.ios={...(previous??{events:[],period_start:null,period_end:null}),status:'unavailable',error_code:error.code??'PROVIDER_UNAVAILABLE'};
+      }
+    }
+    if(item.id==='maker') {
+      try {
+        item.ios=await provider.fetchMakerUsage({startDate:shift(-28),endDate:shift(-1),surface:'ios'});
+      } catch(error) {
+        const previous=state.product_analytics?.projects?.find(p=>p.id==='maker')?.ios;
         item.ios={...(previous??{events:[],period_start:null,period_end:null}),status:'unavailable',error_code:error.code??'PROVIDER_UNAVAILABLE'};
       }
     }
