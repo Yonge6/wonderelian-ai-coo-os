@@ -31,6 +31,10 @@ test("WonderElian reports stay on exact hosts and filter the dedicated schema", 
   assert.equal(result.legacy_events[0].event, "content_discovery");
   assert.equal(result.content.rows[0].content, "essay-one");
   assert.equal(result.revenue.revenue, null);
+  const native = await provider.fetchWonderElianUsage({ startDate: "2026-09-04", endDate: "2026-10-01", surface: "ios" });
+  assert.equal(native.surface, "ios");
+  assert.deepEqual(native.events, []);
+  assert.equal(native.overview, null);
 });
 
 test("sync routes WonderElian through its dedicated provider and preserves earlier baseline", async () => {
@@ -42,12 +46,13 @@ test("sync routes WonderElian through its dedicated provider and preserves earli
     fetchProjectUsage: generic,
     fetchStyleAtlasUsage: async () => ({ status: "waiting_for_events", events: [] }),
     fetchBuerUsage: async () => ({ status: "waiting_for_events", events: [] }),
-    fetchWonderElianUsage: async () => { calls.push("wonder:detailed"); return { status: "waiting_for_events", events: [], content: { rows: [] } }; },
+    fetchWonderElianUsage: async ({ surface = "h5" } = {}) => { calls.push(`wonder:${surface}`); return { status: "waiting_for_events", surface, events: [], content: { rows: [] } }; },
   };
   const state = { audit: [], product_analytics: { projects: [{ id: "wonderelian", h5: { status: "collecting", overview: { totalUsers: 82 } } }] } };
   const result = await syncProductAnalyticsState(state, { provider, iosStreamId: null, buerIosStreamId: null, styleAtlasIosStreamId: null });
   const wonder = result.projects.find(project => project.id === "wonderelian");
-  assert.ok(calls.includes("wonder:detailed"));
+  assert.ok(calls.includes("wonder:h5"));
+  assert.ok(calls.includes("wonder:ios"));
   assert.ok(!calls.includes("generic:wonderelian"));
   assert.equal(wonder.legacy_h5.overview.totalUsers, 82);
 });
@@ -75,4 +80,18 @@ test("bilingual dashboard explains consent, real duration and unknown retention"
   const en = usageView(snapshot, { locale: "en", projectId: "wonderelian" });
   assert.match(en, /Only visitors who explicitly enable/);
   assert.match(en, /Reading quality/);
+});
+
+test("WonderElian App panel is separate from website events", () => {
+  const snapshot = { projects: [{
+    id: "wonderelian", name: "WonderElian", name_zh: "WonderElian", hostname: "wonderelian.com",
+    status: "waiting_for_events",
+    h5: { status: "collecting", events: [{ event: "wonder_v1_visit", count: 9, users: 5 }] },
+    ios: { status: "collecting", source: "Google Analytics 4 Data API", surface: "ios", events: [{ event: "wonder_ios_v1_visit", count: 2, users: 1 }], content: { rows: [] }, retention: {} },
+  }] };
+  const view = usageView(snapshot, { locale: "zh", projectId: "wonderelian", surface: "ios" });
+  assert.match(view, /iOS App/);
+  assert.match(view, /授权访问<\/span><strong>2/);
+  assert.doesNotMatch(view, /<strong>9<small>/);
+  assert.match(view, /不包含网站事件/);
 });

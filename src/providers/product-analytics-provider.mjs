@@ -6,7 +6,7 @@ export const PRODUCT_PROJECTS = [
   { id: "xiazi", name: "Xiazi", name_zh: "虾子曰", hostname: "xiazishuo.com" },
   { id: "style-atlas", name: "Style Atlas", name_zh: "艺术风格图鉴", hostname: "style-atlas.wonderelian.com" },
   { id: "maker", name: "Maker Business Lab", name_zh: "Maker Business Lab", hostname: "maker.wonderelian.com", web_only: true },
-  { id: "wonderelian", name: "WonderElian", name_zh: "WonderElian", hostname: "wonderelian.com", web_only: true },
+  { id: "wonderelian", name: "WonderElian", name_zh: "WonderElian", hostname: "wonderelian.com" },
   { id: "buer", name: "Buer Within", name_zh: "不二见己", hostname: "buer.wonderelian.com" },
 ];
 const numeric = value => value === undefined || value === null || value === "" ? null : Number.isFinite(Number(value)) ? Number(value) : null;
@@ -26,26 +26,28 @@ export function pendingProductSnapshot(now = new Date().toISOString()) {
   return { schema_version: 1, generated_at: now, source: "Google Analytics 4 Data API", projects: PRODUCT_PROJECTS.map(project => ({ ...project, status: "planned", h5: null, ios: null })) };
 }
 export class ProductAnalyticsProvider extends Ga4WebsiteProvider {
-  async fetchWonderElianUsage({ startDate, endDate }) {
+  async fetchWonderElianUsage({ startDate, endDate, surface = "h5" }) {
+    if (!["h5", "ios"].includes(surface)) throw Object.assign(new Error("Invalid surface"), { code: "INVALID_SURFACE" });
+    const prefix = surface === "ios" ? "wonder_ios_v1" : "wonder_v1";
     const scope = { filter: { fieldName: "hostName", inListFilter: { values: ["wonderelian.com", "www.wonderelian.com"], caseSensitive: false } } };
     const options = { startDate, endDate, dimensionFilter: scope };
     const events = await this.runReport({ ...options, dimensions: ["eventName"], metrics: ["eventCount", "totalUsers", "eventValue"] });
     const daily = await this.runReport({ ...options, dimensions: ["date", "eventName"], metrics: ["eventCount", "totalUsers", "eventValue"] });
     const overview = await this.runReport({ ...options, dimensions: [], metrics: ["totalUsers", "activeUsers", "screenPageViews", "sessions", "engagedSessions", "userEngagementDuration"] });
     const normalize = report => reportRows(report)
-      .filter(row => /^wonder_v1_[a-z_]+$/.test(row.eventName))
+      .filter(row => new RegExp(`^${prefix}_[a-z_]+$`).test(row.eventName))
       .map(row => ({
         event: row.eventName,
         count: row.eventCount,
         users: row.totalUsers,
         ...(row.date ? { date: row.date } : {}),
-        seconds: ["wonder_v1_active_time", "wonder_v1_article_reading_time", "wonder_v1_audio_listen_time"].includes(row.eventName) ? row.eventValue : null,
+        seconds: [`${prefix}_active_time`, `${prefix}_article_reading_time`, `${prefix}_audio_listen_time`].includes(row.eventName) ? row.eventValue : null,
       }));
     const rows = normalize(events);
     const result = {
       status: rows.length ? "collecting" : "waiting_for_events",
       source: "Google Analytics 4 Data API",
-      surface: "h5",
+      surface,
       hostname: "wonderelian.com",
       period_start: startDate,
       period_end: endDate,
@@ -53,10 +55,10 @@ export class ProductAnalyticsProvider extends Ga4WebsiteProvider {
       timezone: events.metadata?.timeZone ?? null,
       events: rows,
       daily: normalize(daily),
-      overview: reportRows(overview)[0] ?? null,
-      legacy_events: reportRows(events)
+      overview: surface === "h5" ? reportRows(overview)[0] ?? null : null,
+      legacy_events: surface === "h5" ? reportRows(events)
         .filter(row => ["page_view", "content_discovery", "product_discovery"].includes(row.eventName))
-        .map(row => ({ event: row.eventName, count: row.eventCount, users: row.totalUsers })),
+        .map(row => ({ event: row.eventName, count: row.eventCount, users: row.totalUsers })) : [],
       data_quality: {
         thresholded: [events, daily, overview].some(report => report.metadata?.subjectToThresholding),
         sampled: [events, daily, overview].some(report => report.metadata?.samplingMetadatas?.length),
@@ -70,13 +72,13 @@ export class ProductAnalyticsProvider extends Ga4WebsiteProvider {
       result.content = {
         status: "verified",
         rows: reportRows(content)
-          .filter(row => /^wonder_v1_[a-z_]+$/.test(row.eventName) && row.contentId && row.contentId !== "(not set)")
+          .filter(row => new RegExp(`^${prefix}_[a-z_]+$`).test(row.eventName) && row.contentId && row.contentId !== "(not set)")
           .map(row => ({
             content: row.contentId,
             event: row.eventName,
             count: row.eventCount,
             users: row.totalUsers,
-            seconds: row.eventName === "wonder_v1_article_reading_time" ? row.eventValue : null,
+            seconds: row.eventName === `${prefix}_article_reading_time` ? row.eventValue : null,
           })),
       };
       result.data_quality.thresholded ||= Boolean(content.metadata?.subjectToThresholding);

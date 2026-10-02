@@ -20,10 +20,29 @@ const wonder = state.product_analytics.projects.find(project => project.id === "
 if (!wonder) throw new Error("WonderElian product usage slot is missing");
 if (!wonder.legacy_h5 && wonder.h5 && !wonder.h5.surface) wonder.legacy_h5 = wonder.h5;
 wonder.status = "waiting_for_events";
+delete wonder.web_only;
 wonder.h5 = {
   status: "waiting_for_events",
   source: "Google Analytics 4 Data API",
   surface: "h5",
+  hostname: "wonderelian.com",
+  period_start: null,
+  period_end: null,
+  verified_at: null,
+  timezone: "Asia/Shanghai",
+  events: [],
+  daily: [],
+  overview: null,
+  legacy_events: [],
+  data_quality: { thresholded: false, sampled: false },
+  content: { status: "waiting_for_custom_dimension", rows: [] },
+  retention: { d1: null, d7: null },
+  revenue: { revenue: null, paid_conversions: null },
+};
+wonder.ios = {
+  status: "waiting_for_events",
+  source: "Google Analytics 4 Data API",
+  surface: "ios",
   hostname: "wonderelian.com",
   period_start: null,
   period_end: null,
@@ -46,15 +65,15 @@ state.audit.unshift({
   app_id: null,
   source: "wonderelian_product_usage",
   action: "activate_wonderelian_usage_reporting",
-  result: { status: "waiting_for_events", surface: "h5" },
+  result: { status: "waiting_for_events", surfaces: ["h5", "ios"] },
   status: "success",
 });
 if (JSON.stringify(state.product_analytics.projects.filter(project => project.id !== "wonderelian")) !== before) throw new Error("Unrelated project changed");
 
 const safeState = sanitizePublicData(state);
 assertPublicDataSafe(safeState);
-const index = (await live("index.html")).replace(/app\.js\?v=[^"']+/, "app.js?v=20261002-wonder-usage");
-const app = (await live("app.js")).replace(/product-usage\.js\?v=[^"']+/, "product-usage.js?v=20261002-wonder-usage");
+const index = (await live("index.html")).replace(/app\.js\?v=[^"']+/, "app.js?v=20261002-wonder-ios-usage");
+const app = (await live("app.js")).replace(/product-usage\.js\?v=[^"']+/, "product-usage.js?v=20261002-wonder-ios-usage");
 const files = {
   "data/state.json": `${JSON.stringify(safeState, null, 2)}\n`,
   "index.html": index,
@@ -69,4 +88,4 @@ for (const [file, body] of Object.entries(files)) {
 }
 await writeFile(resolve(output, "SHA256SUMS"), `${Object.entries(files).map(([file, body]) => `${hash(body)}  ${file}`).join("\n")}\n`);
 await writeFile(resolve(output, "BASELINE"), `${Object.entries(baseline).map(([file, digest]) => `${digest}  ${file}`).join("\n")}\n`);
-console.log(`WONDERELIAN_USAGE_STAGE_READY files=${Object.keys(files).length} status=${wonder.h5.status}`);
+console.log(`WONDERELIAN_USAGE_STAGE_READY files=${Object.keys(files).length} h5=${wonder.h5.status} ios=${wonder.ios.status}`);

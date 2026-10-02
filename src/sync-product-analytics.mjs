@@ -63,6 +63,14 @@ export async function syncProductAnalyticsState(state, { provider = new ProductA
         item.ios = { ...(previous ?? { events: [], period_start: null, period_end: null }), status: 'unavailable', error_code: error.code ?? 'PROVIDER_UNAVAILABLE' };
       }
     }
+    if (item.id === 'wonderelian') {
+      try {
+        item.ios = await provider.fetchWonderElianUsage({ startDate: shift(-28), endDate: shift(-1), surface: 'ios' });
+      } catch (error) {
+        const previous = state.product_analytics?.projects?.find(p => p.id === item.id)?.ios;
+        item.ios = { ...(previous ?? { events: [], period_start: null, period_end: null }), status: 'unavailable', surface: 'ios', error_code: error.code ?? 'PROVIDER_UNAVAILABLE' };
+      }
+    }
     if(item.id==='buer') {
       try {
         const stream=buerIosStreamId===undefined?await loadBuerStreamId():buerIosStreamId;
