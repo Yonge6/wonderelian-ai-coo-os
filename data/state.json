@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-10-02T00:39:56.479Z",
+    "last_updated": "2026-10-02T05:57:02.854Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -11942,6 +11942,19 @@
     }
   ],
   "audit": [
+    {
+      "id": "219edf20-3d60-432a-8f6b-b334f7a1692b",
+      "at": "2026-10-02T05:56:47.115Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "ga4_product_usage",
+      "action": "sync_product_usage",
+      "result": {
+        "status": "collecting",
+        "project_count": 7
+      },
+      "status": "success"
+    },
     {
       "id": "morning-audit-20261002",
       "at": "2026-10-02T00:39:56.477Z",
@@ -124661,7 +124674,7 @@
   ],
   "product_analytics": {
     "schema_version": 1,
-    "generated_at": "2026-10-02T00:38:30.062Z",
+    "generated_at": "2026-10-02T05:56:47.115Z",
     "source": "Google Analytics 4 Data API",
     "projects": [
       {
@@ -124676,7 +124689,7 @@
           "period_start": "2026-09-04",
           "period_end": "2026-10-01",
           "timezone": "Asia/Shanghai",
-          "verified_at": "2026-10-02T00:38:33.009Z",
+          "verified_at": "2026-10-02T05:56:49.992Z",
           "source": "Google Analytics 4 Data API",
           "data_quality": {
             "thresholded": false,
@@ -124956,21 +124969,21 @@
               {
                 "scene": "canon",
                 "event": "yixiu_v2_playback_buffer",
-                "count": 3,
+                "count": 4,
                 "users": 1,
                 "seconds": null
               },
               {
                 "scene": "canon",
                 "event": "yixiu_v2_playback_request",
-                "count": 3,
+                "count": 4,
                 "users": 1,
                 "seconds": null
               },
               {
                 "scene": "canon",
                 "event": "yixiu_v2_playback_start",
-                "count": 3,
+                "count": 4,
                 "users": 1,
                 "seconds": null
               },
@@ -124983,7 +124996,28 @@
               },
               {
                 "scene": "ocean",
+                "event": "yixiu_v2_playback_buffer",
+                "count": 3,
+                "users": 2,
+                "seconds": null
+              },
+              {
+                "scene": "ocean",
                 "event": "yixiu_v2_playback_end",
+                "count": 3,
+                "users": 2,
+                "seconds": null
+              },
+              {
+                "scene": "ocean",
+                "event": "yixiu_v2_playback_request",
+                "count": 3,
+                "users": 2,
+                "seconds": null
+              },
+              {
+                "scene": "ocean",
+                "event": "yixiu_v2_playback_start",
                 "count": 3,
                 "users": 2,
                 "seconds": null
@@ -125045,25 +125079,11 @@
                 "seconds": null
               },
               {
-                "scene": "ocean",
-                "event": "yixiu_v2_playback_buffer",
+                "scene": "clairDeLune",
+                "event": "yixiu_v2_listen_time",
                 "count": 2,
                 "users": 1,
-                "seconds": null
-              },
-              {
-                "scene": "ocean",
-                "event": "yixiu_v2_playback_request",
-                "count": 2,
-                "users": 1,
-                "seconds": null
-              },
-              {
-                "scene": "ocean",
-                "event": "yixiu_v2_playback_start",
-                "count": 2,
-                "users": 1,
-                "seconds": null
+                "seconds": 67.3
               },
               {
                 "scene": "birds",
@@ -125096,6 +125116,13 @@
               {
                 "scene": "clairDeLune",
                 "event": "yixiu_v2_playback_buffer",
+                "count": 1,
+                "users": 1,
+                "seconds": null
+              },
+              {
+                "scene": "clairDeLune",
+                "event": "yixiu_v2_playback_end",
                 "count": 1,
                 "users": 1,
                 "seconds": null
@@ -125140,7 +125167,7 @@
           "period_start": "2026-09-04",
           "period_end": "2026-10-01",
           "timezone": "Asia/Shanghai",
-          "verified_at": "2026-10-02T00:38:36.072Z",
+          "verified_at": "2026-10-02T05:56:51.422Z",
           "source": "Google Analytics 4 Data API",
           "data_quality": {
             "thresholded": false,
@@ -125179,7 +125206,7 @@
           "hostname": "wendao.wonderelian.com",
           "period_start": "2026-09-04",
           "period_end": "2026-10-01",
-          "verified_at": "2026-10-02T00:38:38.988Z",
+          "verified_at": "2026-10-02T05:56:53.299Z",
           "timezone": "Asia/Shanghai",
           "overview": {
             "totalUsers": 70,
@@ -125398,7 +125425,7 @@
           "hostname": "xiazishuo.com",
           "period_start": "2026-09-04",
           "period_end": "2026-10-01",
-          "verified_at": "2026-10-02T00:38:40.554Z",
+          "verified_at": "2026-10-02T05:56:54.461Z",
           "timezone": "Asia/Shanghai",
           "overview": {
             "totalUsers": 49,
@@ -125643,7 +125670,7 @@
           "hostname": "style-atlas.wonderelian.com",
           "period_start": "2026-09-04",
           "period_end": "2026-10-01",
-          "verified_at": "2026-10-02T00:38:42.191Z",
+          "verified_at": "2026-10-02T05:56:55.293Z",
           "timezone": "Asia/Shanghai",
           "events": [],
           "daily": [],
@@ -125675,7 +125702,7 @@
           "hostname": null,
           "period_start": "2026-09-04",
           "period_end": "2026-10-01",
-          "verified_at": "2026-10-02T00:38:44.269Z",
+          "verified_at": "2026-10-02T05:56:56.953Z",
           "timezone": "Asia/Shanghai",
           "events": [],
           "daily": [],
@@ -125912,229 +125939,20 @@
         "name": "Maker Business Lab",
         "name_zh": "Maker Business Lab",
         "hostname": "maker.wonderelian.com",
-        "web_only": true,
-        "status": "collecting",
+        "status": "waiting_for_events",
         "h5": {
-          "status": "collecting",
+          "status": "waiting_for_events",
           "source": "Google Analytics 4 Data API",
+          "collection_method": "website",
           "hostname": "maker.wonderelian.com",
+          "surface": "h5",
           "period_start": "2026-09-04",
           "period_end": "2026-10-01",
-          "verified_at": "2026-10-02T00:38:46.317Z",
+          "verified_at": "2026-10-02T05:56:58.458Z",
           "timezone": "Asia/Shanghai",
-          "overview": {
-            "totalUsers": 26,
-            "activeUsers": 26,
-            "screenPageViews": 186,
-            "sessions": 59,
-            "engagedSessions": 26,
-            "userEngagementDuration": 562
-          },
-          "events": [
-            {
-              "event": "page_view",
-              "count": 186,
-              "users": 23
-            },
-            {
-              "event": "session_start",
-              "count": 50,
-              "users": 20
-            },
-            {
-              "event": "user_engagement",
-              "count": 26,
-              "users": 15
-            },
-            {
-              "event": "first_visit",
-              "count": 18,
-              "users": 18
-            },
-            {
-              "event": "scroll",
-              "count": 15,
-              "users": 4
-            },
-            {
-              "event": "click",
-              "count": 1,
-              "users": 1
-            },
-            {
-              "event": "drawer_open",
-              "count": 1,
-              "users": 1
-            },
-            {
-              "event": "home_cta_click",
-              "count": 1,
-              "users": 1
-            },
-            {
-              "event": "outbound_click",
-              "count": 1,
-              "users": 1
-            }
-          ],
-          "daily": [
-            {
-              "date": "20260924",
-              "totalUsers": 4,
-              "screenPageViews": 7,
-              "sessions": 6
-            },
-            {
-              "date": "20260904",
-              "totalUsers": 3,
-              "screenPageViews": 5,
-              "sessions": 4
-            },
-            {
-              "date": "20260910",
-              "totalUsers": 3,
-              "screenPageViews": 48,
-              "sessions": 5
-            },
-            {
-              "date": "20260917",
-              "totalUsers": 3,
-              "screenPageViews": 2,
-              "sessions": 3
-            },
-            {
-              "date": "20260919",
-              "totalUsers": 3,
-              "screenPageViews": 3,
-              "sessions": 4
-            },
-            {
-              "date": "20260923",
-              "totalUsers": 3,
-              "screenPageViews": 67,
-              "sessions": 4
-            },
-            {
-              "date": "20260928",
-              "totalUsers": 3,
-              "screenPageViews": 4,
-              "sessions": 3
-            },
-            {
-              "date": "20260929",
-              "totalUsers": 3,
-              "screenPageViews": 6,
-              "sessions": 3
-            },
-            {
-              "date": "20260909",
-              "totalUsers": 2,
-              "screenPageViews": 2,
-              "sessions": 2
-            },
-            {
-              "date": "20260913",
-              "totalUsers": 2,
-              "screenPageViews": 3,
-              "sessions": 2
-            },
-            {
-              "date": "20260916",
-              "totalUsers": 2,
-              "screenPageViews": 6,
-              "sessions": 3
-            },
-            {
-              "date": "20260920",
-              "totalUsers": 2,
-              "screenPageViews": 2,
-              "sessions": 2
-            },
-            {
-              "date": "20260925",
-              "totalUsers": 2,
-              "screenPageViews": 5,
-              "sessions": 2
-            },
-            {
-              "date": "20260926",
-              "totalUsers": 2,
-              "screenPageViews": 1,
-              "sessions": 2
-            },
-            {
-              "date": "20260927",
-              "totalUsers": 2,
-              "screenPageViews": 3,
-              "sessions": 2
-            },
-            {
-              "date": "20260930",
-              "totalUsers": 2,
-              "screenPageViews": 3,
-              "sessions": 2
-            },
-            {
-              "date": "20260905",
-              "totalUsers": 1,
-              "screenPageViews": 1,
-              "sessions": 1
-            },
-            {
-              "date": "20260906",
-              "totalUsers": 1,
-              "screenPageViews": 3,
-              "sessions": 1
-            },
-            {
-              "date": "20260907",
-              "totalUsers": 1,
-              "screenPageViews": 4,
-              "sessions": 1
-            },
-            {
-              "date": "20260911",
-              "totalUsers": 1,
-              "screenPageViews": 1,
-              "sessions": 1
-            },
-            {
-              "date": "20260912",
-              "totalUsers": 1,
-              "screenPageViews": 1,
-              "sessions": 1
-            },
-            {
-              "date": "20260914",
-              "totalUsers": 1,
-              "screenPageViews": 5,
-              "sessions": 1
-            },
-            {
-              "date": "20260915",
-              "totalUsers": 1,
-              "screenPageViews": 1,
-              "sessions": 1
-            },
-            {
-              "date": "20260918",
-              "totalUsers": 1,
-              "screenPageViews": 1,
-              "sessions": 1
-            },
-            {
-              "date": "20260922",
-              "totalUsers": 1,
-              "screenPageViews": 1,
-              "sessions": 1
-            },
-            {
-              "date": "20261001",
-              "totalUsers": 1,
-              "screenPageViews": 1,
-              "sessions": 1
-            }
-          ],
+          "overview": null,
+          "events": [],
+          "daily": [],
           "data_quality": {
             "thresholded": false,
             "sampled": false
@@ -126144,12 +125962,36 @@
             "d7": null
           },
           "revenue": {
-            "trial_starts": null,
-            "paid_conversions": null,
-            "revenue": null
+            "revenue": null,
+            "paid_conversions": null
           }
         },
-        "ios": null
+        "ios": {
+          "status": "waiting_for_events",
+          "source": "Google Analytics 4 Data API",
+          "collection_method": "consented_ios_webview",
+          "hostname": "maker.wonderelian.com",
+          "surface": "ios",
+          "period_start": "2026-09-04",
+          "period_end": "2026-10-01",
+          "verified_at": "2026-10-02T05:56:59.444Z",
+          "timezone": "Asia/Shanghai",
+          "overview": null,
+          "events": [],
+          "daily": [],
+          "data_quality": {
+            "thresholded": false,
+            "sampled": false
+          },
+          "retention": {
+            "d1": null,
+            "d7": null
+          },
+          "revenue": {
+            "revenue": null,
+            "paid_conversions": null
+          }
+        }
       },
       {
         "id": "wonderelian",
@@ -126164,7 +126006,7 @@
           "hostname": "wonderelian.com",
           "period_start": "2026-09-04",
           "period_end": "2026-10-01",
-          "verified_at": "2026-10-02T00:38:47.733Z",
+          "verified_at": "2026-10-02T05:57:00.700Z",
           "timezone": "Asia/Shanghai",
           "overview": {
             "totalUsers": 82,
@@ -126415,7 +126257,7 @@
           "surface": "h5",
           "period_start": "2026-09-04",
           "period_end": "2026-10-01",
-          "verified_at": "2026-10-02T00:38:49.125Z",
+          "verified_at": "2026-10-02T05:57:01.825Z",
           "timezone": "Asia/Shanghai",
           "events": [],
           "daily": [],
@@ -126445,7 +126287,7 @@
           "surface": "ios",
           "period_start": "2026-09-04",
           "period_end": "2026-10-01",
-          "verified_at": "2026-10-02T00:38:50.362Z",
+          "verified_at": "2026-10-02T05:57:02.853Z",
           "timezone": "Asia/Shanghai",
           "events": [],
           "daily": [],
