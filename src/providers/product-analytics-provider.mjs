@@ -26,6 +26,67 @@ export function pendingProductSnapshot(now = new Date().toISOString()) {
   return { schema_version: 1, generated_at: now, source: "Google Analytics 4 Data API", projects: PRODUCT_PROJECTS.map(project => ({ ...project, status: "planned", h5: null, ios: null })) };
 }
 export class ProductAnalyticsProvider extends Ga4WebsiteProvider {
+  async fetchWonderElianUsage({ startDate, endDate }) {
+    const scope = { filter: { fieldName: "hostName", inListFilter: { values: ["wonderelian.com", "www.wonderelian.com"], caseSensitive: false } } };
+    const options = { startDate, endDate, dimensionFilter: scope };
+    const events = await this.runReport({ ...options, dimensions: ["eventName"], metrics: ["eventCount", "totalUsers", "eventValue"] });
+    const daily = await this.runReport({ ...options, dimensions: ["date", "eventName"], metrics: ["eventCount", "totalUsers", "eventValue"] });
+    const overview = await this.runReport({ ...options, dimensions: [], metrics: ["totalUsers", "activeUsers", "screenPageViews", "sessions", "engagedSessions", "userEngagementDuration"] });
+    const normalize = report => reportRows(report)
+      .filter(row => /^wonder_v1_[a-z_]+$/.test(row.eventName))
+      .map(row => ({
+        event: row.eventName,
+        count: row.eventCount,
+        users: row.totalUsers,
+        ...(row.date ? { date: row.date } : {}),
+        seconds: ["wonder_v1_active_time", "wonder_v1_article_reading_time", "wonder_v1_audio_listen_time"].includes(row.eventName) ? row.eventValue : null,
+      }));
+    const rows = normalize(events);
+    const result = {
+      status: rows.length ? "collecting" : "waiting_for_events",
+      source: "Google Analytics 4 Data API",
+      surface: "h5",
+      hostname: "wonderelian.com",
+      period_start: startDate,
+      period_end: endDate,
+      verified_at: new Date().toISOString(),
+      timezone: events.metadata?.timeZone ?? null,
+      events: rows,
+      daily: normalize(daily),
+      overview: reportRows(overview)[0] ?? null,
+      legacy_events: reportRows(events)
+        .filter(row => ["page_view", "content_discovery", "product_discovery"].includes(row.eventName))
+        .map(row => ({ event: row.eventName, count: row.eventCount, users: row.totalUsers })),
+      data_quality: {
+        thresholded: [events, daily, overview].some(report => report.metadata?.subjectToThresholding),
+        sampled: [events, daily, overview].some(report => report.metadata?.samplingMetadatas?.length),
+      },
+      content: { status: "waiting_for_custom_dimension", rows: [] },
+      retention: { d1: null, d7: null },
+      revenue: { revenue: null, paid_conversions: null },
+    };
+    try {
+      const content = await this.runReport({ ...options, dimensions: ["contentId", "eventName"], metrics: ["eventCount", "totalUsers", "eventValue"] });
+      result.content = {
+        status: "verified",
+        rows: reportRows(content)
+          .filter(row => /^wonder_v1_[a-z_]+$/.test(row.eventName) && row.contentId && row.contentId !== "(not set)")
+          .map(row => ({
+            content: row.contentId,
+            event: row.eventName,
+            count: row.eventCount,
+            users: row.totalUsers,
+            seconds: row.eventName === "wonder_v1_article_reading_time" ? row.eventValue : null,
+          })),
+      };
+      result.data_quality.thresholded ||= Boolean(content.metadata?.subjectToThresholding);
+      result.data_quality.sampled ||= Boolean(content.metadata?.samplingMetadatas?.length);
+    } catch (error) {
+      result.content.error_code = error.code ?? "DIMENSION_UNAVAILABLE";
+    }
+    return result;
+  }
+
   async fetchStyleAtlasUsage({ startDate, endDate, iosStreamId }) {
     if (iosStreamId && !/^\d+$/.test(iosStreamId)) throw Object.assign(new Error('Invalid stream ID'), { code: 'INVALID_STREAM' });
     const scope = iosStreamId ? { andGroup: { expressions: [

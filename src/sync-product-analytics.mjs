@@ -32,14 +32,20 @@ export async function syncProductAnalyticsState(state, { provider = new ProductA
     }
   }
   for (const item of snapshot.projects.slice(1)) {
-    if (item.id === 'style-atlas') {
+    if (item.id === 'style-atlas' || item.id === 'wonderelian') {
       const previous = state.product_analytics?.projects?.find(p => p.id === item.id);
       if (previous?.legacy_h5) item.legacy_h5 = previous.legacy_h5;
       else if (previous?.h5 && !previous.h5.surface) item.legacy_h5 = previous.h5;
     }
     item.ios = item.web_only ? null : {status:"waiting_for_firebase_link",events:[],period_start:null,period_end:null};
     try {
-      item.h5 = item.id === 'style-atlas' ? await provider.fetchStyleAtlasUsage({startDate:shift(-28),endDate:shift(-1)}) : item.id==='buer' ? await provider.fetchBuerUsage({startDate:shift(-28),endDate:shift(-1)}) : await provider.fetchProjectUsage({project:item,startDate:shift(-28),endDate:shift(-1)});
+      item.h5 = item.id === 'style-atlas'
+        ? await provider.fetchStyleAtlasUsage({startDate:shift(-28),endDate:shift(-1)})
+        : item.id === 'wonderelian'
+          ? await provider.fetchWonderElianUsage({startDate:shift(-28),endDate:shift(-1)})
+          : item.id==='buer'
+            ? await provider.fetchBuerUsage({startDate:shift(-28),endDate:shift(-1)})
+            : await provider.fetchProjectUsage({project:item,startDate:shift(-28),endDate:shift(-1)});
       const previousContent = state.product_analytics?.projects?.find(p => p.id === item.id)?.h5?.content;
       if (item.h5.content?.error_code && previousContent?.rows?.length) item.h5.content = { ...previousContent, status: 'unavailable', error_code: item.h5.content.error_code };
       item.status = item.h5.status;
