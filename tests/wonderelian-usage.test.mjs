@@ -64,11 +64,12 @@ test("bilingual dashboard explains consent, real duration and unknown retention"
     retention: { d1: null, d7: null },
     overview: { totalUsers: 82 },
   };
-  const snapshot = { projects: [{ id: "wonderelian", name: "WonderElian", name_zh: "WonderElian", hostname: "wonderelian.com", web_only: true, status: "collecting", h5: data }] };
+  const snapshot = { projects: [{ id: "wonderelian", name: "WonderElian", name_zh: "WonderElian", hostname: "wonderelian.com", web_only: true, status: "collecting", h5: data, legacy_h5: { overview: { totalUsers: 82 } } }] };
   const zh = usageView(snapshot, { locale: "zh", projectId: "wonderelian" });
   assert.match(zh, /授权统计访客/);
   assert.match(zh, /前台阅读分钟/);
   assert.match(zh, /历史基线/);
+  assert.match(zh, />82<small>/);
   assert.match(zh, />—<\/strong>/);
   assert.doesNotMatch(zh, /播放质量/);
   const en = usageView(snapshot, { locale: "en", projectId: "wonderelian" });
