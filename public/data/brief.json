@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T01:18:02.154Z",
+  "generated_at": "2026-10-09T00:36:22.431Z",
   "primary_outcome": "Attributable first-time App Store downloads",
   "kpis": {
     "first_time_downloads": {
@@ -53,7 +53,7 @@
       "apps_total": 5
     },
     "content_published": {
-      "value": 238,
+      "value": 240,
       "apps_reporting": 3,
       "apps_total": 5
     },
@@ -67,11 +67,11 @@
     "sites_tracked": 7,
     "sites_live": 7,
     "analytics_connected": 7,
-    "traffic_metrics_available": 4313,
-    "data_through": "2026-10-08"
+    "traffic_metrics_available": 4357,
+    "data_through": "2026-10-09"
   },
   "daily_portfolio": {
-    "latest_date": "2026-10-07",
+    "latest_date": "2026-10-08",
     "available_dates": [
       "2026-08-15",
       "2026-08-16",
@@ -126,9 +126,10 @@
       "2026-10-04",
       "2026-10-05",
       "2026-10-06",
-      "2026-10-07"
+      "2026-10-07",
+      "2026-10-08"
     ],
-    "website_latest_date": "2026-10-07",
+    "website_latest_date": "2026-10-08",
     "website_available_dates": [
       "2026-08-15",
       "2026-08-16",
@@ -183,7 +184,8 @@
       "2026-10-04",
       "2026-10-05",
       "2026-10-06",
-      "2026-10-07"
+      "2026-10-07",
+      "2026-10-08"
     ],
     "app_latest_date": "2026-09-21",
     "app_available_dates": [
@@ -16280,7 +16282,7 @@
         "date": "2026-10-07",
         "website_totals": {
           "active_users": 4,
-          "page_views": 15,
+          "page_views": 19,
           "sessions": 8,
           "cta_clicks": null
         },
@@ -16368,7 +16370,7 @@
             ],
             "h5_metrics": {
               "active_users": 2,
-              "page_views": 7,
+              "page_views": 8,
               "sessions": 4,
               "cta_clicks": null
             },
@@ -16457,7 +16459,7 @@
             "app_id": "know-yourself",
             "metrics": {
               "active_users": 2,
-              "page_views": 7,
+              "page_views": 8,
               "sessions": 4,
               "cta_clicks": null
             }
@@ -16487,7 +16489,7 @@
             "app_id": null,
             "metrics": {
               "active_users": 1,
-              "page_views": 1,
+              "page_views": 2,
               "sessions": 2,
               "cta_clicks": null
             }
@@ -16497,8 +16499,236 @@
             "app_id": null,
             "metrics": {
               "active_users": 1,
-              "page_views": 6,
+              "page_views": 8,
               "sessions": 1,
+              "cta_clicks": null
+            }
+          }
+        ]
+      },
+      {
+        "date": "2026-10-08",
+        "website_totals": {
+          "active_users": 12,
+          "page_views": 74,
+          "sessions": 21,
+          "cta_clicks": null
+        },
+        "website_coverage": {
+          "active_users": 5,
+          "page_views": 5,
+          "sessions": 5,
+          "cta_clicks": 0
+        },
+        "websites_total": 7,
+        "app_totals": {
+          "impressions": null,
+          "product_page_views": null,
+          "first_time_downloads": null,
+          "redownloads": null,
+          "active_devices": null,
+          "app_sessions": null,
+          "trial_starts": null,
+          "paid_conversions": null,
+          "active_paid_subscriptions": null
+        },
+        "app_coverage": {
+          "impressions": 0,
+          "product_page_views": 0,
+          "first_time_downloads": 0,
+          "redownloads": 0,
+          "active_devices": 0,
+          "app_sessions": 0,
+          "trial_starts": 0,
+          "paid_conversions": 0,
+          "active_paid_subscriptions": 0
+        },
+        "apps_total": 5,
+        "apps": [
+          {
+            "app_id": "style-atlas",
+            "website_ids": [
+              "site-style-atlas"
+            ],
+            "h5_metrics": {
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
+              "cta_clicks": null
+            },
+            "app_metrics": {
+              "impressions": null,
+              "product_page_views": null,
+              "first_time_downloads": null,
+              "redownloads": null,
+              "active_devices": null,
+              "app_sessions": null,
+              "trial_starts": null,
+              "paid_conversions": null,
+              "active_paid_subscriptions": null
+            }
+          },
+          {
+            "app_id": "yixiu-meditation",
+            "website_ids": [
+              "site-yixiu"
+            ],
+            "h5_metrics": {
+              "active_users": 2,
+              "page_views": 9,
+              "sessions": 4,
+              "cta_clicks": null
+            },
+            "app_metrics": {
+              "impressions": null,
+              "product_page_views": null,
+              "first_time_downloads": null,
+              "redownloads": null,
+              "active_devices": null,
+              "app_sessions": null,
+              "trial_starts": null,
+              "paid_conversions": null,
+              "active_paid_subscriptions": null
+            }
+          },
+          {
+            "app_id": "know-yourself",
+            "website_ids": [
+              "site-human-design"
+            ],
+            "h5_metrics": {
+              "active_users": 4,
+              "page_views": 51,
+              "sessions": 9,
+              "cta_clicks": null
+            },
+            "app_metrics": {
+              "impressions": null,
+              "product_page_views": null,
+              "first_time_downloads": null,
+              "redownloads": null,
+              "active_devices": null,
+              "app_sessions": null,
+              "trial_starts": null,
+              "paid_conversions": null,
+              "active_paid_subscriptions": null
+            }
+          },
+          {
+            "app_id": "wendao",
+            "website_ids": [
+              "site-wendao"
+            ],
+            "h5_metrics": {
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
+              "cta_clicks": null
+            },
+            "app_metrics": {
+              "impressions": null,
+              "product_page_views": null,
+              "first_time_downloads": null,
+              "redownloads": null,
+              "active_devices": null,
+              "app_sessions": null,
+              "trial_starts": null,
+              "paid_conversions": null,
+              "active_paid_subscriptions": null
+            }
+          },
+          {
+            "app_id": "xiazi-yesterdays-world",
+            "website_ids": [
+              "site-xiazi"
+            ],
+            "h5_metrics": {
+              "active_users": 1,
+              "page_views": 0,
+              "sessions": 2,
+              "cta_clicks": null
+            },
+            "app_metrics": {
+              "impressions": null,
+              "product_page_views": null,
+              "first_time_downloads": null,
+              "redownloads": null,
+              "active_devices": null,
+              "app_sessions": null,
+              "trial_starts": null,
+              "paid_conversions": null,
+              "active_paid_subscriptions": null
+            }
+          }
+        ],
+        "websites": [
+          {
+            "website_id": "site-style-atlas",
+            "app_id": "style-atlas",
+            "metrics": {
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
+              "cta_clicks": null
+            }
+          },
+          {
+            "website_id": "site-yixiu",
+            "app_id": "yixiu-meditation",
+            "metrics": {
+              "active_users": 2,
+              "page_views": 9,
+              "sessions": 4,
+              "cta_clicks": null
+            }
+          },
+          {
+            "website_id": "site-human-design",
+            "app_id": "know-yourself",
+            "metrics": {
+              "active_users": 4,
+              "page_views": 51,
+              "sessions": 9,
+              "cta_clicks": null
+            }
+          },
+          {
+            "website_id": "site-wendao",
+            "app_id": "wendao",
+            "metrics": {
+              "active_users": null,
+              "page_views": null,
+              "sessions": null,
+              "cta_clicks": null
+            }
+          },
+          {
+            "website_id": "site-xiazi",
+            "app_id": "xiazi-yesterdays-world",
+            "metrics": {
+              "active_users": 1,
+              "page_views": 0,
+              "sessions": 2,
+              "cta_clicks": null
+            }
+          },
+          {
+            "website_id": "site-wonderelian",
+            "app_id": null,
+            "metrics": {
+              "active_users": 3,
+              "page_views": 5,
+              "sessions": 3,
+              "cta_clicks": null
+            }
+          },
+          {
+            "website_id": "site-maker-business-lab",
+            "app_id": null,
+            "metrics": {
+              "active_users": 2,
+              "page_views": 9,
+              "sessions": 3,
               "cta_clicks": null
             }
           }
@@ -28925,6 +29155,236 @@
             }
           }
         ]
+      },
+      {
+        "date": "2026-10-08",
+        "period_start": "2026-08-15",
+        "period_end": "2026-10-08",
+        "website_totals": {
+          "active_users": 961,
+          "page_views": 3774,
+          "sessions": 1807,
+          "cta_clicks": 845
+        },
+        "websites": [
+          {
+            "website_id": "site-style-atlas",
+            "app_id": "style-atlas",
+            "metrics": {
+              "active_users": 68,
+              "page_views": 187,
+              "sessions": 140,
+              "cta_clicks": 4
+            }
+          },
+          {
+            "website_id": "site-yixiu",
+            "app_id": "yixiu-meditation",
+            "metrics": {
+              "active_users": 529,
+              "page_views": 1239,
+              "sessions": 789,
+              "cta_clicks": 128
+            }
+          },
+          {
+            "website_id": "site-human-design",
+            "app_id": "know-yourself",
+            "metrics": {
+              "active_users": 17,
+              "page_views": 97,
+              "sessions": 40,
+              "cta_clicks": null
+            }
+          },
+          {
+            "website_id": "site-wendao",
+            "app_id": "wendao",
+            "metrics": {
+              "active_users": 128,
+              "page_views": 463,
+              "sessions": 296,
+              "cta_clicks": 473
+            }
+          },
+          {
+            "website_id": "site-xiazi",
+            "app_id": "xiazi-yesterdays-world",
+            "metrics": {
+              "active_users": 87,
+              "page_views": 355,
+              "sessions": 233,
+              "cta_clicks": 55
+            }
+          },
+          {
+            "website_id": "site-wonderelian",
+            "app_id": null,
+            "metrics": {
+              "active_users": 207,
+              "page_views": 827,
+              "sessions": 423,
+              "cta_clicks": 185
+            }
+          },
+          {
+            "website_id": "site-maker-business-lab",
+            "app_id": null,
+            "metrics": {
+              "active_users": 34,
+              "page_views": 606,
+              "sessions": 128,
+              "cta_clicks": null
+            }
+          }
+        ],
+        "websites_total": 7,
+        "website_coverage": {
+          "active_users": 7,
+          "page_views": 7,
+          "sessions": 7,
+          "cta_clicks": 5
+        },
+        "apps_total": 5,
+        "app_totals": {
+          "impressions": null,
+          "product_page_views": null,
+          "first_time_downloads": null,
+          "redownloads": null,
+          "active_devices": null,
+          "app_sessions": null,
+          "trial_starts": null,
+          "paid_conversions": null,
+          "active_paid_subscriptions": null
+        },
+        "app_coverage": {
+          "impressions": 0,
+          "product_page_views": 0,
+          "first_time_downloads": 0,
+          "redownloads": 0,
+          "active_devices": 0,
+          "app_sessions": 0,
+          "trial_starts": 0,
+          "paid_conversions": 0,
+          "active_paid_subscriptions": 0
+        },
+        "apps": [
+          {
+            "app_id": "style-atlas",
+            "website_ids": [
+              "site-style-atlas"
+            ],
+            "h5_metrics": {
+              "active_users": 68,
+              "page_views": 187,
+              "sessions": 140,
+              "cta_clicks": 4
+            },
+            "app_metrics": {
+              "impressions": null,
+              "product_page_views": null,
+              "first_time_downloads": null,
+              "redownloads": null,
+              "active_devices": null,
+              "app_sessions": null,
+              "trial_starts": null,
+              "paid_conversions": null,
+              "active_paid_subscriptions": null
+            }
+          },
+          {
+            "app_id": "yixiu-meditation",
+            "website_ids": [
+              "site-yixiu"
+            ],
+            "h5_metrics": {
+              "active_users": 529,
+              "page_views": 1239,
+              "sessions": 789,
+              "cta_clicks": 128
+            },
+            "app_metrics": {
+              "impressions": null,
+              "product_page_views": null,
+              "first_time_downloads": null,
+              "redownloads": null,
+              "active_devices": null,
+              "app_sessions": null,
+              "trial_starts": null,
+              "paid_conversions": null,
+              "active_paid_subscriptions": null
+            }
+          },
+          {
+            "app_id": "know-yourself",
+            "website_ids": [
+              "site-human-design"
+            ],
+            "h5_metrics": {
+              "active_users": 17,
+              "page_views": 97,
+              "sessions": 40,
+              "cta_clicks": null
+            },
+            "app_metrics": {
+              "impressions": null,
+              "product_page_views": null,
+              "first_time_downloads": null,
+              "redownloads": null,
+              "active_devices": null,
+              "app_sessions": null,
+              "trial_starts": null,
+              "paid_conversions": null,
+              "active_paid_subscriptions": null
+            }
+          },
+          {
+            "app_id": "wendao",
+            "website_ids": [
+              "site-wendao"
+            ],
+            "h5_metrics": {
+              "active_users": 128,
+              "page_views": 463,
+              "sessions": 296,
+              "cta_clicks": 473
+            },
+            "app_metrics": {
+              "impressions": null,
+              "product_page_views": null,
+              "first_time_downloads": null,
+              "redownloads": null,
+              "active_devices": null,
+              "app_sessions": null,
+              "trial_starts": null,
+              "paid_conversions": null,
+              "active_paid_subscriptions": null
+            }
+          },
+          {
+            "app_id": "xiazi-yesterdays-world",
+            "website_ids": [
+              "site-xiazi"
+            ],
+            "h5_metrics": {
+              "active_users": 87,
+              "page_views": 355,
+              "sessions": 233,
+              "cta_clicks": 55
+            },
+            "app_metrics": {
+              "impressions": null,
+              "product_page_views": null,
+              "first_time_downloads": null,
+              "redownloads": null,
+              "active_devices": null,
+              "app_sessions": null,
+              "trial_starts": null,
+              "paid_conversions": null,
+              "active_paid_subscriptions": null
+            }
+          }
+        ]
       }
     ],
     "latest_verified_acquisition": {
@@ -29286,7 +29746,7 @@
           "last_successful_import": "2026-08-14T09:20:00.000Z",
           "freshness": "manual",
           "age_state": "stale",
-          "age_days": 56.1,
+          "age_days": 57,
           "data_available": [
             "impressions",
             "product_page_views",
@@ -29366,7 +29826,7 @@
           "last_successful_import": "2026-09-23T02:59:50.893Z",
           "freshness": "fresh",
           "age_state": "stale",
-          "age_days": 14.9,
+          "age_days": 15.9,
           "data_available": [
             "app_store_taps",
             "app_store_taps_unique",
@@ -29413,7 +29873,7 @@
           "name": "Portfolio Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-10-08T01:13:15.144Z",
+          "last_successful_import": "2026-10-09T00:33:04.655Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -29430,7 +29890,7 @@
           "name": "Google Analytics 4 Website Data",
           "status": "live",
           "mode": "official_read_only_api",
-          "last_successful_import": "2026-10-08T01:13:18.921Z",
+          "last_successful_import": "2026-10-09T00:33:09.866Z",
           "freshness": "delayed",
           "age_state": "unknown",
           "age_days": null,
@@ -29466,7 +29926,7 @@
           "error": null
         }
       ],
-      "last_successful_import": "2026-10-08T01:13:18.921Z",
+      "last_successful_import": "2026-10-09T00:33:09.866Z",
       "stale_providers": [
         "manual_app_store_connect",
         "app_store_connect_api"
@@ -29528,7 +29988,7 @@
           "name": "Portfolio Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-10-08T01:13:15.144Z",
+          "last_successful_import": "2026-10-09T00:33:04.655Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -29545,7 +30005,7 @@
           "name": "Google Analytics 4 Website Data",
           "status": "live",
           "mode": "official_read_only_api",
-          "last_successful_import": "2026-10-08T01:13:18.921Z",
+          "last_successful_import": "2026-10-09T00:33:09.866Z",
           "freshness": "delayed",
           "age_state": "unknown",
           "age_days": null,
@@ -29581,7 +30041,7 @@
           "error": null
         }
       ],
-      "last_successful_import": "2026-10-08T01:13:18.921Z",
+      "last_successful_import": "2026-10-09T00:33:09.866Z",
       "stale_providers": [],
       "missing_critical_metrics": [
         "first_time_downloads",
@@ -29596,13 +30056,13 @@
         }
       ],
       "attribution": {
-        "published_assets": 200,
+        "published_assets": 202,
         "linked_assets": 111,
         "measured_assets": 0,
-        "link_coverage": 56,
+        "link_coverage": 55,
         "outcome_coverage": 0
       },
-      "coverage_score": 44,
+      "coverage_score": 43,
       "confidence_cap": 0.65
     },
     {
@@ -29637,7 +30097,7 @@
           "name": "Portfolio Public Health Monitor",
           "status": "live",
           "mode": "scheduled_read_only_http",
-          "last_successful_import": "2026-10-08T01:13:15.144Z",
+          "last_successful_import": "2026-10-09T00:33:04.655Z",
           "freshness": "fresh",
           "age_state": "unknown",
           "age_days": null,
@@ -29654,7 +30114,7 @@
           "name": "Google Analytics 4 Website Data",
           "status": "live",
           "mode": "official_read_only_api",
-          "last_successful_import": "2026-10-08T01:13:18.921Z",
+          "last_successful_import": "2026-10-09T00:33:09.866Z",
           "freshness": "delayed",
           "age_state": "unknown",
           "age_days": null,
@@ -29672,7 +30132,7 @@
           "error": null
         }
       ],
-      "last_successful_import": "2026-10-08T01:13:18.921Z",
+      "last_successful_import": "2026-10-09T00:33:09.866Z",
       "stale_providers": [],
       "missing_critical_metrics": [],
       "import_errors": [
