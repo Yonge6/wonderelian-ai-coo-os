@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": "3.0.0",
-    "last_updated": "2026-10-21T00:35:36.840Z",
+    "last_updated": "2026-10-22T00:39:26.341Z",
     "portfolio_name": "WonderElian Consumer Apps",
     "primary_outcome": "Attributable first-time App Store downloads",
     "phase": 3,
@@ -39,8 +39,8 @@
       "app_store_reviews": "2026-08-13",
       "search_console": null,
       "manual_app_store": "2026-08-12",
-      "website_health": "2026-10-21",
-      "website_analytics": "2026-10-20",
+      "website_health": "2026-10-22",
+      "website_analytics": "2026-10-21",
       "app_store_apps": {
         "style-atlas": "2026-09-21",
         "yixiu-meditation": null,
@@ -52,7 +52,7 @@
       "app_store_finance": "2026-09-30"
     },
     "last_growth_cycle_at": "2026-08-14T15:46:53.809Z",
-    "last_website_health_at": "2026-10-21T00:34:06.294Z"
+    "last_website_health_at": "2026-10-22T00:36:26.180Z"
   },
   "apps": [
     {
@@ -12790,6 +12790,118 @@
       "measurement_status": "collecting",
       "campaign_id": null,
       "app_store_campaign_url": null
+    },
+    {
+      "app_id": "yixiu-meditation",
+      "content_id": "20261021_01-list-rest",
+      "channel_id": "instagram",
+      "type": "image",
+      "title": "Let the List Rest",
+      "url": "https://www.instagram.com/wonderelian/p/DewaY5rnfv3/",
+      "landing_url": null,
+      "id": "yixiu-meditation-instagram-20261021_01-list-rest",
+      "publish_url": "https://www.instagram.com/wonderelian/p/DewaY5rnfv3/",
+      "status": "published",
+      "published_at": "2026-10-21",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting",
+      "campaign_id": null,
+      "app_store_campaign_url": null
+    },
+    {
+      "app_id": "yixiu-meditation",
+      "content_id": "20261021_01-list-rest",
+      "channel_id": "pinterest",
+      "type": "image",
+      "title": "Let the List Rest",
+      "url": "https://www.pinterest.com/pin/1147643917694798187/",
+      "landing_url": "https://yixiu.wonderelian.com/sleep-sounds/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=sleep_sounds&utm_content=20261021_01-list-rest",
+      "id": "yixiu-meditation-pinterest-20261021_01-list-rest",
+      "publish_url": "https://www.pinterest.com/pin/1147643917694798187/",
+      "status": "published",
+      "published_at": "2026-10-21",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting",
+      "campaign_id": null,
+      "app_store_campaign_url": null
+    },
+    {
+      "app_id": "yixiu-meditation",
+      "content_id": "20261021_01-list-rest",
+      "channel_id": "tiktok",
+      "type": "image",
+      "title": "Let the List Rest",
+      "url": "https://www.tiktok.com/@wonderelian1/photo/7699101784941350157",
+      "landing_url": null,
+      "id": "yixiu-meditation-tiktok-20261021_01-list-rest",
+      "publish_url": "https://www.tiktok.com/@wonderelian1/photo/7699101784941350157",
+      "status": "published",
+      "published_at": "2026-10-21",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting",
+      "campaign_id": null,
+      "app_store_campaign_url": null
+    },
+    {
+      "app_id": "yixiu-meditation",
+      "content_id": "20261021_01-list-rest",
+      "channel_id": "youtube",
+      "type": "image",
+      "title": "Let the List Rest",
+      "url": "https://www.youtube.com/post/Ugkxm7KGzaTw8WfKSlKa2NzmYuc38vEPPNnT",
+      "landing_url": "https://yixiu.wonderelian.com/sleep-sounds/?utm_source=youtube&utm_medium=organic_social&utm_campaign=sleep_sounds&utm_content=20261021_01-list-rest",
+      "id": "yixiu-meditation-youtube-20261021_01-list-rest",
+      "publish_url": "https://www.youtube.com/post/Ugkxm7KGzaTw8WfKSlKa2NzmYuc38vEPPNnT",
+      "status": "published",
+      "published_at": "2026-10-21",
+      "impressions": null,
+      "engagements": null,
+      "outbound_clicks": null,
+      "first_time_downloads": null,
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "landing_page_visits": null,
+      "attributed_conversions": null,
+      "product_page_views": null,
+      "measurement_status": "collecting",
+      "campaign_id": null,
+      "app_store_campaign_url": null
     }
   ],
   "insights": [
@@ -13288,9 +13400,9 @@
         "wendao",
         "xiazi-yesterdays-world"
       ],
-      "last_sync": "2026-10-21T00:34:06.294Z",
-      "last_successful_import": "2026-10-21T00:34:06.294Z",
-      "data_through": "2026-10-21",
+      "last_sync": "2026-10-22T00:36:26.180Z",
+      "last_successful_import": "2026-10-22T00:36:26.180Z",
+      "data_through": "2026-10-22",
       "freshness": "fresh",
       "data_available": [
         "http_status",
@@ -13328,9 +13440,9 @@
         "wendao",
         "xiazi-yesterdays-world"
       ],
-      "last_sync": "2026-10-21T00:34:13.353Z",
-      "last_successful_import": "2026-10-21T00:34:13.353Z",
-      "data_through": "2026-10-20",
+      "last_sync": "2026-10-22T00:36:29.786Z",
+      "last_successful_import": "2026-10-22T00:36:29.786Z",
+      "data_through": "2026-10-21",
       "freshness": "delayed",
       "data_available": [
         "page_views",
@@ -13543,14 +13655,14 @@
       "provider": "public_website_health",
       "app_id": null,
       "schedule": "daily:08:15:Asia/Shanghai",
-      "last_run": "2026-10-21T00:34:06.294Z",
-      "next_run": "2026-10-22T00:34:06.294Z",
+      "last_run": "2026-10-22T00:36:26.180Z",
+      "next_run": "2026-10-23T00:36:26.180Z",
       "status": "scheduled",
       "duration": null,
       "result": {
         "records_received": 7,
         "reachable": 7,
-        "data_through": "2026-10-21"
+        "data_through": "2026-10-22"
       },
       "error": null,
       "retry_count": 0
@@ -13561,15 +13673,15 @@
       "provider": "website_analytics_api",
       "app_id": null,
       "schedule": "every:1d",
-      "last_run": "2026-10-21T00:34:13.353Z",
-      "next_run": "2026-10-22T00:34:13.353Z",
+      "last_run": "2026-10-22T00:36:29.786Z",
+      "next_run": "2026-10-23T00:36:29.786Z",
       "status": "scheduled",
       "duration": null,
       "result": {
-        "records_received": 4179,
-        "records_inserted": 68,
-        "records_updated": 210,
-        "data_through": "2026-10-20"
+        "records_received": 4225,
+        "records_inserted": 47,
+        "records_updated": 212,
+        "data_through": "2026-10-21"
       },
       "error": null,
       "retry_count": 0
@@ -13722,6 +13834,134 @@
     }
   ],
   "audit": [
+    {
+      "id": "audit-morning-20261022",
+      "at": "2026-10-22T00:39:26.340Z",
+      "actor": "Codex",
+      "source": "2026-10-22 morning heartbeat; safe launchctl preflight; official GA4 Data API; verified publication ledgers",
+      "action": "morning_data_and_publication_reconciliation",
+      "input": {
+        "external_writes": false,
+        "website_period_end": "2026-10-21"
+      },
+      "result": {
+        "website_data_through": "2026-10-21",
+        "app_data_through": "2026-09-21",
+        "apple_configuration_present": 0,
+        "apple_configuration_complete": false,
+        "apple_key_mode_600": null,
+        "apple_api_verified": false,
+        "apple_request_uniqueness_verified": false,
+        "apple_requests_created": 0,
+        "app_snapshot_preserved": true,
+        "ga4_configuration_unique": true,
+        "ga4_credential_mode_600": true,
+        "ga4_api_verified": true,
+        "verified_publications_imported": 4,
+        "scheduled_drafts_and_unverified_publications_excluded": true,
+        "phase_4_started": false
+      },
+      "status": "partial",
+      "error": {
+        "code": "APPLE_CONFIGURATION_MISSING",
+        "message": "App Analytics was not refreshed. The prior official App cutoff remains independent; no report request was created and missing metrics remain null."
+      }
+    },
+    {
+      "id": "audit-ops-publications-20261021",
+      "at": "2026-10-22T00:39:26.247Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "verified_publication_status_and_durable_ops_logs",
+      "action": "sync_verified_publication_urls_2026_10_21",
+      "input": {
+        "external_writes": false,
+        "operation_date": "2026-10-21"
+      },
+      "result": {
+        "status": "success",
+        "records_inserted": 4,
+        "verified_publication_urls": 4,
+        "scheduled_drafts_and_unverified_items_excluded": true,
+        "unknown_metrics_preserved_as_null": true
+      },
+      "status": "success",
+      "error": null
+    },
+    {
+      "id": "43ca06a6-0b39-446c-81d5-6f4d59204828",
+      "at": "2026-10-22T00:36:40.790Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "ga4_product_usage",
+      "action": "sync_product_usage",
+      "result": {
+        "status": "collecting",
+        "project_count": 7
+      },
+      "status": "success"
+    },
+    {
+      "id": "347a12e9-8b3a-4a52-8268-31d3cc689554",
+      "at": "2026-10-22T00:36:37.881Z",
+      "actor": "Codex",
+      "source": "Google Analytics 4 Data API",
+      "action": "sync_cumulative_website_analytics",
+      "input": {
+        "period_start": "2026-08-15",
+        "period_end": "2026-10-21",
+        "external_writes": false
+      },
+      "result": {
+        "periods": 1,
+        "uv_definition": "GA4 interval active users, deduplicated across days and configured hosts"
+      },
+      "status": "success"
+    },
+    {
+      "id": "2c4f80c2-dffe-47cd-9fc3-3b1aec13e84f",
+      "at": "2026-10-22T00:36:29.786Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "ga4_website_sync",
+      "action": "sync_portfolio_website_analytics",
+      "input": {
+        "external_writes": false
+      },
+      "result": {
+        "status": "success",
+        "received": 4225,
+        "inserted": 47,
+        "updated": 212,
+        "unchanged": 3966,
+        "data_through": "2026-10-21",
+        "sites_observed": 7
+      },
+      "status": "success",
+      "error": null
+    },
+    {
+      "id": "ff52a263-2bd1-4b48-b8a2-973ecae90b29",
+      "at": "2026-10-22T00:36:26.180Z",
+      "actor": "AI COO OS",
+      "app_id": null,
+      "source": "authorized_website_operations_expansion",
+      "action": "sync_portfolio_website_health",
+      "input": {
+        "external_writes": false,
+        "websites": 7
+      },
+      "result": {
+        "reachable": 7,
+        "total": 7,
+        "inserted": 7,
+        "updated": 0,
+        "analytics_tags_detected": 7,
+        "data_through": "2026-10-22"
+      },
+      "status": "success",
+      "error": null
+    },
     {
       "id": "audit-morning-20261021",
       "at": "2026-10-21T00:35:36.839Z",
@@ -23922,6 +24162,38 @@
       "records_unchanged": 3901,
       "data_through": "2026-10-20",
       "error": null
+    },
+    {
+      "id": "sync-public_website_health-2026-10-22T00-36-26-180Z",
+      "app_id": null,
+      "provider": "public_website_health",
+      "period_start": "2026-10-22",
+      "period_end": "2026-10-22",
+      "started_at": "2026-10-22T00:36:26.180Z",
+      "completed_at": "2026-10-22T00:36:26.180Z",
+      "status": "succeeded",
+      "records_received": 7,
+      "records_inserted": 7,
+      "records_updated": 0,
+      "records_unchanged": 0,
+      "data_through": "2026-10-22",
+      "error": null
+    },
+    {
+      "id": "sync-website_analytics_api-2026-10-22T00-36-29-786Z",
+      "app_id": null,
+      "provider": "website_analytics_api",
+      "period_start": "2026-07-24",
+      "period_end": "2026-10-21",
+      "started_at": "2026-10-22T00:36:29.786Z",
+      "completed_at": "2026-10-22T00:36:29.786Z",
+      "status": "succeeded",
+      "records_received": 4225,
+      "records_inserted": 47,
+      "records_updated": 212,
+      "records_unchanged": 3966,
+      "data_through": "2026-10-21",
+      "error": null
     }
   ],
   "reconciliations": [],
@@ -23977,7 +24249,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-10-21T00:34:06.294Z"
+      "last_checked_at": "2026-10-22T00:36:26.180Z"
     },
     {
       "id": "site-yixiu",
@@ -23992,7 +24264,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-10-21T00:34:06.294Z"
+      "last_checked_at": "2026-10-22T00:36:26.180Z"
     },
     {
       "id": "site-human-design",
@@ -24007,7 +24279,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-10-21T00:34:06.294Z",
+      "last_checked_at": "2026-10-22T00:36:26.180Z",
       "description": "Your AI growth companion Doudoulong. Explore Human Design, HUMAN 3.0 interviews and personal experiences to choose actions and reflect on progress.",
       "description_zh": "你的专属 AI 成长伙伴 豆豆龙。结合人类图自我观察、HUMAN 3.0 四领域访谈与个人经历，明确行动并持续复盘。",
       "instrumentation": {
@@ -24031,7 +24303,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-10-21T00:34:06.294Z"
+      "last_checked_at": "2026-10-22T00:36:26.180Z"
     },
     {
       "id": "site-xiazi",
@@ -24046,7 +24318,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-10-21T00:34:06.294Z"
+      "last_checked_at": "2026-10-22T00:36:26.180Z"
     },
     {
       "id": "site-wonderelian",
@@ -24061,7 +24333,7 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-10-21T00:34:06.294Z"
+      "last_checked_at": "2026-10-22T00:36:26.180Z"
     },
     {
       "id": "site-maker-business-lab",
@@ -24076,10 +24348,206 @@
       "operation_status": "active",
       "health_status": "live",
       "analytics_status": "connected",
-      "last_checked_at": "2026-10-21T00:34:06.294Z"
+      "last_checked_at": "2026-10-22T00:36:26.180Z"
     }
   ],
   "website_observations": [
+    {
+      "id": "website-health-site-style-atlas-2026-10-22",
+      "website_id": "site-style-atlas",
+      "app_id": "style-atlas",
+      "observed_at": "2026-10-22T00:36:26.180Z",
+      "source": "Public HTTP and HTML probe",
+      "source_reference": "https://style-atlas.wonderelian.com/",
+      "verification_type": "api_verified",
+      "reachable": true,
+      "http_status": 200,
+      "final_url": "https://style-atlas.wonderelian.com/",
+      "server": "nginx/1.30.4",
+      "content_type": "text/html; charset=utf-8",
+      "lang": "en",
+      "title": "Style Atlas: Art & Design | Learn to See",
+      "description": "Learn to see what makes a style distinct. Explore 144 art and design styles, read 20 complete guides free, and find visual references for your next creative project.",
+      "canonical": "https://style-atlas.wonderelian.com/",
+      "h1": "Learn to See. Develop Your Eye.",
+      "og_title": "Style Atlas: Art &amp; Design",
+      "structured_data_count": 1,
+      "analytics_detected": true,
+      "app_store_link_count": 2,
+      "robots_status": 200,
+      "robots_valid": true,
+      "sitemap_status": 200,
+      "sitemap_valid": true,
+      "error": null
+    },
+    {
+      "id": "website-health-site-yixiu-2026-10-22",
+      "website_id": "site-yixiu",
+      "app_id": "yixiu-meditation",
+      "observed_at": "2026-10-22T00:36:26.180Z",
+      "source": "Public HTTP and HTML probe",
+      "source_reference": "https://yixiu.wonderelian.com/",
+      "verification_type": "api_verified",
+      "reachable": true,
+      "http_status": 200,
+      "final_url": "https://yixiu.wonderelian.com/",
+      "server": "nginx/1.30.4",
+      "content_type": "text/html; charset=utf-8",
+      "lang": "en",
+      "title": "Yixiu · Nature Sounds for Sleep, Focus and Calm",
+      "description": "Try five free nature sounds, three meditation tracks and one-minute Focus. No account or ads. Free 5/15/30-minute timers; more listening options in Yixiu for iPhone.",
+      "canonical": "https://yixiu.wonderelian.com/",
+      "h1": "Free nature sounds for sleep, focus and study",
+      "og_title": "Yixiu · Let nature sounds return you to now",
+      "structured_data_count": 1,
+      "analytics_detected": true,
+      "app_store_link_count": 3,
+      "robots_status": 200,
+      "robots_valid": true,
+      "sitemap_status": 200,
+      "sitemap_valid": true,
+      "error": null
+    },
+    {
+      "id": "website-health-site-human-design-2026-10-22",
+      "website_id": "site-human-design",
+      "app_id": "know-yourself",
+      "observed_at": "2026-10-22T00:36:26.180Z",
+      "source": "Public HTTP and HTML probe",
+      "source_reference": "https://buer.wonderelian.com/",
+      "verification_type": "api_verified",
+      "reachable": true,
+      "http_status": 200,
+      "final_url": "https://buer.wonderelian.com/",
+      "server": "GitHub.com",
+      "content_type": "text/html; charset=utf-8",
+      "lang": "zh-CN",
+      "title": "不二见己 | 你的专属 AI 成长伙伴 豆豆龙",
+      "description": "不二见己，你的专属 AI 成长伙伴 豆豆龙。结合人类图自我观察、HUMAN 3.0 四领域访谈与个人经历，明确行动并持续复盘。",
+      "canonical": "https://buer.wonderelian.com/",
+      "h1": "今天，想从哪里聊起？",
+      "og_title": "不二见己 | 你的专属 AI 成长伙伴 豆豆龙",
+      "structured_data_count": 0,
+      "analytics_detected": true,
+      "app_store_link_count": 0,
+      "robots_status": 200,
+      "robots_valid": true,
+      "sitemap_status": 200,
+      "sitemap_valid": true,
+      "error": null
+    },
+    {
+      "id": "website-health-site-wendao-2026-10-22",
+      "website_id": "site-wendao",
+      "app_id": "wendao",
+      "observed_at": "2026-10-22T00:36:26.180Z",
+      "source": "Public HTTP and HTML probe",
+      "source_reference": "https://wendao.wonderelian.com/",
+      "verification_type": "api_verified",
+      "reachable": true,
+      "http_status": 200,
+      "final_url": "https://wendao.wonderelian.com/",
+      "server": "nginx/1.30.4",
+      "content_type": "text/html; charset=utf-8",
+      "lang": "zh-CN",
+      "title": "三慢问道 · 道德经帛书校读、拼音今译与 AI 问道",
+      "description": "三慢问道提供《道德经》帛书乙本校读、拼音、逐句今译与生活启发。今日一章及自选 10 章免费；AI 问道需会员，陪你观察处境，不替你决定。",
+      "canonical": "https://wendao.wonderelian.com/",
+      "h1": "三慢问道",
+      "og_title": "三慢问道 · 道德经帛书校读、拼音今译与 AI 问道",
+      "structured_data_count": 1,
+      "analytics_detected": true,
+      "app_store_link_count": 0,
+      "robots_status": 200,
+      "robots_valid": true,
+      "sitemap_status": 200,
+      "sitemap_valid": true,
+      "error": null
+    },
+    {
+      "id": "website-health-site-xiazi-2026-10-22",
+      "website_id": "site-xiazi",
+      "app_id": "xiazi-yesterdays-world",
+      "observed_at": "2026-10-22T00:36:26.180Z",
+      "source": "Public HTTP and HTML probe",
+      "source_reference": "https://xiazishuo.com/",
+      "verification_type": "api_verified",
+      "reachable": true,
+      "http_status": 200,
+      "final_url": "https://xiazishuo.com/",
+      "server": "nginx/1.30.4",
+      "content_type": "text/html; charset=utf-8",
+      "lang": "zh-CN",
+      "title": "虾子曰全球热点海报",
+      "description": "用 1 张今日总览、8 件全球热点和中英海报，把复杂世界讲清楚。",
+      "canonical": null,
+      "h1": "昨日世界 .",
+      "og_title": null,
+      "structured_data_count": 0,
+      "analytics_detected": true,
+      "app_store_link_count": 1,
+      "robots_status": 200,
+      "robots_valid": true,
+      "sitemap_status": 200,
+      "sitemap_valid": true,
+      "error": null
+    },
+    {
+      "id": "website-health-site-wonderelian-2026-10-22",
+      "website_id": "site-wonderelian",
+      "app_id": null,
+      "observed_at": "2026-10-22T00:36:26.180Z",
+      "source": "Public HTTP and HTML probe",
+      "source_reference": "https://wonderelian.com/",
+      "verification_type": "api_verified",
+      "reachable": true,
+      "http_status": 200,
+      "final_url": "https://wonderelian.com/",
+      "server": "nginx/1.30.4",
+      "content_type": "text/html; charset=utf-8",
+      "lang": "en",
+      "title": "WonderElian | Design, AI & Independent Creative Products",
+      "description": "WonderElian is Elian Yong&#039;s personal creative world—turning complex ideas into clear, beautiful, useful products through design, product thinking, and AI, alongside field notes on creativity and life.",
+      "canonical": "https://wonderelian.com/en/",
+      "h1": "WonderElian — Designing things. Exploring life.",
+      "og_title": "WonderElian | Design, AI &amp; Independent Creative Products",
+      "structured_data_count": 1,
+      "analytics_detected": true,
+      "app_store_link_count": 0,
+      "robots_status": 200,
+      "robots_valid": true,
+      "sitemap_status": 200,
+      "sitemap_valid": true,
+      "error": null
+    },
+    {
+      "id": "website-health-site-maker-business-lab-2026-10-22",
+      "website_id": "site-maker-business-lab",
+      "app_id": null,
+      "observed_at": "2026-10-22T00:36:26.180Z",
+      "source": "Public HTTP and HTML probe",
+      "source_reference": "https://maker.wonderelian.com/",
+      "verification_type": "api_verified",
+      "reachable": true,
+      "http_status": 200,
+      "final_url": "https://maker.wonderelian.com/",
+      "server": "nginx/1.30.4",
+      "content_type": "text/html; charset=utf-8",
+      "lang": "en",
+      "title": "Maker Business Lab — Turn Maker Skills Into Business Numbers",
+      "description": "Find maker products worth selling, calculate realistic profit and payback, and match your business to the right production setup.",
+      "canonical": "https://maker.wonderelian.com/",
+      "h1": "Make something. Make it add up.",
+      "og_title": "Maker Business Lab",
+      "structured_data_count": 2,
+      "analytics_detected": true,
+      "app_store_link_count": 0,
+      "robots_status": 200,
+      "robots_valid": true,
+      "sitemap_status": 200,
+      "sitemap_valid": true,
+      "error": null
+    },
     {
       "id": "website-health-site-style-atlas-2026-10-21",
       "website_id": "site-style-atlas",
@@ -36534,8 +37002,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-16",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -36556,8 +37024,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-16",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -36578,8 +37046,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-16",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -36733,8 +37201,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-08-16",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -36940,8 +37408,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-08-16",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -37401,8 +37869,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-08-16",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -39405,8 +39873,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-18",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -39427,8 +39895,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-18",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -39449,8 +39917,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-18",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -39716,8 +40184,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-08-18",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -39923,8 +40391,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-08-18",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -40408,8 +40876,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-08-18",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -41177,8 +41645,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-19",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -41199,8 +41667,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-19",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -41221,8 +41689,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-19",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -41399,8 +41867,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-08-19",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -41606,8 +42074,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-08-19",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -45640,8 +46108,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-22",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -45662,8 +46130,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-22",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -45684,8 +46152,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-22",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -46316,8 +46784,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-08-22",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -46943,8 +47411,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-23",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -46965,8 +47433,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-23",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -46987,8 +47455,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-23",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -47320,8 +47788,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-08-23",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -47780,8 +48248,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-08-23",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -48381,8 +48849,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-08-23",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -53237,8 +53705,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-26",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -53259,8 +53727,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-26",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -53281,8 +53749,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-26",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -53945,8 +54413,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-08-26",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -54386,8 +54854,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-08-26",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -61870,8 +62338,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-30",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -61892,8 +62360,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-30",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -61914,8 +62382,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-08-30",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -62486,8 +62954,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-08-30",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -63109,8 +63577,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-08-30",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -68003,8 +68471,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-02",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -68025,8 +68493,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-02",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -68047,8 +68515,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-02",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -68248,8 +68716,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-09-02",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -68570,8 +69038,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-09-02",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -69470,8 +69938,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-09-02",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -72758,8 +73226,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-04",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -72780,8 +73248,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-04",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -72802,8 +73270,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-04",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -72890,8 +73358,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-04",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -72912,8 +73380,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-04",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -72934,8 +73402,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-04",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -73161,8 +73629,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-09-04",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -73667,8 +74135,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-09-04",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -73713,8 +74181,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-09-04",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -74084,8 +74552,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-09-04",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -76850,8 +77318,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-06",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -82246,8 +82714,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-09",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -82268,8 +82736,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-09",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -82290,8 +82758,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-09",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -82580,8 +83048,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-09-09",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -82925,8 +83393,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-09-09",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -83550,8 +84018,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-09-09",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -91042,8 +91510,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-13",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -91064,8 +91532,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-13",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -91086,8 +91554,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-13",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -91270,8 +91738,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-09-13",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -91638,8 +92106,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-09-13",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -92150,8 +92618,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-09-13",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -98474,8 +98942,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-16",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -98496,8 +98964,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-16",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -98518,8 +98986,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-16",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -98923,8 +99391,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-09-16",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -99360,8 +99828,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-09-16",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -100242,8 +100710,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-09-16",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -106531,8 +106999,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-20",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -106553,8 +107021,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-20",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -106575,8 +107043,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-20",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -106937,8 +107405,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-09-20",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -107121,8 +107589,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-09-20",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -109986,8 +110454,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-22",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -110008,8 +110476,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-22",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -110030,8 +110498,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-22",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -110297,8 +110765,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-09-22",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -110780,8 +111248,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-09-22",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -111379,8 +111847,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-09-22",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -112085,8 +112553,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-23",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -112107,8 +112575,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-23",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -112129,8 +112597,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-23",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -112807,8 +113275,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-09-23",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -113752,8 +114220,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-09-23",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -118112,8 +118580,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-26",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -119040,8 +119508,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-27",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -119062,8 +119530,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-27",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -119084,8 +119552,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-27",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -119509,8 +119977,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-09-27",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -120500,8 +120968,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-09-27",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -124280,8 +124748,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-30",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -124302,8 +124770,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-30",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -124324,8 +124792,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-09-30",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -124723,8 +125191,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-09-30",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -125206,8 +125674,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-09-30",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -125598,8 +126066,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-09-30",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -125622,8 +126090,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-09-30",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -126342,8 +126810,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-10-01",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -126364,8 +126832,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-10-01",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -126386,8 +126854,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:overview:2026-10-01",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -127920,8 +128388,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:geo_device:2026-10-01",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -144123,7 +144591,7 @@
       "website_id": "site-yixiu",
       "metric": "traffic_source_sessions",
       "name": "traffic_source_sessions",
-      "value": 2,
+      "value": 1,
       "unit": "count",
       "period_start": "2026-10-20",
       "period_end": "2026-10-20",
@@ -144134,8 +144602,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:sources:2026-10-20",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -144261,7 +144729,7 @@
       "website_id": "site-yixiu",
       "metric": "landing_page_sessions",
       "name": "landing_page_sessions",
-      "value": 3,
+      "value": 2,
       "unit": "count",
       "period_start": "2026-10-20",
       "period_end": "2026-10-20",
@@ -144272,8 +144740,8 @@
       "provider": "website_analytics_api",
       "source": "Google Analytics 4 Data API",
       "source_reference": "ga4:properties/549913650:landing_pages:2026-10-20",
-      "imported_at": "2026-10-21T00:34:13.353Z",
-      "verified_at": "2026-10-21T00:34:13.353Z",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
       "verification_type": "api_verified",
       "freshness": "fresh",
       "confidence": 1,
@@ -144960,6 +145428,1082 @@
       "confidence": 1,
       "stable_key": "d4923b8d1440fc50e8666599",
       "id": "website-metric-d4923b8d1440fc50e8666599"
+    },
+    {
+      "website_id": "site-maker-business-lab",
+      "metric": "page_views",
+      "name": "page_views",
+      "value": 11,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "maker.wonderelian.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "095dff91a830916cb477bda5",
+      "id": "website-metric-095dff91a830916cb477bda5"
+    },
+    {
+      "website_id": "site-maker-business-lab",
+      "metric": "active_users",
+      "name": "active_users",
+      "value": 3,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "maker.wonderelian.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "affb4f5cf810b9b6d21fd31a",
+      "id": "website-metric-affb4f5cf810b9b6d21fd31a"
+    },
+    {
+      "website_id": "site-maker-business-lab",
+      "metric": "sessions",
+      "name": "sessions",
+      "value": 3,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "maker.wonderelian.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "d032b332af757b36d1fddb1b",
+      "id": "website-metric-d032b332af757b36d1fddb1b"
+    },
+    {
+      "website_id": "site-style-atlas",
+      "metric": "page_views",
+      "name": "page_views",
+      "value": 7,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "style-atlas.wonderelian.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "9338b4cf8787a5ff28e5ec3f",
+      "id": "website-metric-9338b4cf8787a5ff28e5ec3f"
+    },
+    {
+      "website_id": "site-style-atlas",
+      "metric": "active_users",
+      "name": "active_users",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "style-atlas.wonderelian.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "490283e367b40b53957dc2b1",
+      "id": "website-metric-490283e367b40b53957dc2b1"
+    },
+    {
+      "website_id": "site-style-atlas",
+      "metric": "sessions",
+      "name": "sessions",
+      "value": 3,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "style-atlas.wonderelian.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "a323f1fe0fa3c03fcb880f60",
+      "id": "website-metric-a323f1fe0fa3c03fcb880f60"
+    },
+    {
+      "website_id": "site-wonderelian",
+      "metric": "page_views",
+      "name": "page_views",
+      "value": 7,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "wonderelian.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "cdab3135f7fafc65ab80067f",
+      "id": "website-metric-cdab3135f7fafc65ab80067f"
+    },
+    {
+      "website_id": "site-wonderelian",
+      "metric": "active_users",
+      "name": "active_users",
+      "value": 2,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "wonderelian.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "80e5542bc4fbb9827fdf6803",
+      "id": "website-metric-80e5542bc4fbb9827fdf6803"
+    },
+    {
+      "website_id": "site-wonderelian",
+      "metric": "sessions",
+      "name": "sessions",
+      "value": 2,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "wonderelian.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "8c91678e4b37cd63d1a3ec8b",
+      "id": "website-metric-8c91678e4b37cd63d1a3ec8b"
+    },
+    {
+      "website_id": "site-yixiu",
+      "metric": "page_views",
+      "name": "page_views",
+      "value": 5,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "yixiu.wonderelian.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "71302e587bb16a501abfb1e5",
+      "id": "website-metric-71302e587bb16a501abfb1e5"
+    },
+    {
+      "website_id": "site-yixiu",
+      "metric": "active_users",
+      "name": "active_users",
+      "value": 3,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "yixiu.wonderelian.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "87e316be62ebb917c234fffb",
+      "id": "website-metric-87e316be62ebb917c234fffb"
+    },
+    {
+      "website_id": "site-yixiu",
+      "metric": "sessions",
+      "name": "sessions",
+      "value": 5,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "yixiu.wonderelian.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "ef25d22abc19efff52058c37",
+      "id": "website-metric-ef25d22abc19efff52058c37"
+    },
+    {
+      "website_id": "site-xiazi",
+      "metric": "page_views",
+      "name": "page_views",
+      "value": 0,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "xiazishuo.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "4499a27867739331505dcf07",
+      "id": "website-metric-4499a27867739331505dcf07"
+    },
+    {
+      "website_id": "site-xiazi",
+      "metric": "active_users",
+      "name": "active_users",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "xiazishuo.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "fd7259c269ba23e9470d11ba",
+      "id": "website-metric-fd7259c269ba23e9470d11ba"
+    },
+    {
+      "website_id": "site-xiazi",
+      "metric": "sessions",
+      "name": "sessions",
+      "value": 2,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "xiazishuo.com"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:overview:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "342d5bf80c7a8e7b927e78f6",
+      "id": "website-metric-342d5bf80c7a8e7b927e78f6"
+    },
+    {
+      "website_id": "site-maker-business-lab",
+      "metric": "traffic_source_sessions",
+      "name": "traffic_source_sessions",
+      "value": 3,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "maker.wonderelian.com",
+        "source_medium": "(direct) / (none)"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:sources:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "03c4080580e5ccba8ed6a468",
+      "id": "website-metric-03c4080580e5ccba8ed6a468"
+    },
+    {
+      "website_id": "site-style-atlas",
+      "metric": "traffic_source_sessions",
+      "name": "traffic_source_sessions",
+      "value": 3,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "style-atlas.wonderelian.com",
+        "source_medium": "(direct) / (none)"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:sources:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "1fbae679454ea71bebace4d2",
+      "id": "website-metric-1fbae679454ea71bebace4d2"
+    },
+    {
+      "website_id": "site-yixiu",
+      "metric": "traffic_source_sessions",
+      "name": "traffic_source_sessions",
+      "value": 3,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "yixiu.wonderelian.com",
+        "source_medium": "wonderelian / owned_referral"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:sources:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "c8b90bc01e74e1f40d74ebbe",
+      "id": "website-metric-c8b90bc01e74e1f40d74ebbe"
+    },
+    {
+      "website_id": "site-style-atlas",
+      "metric": "traffic_source_sessions",
+      "name": "traffic_source_sessions",
+      "value": 2,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "style-atlas.wonderelian.com",
+        "source_medium": "(not set)"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:sources:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "a5490774be7e973d7db8e75b",
+      "id": "website-metric-a5490774be7e973d7db8e75b"
+    },
+    {
+      "website_id": "site-wonderelian",
+      "metric": "traffic_source_sessions",
+      "name": "traffic_source_sessions",
+      "value": 2,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "wonderelian.com",
+        "source_medium": "wonderelian / owned_referral"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:sources:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "51bed86cb4853790f2426fc2",
+      "id": "website-metric-51bed86cb4853790f2426fc2"
+    },
+    {
+      "website_id": "site-xiazi",
+      "metric": "traffic_source_sessions",
+      "name": "traffic_source_sessions",
+      "value": 2,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "xiazishuo.com",
+        "source_medium": "wonderelian / owned_referral"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:sources:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "e586b834f7de4b140e1dd6c8",
+      "id": "website-metric-e586b834f7de4b140e1dd6c8"
+    },
+    {
+      "website_id": "site-xiazi",
+      "metric": "traffic_source_sessions",
+      "name": "traffic_source_sessions",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "xiazishuo.com",
+        "source_medium": "(not set)"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:sources:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "b5471fd7ba4ed64f504878d3",
+      "id": "website-metric-b5471fd7ba4ed64f504878d3"
+    },
+    {
+      "website_id": "site-yixiu",
+      "metric": "traffic_source_sessions",
+      "name": "traffic_source_sessions",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "yixiu.wonderelian.com",
+        "source_medium": "(direct) / (none)"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:sources:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "b5d15c7351b64d15bbed0796",
+      "id": "website-metric-b5d15c7351b64d15bbed0796"
+    },
+    {
+      "website_id": "site-yixiu",
+      "metric": "traffic_source_sessions",
+      "name": "traffic_source_sessions",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "yixiu.wonderelian.com",
+        "source_medium": "(not set)"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:sources:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "2df5e62a0328cbd204d29dc4",
+      "id": "website-metric-2df5e62a0328cbd204d29dc4"
+    },
+    {
+      "website_id": "site-xiazi",
+      "metric": "landing_page_sessions",
+      "name": "landing_page_sessions",
+      "value": 4,
+      "unit": "count",
+      "period_start": "2026-10-20",
+      "period_end": "2026-10-20",
+      "dimensions": {
+        "hostname": "xiazishuo.com",
+        "landing_page": "(not set)"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:landing_pages:2026-10-20",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "4c6c4b6e36e2215961bbb664",
+      "id": "website-metric-4c6c4b6e36e2215961bbb664"
+    },
+    {
+      "website_id": "site-style-atlas",
+      "metric": "landing_page_sessions",
+      "name": "landing_page_sessions",
+      "value": 2,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "style-atlas.wonderelian.com",
+        "landing_page": ""
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:landing_pages:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "aedcbc60eaa2a6629195712d",
+      "id": "website-metric-aedcbc60eaa2a6629195712d"
+    },
+    {
+      "website_id": "site-style-atlas",
+      "metric": "landing_page_sessions",
+      "name": "landing_page_sessions",
+      "value": 2,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "style-atlas.wonderelian.com",
+        "landing_page": "/"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:landing_pages:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "cbfa8f3f684c4e6210d9a8f2",
+      "id": "website-metric-cbfa8f3f684c4e6210d9a8f2"
+    },
+    {
+      "website_id": "site-wonderelian",
+      "metric": "landing_page_sessions",
+      "name": "landing_page_sessions",
+      "value": 2,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "wonderelian.com",
+        "landing_page": "/zh/"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:landing_pages:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "7d3d12bcc55f6de51a6406e3",
+      "id": "website-metric-7d3d12bcc55f6de51a6406e3"
+    },
+    {
+      "website_id": "site-yixiu",
+      "metric": "landing_page_sessions",
+      "name": "landing_page_sessions",
+      "value": 2,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "yixiu.wonderelian.com",
+        "landing_page": "/?music=moonlightSonata&lang=zh"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:landing_pages:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "9eccbc9e196a2d84f19ecf66",
+      "id": "website-metric-9eccbc9e196a2d84f19ecf66"
+    },
+    {
+      "website_id": "site-maker-business-lab",
+      "metric": "landing_page_sessions",
+      "name": "landing_page_sessions",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "maker.wonderelian.com",
+        "landing_page": "/"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:landing_pages:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "11e0b5f4e17940703c7167e0",
+      "id": "website-metric-11e0b5f4e17940703c7167e0"
+    },
+    {
+      "website_id": "site-maker-business-lab",
+      "metric": "landing_page_sessions",
+      "name": "landing_page_sessions",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "maker.wonderelian.com",
+        "landing_page": "/learn/how-to-price-personalized-tote-bags/"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:landing_pages:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "7fcb4c17239b3d84e9820db4",
+      "id": "website-metric-7fcb4c17239b3d84e9820db4"
+    },
+    {
+      "website_id": "site-maker-business-lab",
+      "metric": "landing_page_sessions",
+      "name": "landing_page_sessions",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "maker.wonderelian.com",
+        "landing_page": "/privacy/"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:landing_pages:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "b1b9a9dfa496d9672be90178",
+      "id": "website-metric-b1b9a9dfa496d9672be90178"
+    },
+    {
+      "website_id": "site-xiazi",
+      "metric": "landing_page_sessions",
+      "name": "landing_page_sessions",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "xiazishuo.com",
+        "landing_page": ""
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:landing_pages:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "612e478accf3f0e943f6dabb",
+      "id": "website-metric-612e478accf3f0e943f6dabb"
+    },
+    {
+      "website_id": "site-xiazi",
+      "metric": "landing_page_sessions",
+      "name": "landing_page_sessions",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "xiazishuo.com",
+        "landing_page": "/zh/"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:landing_pages:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "86bff0143f4c0f2d1c333156",
+      "id": "website-metric-86bff0143f4c0f2d1c333156"
+    },
+    {
+      "website_id": "site-yixiu",
+      "metric": "landing_page_sessions",
+      "name": "landing_page_sessions",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "yixiu.wonderelian.com",
+        "landing_page": "/"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:landing_pages:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "e0323d944636e3157bfd0884",
+      "id": "website-metric-e0323d944636e3157bfd0884"
+    },
+    {
+      "website_id": "site-yixiu",
+      "metric": "landing_page_sessions",
+      "name": "landing_page_sessions",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "yixiu.wonderelian.com",
+        "landing_page": "/?music=firstBreath&lang=zh"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:landing_pages:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "5561c3fcfc8ac780417732b5",
+      "id": "website-metric-5561c3fcfc8ac780417732b5"
+    },
+    {
+      "website_id": "site-yixiu",
+      "metric": "landing_page_sessions",
+      "name": "landing_page_sessions",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "yixiu.wonderelian.com",
+        "landing_page": "/?scene=birds&lang=en"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:landing_pages:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "c781331668554553ecb2e84e",
+      "id": "website-metric-c781331668554553ecb2e84e"
+    },
+    {
+      "website_id": "site-maker-business-lab",
+      "metric": "audience",
+      "name": "audience",
+      "value": 2,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "maker.wonderelian.com",
+        "country": "China",
+        "device": "desktop"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:geo_device:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "d206a42513dd47ce9b1d13f5",
+      "id": "website-metric-d206a42513dd47ce9b1d13f5"
+    },
+    {
+      "website_id": "site-maker-business-lab",
+      "metric": "audience",
+      "name": "audience",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "maker.wonderelian.com",
+        "country": "Hong Kong",
+        "device": "desktop"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:geo_device:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "2ea6d1da658981804c71eea5",
+      "id": "website-metric-2ea6d1da658981804c71eea5"
+    },
+    {
+      "website_id": "site-style-atlas",
+      "metric": "audience",
+      "name": "audience",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "style-atlas.wonderelian.com",
+        "country": "China",
+        "device": "desktop"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:geo_device:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "6e5efba111e6a907a68b6083",
+      "id": "website-metric-6e5efba111e6a907a68b6083"
+    },
+    {
+      "website_id": "site-style-atlas",
+      "metric": "audience",
+      "name": "audience",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "style-atlas.wonderelian.com",
+        "country": "United States",
+        "device": "desktop"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:geo_device:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "8bae37b8e6fdd2fa453fb1ee",
+      "id": "website-metric-8bae37b8e6fdd2fa453fb1ee"
+    },
+    {
+      "website_id": "site-wonderelian",
+      "metric": "audience",
+      "name": "audience",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "wonderelian.com",
+        "country": "China",
+        "device": "desktop"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:geo_device:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "fe1589cdb6bd61d4a5669ade",
+      "id": "website-metric-fe1589cdb6bd61d4a5669ade"
+    },
+    {
+      "website_id": "site-wonderelian",
+      "metric": "audience",
+      "name": "audience",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "wonderelian.com",
+        "country": "United States",
+        "device": "mobile"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:geo_device:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "ab3c7341b5a3bbd09981eef6",
+      "id": "website-metric-ab3c7341b5a3bbd09981eef6"
+    },
+    {
+      "website_id": "site-xiazi",
+      "metric": "audience",
+      "name": "audience",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "xiazishuo.com",
+        "country": "United States",
+        "device": "mobile"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:geo_device:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "b6e727c5870e03231a9f65fd",
+      "id": "website-metric-b6e727c5870e03231a9f65fd"
+    },
+    {
+      "website_id": "site-yixiu",
+      "metric": "audience",
+      "name": "audience",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "yixiu.wonderelian.com",
+        "country": "China",
+        "device": "desktop"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:geo_device:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "be3d85429f3d5f36e298c81a",
+      "id": "website-metric-be3d85429f3d5f36e298c81a"
+    },
+    {
+      "website_id": "site-yixiu",
+      "metric": "audience",
+      "name": "audience",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "yixiu.wonderelian.com",
+        "country": "Ireland",
+        "device": "desktop"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:geo_device:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "8b328041ad6e4379224f11a7",
+      "id": "website-metric-8b328041ad6e4379224f11a7"
+    },
+    {
+      "website_id": "site-yixiu",
+      "metric": "audience",
+      "name": "audience",
+      "value": 1,
+      "unit": "count",
+      "period_start": "2026-10-21",
+      "period_end": "2026-10-21",
+      "dimensions": {
+        "hostname": "yixiu.wonderelian.com",
+        "country": "United States",
+        "device": "mobile"
+      },
+      "provider": "website_analytics_api",
+      "source": "Google Analytics 4 Data API",
+      "source_reference": "ga4:properties/549913650:geo_device:2026-10-21",
+      "imported_at": "2026-10-22T00:36:29.786Z",
+      "verified_at": "2026-10-22T00:36:29.786Z",
+      "verification_type": "api_verified",
+      "freshness": "fresh",
+      "confidence": 1,
+      "stable_key": "a60603a4add3c993e120d19a",
+      "id": "website-metric-a60603a4add3c993e120d19a"
     }
   ],
   "website_operations": [
@@ -150325,11 +151869,89 @@
         "sessions": 1955,
         "cta_clicks": 851
       }
+    },
+    {
+      "period_start": "2026-08-15",
+      "period_end": "2026-10-21",
+      "verification_type": "api_verified",
+      "source": "Google Analytics 4 Data API",
+      "verified_at": "2026-10-22T00:36:37.881Z",
+      "websites": [
+        {
+          "website_id": "site-style-atlas",
+          "metrics": {
+            "active_users": 70,
+            "page_views": 211,
+            "sessions": 157,
+            "cta_clicks": 6
+          }
+        },
+        {
+          "website_id": "site-yixiu",
+          "metrics": {
+            "active_users": 537,
+            "page_views": 1395,
+            "sessions": 846,
+            "cta_clicks": 130
+          }
+        },
+        {
+          "website_id": "site-human-design",
+          "metrics": {
+            "active_users": 19,
+            "page_views": 151,
+            "sessions": 60,
+            "cta_clicks": null
+          }
+        },
+        {
+          "website_id": "site-wendao",
+          "metrics": {
+            "active_users": 128,
+            "page_views": 465,
+            "sessions": 298,
+            "cta_clicks": 475
+          }
+        },
+        {
+          "website_id": "site-xiazi",
+          "metrics": {
+            "active_users": 90,
+            "page_views": 363,
+            "sessions": 250,
+            "cta_clicks": 55
+          }
+        },
+        {
+          "website_id": "site-wonderelian",
+          "metrics": {
+            "active_users": 212,
+            "page_views": 890,
+            "sessions": 448,
+            "cta_clicks": 185
+          }
+        },
+        {
+          "website_id": "site-maker-business-lab",
+          "metrics": {
+            "active_users": 45,
+            "page_views": 749,
+            "sessions": 160,
+            "cta_clicks": null
+          }
+        }
+      ],
+      "totals": {
+        "active_users": 983,
+        "page_views": 4224,
+        "sessions": 1969,
+        "cta_clicks": 851
+      }
     }
   ],
   "product_analytics": {
     "schema_version": 1,
-    "generated_at": "2026-10-21T00:34:25.251Z",
+    "generated_at": "2026-10-22T00:36:40.790Z",
     "source": "Google Analytics 4 Data API",
     "projects": [
       {
@@ -150341,18 +151963,18 @@
         "status": "partial",
         "h5": {
           "status": "collecting",
-          "period_start": "2026-09-23",
-          "period_end": "2026-10-20",
+          "period_start": "2026-09-24",
+          "period_end": "2026-10-21",
           "timezone": "Asia/Shanghai",
-          "verified_at": "2026-10-21T00:34:29.042Z",
+          "verified_at": "2026-10-22T00:36:43.527Z",
           "source": "Google Analytics 4 Data API",
           "data_quality": {
             "thresholded": false,
             "sampled": false
           },
           "overview": {
-            "totalUsers": 75,
-            "sessions": 159
+            "totalUsers": 71,
+            "sessions": 152
           },
           "events": [
             {
@@ -150387,8 +152009,8 @@
             },
             {
               "event": "yixiu_v2_library_filter",
-              "count": 40,
-              "users": 4,
+              "count": 41,
+              "users": 5,
               "seconds": null
             },
             {
@@ -150405,8 +152027,8 @@
             },
             {
               "event": "yixiu_v2_consent",
-              "count": 10,
-              "users": 10,
+              "count": 11,
+              "users": 11,
               "seconds": null
             },
             {
@@ -150491,8 +152113,8 @@
           "legacy_events": [
             {
               "event": "yixiu_playback_start",
-              "count": 120,
-              "users": 38
+              "count": 104,
+              "users": 36
             },
             {
               "event": "yixiu_download_click",
@@ -151081,6 +152703,20 @@
               "count": 1,
               "users": 1,
               "seconds": null
+            },
+            {
+              "date": "20261021",
+              "event": "yixiu_v2_consent",
+              "count": 1,
+              "users": 1,
+              "seconds": null
+            },
+            {
+              "date": "20261021",
+              "event": "yixiu_v2_library_filter",
+              "count": 1,
+              "users": 1,
+              "seconds": null
             }
           ],
           "content": {
@@ -151655,10 +153291,10 @@
         },
         "ios": {
           "status": "collecting",
-          "period_start": "2026-09-23",
-          "period_end": "2026-10-20",
+          "period_start": "2026-09-24",
+          "period_end": "2026-10-21",
           "timezone": "Asia/Shanghai",
-          "verified_at": "2026-10-21T00:34:32.035Z",
+          "verified_at": "2026-10-22T00:36:46.334Z",
           "source": "Google Analytics 4 Data API",
           "data_quality": {
             "thresholded": false,
@@ -152155,9 +153791,9 @@
           "source": "Wendao first-party consented aggregate",
           "surface": "h5",
           "hostname": "wendao.wonderelian.com",
-          "period_start": "2026-09-23",
-          "period_end": "2026-10-20",
-          "verified_at": "2026-10-21T00:34:33+00:00",
+          "period_start": "2026-09-24",
+          "period_end": "2026-10-21",
+          "verified_at": "2026-10-22T00:36:47+00:00",
           "timezone": "Asia/Shanghai",
           "overview": {
             "totalUsers": 3,
@@ -152551,9 +154187,9 @@
           "source": "Wendao first-party consented aggregate",
           "surface": "ios",
           "hostname": null,
-          "period_start": "2026-09-23",
-          "period_end": "2026-10-20",
-          "verified_at": "2026-10-21T00:34:33+00:00",
+          "period_start": "2026-09-24",
+          "period_end": "2026-10-21",
+          "verified_at": "2026-10-22T00:36:47+00:00",
           "timezone": "Asia/Shanghai",
           "overview": {
             "totalUsers": null,
@@ -152801,43 +154437,43 @@
           "source": "Xiazi first-party anonymous aggregate",
           "surface": "h5",
           "hostname": "xiazishuo.com",
-          "period_start": "2026-09-24",
-          "period_end": "2026-10-21",
-          "verified_at": "2026-10-21T00:34:33.612Z",
+          "period_start": "2026-09-25",
+          "period_end": "2026-10-22",
+          "verified_at": "2026-10-22T00:36:47.529Z",
           "timezone": "Asia/Shanghai",
           "overview": {
             "totalUsers": 7,
-            "sessions": 48,
-            "userEngagementDuration": 11691
+            "sessions": 51,
+            "userEngagementDuration": 13355
           },
           "events": [
             {
-              "event": "xiazi_v1_active_time",
-              "count": 72,
-              "users": null,
-              "seconds": 11691
-            },
-            {
-              "event": "xiazi_v1_issue_view",
-              "count": 48,
+              "event": "xiazi_v1_visit",
+              "count": 51,
               "users": null,
               "seconds": null
             },
             {
-              "event": "xiazi_v1_visit",
-              "count": 48,
+              "event": "xiazi_v1_issue_view",
+              "count": 51,
+              "users": null,
+              "seconds": null
+            },
+            {
+              "event": "xiazi_v1_active_time",
+              "count": 76,
+              "users": null,
+              "seconds": 13355
+            },
+            {
+              "event": "xiazi_v1_menu_open",
+              "count": 8,
               "users": null,
               "seconds": null
             },
             {
               "event": "xiazi_v1_poster_view",
               "count": 6,
-              "users": null,
-              "seconds": null
-            },
-            {
-              "event": "xiazi_v1_menu_open",
-              "count": 7,
               "users": null,
               "seconds": null
             },
@@ -152885,6 +154521,34 @@
             }
           ],
           "daily": [
+            {
+              "date": "20261021",
+              "event": "xiazi_v1_visit",
+              "count": 3,
+              "users": null,
+              "seconds": null
+            },
+            {
+              "date": "20261021",
+              "event": "xiazi_v1_issue_view",
+              "count": 3,
+              "users": null,
+              "seconds": null
+            },
+            {
+              "date": "20261021",
+              "event": "xiazi_v1_active_time",
+              "count": 4,
+              "users": null,
+              "seconds": 1664
+            },
+            {
+              "date": "20261021",
+              "event": "xiazi_v1_menu_open",
+              "count": 1,
+              "users": null,
+              "seconds": null
+            },
             {
               "date": "20261020",
               "event": "xiazi_v1_active_time",
@@ -153285,25 +154949,31 @@
           "source": "Xiazi first-party anonymous aggregate",
           "surface": "ios",
           "hostname": null,
-          "period_start": "2026-09-24",
-          "period_end": "2026-10-21",
-          "verified_at": "2026-10-21T00:34:33.772Z",
+          "period_start": "2026-09-25",
+          "period_end": "2026-10-22",
+          "verified_at": "2026-10-22T00:36:47.697Z",
           "timezone": "Asia/Shanghai",
           "overview": {
             "totalUsers": 8,
-            "sessions": 67,
-            "userEngagementDuration": 4056
+            "sessions": 71,
+            "userEngagementDuration": 4257
           },
           "events": [
             {
+              "event": "xiazi_v1_active_time",
+              "count": 68,
+              "users": null,
+              "seconds": 4257
+            },
+            {
               "event": "xiazi_v1_visit",
-              "count": 67,
+              "count": 71,
               "users": null,
               "seconds": null
             },
             {
               "event": "xiazi_v1_issue_view",
-              "count": 67,
+              "count": 71,
               "users": null,
               "seconds": null
             },
@@ -153314,26 +154984,20 @@
               "seconds": null
             },
             {
-              "event": "xiazi_v1_language_change",
-              "count": 24,
-              "users": null,
-              "seconds": null
-            },
-            {
-              "event": "xiazi_v1_active_time",
-              "count": 60,
-              "users": null,
-              "seconds": 4056
-            },
-            {
               "event": "xiazi_v1_poster_view",
-              "count": 16,
+              "count": 17,
               "users": null,
               "seconds": null
             },
             {
               "event": "xiazi_v1_download_request",
-              "count": 26,
+              "count": 28,
+              "users": null,
+              "seconds": null
+            },
+            {
+              "event": "xiazi_v1_language_change",
+              "count": 24,
               "users": null,
               "seconds": null
             },
@@ -153388,16 +155052,37 @@
           ],
           "daily": [
             {
+              "date": "20261022",
+              "event": "xiazi_v1_active_time",
+              "count": 3,
+              "users": null,
+              "seconds": 14
+            },
+            {
+              "date": "20261022",
+              "event": "xiazi_v1_visit",
+              "count": 2,
+              "users": null,
+              "seconds": null
+            },
+            {
+              "date": "20261022",
+              "event": "xiazi_v1_issue_view",
+              "count": 2,
+              "users": null,
+              "seconds": null
+            },
+            {
               "date": "20261021",
               "event": "xiazi_v1_visit",
-              "count": 1,
+              "count": 3,
               "users": null,
               "seconds": null
             },
             {
               "date": "20261021",
               "event": "xiazi_v1_issue_view",
-              "count": 1,
+              "count": 3,
               "users": null,
               "seconds": null
             },
@@ -153405,6 +155090,27 @@
               "date": "20261021",
               "event": "xiazi_v1_menu_open",
               "count": 1,
+              "users": null,
+              "seconds": null
+            },
+            {
+              "date": "20261021",
+              "event": "xiazi_v1_active_time",
+              "count": 5,
+              "users": null,
+              "seconds": 187
+            },
+            {
+              "date": "20261021",
+              "event": "xiazi_v1_poster_view",
+              "count": 1,
+              "users": null,
+              "seconds": null
+            },
+            {
+              "date": "20261021",
+              "event": "xiazi_v1_download_request",
+              "count": 2,
               "users": null,
               "seconds": null
             },
@@ -154113,6 +155819,24 @@
             "status": "collecting",
             "rows": [
               {
+                "topic": "minimax-m31-flash-agent-release",
+                "event": "xiazi_v1_poster_view",
+                "count": 1,
+                "users": null
+              },
+              {
+                "topic": "happierleads-solo-b2b-arr",
+                "event": "xiazi_v1_download_request",
+                "count": 1,
+                "users": null
+              },
+              {
+                "topic": "stella-ai-visualization-app-revenue",
+                "event": "xiazi_v1_download_request",
+                "count": 1,
+                "users": null
+              },
+              {
                 "topic": "global-operator-radar-20261020",
                 "event": "xiazi_v1_poster_view",
                 "count": 1,
@@ -154440,40 +156164,40 @@
           "source": "Google Analytics 4 Data API",
           "surface": "h5",
           "hostname": "style-atlas.wonderelian.com",
-          "period_start": "2026-09-23",
-          "period_end": "2026-10-20",
-          "verified_at": "2026-10-21T00:34:35.415Z",
+          "period_start": "2026-09-24",
+          "period_end": "2026-10-21",
+          "verified_at": "2026-10-22T00:36:49.148Z",
           "timezone": "Asia/Shanghai",
           "events": [
             {
               "event": "atlas_v1_screen",
-              "count": 65,
+              "count": 90,
               "users": 6,
               "seconds": null
             },
             {
               "event": "atlas_v1_active_time",
-              "count": 30,
+              "count": 64,
               "users": 5,
-              "seconds": 504.95
+              "seconds": 1301.27
             },
             {
               "event": "atlas_v1_visit",
-              "count": 30,
+              "count": 37,
               "users": 6,
               "seconds": null
             },
             {
               "event": "atlas_v1_style_view",
-              "count": 12,
+              "count": 15,
               "users": 5,
               "seconds": null
             },
             {
               "event": "atlas_v1_reading_time",
-              "count": 9,
+              "count": 13,
               "users": 4,
-              "seconds": 206.23
+              "seconds": 223.43
             },
             {
               "event": "atlas_v1_share_request",
@@ -154489,7 +156213,7 @@
             },
             {
               "event": "atlas_v1_paywall_view",
-              "count": 3,
+              "count": 4,
               "users": 3,
               "seconds": null
             },
@@ -154497,6 +156221,12 @@
               "event": "atlas_v1_download_click",
               "count": 2,
               "users": 2,
+              "seconds": null
+            },
+            {
+              "event": "atlas_v1_guided_start",
+              "count": 2,
+              "users": 1,
               "seconds": null
             },
             {
@@ -154518,6 +156248,12 @@
               "seconds": null
             },
             {
+              "event": "atlas_v1_search",
+              "count": 1,
+              "users": 1,
+              "seconds": null
+            },
+            {
               "event": "atlas_v1_share_cancel",
               "count": 1,
               "users": 1,
@@ -154525,6 +156261,20 @@
             }
           ],
           "daily": [
+            {
+              "event": "atlas_v1_active_time",
+              "count": 34,
+              "users": 1,
+              "date": "20261021",
+              "seconds": 796.32
+            },
+            {
+              "event": "atlas_v1_screen",
+              "count": 25,
+              "users": 1,
+              "date": "20261021",
+              "seconds": null
+            },
             {
               "event": "atlas_v1_screen",
               "count": 13,
@@ -154579,6 +156329,13 @@
               "count": 7,
               "users": 1,
               "date": "20261010",
+              "seconds": null
+            },
+            {
+              "event": "atlas_v1_visit",
+              "count": 7,
+              "users": 1,
+              "date": "20261021",
               "seconds": null
             },
             {
@@ -154652,6 +156409,13 @@
               "seconds": 46.22
             },
             {
+              "event": "atlas_v1_reading_time",
+              "count": 4,
+              "users": 1,
+              "date": "20261021",
+              "seconds": 17.2
+            },
+            {
               "event": "atlas_v1_visit",
               "count": 3,
               "users": 2,
@@ -154685,6 +156449,13 @@
               "users": 2,
               "date": "20261020",
               "seconds": 56.98
+            },
+            {
+              "event": "atlas_v1_style_view",
+              "count": 3,
+              "users": 1,
+              "date": "20261021",
+              "seconds": null
             },
             {
               "event": "atlas_v1_style_view",
@@ -154754,6 +156525,13 @@
               "count": 2,
               "users": 2,
               "date": "20261020",
+              "seconds": null
+            },
+            {
+              "event": "atlas_v1_guided_start",
+              "count": 2,
+              "users": 1,
+              "date": "20261021",
               "seconds": null
             },
             {
@@ -154895,11 +156673,25 @@
               "users": 1,
               "date": "20261020",
               "seconds": null
+            },
+            {
+              "event": "atlas_v1_paywall_view",
+              "count": 1,
+              "users": 1,
+              "date": "20261021",
+              "seconds": null
+            },
+            {
+              "event": "atlas_v1_search",
+              "count": 1,
+              "users": 1,
+              "date": "20261021",
+              "seconds": null
             }
           ],
           "overview": {
-            "totalUsers": 19,
-            "sessions": 59
+            "totalUsers": 17,
+            "sessions": 58
           },
           "data_quality": {
             "thresholded": false,
@@ -154908,6 +156700,13 @@
           "content": {
             "status": "verified",
             "rows": [
+              {
+                "style": "art-deco",
+                "event": "atlas_v1_screen",
+                "count": 11,
+                "users": 1,
+                "seconds": null
+              },
               {
                 "style": "constructivism",
                 "event": "atlas_v1_share_error",
@@ -154958,6 +156757,13 @@
                 "seconds": null
               },
               {
+                "style": "swiss-style",
+                "event": "atlas_v1_screen",
+                "count": 4,
+                "users": 1,
+                "seconds": null
+              },
+              {
                 "style": "constructivism",
                 "event": "atlas_v1_active_time",
                 "count": 3,
@@ -154976,6 +156782,20 @@
                 "event": "atlas_v1_screen",
                 "count": 3,
                 "users": 2,
+                "seconds": null
+              },
+              {
+                "style": "pointillism",
+                "event": "atlas_v1_active_time",
+                "count": 3,
+                "users": 1,
+                "seconds": null
+              },
+              {
+                "style": "pointillism",
+                "event": "atlas_v1_screen",
+                "count": 3,
+                "users": 1,
                 "seconds": null
               },
               {
@@ -155049,6 +156869,13 @@
                 "seconds": 63.07
               },
               {
+                "style": "pointillism",
+                "event": "atlas_v1_reading_time",
+                "count": 2,
+                "users": 1,
+                "seconds": 5.58
+              },
+              {
                 "style": "rinpa",
                 "event": "atlas_v1_screen",
                 "count": 2,
@@ -155064,6 +156891,41 @@
               },
               {
                 "style": "3d-abstract-cgi",
+                "event": "atlas_v1_style_view",
+                "count": 1,
+                "users": 1,
+                "seconds": null
+              },
+              {
+                "style": "art-deco",
+                "event": "atlas_v1_active_time",
+                "count": 1,
+                "users": 1,
+                "seconds": null
+              },
+              {
+                "style": "art-deco",
+                "event": "atlas_v1_guided_start",
+                "count": 1,
+                "users": 1,
+                "seconds": null
+              },
+              {
+                "style": "art-deco",
+                "event": "atlas_v1_reading_time",
+                "count": 1,
+                "users": 1,
+                "seconds": 9.42
+              },
+              {
+                "style": "art-deco",
+                "event": "atlas_v1_search",
+                "count": 1,
+                "users": 1,
+                "seconds": null
+              },
+              {
+                "style": "art-deco",
                 "event": "atlas_v1_style_view",
                 "count": 1,
                 "users": 1,
@@ -155196,6 +157058,20 @@
                 "seconds": null
               },
               {
+                "style": "pointillism",
+                "event": "atlas_v1_paywall_view",
+                "count": 1,
+                "users": 1,
+                "seconds": null
+              },
+              {
+                "style": "pointillism",
+                "event": "atlas_v1_style_view",
+                "count": 1,
+                "users": 1,
+                "seconds": null
+              },
+              {
                 "style": "shojo",
                 "event": "atlas_v1_screen",
                 "count": 1,
@@ -155204,6 +157080,34 @@
               },
               {
                 "style": "shonen",
+                "event": "atlas_v1_style_view",
+                "count": 1,
+                "users": 1,
+                "seconds": null
+              },
+              {
+                "style": "swiss-style",
+                "event": "atlas_v1_active_time",
+                "count": 1,
+                "users": 1,
+                "seconds": null
+              },
+              {
+                "style": "swiss-style",
+                "event": "atlas_v1_guided_start",
+                "count": 1,
+                "users": 1,
+                "seconds": null
+              },
+              {
+                "style": "swiss-style",
+                "event": "atlas_v1_reading_time",
+                "count": 1,
+                "users": 1,
+                "seconds": 2.2
+              },
+              {
+                "style": "swiss-style",
                 "event": "atlas_v1_style_view",
                 "count": 1,
                 "users": 1,
@@ -155260,9 +157164,9 @@
           "source": "Google Analytics 4 Data API",
           "surface": "ios",
           "hostname": null,
-          "period_start": "2026-09-23",
-          "period_end": "2026-10-20",
-          "verified_at": "2026-10-21T00:34:37.622Z",
+          "period_start": "2026-09-24",
+          "period_end": "2026-10-21",
+          "verified_at": "2026-10-22T00:36:51.099Z",
           "timezone": "Asia/Shanghai",
           "events": [
             {
@@ -155550,48 +157454,43 @@
           "source": "Google Analytics 4 Data API",
           "collection_scope": "hostname_excluding_tagged_native",
           "hostname": "maker.wonderelian.com",
-          "period_start": "2026-09-23",
-          "period_end": "2026-10-20",
-          "verified_at": "2026-10-21T00:34:40.274Z",
+          "period_start": "2026-09-24",
+          "period_end": "2026-10-21",
+          "verified_at": "2026-10-22T00:36:53.180Z",
           "timezone": "Asia/Shanghai",
           "overview": {
-            "totalUsers": 23,
-            "activeUsers": 23,
-            "screenPageViews": 253,
-            "sessions": 64,
-            "engagedSessions": 32,
-            "userEngagementDuration": 1326
+            "totalUsers": 24,
+            "activeUsers": 24,
+            "screenPageViews": 197,
+            "sessions": 63,
+            "engagedSessions": 31,
+            "userEngagementDuration": 1109
           },
           "events": [
             {
               "event": "page_view",
-              "count": 253,
-              "users": 22
+              "count": 197,
+              "users": 23
             },
             {
               "event": "maker_v1_page_view",
-              "count": 124,
-              "users": 12
+              "count": 135,
+              "users": 14
             },
             {
               "event": "session_start",
-              "count": 64,
-              "users": 22
+              "count": 63,
+              "users": 23
             },
             {
               "event": "user_engagement",
-              "count": 27,
-              "users": 13
+              "count": 24,
+              "users": 14
             },
             {
               "event": "first_visit",
-              "count": 16,
-              "users": 16
-            },
-            {
-              "event": "scroll",
-              "count": 13,
-              "users": 4
+              "count": 17,
+              "users": 17
             },
             {
               "event": "calculator_step_completed",
@@ -155605,7 +157504,12 @@
             },
             {
               "event": "drawer_open",
-              "count": 7,
+              "count": 6,
+              "users": 3
+            },
+            {
+              "event": "scroll",
+              "count": 6,
               "users": 3
             },
             {
@@ -155629,24 +157533,19 @@
               "users": 1
             },
             {
-              "event": "click",
-              "count": 2,
-              "users": 2
-            },
-            {
-              "event": "home_cta_click",
-              "count": 2,
-              "users": 2
-            },
-            {
               "event": "maker_v1_calculator_complete",
               "count": 2,
               "users": 1
             },
             {
-              "event": "outbound_click",
-              "count": 2,
-              "users": 2
+              "event": "click",
+              "count": 1,
+              "users": 1
+            },
+            {
+              "event": "home_cta_click",
+              "count": 1,
+              "users": 1
             },
             {
               "event": "maker_v1_home_cta_click",
@@ -155677,6 +157576,11 @@
               "event": "opportunity_finder_start",
               "count": 1,
               "users": 1
+            },
+            {
+              "event": "outbound_click",
+              "count": 1,
+              "users": 1
             }
           ],
           "daily": [
@@ -155696,12 +157600,6 @@
               "date": "20261015",
               "totalUsers": 4,
               "screenPageViews": 4,
-              "sessions": 4
-            },
-            {
-              "date": "20260923",
-              "totalUsers": 3,
-              "screenPageViews": 67,
               "sessions": 4
             },
             {
@@ -155732,6 +157630,12 @@
               "date": "20261020",
               "totalUsers": 3,
               "screenPageViews": 53,
+              "sessions": 3
+            },
+            {
+              "date": "20261021",
+              "totalUsers": 3,
+              "screenPageViews": 11,
               "sessions": 3
             },
             {
@@ -155859,83 +157763,83 @@
           "source": "Google Analytics 4 Data API",
           "collection_scope": "hostname_excluding_tagged_native",
           "hostname": "wonderelian.com",
-          "period_start": "2026-09-23",
-          "period_end": "2026-10-20",
-          "verified_at": "2026-10-21T00:34:45.131Z",
+          "period_start": "2026-09-24",
+          "period_end": "2026-10-21",
+          "verified_at": "2026-10-22T00:36:54.675Z",
           "timezone": "Asia/Shanghai",
           "overview": {
-            "totalUsers": 34,
-            "activeUsers": 34,
-            "screenPageViews": 283,
-            "sessions": 84,
-            "engagedSessions": 58,
-            "userEngagementDuration": 11015
+            "totalUsers": 30,
+            "activeUsers": 30,
+            "screenPageViews": 246,
+            "sessions": 79,
+            "engagedSessions": 57,
+            "userEngagementDuration": 7322
           },
           "events": [
             {
               "event": "page_view",
-              "count": 283,
-              "users": 33
-            },
-            {
-              "event": "user_engagement",
-              "count": 104,
-              "users": 16
+              "count": 246,
+              "users": 29
             },
             {
               "event": "wonder_v1_active_time",
-              "count": 93,
+              "count": 99,
               "users": 8
             },
             {
-              "event": "scroll",
-              "count": 74,
-              "users": 19
-            },
-            {
-              "event": "session_start",
-              "count": 70,
-              "users": 30
+              "event": "user_engagement",
+              "count": 81,
+              "users": 15
             },
             {
               "event": "wonder_v1_visit",
-              "count": 70,
+              "count": 77,
               "users": 9
             },
             {
+              "event": "session_start",
+              "count": 66,
+              "users": 27
+            },
+            {
+              "event": "scroll",
+              "count": 57,
+              "users": 17
+            },
+            {
               "event": "wonder_v1_article_reading_time",
+              "count": 25,
+              "users": 4
+            },
+            {
+              "event": "wonder_v1_article_view",
               "count": 24,
+              "users": 4
+            },
+            {
+              "event": "wonder_v1_section_view",
+              "count": 22,
               "users": 3
             },
             {
               "event": "first_visit",
-              "count": 23,
-              "users": 23
-            },
-            {
-              "event": "wonder_v1_article_view",
-              "count": 23,
-              "users": 3
-            },
-            {
-              "event": "content_discovery",
-              "count": 22,
-              "users": 6
-            },
-            {
-              "event": "wonder_v1_section_view",
-              "count": 21,
-              "users": 2
+              "count": 20,
+              "users": 20
             },
             {
               "event": "product_discovery",
-              "count": 15,
-              "users": 6
+              "count": 14,
+              "users": 5
             },
             {
               "event": "click",
               "count": 13,
               "users": 3
+            },
+            {
+              "event": "content_discovery",
+              "count": 13,
+              "users": 5
             },
             {
               "event": "wonder_v1_reading_progress",
@@ -155954,13 +157858,18 @@
             },
             {
               "event": "wonder_v1_note_open",
-              "count": 6,
-              "users": 3
+              "count": 7,
+              "users": 4
             },
             {
               "event": "wonder_v1_contact_click",
               "count": 4,
               "users": 2
+            },
+            {
+              "event": "wonder_v1_load_more",
+              "count": 2,
+              "users": 1
             }
           ],
           "daily": [
@@ -155969,12 +157878,6 @@
               "totalUsers": 7,
               "screenPageViews": 35,
               "sessions": 11
-            },
-            {
-              "date": "20260923",
-              "totalUsers": 6,
-              "screenPageViews": 44,
-              "sessions": 7
             },
             {
               "date": "20261001",
@@ -156053,6 +157956,12 @@
               "totalUsers": 2,
               "screenPageViews": 13,
               "sessions": 6
+            },
+            {
+              "date": "20261021",
+              "totalUsers": 2,
+              "screenPageViews": 7,
+              "sessions": 2
             },
             {
               "date": "20260925",
@@ -156136,9 +158045,9 @@
           "source": "Google Analytics 4 Data API",
           "hostname": "buer.wonderelian.com",
           "surface": "h5",
-          "period_start": "2026-09-23",
-          "period_end": "2026-10-20",
-          "verified_at": "2026-10-21T00:34:46.916Z",
+          "period_start": "2026-09-24",
+          "period_end": "2026-10-21",
+          "verified_at": "2026-10-22T00:36:56.022Z",
           "timezone": "Asia/Shanghai",
           "events": [],
           "daily": [],
@@ -156166,9 +158075,9 @@
           "source": "Google Analytics 4 Data API",
           "hostname": null,
           "surface": "ios",
-          "period_start": "2026-09-23",
-          "period_end": "2026-10-20",
-          "verified_at": "2026-10-21T00:34:48.265Z",
+          "period_start": "2026-09-24",
+          "period_end": "2026-10-21",
+          "verified_at": "2026-10-22T00:36:57.432Z",
           "timezone": "Asia/Shanghai",
           "events": [],
           "daily": [],
